@@ -4,7 +4,6 @@ public class BasicTask7 {
     public static void Past()
     {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("            ---WELCOME---");
         System.out.println("To write a function which returns the time since midnight in milliseconds.");
         System.out.print("Put the dats od hours= ");
         int h=scanner.nextInt();
