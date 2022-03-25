@@ -4,7 +4,6 @@ public class BasicTask4 {
     public static void isDivisible() {
         int wallLength,pixelSize;
         Scanner scanner = new Scanner(System.in);
-        System.out.println("            ---WELCOME---");
         System.out.println("You're laying out a rad pixel art mural to paint on your living room wall in homage to Paul Robertson, your favorite pixel artist.\n" +
                 "\n" +
                 "You want your work to be perfect down to the millimeter. You haven't decided on the dimensions of your piece,\n"+"how large you want your pixels to be, or which wall you want to use.\n"+"You just know that you want to fit an exact number of pixels.\n" +

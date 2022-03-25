@@ -28,8 +28,10 @@ public class BasicProgramMenu {
                 BasicTask7.Past();
                 break;
             case 8:
+                BasicTask8.century();
                 break;
             case 9:
+                BasicTask9.makeNegative();
                 break;
             case 10:
                 BasicTask10.ageCounter();
