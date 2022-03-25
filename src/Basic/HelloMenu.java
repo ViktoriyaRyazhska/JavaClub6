@@ -16,6 +16,7 @@ public class HelloMenu {
                 Task3.getVolumeOfCuboid();
                 break;
             case 4:
+                Task4.isDivisible();
                 break;
             case 5:
                 break;
