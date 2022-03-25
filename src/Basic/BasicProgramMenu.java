@@ -1,9 +1,9 @@
 import java.util.Scanner;
 
-public class HelloMenu {
+public class BasicProgramMenu {
     Scanner scanner = new Scanner(System.in);
     public void chooseTask() {
-        System.out.println("Choose the number of tasks:");
+        System.out.println("Choose the number of tasks from 1 to 11:");
         int chooseNumber = scanner.nextInt();
         switch (chooseNumber) {
             case 1:
