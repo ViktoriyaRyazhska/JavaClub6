@@ -33,7 +33,7 @@ public class ConditionsMenu {
             case 28:
                 break;
             case 29:
-                ConditionsTask29.sequence(5);
+                ConditionsTask29.sequence();
                 break;
             case 30:
                 break;
