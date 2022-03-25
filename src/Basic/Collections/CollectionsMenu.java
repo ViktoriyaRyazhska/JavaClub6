@@ -1,22 +1,20 @@
+package Collections;
+
 import java.util.Scanner;
 
-public class ClassesMenu {
+public class CollectionsMenu {
     public static void chooseTask() {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Choose the number of tasks from 12 to 17:");
+        System.out.println("Choose the number of tasks from 70 to 73:");
         int chooseNumber = scanner.nextInt();
         switch (chooseNumber) {
-            case 12:
+            case 70:
                 break;
-            case 13:
+            case 71:
                 break;
-            case 14:
+            case 72:
                 break;
-            case 15:
-                break;
-            case 16:
-                break;
-            case 17:
+            case 73:
                 break;
         }
     }

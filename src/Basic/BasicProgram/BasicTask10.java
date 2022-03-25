@@ -1,4 +1,4 @@
-//        Age Range Compatibility Equation
+package BasicProgram;//        Age Range Compatibility Equation
 //        https://www.codewars.com/kata/5803956ddb07c5c74200144e/train/java
 //        Author:Maksim Dziurei
 

@@ -1,4 +1,13 @@
-import javax.xml.bind.SchemaOutputResolver;
+package Main;
+
+import BasicProgram.BasicProgramMenu;
+import Classes.ClassesMenu;
+import Collections.CollectionsMenu;
+import Conditions.ConditionsMenu;
+import Loops.LoopsMenu;
+import OOP.OOPMenu;
+import StringProgram.StringProgramMenu;
+
 import java.util.Scanner;
 
 public class FirstHelloMenu {
@@ -26,16 +35,16 @@ public class FirstHelloMenu {
                 ConditionsMenu.chooseTask();
                 break;
             case 4:
-               LoopsMenu.chooseTask();
+                LoopsMenu.chooseTask();
                 break;
             case 5:
-               StringMenu.chooseTask();
+                StringProgramMenu.chooseTask();
                 break;
             case 6:
-               OOPMenu.chooseTask();
+                OOPMenu.chooseTask();
                 break;
             case 7:
-               CollectionsMenu.chooseTask();
+                CollectionsMenu.chooseTask();
                 break;
         }
     }

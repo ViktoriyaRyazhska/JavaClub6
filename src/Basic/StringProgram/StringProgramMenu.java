@@ -1,6 +1,8 @@
+package StringProgram;
+
 import java.util.Scanner;
 
-public class StringMenu {
+public class StringProgramMenu {
     public static void chooseTask() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Choose the number of tasks from 52 to 69:");
@@ -45,3 +47,4 @@ public class StringMenu {
         }
     }
 }
+
