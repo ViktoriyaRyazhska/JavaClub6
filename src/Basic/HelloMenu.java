@@ -7,9 +7,7 @@ public class HelloMenu {
         int chooseNumber = scanner.nextInt();
         switch (chooseNumber) {
             case 1:
-                System.out.print("Put the data, i= ");
-                int putData = scanner.nextInt();
-                Task1.doubleInteger(putData);
+                Task1.doubleInteger();
                 break;
             case 2:
                 break;
@@ -26,6 +24,10 @@ public class HelloMenu {
             case 8:
                 break;
             case 9:
+                break;
+            case 10:
+                Task10.ageCounter();
+
                 break;
         }
     }
