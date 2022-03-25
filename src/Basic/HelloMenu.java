@@ -19,6 +19,7 @@ public class HelloMenu {
                 Task4.isDivisible();
                 break;
             case 5:
+                Task5.greet();
                 break;
             case 6:
                 break;
