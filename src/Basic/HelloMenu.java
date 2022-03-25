@@ -10,6 +10,7 @@ public class HelloMenu {
                 Task1.doubleInteger();
                 break;
             case 2:
+                Task2.multiply();
                 break;
             case 3:
                 break;
