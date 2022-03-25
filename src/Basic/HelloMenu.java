@@ -13,6 +13,7 @@ public class HelloMenu {
                 Task2.multiply();
                 break;
             case 3:
+                Task3.getVolumeOfCuboid();
                 break;
             case 4:
                 break;
