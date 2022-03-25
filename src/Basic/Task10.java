@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class Task10 {
 
-    public static void ageCounter (String[] args) {
+    public static void ageCounter () {
         int min, max, age;
         Scanner sc = new Scanner(System.in);
         System.out.println("            ---WELCOME---");
