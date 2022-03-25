@@ -1,3 +1,5 @@
+package BasicProgram;
+
 import java.util.Scanner;
 
 public class BasicTask3 {

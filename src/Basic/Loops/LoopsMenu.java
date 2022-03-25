@@ -1,40 +1,45 @@
+package Loops;
+
 import java.util.Scanner;
 
-public class ConditionsMenu {
+public class LoopsMenu {
     public static void chooseTask() {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Choose the number of tasks from 19 to 32:");
+        System.out.println("Choose the number of tasks from 33 to 47:");
         int chooseNumber = scanner.nextInt();
         switch (chooseNumber) {
-            case 19:
+            case 33:
                 break;
-            case 20:
+            case 34:
                 break;
-            case 21:
+            case 35:
                 break;
-            case 22:
+            case 36:
                 break;
-            case 23:
+            case 37:
                 break;
-            case 24:
-               ConditionsTask24.rps();
+            case 38:
                 break;
-            case 25:
+            case 39:
                 break;
-            case 26:
+            case 40:
                 break;
-            case 27:
+            case 41:
                 break;
-            case 28:
+            case 42:
                 break;
-            case 29:
+            case 43:
                 break;
-            case 30:
+            case 44:
                 break;
-            case 31:
+            case 45:
                 break;
-            case 32:
+            case 46:
                 break;
+            case 47:
+                break;
+
         }
     }
 }
+

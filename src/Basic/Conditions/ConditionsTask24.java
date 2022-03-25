@@ -1,3 +1,5 @@
+package Conditions;
+
 import java.util.Scanner;
 
 public class ConditionsTask24 {
@@ -7,7 +9,7 @@ public class ConditionsTask24 {
         String p1=scanner.next();
         String p2=scanner.next();
         if ((p1.equals("scissors") && p2.equals("paper")) ||
-                (p1.equals("paper") && p2.equals("rock")) || (p1.equals("rock") && p2.equals("scissors"))){
+                (p1.equals("paper") && p2.equals("rock")) || (p1.equals("rock")) && p2.equals("scissors")){
             System.out.println("Player 1 won!");
         }
         else if ((p1.equals("scissors") && p2.equals("rock"))
