@@ -12,6 +12,7 @@ public class ConditionsMenu {
         int chooseNumber = scanner.nextInt();
         switch (chooseNumber) {
             case 19:
+                ConditionsTask19.opposite();
                 break;
             case 20:
                 break;
