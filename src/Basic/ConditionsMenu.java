@@ -1,9 +1,8 @@
 import java.util.Scanner;
 
 public class ConditionsMenu {
-    Scanner scanner = new Scanner(System.in);
-
-    public void chooseTask() {
+    public static void chooseTask() {
+        Scanner scanner = new Scanner(System.in);
         System.out.println("Choose the number of tasks from 19 to 32:");
         int chooseNumber = scanner.nextInt();
         switch (chooseNumber) {
@@ -18,6 +17,7 @@ public class ConditionsMenu {
             case 23:
                 break;
             case 24:
+               ConditionsTask24.rps();
                 break;
             case 25:
                 break;

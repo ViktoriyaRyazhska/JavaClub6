@@ -17,25 +17,25 @@ public class FirstHelloMenu {
         int chooseNumber = scanner.nextInt();
         switch (chooseNumber) {
             case 1:
-                new BasicProgramMenu().chooseTask();
+                BasicProgramMenu.chooseTask();
                 break;
             case 2:
-                new ClassesMenu().chooseTask();
+                ClassesMenu.chooseTask();
                 break;
             case 3:
-                new ConditionsMenu().chooseTask();
+                ConditionsMenu.chooseTask();
                 break;
             case 4:
-                new LoopsMenu().chooseTask();
+               LoopsMenu.chooseTask();
                 break;
             case 5:
-                new StringMenu().chooseTask();
+               StringMenu.chooseTask();
                 break;
             case 6:
-                new OOPMenu().chooseTask();
+               OOPMenu.chooseTask();
                 break;
             case 7:
-                new CollectionsMenu().chooseTask();
+               CollectionsMenu.chooseTask();
                 break;
         }
     }

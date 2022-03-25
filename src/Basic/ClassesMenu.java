@@ -1,9 +1,8 @@
 import java.util.Scanner;
 
 public class ClassesMenu {
-    Scanner scanner = new Scanner(System.in);
-
-    public void chooseTask() {
+    public static void chooseTask() {
+        Scanner scanner = new Scanner(System.in);
         System.out.println("Choose the number of tasks from 12 to 17:");
         int chooseNumber = scanner.nextInt();
         switch (chooseNumber) {

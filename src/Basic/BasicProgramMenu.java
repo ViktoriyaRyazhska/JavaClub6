@@ -1,8 +1,8 @@
 import java.util.Scanner;
 
 public class BasicProgramMenu {
-    Scanner scanner = new Scanner(System.in);
-    public void chooseTask() {
+    public static void chooseTask() {
+        Scanner scanner = new Scanner(System.in);
         System.out.println("Choose the number of tasks from 1 to 11:");
         int chooseNumber = scanner.nextInt();
         switch (chooseNumber) {
@@ -35,7 +35,6 @@ public class BasicProgramMenu {
                 break;
             case 10:
                 BasicTask10.ageCounter();
-
                 break;
         }
     }
