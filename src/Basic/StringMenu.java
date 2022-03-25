@@ -1,25 +1,21 @@
 import java.util.Scanner;
 
-public class BasicProgramMenu {
+public class StringMenu {
     Scanner scanner = new Scanner(System.in);
+
     public void chooseTask() {
-        System.out.println("Choose the number of tasks from 1 to 11:");
+        System.out.println("Choose the number of tasks from 1 to 14:");
         int chooseNumber = scanner.nextInt();
         switch (chooseNumber) {
             case 1:
-                BasicTask1.doubleInteger();
                 break;
             case 2:
-                BasicTask2.multiply();
                 break;
             case 3:
-                BasicTask3.getVolumeOfCuboid();
                 break;
             case 4:
-                BasicTask4.isDivisible();
                 break;
             case 5:
-                BasicTask5.greet();
                 break;
             case 6:
                 break;
@@ -30,11 +26,23 @@ public class BasicProgramMenu {
             case 9:
                 break;
             case 10:
-                BasicTask10.ageCounter();
-
+                break;
+            case 11:
+                break;
+            case 12:
+                break;
+            case 13:
+                break;
+            case 14:
+                break;
+            case 15:
+                break;
+            case 16:
+                break;
+            case 17:
+                break;
+            case 18:
                 break;
         }
     }
-
-
 }

@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Task5 {
+public class BasicTask5 {
     public static void greet() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("            ---WELCOME---");

@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Task4 {
+public class BasicTask4 {
     public static void isDivisible() {
         int wallLength,pixelSize;
         Scanner scanner = new Scanner(System.in);

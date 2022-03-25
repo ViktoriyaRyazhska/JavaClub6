@@ -12,21 +12,30 @@ public class FirstHelloMenu {
         System.out.println("CONDITIONS-3");
         System.out.println("LOOPS-4");
         System.out.println("STRING-5");
-        System.out.println("COLLECTIONS-6");
+        System.out.println("OOP-6");
+        System.out.println("COLLECTIONS-7");
         int chooseNumber = scanner.nextInt();
         switch (chooseNumber) {
             case 1:
                 new BasicProgramMenu().chooseTask();
                 break;
             case 2:
+                new ClassesMenu().chooseTask();
                 break;
             case 3:
+                new ConditionsMenu().chooseTask();
                 break;
             case 4:
+                new LoopsMenu().chooseTask();
                 break;
             case 5:
+                new StringMenu().chooseTask();
                 break;
             case 6:
+                new OOPMenu().chooseTask();
+                break;
+            case 7:
+                new CollectionsMenu().chooseTask();
                 break;
         }
     }
