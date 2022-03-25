@@ -9,7 +9,7 @@ public class HelloMenu {
             case 1:
                 System.out.print("Put the data, i= ");
                 int putData = scanner.nextInt();
-                doubleInteger(putData);
+                Task1.doubleInteger(putData);
                 break;
             case 2:
                 break;
@@ -30,11 +30,5 @@ public class HelloMenu {
         }
     }
 
-    public static int doubleInteger(int i) {
-        System.out.println("Task1:Code as fast as you can! You need to double the integer and return it.");
-        int result=i * i;
-        System.out.println(result);
-        return result;
 
-    }
 }
