@@ -4,38 +4,38 @@ public class LoopsMenu {
     Scanner scanner = new Scanner(System.in);
 
     public void chooseTask() {
-        System.out.println("Choose the number of tasks from 1 to 14:");
+        System.out.println("Choose the number of tasks from 33 to 47:");
         int chooseNumber = scanner.nextInt();
         switch (chooseNumber) {
-            case 1:
+            case 33:
                 break;
-            case 2:
+            case 34:
                 break;
-            case 3:
+            case 35:
                 break;
-            case 4:
+            case 36:
                 break;
-            case 5:
+            case 37:
                 break;
-            case 6:
+            case 38:
                 break;
-            case 7:
+            case 39:
                 break;
-            case 8:
+            case 40:
                 break;
-            case 9:
+            case 41:
                 break;
-            case 10:
+            case 42:
                 break;
-            case 11:
+            case 43:
                 break;
-            case 12:
+            case 44:
                 break;
-            case 13:
+            case 45:
                 break;
-            case 14:
+            case 46:
                 break;
-            case 15:
+            case 47:
                 break;
 
         }

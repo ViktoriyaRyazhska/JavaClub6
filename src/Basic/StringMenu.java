@@ -4,44 +4,44 @@ public class StringMenu {
     Scanner scanner = new Scanner(System.in);
 
     public void chooseTask() {
-        System.out.println("Choose the number of tasks from 1 to 14:");
+        System.out.println("Choose the number of tasks from 52 to 69:");
         int chooseNumber = scanner.nextInt();
         switch (chooseNumber) {
-            case 1:
+            case 52:
                 break;
-            case 2:
+            case 53:
                 break;
-            case 3:
+            case 54:
                 break;
-            case 4:
+            case 55:
                 break;
-            case 5:
+            case 56:
                 break;
-            case 6:
+            case 57:
                 break;
-            case 7:
+            case 58:
                 break;
-            case 8:
+            case 59:
                 break;
-            case 9:
+            case 60:
                 break;
-            case 10:
+            case 61:
                 break;
-            case 11:
+            case 62:
                 break;
-            case 12:
+            case 63:
                 break;
-            case 13:
+            case 64:
                 break;
-            case 14:
+            case 65:
                 break;
-            case 15:
+            case 66:
                 break;
-            case 16:
+            case 67:
                 break;
-            case 17:
+            case 68:
                 break;
-            case 18:
+            case 69:
                 break;
         }
     }

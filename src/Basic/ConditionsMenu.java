@@ -4,36 +4,36 @@ public class ConditionsMenu {
     Scanner scanner = new Scanner(System.in);
 
     public void chooseTask() {
-        System.out.println("Choose the number of tasks from 1 to 14:");
+        System.out.println("Choose the number of tasks from 19 to 32:");
         int chooseNumber = scanner.nextInt();
         switch (chooseNumber) {
-            case 1:
+            case 19:
                 break;
-            case 2:
+            case 20:
                 break;
-            case 3:
+            case 21:
                 break;
-            case 4:
+            case 22:
                 break;
-            case 5:
+            case 23:
                 break;
-            case 6:
+            case 24:
                 break;
-            case 7:
+            case 25:
                 break;
-            case 8:
+            case 26:
                 break;
-            case 9:
+            case 27:
                 break;
-            case 10:
+            case 28:
                 break;
-            case 11:
+            case 29:
                 break;
-            case 12:
+            case 30:
                 break;
-            case 13:
+            case 31:
                 break;
-            case 14:
+            case 32:
                 break;
         }
     }
