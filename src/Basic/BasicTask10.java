@@ -4,7 +4,7 @@
 
 import java.util.Scanner;
 
-public class Task10 {
+public class BasicTask10 {
 
     public static void ageCounter () {
         int min, max, age;

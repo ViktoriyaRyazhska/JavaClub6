@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Task3 {
+public class BasicTask3 {
     public static void getVolumeOfCuboid() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("            ---WELCOME---");

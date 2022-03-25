@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Task1 {
+public class BasicTask1 {
     public static int doubleInteger() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("            ---WELCOME---");

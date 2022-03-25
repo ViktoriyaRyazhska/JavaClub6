@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Task2 {
+public class BasicTask2 {
     public static void multiply() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("            ---WELCOME---");
