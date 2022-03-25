@@ -22,8 +22,10 @@ public class BasicProgramMenu {
                 BasicTask5.greet();
                 break;
             case 6:
+                BasicTask6.toBinary();
                 break;
             case 7:
+                BasicTask7.Past();
                 break;
             case 8:
                 break;
