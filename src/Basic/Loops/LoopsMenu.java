@@ -33,6 +33,7 @@ public class LoopsMenu {
             case 43:
                 break;
             case 44:
+                LoopsTask44.findNearestSquare();
                 break;
             case 45:
                 break;
