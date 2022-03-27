@@ -15,6 +15,7 @@ public class StringProgramMenu {
             case 54:
                 break;
             case 55:
+                StringProgramTask55.oppositeNum();
                 break;
             case 56:
                 break;
@@ -25,6 +26,7 @@ public class StringProgramMenu {
             case 59:
                 break;
             case 60:
+                StringProgramTask60.findThePosition();
                 break;
             case 61:
                 break;
