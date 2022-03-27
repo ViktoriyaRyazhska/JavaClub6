@@ -6,11 +6,12 @@ package Conditions;
 
 import java.util.Scanner;
 
-public class ConditionTask25 {
+public class ConditionsTask25 {
     public static Integer basicOperations(){
         Scanner sc = new Scanner(System.in);
         String op;
         int a,b;
+        System.out.println("Is n divisible by x and y?");
         System.out.print("Enter operator:");
         op=sc.nextLine();
         System.out.print("a=");
