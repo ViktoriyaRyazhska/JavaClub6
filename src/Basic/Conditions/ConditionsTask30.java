@@ -7,32 +7,32 @@ package Conditions;
 import java.util.Scanner;
 
 public class ConditionsTask30 {
-    public static String switchItUp() {
+    public static void switchItUp() {
         Scanner sc = new Scanner(System.in);
         int number;
         System.out.println("Switch it up!");
         System.out.print("Enter your number: ");
         number = sc.nextInt();
         if (number == 0)
-            return "Zero";
+            System.out.println( "Zero");
         if (number == 1)
-            return "One";
+            System.out.println("One");
         if (number == 2)
-            return "Two";
+            System.out.println("Two");
         if (number == 3)
-            return "Three";
+            System.out.println("Three");
         if (number == 4)
-            return "Four";
+            System.out.println( "Four");
         if (number == 5)
-            return "Five";
+            System.out.println("Five");
         if (number == 6)
-            return "Six";
+            System.out.println("Six");
         if (number == 7)
-            return "Seven";
+            System.out.println("Seven");
         if (number == 8)
-            return "Eight";
+            System.out.println("Eight");
         if (number == 9)
-            return "Nine";
-        return "";
+            System.out.println("Nine");
+        System.out.println( "");
     }
 }

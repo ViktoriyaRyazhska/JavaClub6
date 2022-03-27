@@ -15,6 +15,7 @@ public class ConditionsMenu {
                 ConditionsTask19.opposite();
                 break;
             case 20:
+                ConditionsTask20.divisible();
                 break;
             case 21:
                 break;
@@ -26,6 +27,7 @@ public class ConditionsMenu {
                ConditionsTask24.rps();
                 break;
             case 25:
+                ConditionsTask25.basicOperations();
                 break;
             case 26:
                 break;
@@ -37,6 +39,7 @@ public class ConditionsMenu {
                 ConditionsTask29.sequence();
                 break;
             case 30:
+                ConditionsTask30.switchItUp();
                 break;
             case 31:
                 break;
