@@ -25,6 +25,7 @@ public class StringProgramMenu {
             case 58:
                 break;
             case 59:
+                StringProgramTask59.tripleTrouble();
                 break;
             case 60:
                 StringProgramTask60.findThePosition();

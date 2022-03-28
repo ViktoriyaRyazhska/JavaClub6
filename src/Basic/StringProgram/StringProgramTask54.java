@@ -1,13 +1,15 @@
 package StringProgram;
 
-import java.lang.reflect.Array;
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class StringProgramTask54 {
     public static String sayHello(){
         Scanner scanner =new Scanner(System.in);
-        System.out.print( "String [] name =  ");
+        System.out.println("Create a method sayHello/say_hello/SayHello that takes as input a name,\n"+
+                " city, and state to welcome a person. Note that name will be an array \n"+
+                "consisting of one or more values that should be joined together with one\n"+
+                " space between each, and the length of the name array in test cases will vary.\n");
+        System.out.print( "String [] name is ");
         String [] name=new String[2];
         name[0]=scanner.nextLine();
         System.out.print("city ");
