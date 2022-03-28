@@ -13,6 +13,7 @@ public class StringProgramMenu {
             case 53:
                 break;
             case 54:
+                 StringProgramTask54.sayHello();
                 break;
             case 55:
                 StringProgramTask55.oppositeNum();
