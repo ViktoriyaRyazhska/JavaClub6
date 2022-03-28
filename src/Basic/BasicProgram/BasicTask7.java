@@ -3,7 +3,7 @@ package BasicProgram;
 import java.util.Scanner;
 
 public class BasicTask7 {
-    public static void Past()
+    public static int Past()
     {
         Scanner scanner = new Scanner(System.in);
         System.out.println("To write a function which returns the time since midnight in milliseconds.");
@@ -14,6 +14,7 @@ public class BasicTask7 {
         System.out.print("seconds");
         int s=scanner.nextInt();
         System.out.println("result in milliseconds is "+ h*60*60*1000+m*60*1000+s*1000);
+        return h*60*60*1000+m*60*1000+s*1000;
     }
 
 

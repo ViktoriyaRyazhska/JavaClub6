@@ -3,7 +3,7 @@ package BasicProgram;
 import java.util.Scanner;
 
 public class BasicTask2 {
-    public static void multiply() {
+    public static int multiply() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Implement a function which multiplies two numbers.");
         System.out.print("Put the data,num1= " );
@@ -11,6 +11,7 @@ public class BasicTask2 {
         System.out.print("num2= ");
         int num2=scanner.nextInt();
         System.out.println(num1*num2);
+        return num1*num2;
     }
 
 }
