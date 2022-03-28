@@ -37,6 +37,7 @@ public class StringProgramMenu {
             case 63:
                 break;
             case 64:
+                StringProgramTask64.abbrevName();
                 break;
             case 65:
                 break;
