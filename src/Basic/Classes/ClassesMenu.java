@@ -13,6 +13,8 @@ public class ClassesMenu {
             case 13:
                 break;
             case 14:
+
+new ClassMenuTask14(2,4).add(new ClassMenuTask14(1,3));
                 break;
             case 15:
                 break;
