@@ -4,7 +4,7 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class LoopsTask39 {
-    public static void betterThanAverage() {
+    public static boolean betterThanAverage() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("There was a test in your class and you passed it. Congratulations!\n" +
                 "But you're an ambitious person. You want to know if you're better than the average student in your class.\n" +
@@ -27,8 +27,11 @@ public class LoopsTask39 {
         }
         int totalSum = sum + yourPoints;
         double avg = (double) totalSum / (classPoints.length + 1);
-        if (yourPoints > avg) System.out.println(true);
+        if (yourPoints > avg) {System.out.println(true);
+        return  true;}
         else System.out.println(false);
+        return false;
+
     }
 }
 
