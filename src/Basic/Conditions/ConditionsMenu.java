@@ -18,6 +18,7 @@ public class ConditionsMenu {
                 ConditionsTask20.divisible();
                 break;
             case 21:
+                ConditionsTask21.convert();
                 break;
             case 22:
                 break;
@@ -30,6 +31,7 @@ public class ConditionsMenu {
                 ConditionsTask25.basicOperations();
                 break;
             case 26:
+                ConditionsTask26.isLove();
                 break;
             case 27:
                 break;
@@ -42,6 +44,7 @@ public class ConditionsMenu {
                 ConditionsTask30.switchItUp();
                 break;
             case 31:
+                ConditionsTask31.updateLight();
                 break;
             case 32:
                 break;
