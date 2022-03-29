@@ -11,6 +11,7 @@ public class CollectionsMenu {
             case 70:
                 break;
             case 71:
+                CollectionsTask71.CreateList();
                 break;
             case 72:
                 break;
