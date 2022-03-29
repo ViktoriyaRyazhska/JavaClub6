@@ -18,7 +18,7 @@ new ClassMenuTask14(2,4).add(new ClassMenuTask14(1,3));
                 break;
             case 15:
                 break;
-            case 16:
+            case 16: ClassTask16.declareWinner();
                 break;
             case 17:
                 break;

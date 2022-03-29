@@ -16,6 +16,7 @@ public class LoopsMenu {
             case 35:
                 break;
             case 36:
+                LoopsTask36.map();
                 break;
             case 37:
                 break;
@@ -27,6 +28,7 @@ public class LoopsMenu {
             case 40:
                 break;
             case 41:
+                LoopsTask41.sum();
                 break;
             case 42:
                 break;
@@ -38,6 +40,7 @@ public class LoopsMenu {
             case 45:
                 break;
             case 46:
+                LoopsTask46.gap();
                 break;
             case 47:
                 break;

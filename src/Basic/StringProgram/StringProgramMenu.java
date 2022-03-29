@@ -19,6 +19,7 @@ public class StringProgramMenu {
                 StringProgramTask55.oppositeNum();
                 break;
             case 56:
+                StringProgramTask56.replaceDots();
                 break;
             case 57:
                 break;
@@ -31,6 +32,7 @@ public class StringProgramMenu {
                 StringProgramTask60.findThePosition();
                 break;
             case 61:
+                StringProgramTask61.fakeBin();
                 break;
             case 62:
                 break;
@@ -42,6 +44,7 @@ public class StringProgramMenu {
             case 65:
                 break;
             case 66:
+                StringProgramTask66.twoSort();
                 break;
             case 67:
                 break;
