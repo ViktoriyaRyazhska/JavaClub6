@@ -1,6 +1,6 @@
 package String;
 
-public class Task57 {
+public class Task51 {
 
     public static String numberToString(int num) {
 
