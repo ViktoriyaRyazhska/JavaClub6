@@ -13,7 +13,7 @@ public class StringProgramMenu {
             case 53:
                 break;
             case 54:
-                 StringProgramTask54.sayHello();
+                StringProgramTask54.sayHello();
                 break;
             case 55:
                 StringProgramTask55.oppositeNum();
@@ -48,6 +48,7 @@ public class StringProgramMenu {
             case 68:
                 break;
             case 69:
+                StringProgramTask69.remove();
                 break;
         }
     }
