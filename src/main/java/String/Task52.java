@@ -1,4 +1,6 @@
-public class Kata {
+package String;
+
+public class Task52 {
 
     public static String solution(String str) {
         String res="";

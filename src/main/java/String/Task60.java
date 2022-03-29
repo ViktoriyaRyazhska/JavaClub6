@@ -1,4 +1,6 @@
-public class FakeBinary {
+package String;
+
+public class Task60 {
     public static String fakeBin(String numberString) {
         String res = "";
 
