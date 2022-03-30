@@ -33,6 +33,6 @@ class Block{
         return width * height * length;
     }
     int getSurfaceArea(){
-        return 2 * (width * length + width * height + length * height);
+        return 2 *(width * length + width * height + length * height);
     }
 }
