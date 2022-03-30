@@ -1,5 +1,5 @@
-//Beginner - Reduce but Grow
-//https://www.codewars.com/kata/beginner-reduce-but-grow
+//Get the mean of an array
+//https://www.codewars.com/kata/get-the-mean-of-an-array
 //Author:Maksim Dziurei
 
 
