@@ -1,8 +1,10 @@
 package Classes;
 
 public class Task4 {
+//    https://www.codewars.com/kata/simple-drawing-board/
 
     char[][] canvas;
+
 
     public static void main(String[] args) {
 //        Task4 c = new Task4(7, 7);

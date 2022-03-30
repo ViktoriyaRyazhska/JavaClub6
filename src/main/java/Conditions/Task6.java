@@ -1,6 +1,7 @@
 package Conditions;
 
 public class Task6 {
+//    https://www.codewars.com/kata/rock-paper-scissors/
 
     public static void main(String[] args) {
         System.out.println("Player 1 won!");
