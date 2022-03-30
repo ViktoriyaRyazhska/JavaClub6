@@ -23,5 +23,4 @@ public class BlockTests {
         assertEquals(8,b.getSurfaceArea());
     }
 }
-
  */
