@@ -9,7 +9,7 @@ public class TestTask21 {
         assertEquals(20, Task21.bonusTime(20,false));
     }
     @Test
-    public void test1() {
+    public void test2() {
         assertEquals(200, Task21.bonusTime(20,true));
     }
 }

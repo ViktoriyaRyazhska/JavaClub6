@@ -1,3 +1,4 @@
+/*
 public static String remove(String s, int n){
 
         char ss[]  = s.toCharArray();
@@ -31,3 +32,5 @@ public static String remove(String s, int n){
         }
 
         }
+
+ */

@@ -1,4 +1,4 @@
-package Collections;
+package Conditions;
 
 import org.junit.Test;
 import java.util.List;
@@ -7,12 +7,12 @@ import static org.junit.Assert.assertEquals;
 public class TestTask29 {
 @Test
 public void test1(){
-assertEquals("One",Task29.switchItUp(1))
+assertEquals("One",Task29.switchItUp(1));
 }
     public void test2(){
-        assertEquals("Zero",Task29.switchItUp(0))
+        assertEquals("Zero",Task29.switchItUp(0));
     }
     public void test3(){
-        assertEquals("Nine",Task29.switchItUp(9))
+        assertEquals("Nine",Task29.switchItUp(9));
     }
 }
