@@ -1,15 +1,15 @@
 package Conditions;
 
 public class Task8 {
-    public static String bonusTime(int salary, boolean bonus) {
-        // if bonus== true => salary * 10 "£" = "\u00A3"
-        // if bonus== false => salary "£" = "\u00A3"
+    public static boolean isLove(final int flower1, final int flower2) {
 
-        return bonus == false ? "\u00A3" + salary : "\u00A3" + salary * 10;
-
+        return flower1 % 2 == 0 && flower2 % 2 == 1 || flower2 % 2 == 0 && flower1 % 2 == 1 ? true : false;
     }
 
     public static void main(String[] args) {
-        System.out.println(bonusTime(4, false));
+        System.out.println(isLove(4, 5));
+        System.out.println(isLove(5, 6));
+        System.out.println(isLove(4, 4));
+        System.out.println(isLove(5, 5));
     }
 }
