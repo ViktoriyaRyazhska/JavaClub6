@@ -25,8 +25,6 @@ public class Task2 {
                 }
             }
         }
-
-
         else {
             System.out.println("humanYears must be >=1 ");
         }
