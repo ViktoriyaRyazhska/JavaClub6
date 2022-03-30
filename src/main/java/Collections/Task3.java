@@ -14,6 +14,7 @@ public class Task3 {
                 iterator.remove();
             }
         }
+
         return listOfNumbers;
     }
 
