@@ -1,4 +1,6 @@
 package String;
+import java.math.BigDecimal;
+import java.math.RoundingMode;
 
 public class Task12 {
     public static String weatherInfo(int temp) {
@@ -10,7 +12,9 @@ public class Task12 {
     }
 
     public static double convertToCelsius(int temperature) {
-        double celsius = (temperature - 32) * (5.0/9.0);
-        return celsius;
+        BigDecimal bd = BigDecimal.valueOf((temperature - 32) * (5.0/9.0));
+        bd = bd.setScale(1, RoundingMode.HALF_UP);
+        return bd.doubleValue();
     }
+
 }
