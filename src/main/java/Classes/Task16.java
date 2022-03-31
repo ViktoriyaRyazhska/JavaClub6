@@ -1,7 +1,7 @@
 package Classes;
 
 public class Task16 {
-    public class Fighter {
+    public static class Fighter {
         public String name;
         public int health, damagePerAttack;
         public Fighter(String name, int health, int damagePerAttack) {

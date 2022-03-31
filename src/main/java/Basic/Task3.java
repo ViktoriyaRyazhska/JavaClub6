@@ -6,5 +6,4 @@ public class Task3 {
 
         return length * width * height;
     }
-
 }
