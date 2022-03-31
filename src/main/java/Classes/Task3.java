@@ -1,6 +1,8 @@
 package Classes;
 
-//Task 3
+/**     Task 3
+ * @author RoSteik*/
+
 public class Task3 implements Comparable<Task3>
 {
     private final long top;

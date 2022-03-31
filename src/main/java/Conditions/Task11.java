@@ -1,5 +1,8 @@
 package Conditions;
 
+/**     Task 11
+ * @author RoSteik*/
+
 public class Task11 {
     private static int result;
     public static int sequence(int n) {

@@ -1,5 +1,8 @@
 package String;
 
+/**     Task 10
+ * @author RoSteik*/
+
 public class Task10{
     public static String fakeBin(String numberString) {
         String copyOfNumberString = "";

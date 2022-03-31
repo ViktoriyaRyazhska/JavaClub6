@@ -1,5 +1,8 @@
 package BasicPrograms;
 
+/**   Task 5
+ * @author RoSteik*/
+
 public class Task5 {
     public static String greet(String name) {
 

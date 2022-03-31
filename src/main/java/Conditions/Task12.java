@@ -1,5 +1,8 @@
 package Conditions;
 
+/**     Task 12
+ * @author RoSteik*/
+
 public class Task12 {
     static String numberSwitchedToString;
 

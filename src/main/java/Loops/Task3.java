@@ -1,5 +1,8 @@
 package Loops;
 
+/**     Task 3
+ * @author RoSteik*/
+
 public class Task3{
 
     public static int getAverage(int[] marks){

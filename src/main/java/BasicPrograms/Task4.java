@@ -1,5 +1,8 @@
 package BasicPrograms;
 
+/**   Task 4
+ * @author RoSteik*/
+
 public class Task4 {
 
     public static boolean isDivisible(int wallLength, int pixelSize) {

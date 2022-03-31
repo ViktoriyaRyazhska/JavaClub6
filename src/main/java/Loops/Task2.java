@@ -1,5 +1,8 @@
 package Loops;
 
+/**     Task 2
+ * @author RoSteik*/
+
 public class Task2 {
 
     private static int catYears;

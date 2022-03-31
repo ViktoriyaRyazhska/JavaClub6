@@ -1,6 +1,8 @@
 package Classes;
 
-//Task 2
+/**     Task 2
+ * @author RoSteik*/
+
 public class Task2 {
 
     public static final Task2 INST = new Task2();

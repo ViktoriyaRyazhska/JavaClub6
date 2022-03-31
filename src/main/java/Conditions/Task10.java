@@ -1,5 +1,8 @@
 package Conditions;
 
+/**     Task 10
+ * @author RoSteik*/
+
 public class Task10 {
     private static int emptySeatsInBus;
     public static int enough(int capacity, int numberOfPeopleOnBus, int numberOfPeopleWhoWaitOnBus){

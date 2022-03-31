@@ -1,5 +1,8 @@
 package OOP;
 
+/**     Task 3
+ * @author RoSteik*/
+
 public class Task3{
     private String copyOfSource = "" ;
 
