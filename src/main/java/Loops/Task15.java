@@ -1,6 +1,6 @@
-package com.example.softserve;
+package Loops;
 
-public class Loops15 {
+public class Task15 {
 
     public static int makeMove(int sticks) {
 

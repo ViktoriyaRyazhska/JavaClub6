@@ -1,6 +1,6 @@
-package com.example.softserve;
+package Loops;
 
-public class Loops3 {
+public class Task3 {
     public static int getAverage(int[] marks){
         int count = marks.length;
         int summ = 0;

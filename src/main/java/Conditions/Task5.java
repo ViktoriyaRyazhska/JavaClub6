@@ -1,6 +1,6 @@
-package com.example.softserve;
+package Conditions;
 
-public class Conditions5 {
+public class Task5 {
     public static String CalculateAge(int birth, int yearTo) {
         int age = 0;
         String message = "";

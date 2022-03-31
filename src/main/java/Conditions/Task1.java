@@ -1,6 +1,6 @@
-package com.example.softserve;
+package Conditions;
 
-public class Conditions1 {
+public class Task1 {
     public static int opposite(int number)
     {
         return (number - number * 2);

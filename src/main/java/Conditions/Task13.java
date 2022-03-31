@@ -1,6 +1,6 @@
-package com.example.softserve;
+package Conditions;
 
-public class Conditions13 {
+public class Task13 {
     public static String updateLight(String current) {
         String changeTo = "";
         switch(current) {
