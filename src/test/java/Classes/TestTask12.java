@@ -8,10 +8,10 @@ public class TestTask12 {
     @Test
     public void testSample() {
         TestTask12 ed = new TestTask12();
-        assertEquals(0,ed.getNumber());
+        assertEquals(1,ed.getNumber());
 
 }
     private double getNumber() {
-        return 0;
+        return 1;
     }
 }

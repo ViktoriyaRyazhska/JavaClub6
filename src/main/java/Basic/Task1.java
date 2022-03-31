@@ -7,5 +7,4 @@ class Task1 {
         i = i*multiplier;
 
         return i;
-    }
-}
+    }}
