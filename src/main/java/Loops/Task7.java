@@ -1,6 +1,6 @@
-package com.example.softserve;
+package Loops;
 
-public class Loops7 {
+public class Task7 {
     public static boolean betterThanAverage(int[] classPoints, int yourPoints) {
 
         int summ = yourPoints;

@@ -1,6 +1,6 @@
-package com.example.softserve;
+package String;
 
-public class String4 {
+public class Task4 {
     public static int opposite(int number)
     {
         number -= number * 2;

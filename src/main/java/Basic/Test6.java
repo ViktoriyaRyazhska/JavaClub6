@@ -1,6 +1,6 @@
-package com.example.softserve;
+package Basic;
 
-public class Basic6 {
+public class Test6 {
     public static int toBinary(int n) {
         int binary = 0;
         int adder = 1;

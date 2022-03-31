@@ -1,9 +1,9 @@
-package com.example.softserve;
+package OOP;
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 
-public class OOP4 {
+public class Task4 {
 
 }
 

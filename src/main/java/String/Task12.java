@@ -1,6 +1,6 @@
-package com.example.softserve;
+package String;
 
-public class String12 {
+public class Task12 {
     public static String weatherInfo(int temp) {
         double c = convertToCelsius(temp);
         if (c < 0)

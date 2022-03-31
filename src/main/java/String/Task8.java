@@ -1,6 +1,6 @@
-package com.example.softserve;
+package String;
 
-public class String8 {
+public class Task8 {
     public static String tripleTrouble(String one, String two, String three) {
         String string = "";
         String[] strings = {one, two, three};;

@@ -1,8 +1,8 @@
-package com.example.softserve;
+package Collections;
 
 import java.util.*;
 
-public class Collections2 {
+public class Task2 {
     public static List CreateList(int number)
     {
         List list = new ArrayList();

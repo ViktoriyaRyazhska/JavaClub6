@@ -1,6 +1,6 @@
-package com.example.softserve;
+package Conditions;
 
-public class Condition9 {
+public class Task9 {
     public static String boolToWord(boolean b)
     {
         if(b) {

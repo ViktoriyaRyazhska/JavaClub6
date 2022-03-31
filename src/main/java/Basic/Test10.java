@@ -1,6 +1,6 @@
-package com.example.softserve;
+package Basic;
 
-public class Basic10 {
+public class Test10 {
     public static String datingRange(int age) {
         int min, max = 0;
         if (age <= 14) {
