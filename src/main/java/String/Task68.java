@@ -1,7 +1,9 @@
-/*
+package String;
+
+public class Task68 {
 public static String remove(String s, int n){
 
-        char ss[]  = s.toCharArray();
+        char[] ss = s.toCharArray();
         int tmp=0;
         if(n>ss.length){n=ss.length;}
         while(n>0) {
@@ -9,7 +11,7 @@ public static String remove(String s, int n){
         for (int i=0;i<s.length();i++){
         if(Character.compare(s.charAt(i),'!')==0)  counter++;
         }
-        if(counter!=0&n!=0) {
+        if(counter!=0) {
 
         int a=String.valueOf(ss).indexOf(33);
         if (a==-1)break;
@@ -25,11 +27,9 @@ public static String remove(String s, int n){
         }
         }
         char []newArr = new char[ss.length -tmp];
-        for(int i = 0; i < newArr.length; i++){
-        newArr[i] = ss[i];
-        }
+        System.arraycopy(ss, 0, newArr, 0, newArr.length);
         return String.valueOf(newArr);
         }
 
-        }
- */
+}
+
