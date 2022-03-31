@@ -5,7 +5,7 @@ import static org.junit.Assert.assertEquals;
 import org.junit.runners.JUnit4;
 
 public class task6Test {
-    Test6 t = new Test6();
+    Task6 t = new Task6();
 
     @Test
     public void testToBinary() {

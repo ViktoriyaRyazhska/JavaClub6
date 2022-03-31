@@ -5,7 +5,7 @@ import static org.junit.Assert.assertEquals;
 import org.junit.runners.JUnit4;
 
 public class task2Test {
-    Test2 t = new Test2();
+    Task2 t = new Task2();
 
     @Test
     public void sampleTest() {
