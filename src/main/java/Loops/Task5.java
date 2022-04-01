@@ -2,7 +2,7 @@ package Loops;
 /**   Task 5
  * @author wertylu*/
 public class Task5 {
-    public static int countSheeps(Boolean[] arrayOfSheeps) {
+    public int countSheeps(Boolean[] arrayOfSheeps) {
 
         int total = 0;
         for (Boolean arrayOfSheep : arrayOfSheeps) {
