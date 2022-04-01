@@ -1,6 +1,6 @@
 package String;
 
-/**     Task 10
+/**Task 10 from String
  * @author RoSteik*/
 
 public class Task10{

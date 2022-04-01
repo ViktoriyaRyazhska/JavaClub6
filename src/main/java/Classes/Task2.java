@@ -1,6 +1,6 @@
 package Classes;
 
-/**     Task 2
+/**Task 2 from Classes
  * @author RoSteik*/
 
 public class Task2 {

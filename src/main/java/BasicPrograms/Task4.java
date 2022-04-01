@@ -1,6 +1,6 @@
 package BasicPrograms;
 
-/**   Task 4
+/** Task 4 from BasicPrograms
  * @author RoSteik*/
 
 public class Task4 {
