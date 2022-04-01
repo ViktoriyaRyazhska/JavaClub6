@@ -9,7 +9,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class Task2Test {
 
     @Test
-    public void testplus100() {
+    public void testPlus100() {
         assertEquals(101, Task2.INST.plus100(1));
         assertEquals(200, Task2.INST.plus100(100));
         assertEquals(223, Task2.INST.plus100(123));
