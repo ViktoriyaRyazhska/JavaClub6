@@ -21,35 +21,35 @@ public class MainApp {
             switch (sc.next()) {
 
                 case "1": {
-                    AllMenu.menuBasic();
+                    AllMenu.menuBasic(sc);
                     break;
                 }
 
                 case "2": {
-                    AllMenu.menuClasses();
+                    AllMenu.menuClasses(sc);
                     break;
                 }
 
                 case "3": {
-                    AllMenu.menuConditions();
+                    AllMenu.menuConditions(sc);
                     break;
                 }
                 case "4": {
-                    AllMenu.menuLoops();
+                    AllMenu.menuLoops(sc);
                     break;
                 }
 
                 case "5": {
-                    AllMenu2.menuOOP();
+                    AllMenu2.menuOOP(sc);
                     break;
                 }
 
                 case "6": {
-                    AllMenu2.menuString();
+                    AllMenu2.menuString(sc);
                     break;
                 }
                 case "7": {
-                    AllMenu2.menuCollections();
+                    AllMenu2.menuCollections(sc);
                     break;
                 }
             }

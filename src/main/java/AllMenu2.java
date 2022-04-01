@@ -21,7 +21,7 @@ import String.Task8;
 import String.Task9;
 
 public class AllMenu2 {
-    static void menuOOP() {
+    static void menuOOP(Scanner sc) {
         System.out.println();
         System.out.println("=========================Menu=============================");
         System.out.println("OOP:");
@@ -35,7 +35,7 @@ public class AllMenu2 {
                 "4 -  Implement Calculator.getTotalArea(). Define the different shapes: `Square`, `Rectangle`, `Circle` and `Triangle`");
         System.out.println("5 - Back to Menu");
 
-        Scanner sc = new Scanner(System.in);
+//        Scanner sc = new Scanner(System.in);
         System.out.println();
 
         while (true) {
@@ -43,13 +43,13 @@ public class AllMenu2 {
 
                 case "1": {
                     System.out.println(Arrays.toString(OOP.Task1.create()));
-                    menuOOP();
+                    menuOOP(sc);
                     break;
                 }
 
                 case "2": {
                     // ДОРОБИТИ
-                    menuOOP();
+                    menuOOP(sc);
                     break;
                 }
 
@@ -58,7 +58,7 @@ public class AllMenu2 {
                     System.out.println("a el mou AA Ee");
                     System.out.println(str.encode("a el mou AA Ee"));
 
-                    menuOOP();
+                    menuOOP(sc);
                     break;
                 }
                 case "4": {
@@ -70,7 +70,7 @@ public class AllMenu2 {
                     // System.out.println(sut.getTotalArea(new Triangle(triangleBase,
                     // triangleHeight)));
 
-                    menuOOP();
+                    menuOOP(sc);
                     break;
                 }
 
@@ -83,7 +83,7 @@ public class AllMenu2 {
         }
     }
 
-    static void menuString() {
+    static void menuString(Scanner sc) {
 
         System.out.println();
         System.out.println("=========================Menu=============================");
@@ -119,7 +119,7 @@ public class AllMenu2 {
                 .println("18 - Remove n exclamation marks in the sentence from left to right. n is positive integer.");
         System.out.println("19 - Back to Menu");
 
-        Scanner sc = new Scanner(System.in);
+//        Scanner sc = new Scanner(System.in);
         System.out.println();
 
         while (true) {
@@ -129,14 +129,14 @@ public class AllMenu2 {
                     System.out.println("Integer 25:");
                     System.out.println("String: " + Task1.numberToString(25));
 
-                    menuString();
+                    menuString(sc);
                     break;
                 }
 
                 case "2": {
                     // ДОРОБИТИ
 
-                    menuString();
+                    menuString(sc);
                     break;
                 }
 
@@ -145,61 +145,61 @@ public class AllMenu2 {
                     System.out.println("Input: " + Arrays.toString(name) + "City" + "State");
                     System.out.println(Task3.sayHello(name, "City", "State"));
 
-                    menuString();
+                    menuString(sc);
                     break;
                 }
                 case "4": {
                     System.out.println("Input: " + -40);
                     System.out.println(Task4.opposite(-40));
 
-                    menuString();
+                    menuString(sc);
                     break;
                 }
                 case "5": {
                     System.out.println("Input: T.ext la la .la.la...la");
                     System.out.println(Task5.replaceDots("T.ext la la .la.la...la"));
 
-                    menuString();
+                    menuString(sc);
                     break;
                 }
                 case "6": {
                     // ДОРОБИТИ
 
-                    menuString();
+                    menuString(sc);
                     break;
                 }
                 case "7": {
                     System.out.println("Input: `Text la la lala---la   `");
                     System.out.println(Task7.noSpace("Text la la lala---la   "));
 
-                    menuString();
+                    menuString(sc);
                     break;
                 }
                 case "8": {
                     System.out.println("Input: `this`, `test`, `lock` ");
                     System.out.println(Task8.tripleTrouble("this", "test", "lock"));
 
-                    menuString();
+                    menuString(sc);
                     break;
                 }
                 case "9": {
                     System.out.println("Input: `c`");
                     System.out.println(Task9.position('c'));
 
-                    menuString();
+                    menuString(sc);
                     break;
                 }
                 case "10": {
                     // ДОРОБИТИ
 
-                    menuString();
+                    menuString(sc);
                     break;
                 }
                 case "11": {
                     System.out.println("Input: `8 - is my age`");
                     System.out.println(Task11.howOld("8 - is my age"));
 
-                    menuString();
+                    menuString(sc);
                     break;
                 }
                 case "12": {
@@ -209,20 +209,20 @@ public class AllMenu2 {
                     System.out.println("Input: 23");
                     System.out.println(Task12.weatherInfo(23));
 
-                    menuString();
+                    menuString(sc);
                     break;
                 }
                 case "13": {
                     System.out.println("Input: `David Mendieta`");
                     System.out.println(Task13.abbrevName("David Mendieta"));
 
-                    menuString();
+                    menuString(sc);
                     break;
                 }
                 case "14": {
                     // ДОРОБИТИ
 
-                    menuString();
+                    menuString(sc);
                     break;
                 }
                 case "15": {
@@ -230,28 +230,28 @@ public class AllMenu2 {
                     System.out.println("Input: " + Arrays.toString(abc));
                     System.out.println(Task15.twoSort(abc));
 
-                    menuString();
+                    menuString(sc);
                     break;
                 }
                 case "16": {
                     System.out.println("Input: `505`");
                     System.out.println(Task16.correct("505"));
 
-                    menuString();
+                    menuString(sc);
                     break;
                 }
                 case "17": {
                     System.out.println("Input: `altERnaTIng cAsE <=> ALTerNAtiNG CaSe`");
                     System.out.println(Task17.toAlternativeString("altERnaTIng cAsE <=> ALTerNAtiNG CaSe"));
 
-                    menuString();
+                    menuString(sc);
                     break;
                 }
 
                 case "18": {
                     // ДОРОБИТИ
 
-                    menuString();
+                    menuString(sc);
                     break;
                 }
 
@@ -264,7 +264,7 @@ public class AllMenu2 {
         }
     }
 
-    static void menuCollections() {
+    static void menuCollections(Scanner sc) {
         System.out.println();
         System.out.println("=========================Menu=============================");
         System.out.println("Collections:");
@@ -276,7 +276,7 @@ public class AllMenu2 {
                 "4 -  Create a class Dictionary which you can add words to and their entries");
         System.out.println("5 - Back to Menu");
 
-        Scanner sc = new Scanner(System.in);
+//        Scanner sc = new Scanner(System.in);
         System.out.println();
 
         while (true) {
@@ -285,7 +285,7 @@ public class AllMenu2 {
                 case "1": {
                     System.out.println(task1.added());
 
-                    menuCollections();
+                    menuCollections(sc);
                     break;
                 }
 
@@ -293,7 +293,7 @@ public class AllMenu2 {
                     // ДОРОБИТИ
                     // System.out.println(Task2.CreateList(4));
 
-                    menuCollections();
+                    menuCollections(sc);
                     break;
                 }
 
@@ -302,13 +302,13 @@ public class AllMenu2 {
                     System.out.println(Arrays.asList(111, 2, 2, 2, 4, 3, 4, 5, 69, 7));
                     System.out.println(Collections.Task3.filterOddNumber(listOne));
 
-                    menuCollections();
+                    menuCollections(sc);
                     break;
                 }
                 case "4": {
                     // ДОРОБИТИ
 
-                    menuCollections();
+                    menuCollections(sc);
                     break;
                 }
 

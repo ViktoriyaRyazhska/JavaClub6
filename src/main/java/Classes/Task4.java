@@ -1,5 +1,7 @@
 package Classes;
 
+import java.util.Scanner;
+
 public class Task4 {
 //    https://www.codewars.com/kata/simple-drawing-board/
 
@@ -27,7 +29,21 @@ public class Task4 {
 
     }
 
+public static void Enter(Scanner sc){
 
+//    System.out.println("Enter board width (int): ");
+//    final int width = sc.nextInt();
+//    System.out.println("Enter board height (int): ");
+//    final int height = sc.nextInt();
+
+    Task4 c = new Task4(14, 14);
+
+    c.draw(1, 1, 10, 10)
+            .fill(3, 3, 'o');
+    System.out.println("---------\n|       |\n| xxxxx |\n| xooox |\n| xooox |\n| xxxxx |\n|       |\n|       |\n---------");
+    System.out.println(c.drawCanvas());
+
+}
     public Task4(int width, int height) {
         canvas = new char[width + 2][height + 2];
         for (int i = canvas.length - 1; i >= 0; i--) {

@@ -1,6 +1,13 @@
 
+
+import java.util.Arrays;
+import java.util.Scanner;
+import Basic.*;
+import Classes.*;
+import com.sun.xml.internal.bind.v2.TODO;
+
 public class AllMenu {
-    static void menuBasic() {
+    static void menuBasic(Scanner sc) {
         System.out.println();
         System.out.println("=========================Menu=============================");
         System.out.println("Basic:");
@@ -21,9 +28,77 @@ public class AllMenu {
                 "10 - Given an integer (1 <= n <= 100) representing a person's age, return their minimum and maximum age range.");
         System.out.println("11 - Get the celsius converter working properly.");
         System.out.println("12 - Back to Menu");
+
+        while (true) {
+            switch (sc.next()) {
+
+                case "1": {
+                    System.out.println(Basic.task1.doubleInteger(2));
+                    menuBasic(sc);
+                    break;
+                }
+
+                case "2": {
+                    System.out.println(Basic.Task2.multiply(2, 3));
+                    menuBasic(sc);
+                    break;
+                }
+
+                case "3": {
+                    Basic.Task3.Enter(sc);
+                    menuBasic(sc);
+                    break;
+                }
+                case "4": {
+                    System.out.println(Basic.Task4.isDivisible(100, 21));
+                    menuBasic(sc);
+                    break;
+                }
+                case "5": {
+                    System.out.println(Basic.task5.greet("JOhNny"));
+                    menuBasic(sc);
+                    break;
+                }
+                case "6": {
+                    System.out.println(Basic.Task6.toBinary(100));
+                    menuBasic(sc);
+                    break;
+                }
+                case "7": {
+                    System.out.println(Basic.Task7.past(1, 1, 1));
+                    menuBasic(sc);
+                    break;
+                }
+                case "8": {
+                    System.out.println(Basic.Task8.century(1962));
+                    menuBasic(sc);
+                    break;
+                }
+                case "9": {
+                    System.out.println(Basic.task9.makeNegative(-76));
+                    menuBasic(sc);
+                    break;
+                }
+                case "10": {
+                    System.out.println(Basic.Task10.datingRange( 21));
+                    menuBasic(sc);
+                    break;
+                }
+                case "11": {
+                    System.out.println(Basic.Task11. weatherInfo(70));
+                    menuBasic(sc);
+                    break;
+                }
+                case "12": {
+                    MainApp.menu();
+                    break;
+                }
+            }
+        }
+
     }
 
-    static void menuClasses() {
+    static void menuClasses(Scanner sc) {
         System.out.println();
         System.out.println("=========================Menu=============================");
         System.out.println("Classes:");
@@ -40,9 +115,65 @@ public class AllMenu {
         System.out.println(
                 "6 - Write a class Block. Define these methods: getWidth(), getLength(), getHeight(), getVolume(), getSurfaceArea()");
         System.out.println("7 - Back to Menu");
+
+
+        while (true) {
+            switch (sc.next()) {
+
+                case "1": {
+                    System.out.println(new Classes.Task1(10, "value", "asd").toString());
+                    menuBasic(sc);
+                    break;
+                }
+
+                case "2": {
+                    System.out.println(Classes.task2.INST.plus100(-100));
+                    menuBasic(sc);
+                    break;
+                }
+
+                case "3": {
+                    // TODO: 01.04.2022
+                    menuBasic(sc);
+                    break;
+                }
+                case "4": {
+                    Classes.Task4.Enter(sc);
+                    menuBasic(sc);
+                    break;
+                }
+                case "5": {
+                    // TODO: 01.04.2022  
+//                    System.out.println(Classes.Task5.declareWinner(new Classes.Fighter("Lew", 10, 2), new Fighter("Harry", 5, 4), "Lew"));
+                    menuBasic(sc);
+                    break;
+                }
+                case "6": {
+                    Classes.task6 b = new Classes.task6(new int[] { 2, 4, 6 }); // -> creates a `Block` object with a width of `2` a length of `4`
+                    // and a height of `6`
+                    System.out.println(b.getWidth()); // -> 2
+
+                    System.out.println(b.getLength()); // -> 4
+
+                    System.out.println(b.getHeight()); // -> 6
+
+                    System.out.println(b.getVolume()); // -> 48
+
+                    System.out.println(b.getSurfaceArea()); // -> 88
+
+                    menuBasic(sc);
+                    break;
+                }
+                case "7": {
+                    MainApp.menu();
+                    break;
+                }
+            }
+        }
+
     }
 
-    static void menuConditions() {
+    static void menuConditions(Scanner sc) {
         // ДОРОБИТИ
         System.out.println();
         System.out.println("=========================Menu=============================");
@@ -69,7 +200,7 @@ public class AllMenu {
         System.out.println("15 - Back to Menu");
     }
 
-    static void menuLoops() {
+    static void menuLoops(Scanner sc) {
         // ДОРОБИТИ
         System.out.println();
         System.out.println("=========================Menu=============================");
