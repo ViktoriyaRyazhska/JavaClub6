@@ -2,7 +2,6 @@ package Basic;
 
 import org.junit.Test;
 import static org.junit.Assert.assertEquals;
-import java.util.Random;
 
 public class task10Test {
     @Test

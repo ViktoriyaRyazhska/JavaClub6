@@ -14,6 +14,8 @@ public class MainApp {
         System.out.println("7 - Collections");
 
         Scanner sc = new Scanner(System.in);
+        System.out.println();
+
         while (true) {
 
             switch (sc.next()) {

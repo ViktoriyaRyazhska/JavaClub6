@@ -1,3 +1,5 @@
+package Loops;
+
 public class Task5 {
     public static void main(String[] args) {
 
@@ -7,7 +9,8 @@ public class Task5 {
         int sheepCount = 0;
 
         for (int i = 0; i < arrayOfSheeps.length; i++) {
-            if (arrayOfSheeps[i]) sheepCount++;
+            if (arrayOfSheeps[i])
+                sheepCount++;
         }
 
         return sheepCount;

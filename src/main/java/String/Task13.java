@@ -1,9 +1,7 @@
 package String;
 
-import java.util.Locale;
-
 public class Task13 {
-//    https://www.codewars.com/kata/abbreviate-a-two-word-name/
+    // https://www.codewars.com/kata/abbreviate-a-two-word-name/
 
     public static String abbrevName(String name) {
         String result;

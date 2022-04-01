@@ -1,10 +1,11 @@
 package Conditions;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.MatcherAssert.assertThat;
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.*;
 
 class Task7Test {
     @Test
@@ -14,8 +15,7 @@ class Task7Test {
         assertEquals(20, Task7.basicMath((String) "/", 60, 3).intValue());
         assertEquals(4, Task7.basicMath((String) "-", 5, 1).intValue());
         assertThat(Task7.basicMath((String) "+", 5, 5), is(10));
-        assertThat( Task7.basicMath((String) "*", 5, 5), is(25));
-        assertThrows(ArithmeticException.class, ()->Task7.basicMath( "/", 1, 0)) ;
+        assertThat(Task7.basicMath((String) "*", 5, 5), is(25));
+        assertThrows(ArithmeticException.class, () -> Task7.basicMath("/", 1, 0));
     }
 }
-

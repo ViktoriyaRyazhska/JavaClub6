@@ -6,6 +6,19 @@ import java.util.Scanner;
 
 import Collections.*;
 import OOP.*;
+import String.Task1;
+import String.Task11;
+import String.Task12;
+import String.Task13;
+import String.Task15;
+import String.Task16;
+import String.Task17;
+import String.Task3;
+import String.Task4;
+import String.Task5;
+import String.Task7;
+import String.Task8;
+import String.Task9;
 
 public class AllMenu2 {
     static void menuOOP() {
@@ -23,16 +36,20 @@ public class AllMenu2 {
         System.out.println("5 - Back to Menu");
 
         Scanner sc = new Scanner(System.in);
+        System.out.println();
+
         while (true) {
             switch (sc.next()) {
 
                 case "1": {
-                    System.out.println(Task1.create());
+                    System.out.println(Arrays.toString(OOP.Task1.create()));
+                    menuOOP();
                     break;
                 }
 
                 case "2": {
                     // ДОРОБИТИ
+                    menuOOP();
                     break;
                 }
 
@@ -40,6 +57,8 @@ public class AllMenu2 {
                     task3 str = new task3();
                     System.out.println("a el mou AA Ee");
                     System.out.println(str.encode("a el mou AA Ee"));
+
+                    menuOOP();
                     break;
                 }
                 case "4": {
@@ -50,6 +69,8 @@ public class AllMenu2 {
                     System.out.println("triangleBase = 6,  triangleHeight = 4 ");
                     // System.out.println(sut.getTotalArea(new Triangle(triangleBase,
                     // triangleHeight)));
+
+                    menuOOP();
                     break;
                 }
 
@@ -63,34 +84,184 @@ public class AllMenu2 {
     }
 
     static void menuString() {
-        // ДОРОБИТИ
+
         System.out.println();
         System.out.println("=========================Menu=============================");
         System.out.println("String:");
-        System.out.println("1 - You need to double the integer and return it.");
-        System.out.println("2 - Implement a function which multiplies two numbers.");
+        System.out.println("1 - A function that can transform a number into a string");
+        System.out.println("2 - Complete the solution so that it reverses the string passed into it.");
         System.out.println(
-                "3 - Calculate the volume of a cuboid with three values: length, width and the height of the cuboid.");
+                "3 - A method sayHello() that takes as input a name, city, and state to welcome a person. Note that name will be an array consisting of one or more values");
         System.out.println(
-                "4 -  a function is_divisible() that will tell you whether a wall of a certain length can exactly fit an integer number of pixels of a certain length.");
+                "4 -  Given an integer or a floating-point number, find its opposite");
         System.out.println(
-                "5 -  a function that returns a greeting for a user, but greet for Johnny slightly different.");
-        System.out.println("6 - a function to_binary/ToBinary which returns that number in a binary format.");
+                "5 -  The code provided is supposed replace all the dots . in the specified String str with dashes -");
         System.out.println(
-                "7 - Clock shows h hours, m minutes and s seconds after midnight. A function which returns the time since midnight in milliseconds.");
-        System.out.println("8 - Given a year, return the century it is in.");
-        System.out.println("9 - Given a number and have to make it negative");
+                "6 - `Are you playing banjo?`. If your name starts with the letter `R` or `r`, you are playing banjo!");
         System.out.println(
-                "10 - Given an integer (1 <= n <= 100) representing a person's age, return their minimum and maximum age range.");
-        System.out.println("11 - Get the celsius converter working properly.");
-        System.out.println("12 - Get the celsius converter working properly.");
-        System.out.println("13 - Get the celsius converter working properly.");
-        System.out.println("14 - Get the celsius converter working properly.");
-        System.out.println("15 - Get the celsius converter working properly.");
-        System.out.println("16 - Get the celsius converter working properly.");
-        System.out.println("17 - Get the celsius converter working properly.");
-        System.out.println("18 - Get the celsius converter working properly.");
+                "7 - Remove the spaces from the string, then return the resultant string.");
+        System.out.println(
+                "8 - A function that will return a string that combines all of the letters of the three inputed strings in groups. `aa`, `bb` , `cc` => `abcabc`");
+        System.out.println("9 - When provided with a letter, return its position in the alphabet.");
+        System.out.println(
+                "10 - Given a string of digits, you should replace any digit below 5 with '0' and any digit 5 and above with '1'. Return the resulting string.");
+        System.out.println(
+                "11 - `How old are you?` She always says, `x years old`. Write a program that returns the girl's age (0-9) as an integer.");
+        System.out.println("12 - Debug celsius converter. Convert fahrenheit to celsius");
+        System.out.println("13 - A function to convert a name into initials.  (Sam Harris => S.H)");
+        System.out.println(
+                "14 - a function that accepts 2 string arguments and returns an integer of the count of occurrences the 2nd argument is found in the first one.  ((`Hello`, `l`)  ==>  2)");
+        System.out.println(
+                "15 - You must sort a vector of strings alphabetically. The returned value must be a string, and have `***` between each of its letters.");
+        System.out.println("16 - Correct the errors in the digitised text. S -> 5   O -> 0   I -> 1");
+        System.out.println("17 - altERnaTIng cAsE <=> ALTerNAtiNG CaSe    altERnaTIng cAsE <=> ALTerNAtiNG CaSe");
+        System.out
+                .println("18 - Remove n exclamation marks in the sentence from left to right. n is positive integer.");
         System.out.println("19 - Back to Menu");
+
+        Scanner sc = new Scanner(System.in);
+        System.out.println();
+
+        while (true) {
+            switch (sc.next()) {
+
+                case "1": {
+                    System.out.println("Integer 25:");
+                    System.out.println("String: " + Task1.numberToString(25));
+
+                    menuString();
+                    break;
+                }
+
+                case "2": {
+                    // ДОРОБИТИ
+
+                    menuString();
+                    break;
+                }
+
+                case "3": {
+                    String[] name = { "My", "Name" };
+                    System.out.println("Input: " + Arrays.toString(name) + "City" + "State");
+                    System.out.println(Task3.sayHello(name, "City", "State"));
+
+                    menuString();
+                    break;
+                }
+                case "4": {
+                    System.out.println("Input: " + -40);
+                    System.out.println(Task4.opposite(-40));
+
+                    menuString();
+                    break;
+                }
+                case "5": {
+                    System.out.println("Input: T.ext la la .la.la...la");
+                    System.out.println(Task5.replaceDots("T.ext la la .la.la...la"));
+
+                    menuString();
+                    break;
+                }
+                case "6": {
+                    // ДОРОБИТИ
+
+                    menuString();
+                    break;
+                }
+                case "7": {
+                    System.out.println("Input: `Text la la lala---la   `");
+                    System.out.println(Task7.noSpace("Text la la lala---la   "));
+
+                    menuString();
+                    break;
+                }
+                case "8": {
+                    System.out.println("Input: `this`, `test`, `lock` ");
+                    System.out.println(Task8.tripleTrouble("this", "test", "lock"));
+
+                    menuString();
+                    break;
+                }
+                case "9": {
+                    System.out.println("Input: `c`");
+                    System.out.println(Task9.position('c'));
+
+                    menuString();
+                    break;
+                }
+                case "10": {
+                    // ДОРОБИТИ
+
+                    menuString();
+                    break;
+                }
+                case "11": {
+                    System.out.println("Input: `8 - is my age`");
+                    System.out.println(Task11.howOld("8 - is my age"));
+
+                    menuString();
+                    break;
+                }
+                case "12": {
+                    System.out.println("Input: 50");
+                    System.out.println(Task12.weatherInfo(50));
+
+                    System.out.println("Input: 23");
+                    System.out.println(Task12.weatherInfo(23));
+
+                    menuString();
+                    break;
+                }
+                case "13": {
+                    System.out.println("Input: `David Mendieta`");
+                    System.out.println(Task13.abbrevName("David Mendieta"));
+
+                    menuString();
+                    break;
+                }
+                case "14": {
+                    // ДОРОБИТИ
+
+                    menuString();
+                    break;
+                }
+                case "15": {
+                    String[] abc = { "text", "TEXT1", "Abc", "idjf" };
+                    System.out.println("Input: " + Arrays.toString(abc));
+                    System.out.println(Task15.twoSort(abc));
+
+                    menuString();
+                    break;
+                }
+                case "16": {
+                    System.out.println("Input: `505`");
+                    System.out.println(Task16.correct("505"));
+
+                    menuString();
+                    break;
+                }
+                case "17": {
+                    System.out.println("Input: `altERnaTIng cAsE <=> ALTerNAtiNG CaSe`");
+                    System.out.println(Task17.toAlternativeString("altERnaTIng cAsE <=> ALTerNAtiNG CaSe"));
+
+                    menuString();
+                    break;
+                }
+
+                case "18": {
+                    // ДОРОБИТИ
+
+                    menuString();
+                    break;
+                }
+
+                case "19": {
+                    MainApp.menu();
+                    break;
+                }
+            }
+
+        }
     }
 
     static void menuCollections() {
@@ -106,29 +277,38 @@ public class AllMenu2 {
         System.out.println("5 - Back to Menu");
 
         Scanner sc = new Scanner(System.in);
+        System.out.println();
+
         while (true) {
             switch (sc.next()) {
 
                 case "1": {
                     System.out.println(task1.added());
 
+                    menuCollections();
                     break;
                 }
 
                 case "2": {
                     // ДОРОБИТИ
                     // System.out.println(Task2.CreateList(4));
+
+                    menuCollections();
                     break;
                 }
 
                 case "3": {
                     List<Integer> listOne = new LinkedList<>(Arrays.asList(111, 2, 2, 2, 4, 3, 4, 5, 69, 7));
                     System.out.println(Arrays.asList(111, 2, 2, 2, 4, 3, 4, 5, 69, 7));
-                    System.out.println(Task3.filterOddNumber(listOne));
+                    System.out.println(Collections.Task3.filterOddNumber(listOne));
+
+                    menuCollections();
                     break;
                 }
                 case "4": {
                     // ДОРОБИТИ
+
+                    menuCollections();
                     break;
                 }
 
