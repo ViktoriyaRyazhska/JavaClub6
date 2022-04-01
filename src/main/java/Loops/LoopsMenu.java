@@ -52,12 +52,11 @@ public class LoopsMenu {
             case 5:
                 System.out.println("You selected task 5: Counting sheep...");
                 System.out.print("Please enter length and array of booleans: ");
-                Task5 t = new Task5();
                 Boolean[] arra = new Boolean[in.nextInt()];
                 for (int i = 0; i < arra.length; i++){
                     arra[i] = in.nextBoolean();
                 }
-                System.out.println("Number of present: " + t.countSheeps(arra));
+                System.out.println("Number of present: " + Task5.countSheeps(arra));
                 break;
             case 6:
                 System.out.println("You selected task 6: Reversed sequence.");
@@ -82,45 +81,47 @@ public class LoopsMenu {
                     System.out.println("False, you're worse than average.");
                 }
                 break;*/
+                System.out.println("Task hasn't been done yet.");
+                break;
             case 8:
-                System.out.println("You selected task 8: ");
-                System.out.print("Please enter: ");
-                System.out.println();
+                System.out.println("Task hasn't been done yet.");
                 break;
             case 9:
-                System.out.println("You selected task 9: ");
-                System.out.print("Please enter: ");
-                System.out.println();
+                System.out.println("Task hasn't been done yet.");
                 break;
             case 10:
-                System.out.println("You selected task 10: ");
-                System.out.print("Please enter: ");
+                System.out.println("You selected task 10: My head is at the wrong end!");
+                System.out.print("Please enter array of 3 Strings: ");
+                String[] aray = new String[3];
+                for (int i = 0; i < aray.length; i++){
+                    aray[i] = in.next();
+                }
+                System.out.print("Saved Meerkats!: ");
+                for (String i : Task10.safeMeerkats(aray)){
+                    System.out.print(i + " ");
+                }
                 System.out.println();
                 break;
             case 11:
-                System.out.println("You selected task 11: ");
-                System.out.print("Please enter: ");
-                System.out.println();
+                System.out.println("You selected task 11: Twice as old.");
+                System.out.print("Please enter father's and son's years: ");
+                System.out.println("Years to twice: " + Task11.twiceAsOld(in.nextInt(), in.nextInt()));
                 break;
             case 12:
-                System.out.println("You selected task 12: ");
-                System.out.print("Please enter: ");
-                System.out.println();
+                System.out.println("You selected task 12: Find Nearest square number.");
+                System.out.print("Please enter the number: ");
+                System.out.println("The nearest square: " + Task12.nearestSquare(in.nextInt()));
                 break;
             case 13:
-                System.out.println("You selected task 13: ");
-                System.out.print("Please enter: ");
-                System.out.println();
+                System.out.println("You selected task 13: Grasshopper - Summation.");
+                System.out.print("Please enter the number: ");
+                System.out.println("The sum of every number from 1 to yours: " + Task13.summation(in.nextInt()));
                 break;
             case 14:
-                System.out.println("You selected task 14: ");
-                System.out.print("Please enter: ");
-                System.out.println();
+                System.out.println("Task hasn't been done yet.");
                 break;
             case 15:
-                System.out.println("You selected task 15: ");
-                System.out.print("Please enter: ");
-                System.out.println();
+                System.out.println("Task hasn't been done yet.");
                 break;
             default:
                 System.out.println("No task found. Please try again.");
