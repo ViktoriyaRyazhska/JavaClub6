@@ -4,7 +4,7 @@ import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 
 public class task4Test {
-    private Calculator sut = new Calculator();
+    private Task4 sut = new Task4();
 
     @Test
     public void areaOfATriangleIsBaseMultipliedByHeight() {

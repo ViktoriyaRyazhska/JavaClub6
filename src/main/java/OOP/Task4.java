@@ -5,10 +5,6 @@ import java.math.RoundingMode;
 
 public class Task4 {
 
-}
-
-class Calculator {
-
     public double getTotalArea() {
         return 0;
     }
@@ -23,7 +19,7 @@ class Calculator {
         return bd.doubleValue();
     }
 
-    public double getTotalArea(Calculator...c) {
+    public double getTotalArea(Task4... c) {
         double sum = 0;
         for (int i = 0; i < c.length; ++i) {
             sum += c[i].getTotalArea();
@@ -32,21 +28,21 @@ class Calculator {
     }
 }
 
-class Square extends Calculator{
+class Square extends Task4 {
     private double side;
 
     public Square(double side) {
         this.side = side;
     }
 
-    //areaOfASquareIsSquareOfSide
+    // areaOfASquareIsSquareOfSide
     @Override
     public double getTotalArea() {
         return side * side;
     }
 }
 
-class Triangle extends Calculator{
+class Triangle extends Task4 {
 
     private double base;
     private double height;
@@ -56,21 +52,21 @@ class Triangle extends Calculator{
         this.height = height;
     }
 
-    //areaOfATriangleIsBaseMultipliedByHeight
+    // areaOfATriangleIsBaseMultipliedByHeight
     @Override
     public double getTotalArea() {
         return (base * height) / 2;
     }
 }
 
-class Circle extends Calculator{
+class Circle extends Task4 {
     private double radius;
 
     public Circle(double radius) {
         this.radius = radius;
     }
 
-    //areaOfACircleIsSquareOfRadiusMulitpliedByPi
+    // areaOfACircleIsSquareOfRadiusMulitpliedByPi
     @Override
     public double getTotalArea() {
         BigDecimal bd = BigDecimal.valueOf(radius * radius * 3.141);
@@ -79,7 +75,7 @@ class Circle extends Calculator{
     }
 }
 
-class Rectangle extends Calculator{
+class Rectangle extends Task4 {
 
     private double height;
     private double width;
@@ -89,11 +85,9 @@ class Rectangle extends Calculator{
         this.width = width;
     }
 
-    //areaOfARectangleIsWidthMultipliedByHeight
+    // areaOfARectangleIsWidthMultipliedByHeight
     @Override
     public double getTotalArea() {
         return height * width;
     }
 }
-
-

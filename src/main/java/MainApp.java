@@ -13,10 +13,6 @@ public class MainApp {
         System.out.println("6 - String");
         System.out.println("7 - Collections");
 
-    }
-
-    public static void main(String[] args) {
-        menu();
         Scanner sc = new Scanner(System.in);
         while (true) {
 
@@ -42,21 +38,25 @@ public class MainApp {
                 }
 
                 case "5": {
-                    AllMenu.menuOOP();
+                    AllMenu2.menuOOP();
                     break;
                 }
 
                 case "6": {
-                    AllMenu.menuString();
+                    AllMenu2.menuString();
                     break;
                 }
                 case "7": {
-                    AllMenu.menuCollections();
+                    AllMenu2.menuCollections();
                     break;
                 }
             }
 
         }
+    }
+
+    public static void main(String[] args) {
+        menu();
 
     }
 }
