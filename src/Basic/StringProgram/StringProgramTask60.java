@@ -1,3 +1,9 @@
+//Find the position!
+//https://www.codewars.com/kata/find-the-position/
+//Author:Maksim Dziurei
+
+
+
 package StringProgram;
 
 import java.util.Scanner;

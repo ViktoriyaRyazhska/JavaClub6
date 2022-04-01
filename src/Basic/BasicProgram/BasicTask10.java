@@ -6,6 +6,20 @@ import java.util.Scanner;
 
 public class BasicTask10 {
 
+    public static String ageCounter(int age){
+        int min, max;
+        String res;
+        if (age > 14) {
+            min = age / 2 + 7;
+            max = (age - 7) * 2;
+        } else {
+            min = age - age / 10;
+            max = age + age / 10;
+        }
+        res= "Your result: "+min+"-"+max;
+        return res;
+    }
+
     public static String ageCounter () {
         int min, max, age;
         String res;
