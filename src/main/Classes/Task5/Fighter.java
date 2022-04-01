@@ -55,7 +55,7 @@ public class Fighter {
         return Objects.hash(name, health, damagePerAttack);
     }
 
-    public static void Fight(Fighter f1, Fighter f2) {
+    public static void fight(Fighter f1, Fighter f2) {
         while (f1.getHealth() > 0 || f2.getHealth() > 0) {
             System.out.print(f1.name + " attacks " + f2.name+"\t");
             f2.setHealth(f2.getHealth() - f1.getDamagePerAttack());
