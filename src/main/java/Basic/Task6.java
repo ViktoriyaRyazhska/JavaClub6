@@ -1,6 +1,6 @@
 package Basic;
 
-public class Test6 {
+public class Task6 {
     public static int toBinary(int n) {
         int binary = 0;
         int adder = 1;
