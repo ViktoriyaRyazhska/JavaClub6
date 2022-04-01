@@ -1,7 +1,7 @@
 package Conditions;
 
 /**Task 5
- * @author zshaparenkoz*/
+ * @author sshaparenko*/
 
 public class Task5 {
     public static String CalculateAge(int birth, int yearTo){

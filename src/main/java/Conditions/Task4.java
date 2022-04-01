@@ -1,7 +1,7 @@
 package Conditions;
 
 /**Task 4
- * @author zshaparenkoz*/
+ * @author sshaparenko*/
 
 public class Task4 {
     public static String bonusTime(final int salary, final boolean bonus){
