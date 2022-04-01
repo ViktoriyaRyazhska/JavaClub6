@@ -19,9 +19,6 @@ public class Task3 {
         @Override
         public int compareTo(Fraction f2){ return Long.compare(top * f2.bottom, f2.top * bottom); }
 
-        // Your work here!
-
-        //Add two fractions
         public Fraction add(Fraction f2) {
             long commonDenominator = Math.nok(f2.bottom, bottom);
             long commonNumerator = (((commonDenominator / bottom) * top) + ((commonDenominator / f2.bottom) * f2.top));
@@ -29,7 +26,10 @@ public class Task3 {
             return finalFraction;
         }
 
-        //...and make this class string representable
+        @Override
+        public String toString() {
+            return (top + "/" + bottom);
+        }
     }
 
     class Math {
@@ -65,7 +65,5 @@ public class Task3 {
 
             return new Fraction(top, bottom);
         }
-
-
     }
 }
