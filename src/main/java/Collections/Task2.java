@@ -1,6 +1,6 @@
 package Collections;
 
-/**     Task 2
+/** Task 2 from Loops
  * @author RoSteik*/
 
 import java.util.*;

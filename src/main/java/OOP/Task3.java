@@ -1,6 +1,6 @@
 package OOP;
 
-/**     Task 3
+/**  Task 3 from OOP
  * @author RoSteik*/
 
 public class Task3{
