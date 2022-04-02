@@ -1,11 +1,7 @@
-import java.util.Arrays;
 import java.util.Scanner;
-import Basic.*;
-import Classes.*;
-import Conditions.*;
 
 public class AllMenu {
-    static void menuBasic(Scanner sc) {
+    static void showBasicMenu(Scanner sc) {
         System.out.println();
         System.out.println("=========================Menu=============================");
         System.out.println("Basic:");
@@ -32,59 +28,59 @@ public class AllMenu {
 
                 case "1": {
                     System.out.println(Basic.task1.doubleInteger(2));
-                    menuBasic(sc);
+                    showBasicMenu(sc);
                     break;
                 }
 
                 case "2": {
                     System.out.println(Basic.Task2.multiply(2, 3));
-                    menuBasic(sc);
+                    showBasicMenu(sc);
                     break;
                 }
 
                 case "3": {
                     Basic.Task3.Enter(sc);
-                    menuBasic(sc);
+                    showBasicMenu(sc);
                     break;
                 }
                 case "4": {
                     System.out.println(Basic.Task4.isDivisible(100, 21));
-                    menuBasic(sc);
+                    showBasicMenu(sc);
                     break;
                 }
                 case "5": {
                     System.out.println(Basic.task5.greet("JOhNny"));
-                    menuBasic(sc);
+                    showBasicMenu(sc);
                     break;
                 }
                 case "6": {
                     System.out.println(Basic.Task6.toBinary(100));
-                    menuBasic(sc);
+                    showBasicMenu(sc);
                     break;
                 }
                 case "7": {
                     System.out.println(Basic.Task7.past(1, 1, 1));
-                    menuBasic(sc);
+                    showBasicMenu(sc);
                     break;
                 }
                 case "8": {
                     System.out.println(Basic.Task8.century(1962));
-                    menuBasic(sc);
+                    showBasicMenu(sc);
                     break;
                 }
                 case "9": {
                     System.out.println(Basic.task9.makeNegative(-76));
-                    menuBasic(sc);
+                    showBasicMenu(sc);
                     break;
                 }
                 case "10": {
                     System.out.println(Basic.Task10.datingRange( 21));
-                    menuBasic(sc);
+                    showBasicMenu(sc);
                     break;
                 }
                 case "11": {
                     System.out.println(Basic.Task11. weatherInfo(70));
-                    menuBasic(sc);
+                    showBasicMenu(sc);
                     break;
                 }
                 case "12": {
@@ -120,30 +116,30 @@ public class AllMenu {
 
                 case "1": {
                     System.out.println(new Classes.Task1(10, "value", "asd").toString());
-                    menuBasic(sc);
+                    showBasicMenu(sc);
                     break;
                 }
 
                 case "2": {
                     System.out.println(Classes.task2.INST.plus100(-100));
-                    menuBasic(sc);
+                    showBasicMenu(sc);
                     break;
                 }
 
                 case "3": {
                     // TODO: 01.04.2022
-                    menuBasic(sc);
+                    showBasicMenu(sc);
                     break;
                 }
                 case "4": {
                     Classes.Task4.Enter(sc);
-                    menuBasic(sc);
+                    showBasicMenu(sc);
                     break;
                 }
                 case "5": {
                     // TODO: 01.04.2022  
 //                    System.out.println(Classes.Task5.declareWinner(new Classes.Fighter("Lew", 10, 2), new Fighter("Harry", 5, 4), "Lew"));
-                    menuBasic(sc);
+                    showBasicMenu(sc);
                     break;
                 }
                 case "6": {
@@ -159,7 +155,7 @@ public class AllMenu {
 
                     System.out.println(b.getSurfaceArea()); // -> 88
 
-                    menuBasic(sc);
+                    showBasicMenu(sc);
                     break;
                 }
                 case "7": {
@@ -227,74 +223,74 @@ public class AllMenu {
 
                 case "1": {
                     System.out.println(Conditions.Task1.opposite(2));
-                    menuBasic(sc);
+                    showBasicMenu(sc);
                     break;
                 }
 
                 case "2": {
                     System.out.println(Conditions.Task2.isDivisible(3, 3, 4));
-                    menuBasic(sc);
+                    showBasicMenu(sc);
                     break;
                 }
 
                 case "3": {
                     System.out.println(Conditions.Task3.convert(true));
-                    menuBasic(sc);
+                    showBasicMenu(sc);
                     break;
                 }
                 case "4": {
                     System.out.println(Conditions.Task4.bonusTime(4, false));
-                    menuBasic(sc);
+                    showBasicMenu(sc);
                     break;
                 }
                 case "5": {
                     System.out.println(Conditions.Task5.CalculateAge(2002, 2022));
-                    menuBasic(sc);
+                    showBasicMenu(sc);
                     break;
                 }
                 case "6": {
                     System.out.println(Conditions.Task6.rps("rock", "scissors"));
-                    menuBasic(sc);
+                    showBasicMenu(sc);
                     break;
                 }
                 case "7": {
                     System.out.println(Conditions.Task7.basicMath("+", 5, 5));
-                    menuBasic(sc);
+                    showBasicMenu(sc);
                     break;
                 }
                 case "8": {
                     System.out.println(Conditions.Task8.isLove(4, 5));
-                    menuBasic(sc);
+                    showBasicMenu(sc);
                     break;
                 }
                 case "9": {
                     System.out.println(Conditions.Task9.boolToWord(true));
-                    menuBasic(sc);
+                    showBasicMenu(sc);
                     break;
                 }
                 case "10": {
                     System.out.println(Conditions.Task10.enough(100, 60, 50));
-                    menuBasic(sc);
+                    showBasicMenu(sc);
                     break;
                 }
                 case "11": {
                     System.out.println(Conditions.Task11.sequence(10));
-                    menuBasic(sc);
+                    showBasicMenu(sc);
                     break;
                 }
                 case "12": {
                     System.out.println(Conditions.Task12.sequence(99));
-                    menuBasic(sc);
+                    showBasicMenu(sc);
                     break;
                 }
                 case "13": {
                     System.out.println(Conditions.Task13.updateLight("green"));
-                    menuBasic(sc);
+                    showBasicMenu(sc);
                     break;
                 }
                 case "14": {
                     System.out.println(Conditions.Task14.rentalCarCost(5));
-                    menuBasic(sc);
+                    showBasicMenu(sc);
                     break;
                 }
                 case "15": {

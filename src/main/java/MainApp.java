@@ -20,7 +20,7 @@ public class MainApp {
             switch (sc.next()) {
 
                 case "1": {
-                    AllMenu.menuBasic(sc);
+                    AllMenu.showBasicMenu(sc);
                     break;
                 }
 
@@ -39,7 +39,7 @@ public class MainApp {
                 }
 
                 case "5": {
-                    AllMenu2.menuOOP(sc);
+                    AllMenu2.showOOPMenu(sc);
                     break;
                 }
 
