@@ -1,6 +1,6 @@
 package Basic;
 
-class task1 {
+public class task1 {
     public static int doubleInteger(int i) {
         // Double the integer and return it!
         return i * 2;

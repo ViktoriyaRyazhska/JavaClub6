@@ -62,7 +62,7 @@ public class AllMenu2 {
                     break;
                 }
                 case "4": {
-                    // ДОРОБИТИ
+                    //TODO ДОРОБИТИ
                     Task4 sut = new Task4();
                     double triangleBase = 6;
                     double triangleHeight = 4;
@@ -75,7 +75,7 @@ public class AllMenu2 {
                 }
 
                 case "5": {
-                    MainApp.menu();
+                    MainApp.showMenu();
                     break;
                 }
             }
@@ -256,7 +256,7 @@ public class AllMenu2 {
                 }
 
                 case "19": {
-                    MainApp.menu();
+                    MainApp.showMenu();
                     break;
                 }
             }
@@ -313,7 +313,7 @@ public class AllMenu2 {
                 }
 
                 case "5": {
-                    MainApp.menu();
+                    MainApp.showMenu();
                     break;
                 }
             }
