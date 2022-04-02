@@ -1,5 +1,8 @@
 package String;
 
+/**   Task 13
+ * @author MichaelShv*/
+
 public class Task13 {
     public static String abbrevName(String name) {
         name = name.toUpperCase();

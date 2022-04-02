@@ -1,5 +1,8 @@
 package Conditions;
 
+/**   Task 13
+ * @author MichaelShv*/
+
 public class Task13 {
     public static String updateLight(String current) {
         if (current == "green") {
