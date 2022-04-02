@@ -18,7 +18,7 @@ public class ClassesMenu {
             case 15:
                 break;
             case 16:
-                ClassTask16.declareWinner();
+                ClassTask16.declareWinner(scanner);
                 break;
             case 17:
                 break;
