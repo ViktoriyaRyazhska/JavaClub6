@@ -9,6 +9,7 @@ class Task13Test {
     void testSummation() {
         assertEquals(1, Task13.summation(1));
         assertEquals(36, Task13.summation(8));
+
     }
 }
 
