@@ -1,5 +1,8 @@
 package Loops;
 
+/**Task 9
+ * @author sshaparenko*/
+
 public class Task9 {
     public static int sum(int[] arr){
         int s = 0;

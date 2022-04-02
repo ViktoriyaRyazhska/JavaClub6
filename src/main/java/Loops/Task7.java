@@ -1,5 +1,8 @@
 package Loops;
 
+/**Task 7
+ * @author sshaparenko*/
+
 public class Task7 {
     public static boolean betterThanAverage(int [] classPoints, int yourPoints){
         int amount = 0;
