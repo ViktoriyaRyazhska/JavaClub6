@@ -45,6 +45,7 @@ public class ConditionsMenu {
                 ConditionsTask31.updateLight();
                 break;
             case 32:
+                ConditionsTask32.rentalCarCost();
                 break;
         }
     }
