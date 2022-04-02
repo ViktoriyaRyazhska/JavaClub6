@@ -26,6 +26,7 @@ public class ClassesMenu {
             case 6:
                 break;
             default:
+                System.out.println("No task found. Please try again.");
                 break;
         }
     }
