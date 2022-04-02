@@ -35,28 +35,12 @@ public class SettingsMenu {
                 case 3:
                     CollectionsMenu.chooseNumberOfTask();
                     break;
-//                case 2:
-//                    ClassesMenu.chooseTask();
-//                    break;
-//                case 3:
-//                    ConditionsMenu.chooseTask();
-//                    break;
-//                case 4:
-//                    LoopsMenu.chooseTask();
-//                    break;
-//                case 5:
-//                    StringProgramMenu.chooseTask();
-//                    break;
-//                case 6:
-//                    OOPMenu.chooseTask();
-//                    break;
-//                case 7:
-//                    CollectionsMenu.chooseTask();
-//                    break;
                 case 0:
                     System.exit(0);
                 default:
-                    System.out.println("Error, wrong answer");
+                    final String ANSI_RED = "\u001B[31m";
+                    final String ANSI_RESET = "\u001B[0m";
+                    System.out.println(ANSI_RED+"ERROR"+ANSI_RESET+" You write a wrong number");
                     menuTitle();
 
             }
