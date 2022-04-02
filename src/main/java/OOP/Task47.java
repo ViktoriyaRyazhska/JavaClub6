@@ -1,4 +1,4 @@
-package Opp;
+package OOP;
 
 public class Task47 {
 

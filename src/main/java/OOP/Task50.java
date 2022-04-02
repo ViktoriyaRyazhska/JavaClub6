@@ -1,4 +1,4 @@
-package Opp;
+package OOP;
 
 import java.util.Arrays;
 public class Task50 {
