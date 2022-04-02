@@ -1,6 +1,6 @@
 package Classes;
 
-/**     Task 3
+/**Task 3 from Classes
  * @author RoSteik*/
 
 public class Task3 implements Comparable<Task3>

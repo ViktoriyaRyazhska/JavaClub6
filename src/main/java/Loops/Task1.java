@@ -1,6 +1,6 @@
 package Loops;
 
-/**     Task 1
+/**Task 1 from Loops
  * @author RoSteik*/
 
 public class Task1 {

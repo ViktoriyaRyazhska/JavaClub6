@@ -1,12 +1,13 @@
 package OOP;
 
-/**     Task 3
+/**  Task 3 from OOP
  * @author RoSteik*/
 
 public class Task3{
-    private String copyOfSource = "" ;
+
 
     public String encode(String source){
+        String copyOfSource = "";
         for (int i = 0; i<source.length(); i++) {
 
             switch(source.charAt(i)){
@@ -41,6 +42,7 @@ public class Task3{
         }
 
         return copyOfSource;
+
     }
 
 }

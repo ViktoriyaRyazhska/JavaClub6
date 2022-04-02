@@ -1,6 +1,6 @@
 package Conditions;
 
-/**     Task 10
+/**Task 10 from conditions
  * @author RoSteik*/
 
 public class Task10 {
