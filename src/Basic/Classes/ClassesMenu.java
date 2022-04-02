@@ -8,7 +8,7 @@ public class ClassesMenu {
         System.out.println("Choose the number of tasks from 12 to 17:");
         int chooseNumber = scanner.nextInt();
         switch (chooseNumber) {
-            case 12:
+            case 12: new ClassesTask12();
                 break;
             case 13:
                 break;

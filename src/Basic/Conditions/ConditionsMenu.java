@@ -1,8 +1,5 @@
 package Conditions;
 
-import Conditions.ConditionsTask24;
-import Conditions.ConditionsTask29;
-
 import java.util.Scanner;
 
 public class ConditionsMenu {
@@ -34,7 +31,7 @@ public class ConditionsMenu {
             case 26:
                 ConditionsTask26.isLove();
                 break;
-            case 27:
+            case 27: ConditionsTask27.boolToWord();
                 break;
             case 28:
                 break;
