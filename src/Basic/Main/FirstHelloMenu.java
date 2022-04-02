@@ -36,7 +36,7 @@ public class FirstHelloMenu {
                     BasicProgramMenu.chooseTask(scanner);
                     break;
                 case 2:
-                    ClassesMenu.chooseTask();
+                    ClassesMenu.chooseTask(scanner);
                     break;
                 case 3:
                     ConditionsMenu.chooseTask();
