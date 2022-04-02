@@ -21,6 +21,7 @@ public class ConditionsMenu {
                 ConditionsTask21.convert();
                 break;
             case 22:
+                ConditionsTask22.bonusTime();
                 break;
             case 23:
                 break;
