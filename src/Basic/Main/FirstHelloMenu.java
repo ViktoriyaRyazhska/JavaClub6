@@ -27,13 +27,13 @@ public class FirstHelloMenu {
         System.out.println("EXIT-0"+ANSI_RESET);
     }
 
-    public void chooseTopicOfTask() {
+    public void chooseTopicOfTask(Scanner scanner) {
         while (true) {
             helloMenu();
             int chooseNumber = scanner.nextInt();
             switch (chooseNumber) {
                 case 1:
-                    BasicProgramMenu.chooseTask();
+                    BasicProgramMenu.chooseTask(scanner);
                     break;
                 case 2:
                     ClassesMenu.chooseTask();

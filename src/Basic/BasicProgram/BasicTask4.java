@@ -3,9 +3,15 @@ package BasicProgram;
 import java.util.Scanner;
 
 public class BasicTask4 {
-    public static boolean isDivisible() {
+    public static boolean isDivisible(int wallLength, int pixelSize) {
+        if (wallLength % pixelSize == 0) {
+            System.out.println(true);
+            return true;
+        } else System.out.println(false);
+        return false;
+    }
+    public static void isDivisible (Scanner scanner){
         int wallLength, pixelSize;
-        Scanner scanner = new Scanner(System.in);
         System.out.println("You're laying out a rad pixel art mural to paint on your living room wall in homage to Paul Robertson, your favorite pixel artist.\n" +
                 "\n" +
                 "You want your work to be perfect down to the millimeter. You haven't decided on the dimensions of your piece,\n" + "how large you want your pixels to be, or which wall you want to use.\n" + "You just know that you want to fit an exact number of pixels.\n" +
@@ -19,9 +25,6 @@ public class BasicTask4 {
         pixelSize = scanner.nextInt();
         if (wallLength % pixelSize == 0) {
             System.out.println(true);
-            return true;
         } else System.out.println(false);
-        return false;
-
     }
 }
