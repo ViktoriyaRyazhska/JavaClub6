@@ -1,5 +1,8 @@
 package BasicPrograms;
 
+/**   Task 6
+ * @author MichaelShv*/
+
 public class Task6 {
     public static int toBinary(int n) {
         String result1 = Integer.toBinaryString(n);

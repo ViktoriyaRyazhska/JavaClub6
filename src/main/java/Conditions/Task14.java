@@ -1,5 +1,8 @@
 package Conditions;
 
+/**   Task 14
+ * @author MichaelShv*/
+
 public class Task14 {
     public static int rentalCarCost(int d) {
         int sum = d * 40;

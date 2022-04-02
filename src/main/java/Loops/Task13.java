@@ -1,5 +1,8 @@
 package Loops;
 
+/**   Task 13
+ * @author MichaelShv*/
+
 public class Task13 {
     public static int summation(int n) {
         int amount = 0;
