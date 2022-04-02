@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class BasicTask10 {
 
-    public static String ageCounter(int age){
+    public static String datingRange (int age){
         int min, max;
         String res;
         if (age > 14) {
@@ -16,14 +16,13 @@ public class BasicTask10 {
             min = age - age / 10;
             max = age + age / 10;
         }
-        res= "Your result: "+min+"-"+max;
+        res=  min+"-"+max;
         return res;
     }
 
-    public static String ageCounter () {
+    public static String datingRange (Scanner sc) {
         int min, max, age;
         String res;
-        Scanner sc = new Scanner(System.in);
         System.out.println("            ---WELCOME---");
         System.out.println("---Age Range Compatibility Equation---");
         System.out.print("Enter yor age: ");
