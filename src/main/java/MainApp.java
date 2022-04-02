@@ -51,6 +51,7 @@ public class MainApp {
                     AllMenu2.showCollectionsMenu(sc);
                     break;
                 }
+
             }
 
         }
