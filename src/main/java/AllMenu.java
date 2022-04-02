@@ -91,7 +91,7 @@ public class AllMenu {
                     break;
                 }
                 case "12": {
-                    MainApp.menu();
+                    MainApp.showMenu();
                     break;
                 }
             }
@@ -166,7 +166,7 @@ public class AllMenu {
                     break;
                 }
                 case "7": {
-                    MainApp.menu();
+                    MainApp.showMenu();
                     break;
                 }
             }
@@ -301,7 +301,7 @@ public class AllMenu {
                     break;
                 }
                 case "15": {
-                    MainApp.menu();
+                    MainApp.showMenu();
                     break;
                 }
             }
