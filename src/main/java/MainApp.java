@@ -25,16 +25,16 @@ public class MainApp {
                 }
 
                 case "2": {
-                    AllMenu.menuClasses(sc);
+                    AllMenu.showClassesMenu(sc);
                     break;
                 }
 
                 case "3": {
-                    AllMenu.menuConditions(sc);
+                    AllMenu.showConditionsMenu(sc);
                     break;
                 }
                 case "4": {
-                    AllMenu.menuLoops(sc);
+                    AllMenu.showLoopsMenu(sc);
                     break;
                 }
 
@@ -44,11 +44,11 @@ public class MainApp {
                 }
 
                 case "6": {
-                    AllMenu2.menuString(sc);
+                    AllMenu2.showStringMenu(sc);
                     break;
                 }
                 case "7": {
-                    AllMenu2.menuCollections(sc);
+                    AllMenu2.showCollectionsMenu(sc);
                     break;
                 }
             }

@@ -5,7 +5,7 @@ import static org.junit.Assert.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.junit.Assert.assertTrue;
 
-class Task4Test {
+public class Task4Test {
 
     @Test
     public void testIsDivisible() {
@@ -14,9 +14,5 @@ class Task4Test {
         assertTrue(Task4.isDivisible(45612, 3));
         assertFalse(Task4.isDivisible(1, 34578));
 
-    }
-
-    @Test
-    void isDivisible() {
     }
 }
