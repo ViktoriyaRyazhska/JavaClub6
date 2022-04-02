@@ -18,7 +18,7 @@ public class StringProgramTask65 {
         }
         return counter;
     }
-    public static void strCount(){
+    public static int strCount(){
         int counter = 0;
         String str;
         char letter;
@@ -34,6 +34,7 @@ public class StringProgramTask65 {
         }
         System.out.println(counter);
 
+        return counter;
     }
 
 
