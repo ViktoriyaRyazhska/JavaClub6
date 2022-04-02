@@ -61,10 +61,11 @@ public class ClassTask16 {
         while (true) {
             if ((b.health -= a.damagePerAttack) <= 0){
                 System.out.println("Fighter " + a.name + " wins");
-
+                break;
             }
             if ((a.health -= b.damagePerAttack) <= 0) {
                 System.out.println("Fighter " + b.name + " wins");
+                break;
             }
 
         }
