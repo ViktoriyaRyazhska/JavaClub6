@@ -21,7 +21,7 @@ import String.Task8;
 import String.Task9;
 
 public class AllMenu2 {
-    static void menuOOP(Scanner sc) {
+    static void showOOPMenu(Scanner sc) {
         System.out.println();
         System.out.println("=========================Menu=============================");
         System.out.println("OOP:");
@@ -43,13 +43,13 @@ public class AllMenu2 {
 
                 case "1": {
                     System.out.println(Arrays.toString(OOP.Task1.create()));
-                    menuOOP(sc);
+                    showOOPMenu(sc);
                     break;
                 }
 
                 case "2": {
                     // ДОРОБИТИ
-                    menuOOP(sc);
+                    showOOPMenu(sc);
                     break;
                 }
 
@@ -58,11 +58,11 @@ public class AllMenu2 {
                     System.out.println("a el mou AA Ee");
                     System.out.println(str.encode("a el mou AA Ee"));
 
-                    menuOOP(sc);
+                    showOOPMenu(sc);
                     break;
                 }
                 case "4": {
-                    // ДОРОБИТИ
+                    //TODO ДОРОБИТИ
                     Task4 sut = new Task4();
                     double triangleBase = 6;
                     double triangleHeight = 4;
@@ -70,12 +70,12 @@ public class AllMenu2 {
                     // System.out.println(sut.getTotalArea(new Triangle(triangleBase,
                     // triangleHeight)));
 
-                    menuOOP(sc);
+                    showOOPMenu(sc);
                     break;
                 }
 
                 case "5": {
-                    MainApp.menu();
+                    MainApp.showMenu();
                     break;
                 }
             }
@@ -256,7 +256,7 @@ public class AllMenu2 {
                 }
 
                 case "19": {
-                    MainApp.menu();
+                    MainApp.showMenu();
                     break;
                 }
             }
@@ -313,7 +313,7 @@ public class AllMenu2 {
                 }
 
                 case "5": {
-                    MainApp.menu();
+                    MainApp.showMenu();
                     break;
                 }
             }

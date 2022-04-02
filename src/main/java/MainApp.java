@@ -2,14 +2,13 @@ import java.util.Scanner;
 
 public class MainApp {
 
-    static void menu() {
-        System.out.println();
-        System.out.println("=========================Menu=============================");
+    static void showMenu() {
+        System.out.println("\n=========================Menu=============================");
         System.out.println("1 - Basic");
         System.out.println("2 - Classes");
         System.out.println("3 - Conditions");
-        System.out.println("4 -  Loops");
-        System.out.println("5 -  OOP");
+        System.out.println("4 - Loops");
+        System.out.println("5 - OOP");
         System.out.println("6 - String");
         System.out.println("7 - Collections");
 
@@ -21,7 +20,7 @@ public class MainApp {
             switch (sc.next()) {
 
                 case "1": {
-                    AllMenu.menuBasic(sc);
+                    AllMenu.showBasicMenu(sc);
                     break;
                 }
 
@@ -40,7 +39,7 @@ public class MainApp {
                 }
 
                 case "5": {
-                    AllMenu2.menuOOP(sc);
+                    AllMenu2.showOOPMenu(sc);
                     break;
                 }
 
@@ -58,7 +57,6 @@ public class MainApp {
     }
 
     public static void main(String[] args) {
-        menu();
-
+        showMenu();
     }
 }

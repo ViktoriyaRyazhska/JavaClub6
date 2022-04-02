@@ -8,7 +8,7 @@ public class task2 {
 
     private final int value;
 
-    private task2() {
+    task2() {
         value = ONE_HUNDRED;
     }
 
