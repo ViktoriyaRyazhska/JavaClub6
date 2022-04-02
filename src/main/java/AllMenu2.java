@@ -7,15 +7,20 @@ import java.util.Scanner;
 import Collections.*;
 import OOP.*;
 import String.Task1;
+import String.Task10;
 import String.Task11;
 import String.Task12;
 import String.Task13;
+import String.Task14;
 import String.Task15;
 import String.Task16;
 import String.Task17;
+import String.Task18;
+import String.Task2;
 import String.Task3;
 import String.Task4;
 import String.Task5;
+import String.Task6;
 import String.Task7;
 import String.Task8;
 import String.Task9;
@@ -35,13 +40,13 @@ public class AllMenu2 {
                 "4 -  Implement Calculator.getTotalArea(). Define the different shapes: `Square`, `Rectangle`, `Circle` and `Triangle`");
         System.out.println("5 - Back to Menu");
 
-        // Scanner sc = new Scanner(System.in);
         System.out.println();
 
         while (true) {
             switch (sc.next()) {
 
                 case "1": {
+
                     System.out.println(Arrays.toString(OOP.Task1.create()));
                     showOOPMenu(sc);
                     break;
@@ -62,6 +67,7 @@ public class AllMenu2 {
                     break;
                 }
                 case "4": {
+                    // TODO:
                     // Task4 sut = new Task4();
                     // double triangleBase = 6;
                     // double triangleHeight = 4;
@@ -118,14 +124,13 @@ public class AllMenu2 {
                 .println("18 - Remove n exclamation marks in the sentence from left to right. n is positive integer.");
         System.out.println("19 - Back to Menu");
 
-        // Scanner sc = new Scanner(System.in);
         System.out.println();
 
         while (true) {
             switch (sc.next()) {
 
                 case "1": {
-                    System.out.println("Integer 25:");
+                    System.out.println("Integer: 25");
                     System.out.println("String: " + Task1.numberToString(25));
 
                     showStringMenu(sc);
@@ -133,7 +138,8 @@ public class AllMenu2 {
                 }
 
                 case "2": {
-                    // TODO:
+                    System.out.println("Input: some text");
+                    System.out.println(Task2.solution("some text"));
 
                     showStringMenu(sc);
                     break;
@@ -162,8 +168,12 @@ public class AllMenu2 {
                     break;
                 }
                 case "6": {
-                    // TODO:
 
+                    System.out.println("Input: Roberto");
+                    System.out.println(Task6.areYouPlayingBanjo("Roberto"));
+
+                    System.out.println("Input: Tom");
+                    System.out.println(Task6.areYouPlayingBanjo("Tom"));
                     showStringMenu(sc);
                     break;
                 }
@@ -189,7 +199,8 @@ public class AllMenu2 {
                     break;
                 }
                 case "10": {
-                    // TODO:
+                    System.out.println("Input: `text`");
+                    System.out.println(Task10.fakeBin("text"));
 
                     showStringMenu(sc);
                     break;
@@ -219,7 +230,8 @@ public class AllMenu2 {
                     break;
                 }
                 case "14": {
-                    // TODO:
+                    System.out.println("Input: `laaalalallaala`, 'a' ");
+                    System.out.println(Task14.strCount("laaalalallaala", 'a'));
 
                     showStringMenu(sc);
                     break;
@@ -243,12 +255,16 @@ public class AllMenu2 {
                     System.out.println("Input: `altERnaTIng cAsE <=> ALTerNAtiNG CaSe`");
                     System.out.println(Task17.toAlternativeString("altERnaTIng cAsE <=> ALTerNAtiNG CaSe"));
 
+                    System.out.println("Input: `HELLO everyone!`");
+                    System.out.println(Task17.toAlternativeString("HELLO everyone!"));
+
                     showStringMenu(sc);
                     break;
                 }
 
                 case "18": {
-                    // TODO:
+                    System.out.println("Input: `text lalal tatat` , 'a'");
+                    System.out.println(Task18.remove("text lalal tatat ", 'a'));
 
                     showStringMenu(sc);
                     break;
@@ -275,7 +291,6 @@ public class AllMenu2 {
                 "4 -  Create a class Dictionary which you can add words to and their entries");
         System.out.println("5 - Back to Menu");
 
-        // Scanner sc = new Scanner(System.in);
         System.out.println();
 
         while (true) {

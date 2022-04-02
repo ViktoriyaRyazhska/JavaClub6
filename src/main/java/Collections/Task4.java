@@ -3,21 +3,13 @@ package Collections;
 import java.util.*;
 
 public class Task4 {
+    Map<String, String> dictionary = new HashMap<>();
 
-}
-
-class Dictionary {
-    Map<String, String> dictionary = new HashMap();
-
-    public Dictionary(){
-        // your code
-    }
-
-    public void newEntry(String key, String value){
+    public void newEntry(String key, String value) {
         dictionary.put(key, value);
     }
 
-    public String look(String key){
+    public String look(String key) {
         String entry = dictionary.get(key);
         if (entry == null) {
             return "Cant find entry for " + key;

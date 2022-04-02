@@ -251,73 +251,96 @@ public class AllMenu {
             switch (sc.next()) {
 
                 case "1": {
+                    System.out.println("Input:  2");
                     System.out.println(Conditions.Task1.opposite(2));
                     showConditionsMenu(sc);
                     break;
                 }
 
                 case "2": {
+                    System.out.println("Input:  3, 3, 4");
                     System.out.println(Conditions.Task2.isDivisible(3, 3, 4));
                     showConditionsMenu(sc);
                     break;
                 }
 
                 case "3": {
+                    System.out.println("Input:  true");
                     System.out.println(Conditions.Task3.convert(true));
                     showConditionsMenu(sc);
                     break;
                 }
                 case "4": {
+                    System.out.println("Input:  4,   false");
                     System.out.println(Conditions.Task4.bonusTime(4, false));
                     showConditionsMenu(sc);
                     break;
                 }
                 case "5": {
+                    System.out.println("Input:  2002, 2022");
                     System.out.println(Conditions.Task5.CalculateAge(2002, 2022));
                     showConditionsMenu(sc);
                     break;
                 }
                 case "6": {
+                    System.out.println("Input:   rock,    scissors");
                     System.out.println(Conditions.Task6.rps("rock", "scissors"));
                     showConditionsMenu(sc);
                     break;
                 }
                 case "7": {
+
+                    System.out.println("Input:   5 + 5");
                     System.out.println(Conditions.Task7.basicMath("+", 5, 5));
                     showConditionsMenu(sc);
                     break;
                 }
                 case "8": {
+
+                    System.out.println("Input:   4  5");
                     System.out.println(Conditions.Task8.isLove(4, 5));
                     showConditionsMenu(sc);
                     break;
                 }
                 case "9": {
+
+                    System.out.println("Input:   true");
                     System.out.println(Conditions.Task9.boolToWord(true));
                     showConditionsMenu(sc);
                     break;
                 }
                 case "10": {
+                    System.out.println("Input:   100, 60, 50");
                     System.out.println(Conditions.Task10.enough(100, 60, 50));
                     showConditionsMenu(sc);
                     break;
                 }
                 case "11": {
+
+                    System.out.println("Input:   10");
                     System.out.println(Conditions.Task11.sequence(10));
                     showConditionsMenu(sc);
                     break;
                 }
                 case "12": {
+
+                    System.out.println("Input:   99");
                     System.out.println(Conditions.Task12.sequence(99));
+
+                    System.out.println("Input:   2");
+                    System.out.println(Conditions.Task12.sequence(2));
                     showConditionsMenu(sc);
                     break;
                 }
                 case "13": {
+                    System.out.println("Input:   green");
                     System.out.println(Conditions.Task13.updateLight("green"));
                     showConditionsMenu(sc);
                     break;
                 }
                 case "14": {
+
+                    System.out.println("Input:   5");
                     System.out.println(Conditions.Task14.rentalCarCost(5));
                     showConditionsMenu(sc);
                     break;
@@ -384,79 +407,100 @@ public class AllMenu {
             switch (sc.next()) {
 
                 case "1": {
+
+                    System.out.println("Input:   4,  string");
                     System.out.println(Loops.Task1.repeatStr(4, "string"));
                     showLoopsMenu(sc);
                     break;
                 }
 
                 case "2": {
+
+                    System.out.println("Input:   10");
                     System.out.println(Arrays.toString(Loops.Task2.humanYearsCatYearsDogYears(10)));
                     showLoopsMenu(sc);
                     break;
                 }
 
                 case "3": {
+                    System.out.println("Input:   167, -2, 16, 99, 26, 92, 43, -234, 35, 80");
                     System.out.println(Loops.Task3.getAverage(new int[] { 167, -2, 16, 99, 26, 92, 43, -234, 35, 80 }));
                     showLoopsMenu(sc);
                     break;
                 }
                 case "4": {
+                    System.out.println("Input:   4, 1, 1, 1, 4");
                     System.out.println(Arrays.toString(Loops.Task4.map(new int[] { 4, 1, 1, 1, 4 })));
                     showLoopsMenu(sc);
                     break;
                 }
                 case "5": {
+                    System.out.println("Input:   false, true, false, true");
+
                     Loops.Task5 task5 = new Task5();
                     System.out.println(task5.countSheeps(new Boolean[] { false, true, false, true }));
                     showLoopsMenu(sc);
                     break;
                 }
                 case "6": {
+                    System.out.println("Input:   5");
                     System.out.println(Arrays.toString(Loops.Task6.reverse(5)));
                     showLoopsMenu(sc);
                     break;
                 }
                 case "7": {
+                    System.out.println("Input:   { 3, 1, 4, 5, 2 }, 2");
                     System.out.println(Loops.Task7.betterThanAverage(new int[] { 3, 1, 4, 5, 2 }, 2));
                     showLoopsMenu(sc);
                     break;
                 }
                 case "8": {
+                    System.out.println("Input:   2, 2, 2, 2, 2, 2");
                     System.out.println(Loops.Task8.grow(new int[] { 2, 2, 2, 2, 2, 2 }));
                     showLoopsMenu(sc);
                     break;
                 }
                 case "9": {
+                    System.out.println("Input:  2, -5, 8, 0, -24, 12, 5, 4");
                     System.out.println(Loops.Task9.sum(new int[] { 2, -5, 8, 0, -24, 12, 5, 4 }));
                     showLoopsMenu(sc);
                     break;
                 }
                 case "10": {
+                    System.out.println("Input: { `1`, `2`, `3`, `4` }");
                     System.out.println(Arrays.toString(Loops.Task10.sortEl(new String[] { "1", "2", "3", "4" })));
                     showLoopsMenu(sc);
                     break;
                 }
                 case "11": {
+
+                    System.out.println("Input: 39, 5");
                     System.out.println(Loops.Task11.TwiceAsOld(39, 5));
                     showLoopsMenu(sc);
                     break;
                 }
                 case "12": {
+
+                    System.out.println("Input: 111");
                     System.out.println(Loops.Task12.nearestSq(111));
                     showLoopsMenu(sc);
                     break;
                 }
                 case "13": {
+                    System.out.println("Input: 5");
                     System.out.println(Loops.Task13.summation(5));
                     showLoopsMenu(sc);
                     break;
                 }
                 case "14": {
+
+                    System.out.println("Input: 5, 1245, 65456");
                     System.out.println(Arrays.toString(Loops.Task14.gap(5, 1245, 65456)));
                     showLoopsMenu(sc);
                     break;
                 }
                 case "15": {
+                    System.out.println("Input: 6");
                     System.out.println(Loops.Task15.makeMove(6));
                     showLoopsMenu(sc);
                     break;
