@@ -53,9 +53,13 @@ public class ClassMenuTask14 implements Comparable<ClassMenuTask14> {
         topNew = this.getTop() * f2.bottom + this.getBottom() * f2.top;
         bottomNew = this.getBottom() * f2.bottom;
         long div = greatestCommonDivide(topNew, bottomNew);
-        topNew=topNew/div;
-        bottomNew=bottomNew/div;
+        topNew = topNew / div;
+        bottomNew = bottomNew / div;
         System.out.println(topNew + "/" + bottomNew);
         return new ClassMenuTask14(topNew, bottomNew);
+    }
+
+    public String toString() {
+        return top + "/" + bottom;
     }
 }
