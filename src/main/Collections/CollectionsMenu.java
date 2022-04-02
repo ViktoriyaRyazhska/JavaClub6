@@ -1,5 +1,6 @@
 package main.Collections;
 
+import main.Collections.Task4.Task4;
 import main.Menu.SettingsMenu;
 
 import java.util.Scanner;
@@ -11,6 +12,18 @@ public class CollectionsMenu {
         int numberOfTask = scanner.nextInt();
         switch (numberOfTask){
             case 1:
+                System.out.println(Task1.push());
+                chooseNumberOfTask();
+                break;
+            case 3:
+                Task3.main(new String[]{});
+                chooseNumberOfTask();
+                break;
+            case 4:
+                Task4.main(new String[]{});
+                chooseNumberOfTask();
+                break;
+
             case 0:
                 SettingsMenu.topicNumberOfPackages();
             default:

@@ -3,20 +3,26 @@ package main.Collections;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
+import java.util.Scanner;
 
 public class Task3 {
     public static void main(String[] args) {
+        Scanner scanner =new Scanner(System.in);
         List<Integer> list = new ArrayList<>();
-        list.add(1);
-        list.add(2);
-        list.add(3);
-        list.add(4);
-        list.add(5);
-        list.add(6);
-        list.add(7);
-        list.add(8);
-        list.add(9);
-        System.out.println(DropEven(list));
+        boolean b = true;
+        System.out.println("Enter number to add\t| Enter 'exit' to exit");
+        do {
+
+            String str = scanner.next();
+            if(str.equals("exit")){
+                b=false;
+            }
+            else {
+                int number = Integer.parseInt(str);
+                list.add(number);
+            }
+        }while (b==true);
+        System.out.println("Drop list "+ DropEven(list));
 
     }
 

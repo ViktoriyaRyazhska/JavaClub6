@@ -2,6 +2,7 @@ package main.Menu;
 
 import main.Basic.BasicMenu;
 import main.Classes.ClassMenu;
+import main.Collections.CollectionsMenu;
 
 import java.util.Scanner;
 
@@ -32,6 +33,8 @@ public class SettingsMenu {
                     ClassMenu.chooseNumberOfTask();
                     break;
                 case 3:
+                    CollectionsMenu.chooseNumberOfTask();
+                    break;
 //                case 2:
 //                    ClassesMenu.chooseTask();
 //                    break;
