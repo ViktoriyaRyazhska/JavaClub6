@@ -2,8 +2,6 @@ package Collections;
 
 import org.junit.Test;
 
-import java.util.stream.Collectors;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.*;
 
@@ -13,8 +11,8 @@ public class Task3Test {
     List<Integer> listOne = new LinkedList<>(Arrays.asList(111, 2, 2, 2, 4, 3, 4, 5, 69, 7));
     List<Integer> expectedOne = new LinkedList<>(Arrays.asList(111, 3, 5, 69, 7));
 
-    List<Integer> listTwo = new LinkedList<>(Arrays.asList(2, 2, 2, 2, 4, 0, 4));
-    List<Integer> expectedTwo = new LinkedList<>(Arrays.asList());
+    List<Integer> listTwo = new LinkedList<>(Arrays.asList(2, 2, 2, 2, 4, 1, 4));
+    List<Integer> expectedTwo = new LinkedList<>(Arrays.asList(1));
 
     @Test
     public void testFilterOddNumber1() throws Exception {

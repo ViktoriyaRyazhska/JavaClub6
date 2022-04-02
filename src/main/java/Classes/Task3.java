@@ -1,31 +1,35 @@
 package Classes;
 
-public class Task3 {
+public class Task3 implements Comparable<Task3> {
 
-}
-
-class Fraction implements Comparable<Fraction>
-{
     private final long top;
     private final long bottom;
 
-    public Fraction(long numerator, long denominator) {
+    public Task3(long numerator, long denominator) {
         top = numerator;
         bottom = denominator;
     }
 
     @Override
-    public int hashCode() { return 17 * Long.hashCode(top) + Long.hashCode(bottom); }
-    @Override
-    public boolean equals(Object o) { return compareTo((Fraction)o) == 0; }
-    @Override
-    public int compareTo(Fraction f2){ return Long.compare(top * f2.bottom, f2.top * bottom); }
+    public int hashCode() {
+        return 17 * Long.hashCode(top) + Long.hashCode(bottom);
+    }
 
-    public Fraction add(Fraction f2) {
+    @Override
+    public boolean equals(Object o) {
+        return compareTo((Task3) o) == 0;
+    }
+
+    @Override
+    public int compareTo(Task3 f2) {
+        return Long.compare(top * f2.bottom, f2.top * bottom);
+    }
+
+    public Task3 add(Task3 f2) {
         long commonDenominator = Math.nok(f2.bottom, bottom);
         long commonNumerator = (((commonDenominator / bottom) * top) + ((commonDenominator / f2.bottom) * f2.top));
-        Fraction finalFraction = Math.abbreviation(commonNumerator, commonDenominator);
-        return finalFraction;
+        Task3 finalTask3 = Math.abbreviation(commonNumerator, commonDenominator);
+        return finalTask3;
     }
 
     @Override
@@ -46,7 +50,7 @@ class Math {
         return nod(b, a % b);
     }
 
-    static Fraction abbreviation(long top, long bottom) {
+    static Task3 abbreviation(long top, long bottom) {
         boolean isRunning = true;
         int check = 0;
         while (isRunning) {
@@ -65,6 +69,6 @@ class Math {
             }
         }
 
-        return new Fraction(top, bottom);
+        return new Task3(top, bottom);
     }
 }
