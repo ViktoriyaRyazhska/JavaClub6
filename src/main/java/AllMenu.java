@@ -1,8 +1,8 @@
 
-
 import java.util.Arrays;
 import java.util.Scanner;
 import Basic.*;
+import Basic.Task3;
 import Classes.*;
 import Conditions.*;
 import com.sun.xml.internal.bind.v2.TODO;
@@ -30,63 +30,79 @@ public class AllMenu {
         System.out.println("11 - Get the celsius converter working properly.");
         System.out.println("12 - Back to Menu");
 
+        System.out.println();
         while (true) {
             switch (sc.next()) {
 
                 case "1": {
-                    System.out.println(Basic.task1.doubleInteger(2));
+                    System.out.println("Input: 2");
+                    System.out.println(task1.doubleInteger(2));
                     menuBasic(sc);
                     break;
                 }
 
                 case "2": {
+                    System.out.println("Input: 2 , 3");
                     System.out.println(Basic.Task2.multiply(2, 3));
                     menuBasic(sc);
                     break;
                 }
 
                 case "3": {
-                    Basic.Task3.Enter(sc);
+                    // Basic.Task3.Enter(sc);
+                    System.out.println("Input:  10, 12, 5");
+                    System.out.println(Task3.getVolumeOfCubiod(10, 12, 5));
                     menuBasic(sc);
                     break;
                 }
                 case "4": {
+                    System.out.println("Input:  100, 21");
                     System.out.println(Basic.Task4.isDivisible(100, 21));
                     menuBasic(sc);
                     break;
                 }
                 case "5": {
+                    System.out.println("Input:  JOhNny");
                     System.out.println(Basic.task5.greet("JOhNny"));
+
+                    System.out.println("Input:  Tom");
+                    System.out.println(Basic.task5.greet("Tom"));
                     menuBasic(sc);
                     break;
                 }
                 case "6": {
+                    System.out.println("Input:  100");
                     System.out.println(Basic.Task6.toBinary(100));
                     menuBasic(sc);
                     break;
                 }
                 case "7": {
+                    System.out.println("Input:  1, 1, 1");
                     System.out.println(Basic.Task7.past(1, 1, 1));
                     menuBasic(sc);
                     break;
                 }
                 case "8": {
+                    System.out.println("Input:  1962");
                     System.out.println(Basic.Task8.century(1962));
                     menuBasic(sc);
                     break;
                 }
                 case "9": {
+                    System.out.println("Input:  -76");
                     System.out.println(Basic.task9.makeNegative(-76));
                     menuBasic(sc);
                     break;
                 }
                 case "10": {
-                    System.out.println(Basic.Task10.datingRange( 21));
+                    System.out.println("Input:  21");
+                    System.out.println(Basic.Task10.datingRange(21));
                     menuBasic(sc);
                     break;
                 }
                 case "11": {
-                    System.out.println(Basic.Task11. weatherInfo(70));
+                    System.out.println("Input:  70");
+                    System.out.println(Basic.Task11.weatherInfo(70));
                     menuBasic(sc);
                     break;
                 }
@@ -117,17 +133,18 @@ public class AllMenu {
                 "6 - Write a class Block. Define these methods: getWidth(), getLength(), getHeight(), getVolume(), getSurfaceArea()");
         System.out.println("7 - Back to Menu");
 
-
         while (true) {
             switch (sc.next()) {
 
                 case "1": {
+                    System.out.println("Input:  10, value, asd");
                     System.out.println(new Classes.Task1(10, "value", "asd").toString());
                     menuBasic(sc);
                     break;
                 }
 
                 case "2": {
+                    System.out.println("Input:  -100");
                     System.out.println(Classes.task2.INST.plus100(-100));
                     menuBasic(sc);
                     break;
@@ -144,23 +161,25 @@ public class AllMenu {
                     break;
                 }
                 case "5": {
-                    // TODO: 01.04.2022  
-//                    System.out.println(Classes.Task5.declareWinner(new Classes.Fighter("Lew", 10, 2), new Fighter("Harry", 5, 4), "Lew"));
+                    // TODO: 01.04.2022
+                    // System.out.println(Classes.Task5.declareWinner(new Classes.Fighter("Lew", 10,
+                    // 2), new Fighter("Harry", 5, 4), "Lew"));
                     menuBasic(sc);
                     break;
                 }
                 case "6": {
-                    Classes.task6 b = new Classes.task6(new int[] { 2, 4, 6 }); // -> creates a `Block` object with a width of `2` a length of `4`
-                    // and a height of `6`
-                    System.out.println(b.getWidth()); // -> 2
+                    System.out.println("Input:  2, 4, 6");
+                    Classes.task6 b = new Classes.task6(new int[] { 2, 4, 6 });
 
-                    System.out.println(b.getLength()); // -> 4
+                    System.out.println("Width:" + b.getWidth()); // -> 2
 
-                    System.out.println(b.getHeight()); // -> 6
+                    System.out.println("Length:" + b.getLength()); // -> 4
 
-                    System.out.println(b.getVolume()); // -> 48
+                    System.out.println("Height:" + b.getHeight()); // -> 6
 
-                    System.out.println(b.getSurfaceArea()); // -> 88
+                    System.out.println("Volume:" + b.getVolume()); // -> 48
+
+                    System.out.println("SurfaceArea:" + b.getSurfaceArea()); // -> 88
 
                     menuBasic(sc);
                     break;
@@ -197,7 +216,7 @@ public class AllMenu {
                         "Let's play! You have to return which player won! In case of a draw return Draw!.");
         System.out.println(
                 "7 - Your task is to create a function that does four basic mathematical operations.\n" +
-                "The function should take three arguments - operation(string/char), value1(number), value2(number).");
+                        "The function should take three arguments - operation(string/char), value1(number), value2(number).");
         System.out.println(
                 "8 - Write a function that will take the number of petals of each flower\n" +
                         "and return true if they are in love and false if they aren't.");

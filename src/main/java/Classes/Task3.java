@@ -2,8 +2,7 @@ package Classes;
 
 public class Task3 {
 
-    public class Fraction implements Comparable<Fraction>
-    {
+    public class Fraction implements Comparable<Fraction> {
         private final long top;
         private final long bottom;
 
@@ -13,11 +12,19 @@ public class Task3 {
         }
 
         @Override
-        public int hashCode() { return 17 * Long.hashCode(top) + Long.hashCode(bottom); }
+        public int hashCode() {
+            return 17 * Long.hashCode(top) + Long.hashCode(bottom);
+        }
+
         @Override
-        public boolean equals(Object o) { return compareTo((Fraction)o) == 0; }
+        public boolean equals(Object o) {
+            return compareTo((Fraction) o) == 0;
+        }
+
         @Override
-        public int compareTo(Fraction f2){ return Long.compare(top * f2.bottom, f2.top * bottom); }
+        public int compareTo(Fraction f2) {
+            return Long.compare(top * f2.bottom, f2.top * bottom);
+        }
 
         public Fraction add(Fraction f2) {
             long commonDenominator = Math.nok(f2.bottom, bottom);
@@ -32,7 +39,7 @@ public class Task3 {
         }
     }
 
-    class Math {
+    static class Math {
         static long nok(long a, long b) {
             return a * b / nod(a, b);
         }
