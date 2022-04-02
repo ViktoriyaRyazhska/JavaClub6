@@ -1,6 +1,6 @@
 package Loops;
 
-public class Test8 {
+public class Task8 {
     public static int grow(int[] x){
         int result = 1;
 
