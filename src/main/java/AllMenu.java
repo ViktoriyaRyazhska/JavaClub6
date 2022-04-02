@@ -136,6 +136,7 @@ public class AllMenu {
                 "6 - Write a class Block. Define these methods: getWidth(), getLength(), getHeight(), getVolume(), getSurfaceArea()");
         System.out.println("7 - Back to Menu");
 
+        System.out.println();
         while (true) {
             switch (sc.next()) {
 
@@ -154,7 +155,11 @@ public class AllMenu {
                 }
 
                 case "3": {
-                    // TODO: 01.04.2022
+                    System.out.println("Input:  2 , 5");
+                    System.out.println("Input:  4 , 5");
+                    Classes.Task3 t1 = new Classes.Task3(2, 5);
+                    Classes.Task3 t2 = new Classes.Task3(4, 5);
+                    System.out.println(t1.add(t2));
                     menuBasic(sc);
                     break;
                 }
@@ -246,6 +251,8 @@ public class AllMenu {
                 "\n" +
                 "Write a code that gives out the total amount for different days(d).");
         System.out.println("15 - Back to Menu");
+
+        System.out.println();
 
         while (true) {
             switch (sc.next()) {
