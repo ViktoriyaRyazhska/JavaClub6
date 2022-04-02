@@ -7,12 +7,12 @@ import java.util.Scanner;
 public class Task11 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("input ");
+        System.out.println("input fahrenheit: ");
 
         try{
             int fahrenheit   = scanner.nextInt();
             int celsius=(fahrenheit-32)*5/9;
-            System.out.println(celsius);
+            System.out.println("Temperature in Celsius: "+celsius);
 
         }catch (InputMismatchException e){
             e.printStackTrace();

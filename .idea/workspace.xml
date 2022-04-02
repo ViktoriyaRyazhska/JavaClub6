@@ -2,19 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5830459a-e012-46af-88cc-97e95e6a83a4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/JavaClub6.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/JavaClub6.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/JavaClub62.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/JavaClub6_war_exploded.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/JPA_2_0_2_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/Basic/Task2Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/Basic/Task2Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/Conditions/Task10Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/Conditions/Task10Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/mockito_core_4_4_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Basic/BasicMenu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Classes/ClassMenu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Collections/CollectionsMenu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Menu/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Menu/SettingsMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaClub6.iml" beforeDir="false" afterPath="$PROJECT_DIR$/JavaClub6.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Basic/Task1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Basic/Task1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Basic/Task11.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Basic/Task11.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Basic/Task2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Basic/Task2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Basic/Task4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Basic/Task4.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Basic/Task6.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Basic/Task6.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Basic/Task7.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Basic/Task7.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Basic/Task9.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Basic/Task9.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Classes/Task3/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Classes/Task3/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Classes/Task6/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Classes/Task6/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Collections/Task4/Dictionary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Collections/Task4/Dictionary.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/Collections/Task4Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/Collections/Task4Test.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +31,13 @@
   </component>
   <component name="CodeInsightWorkspaceSettings">
     <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -48,19 +63,64 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../test" />
-    <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.0" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/libs/mockito-core-4.4.0.jar" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.applicationServers" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.annotationProcessors" />
   </component>
-  <component name="RunManager" selected="Application.Task4">
-    <configuration name="Task2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="main.Basic.Task2" />
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\JavaClub6\libs" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="main.Classes.Task3.Main" />
+      <module name="JavaClub6" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="main.Classes.Task3.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="main.Menu.Main" />
+      <module name="JavaClub6" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="main.Menu.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Task1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="main.Basic.Task1" />
       <module name="JavaClub6" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="main.Basic.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Task4 (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="main.Collections.Task4.Task4" />
+      <module name="JavaClub6" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="main.Collections.Task4.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -81,10 +141,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Main (1)" />
+        <item itemvalue="Application.Task1" />
+        <item itemvalue="Application.Task4 (1)" />
         <item itemvalue="Application.Task4" />
-        <item itemvalue="Application.Task2" />
       </list>
     </recent_temporary>
   </component>
@@ -97,6 +173,7 @@
       <option name="presentableId" value="Default" />
       <updated>1648829831013</updated>
       <workItem from="1648829837453" duration="1244000" />
+      <workItem from="1648888379782" duration="13980000" />
     </task>
     <servers />
   </component>
@@ -108,29 +185,41 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="249" y="0" key="#Project_Structure/0.0.1536.824@0.0.1536.824" timestamp="1648829944405" />
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1648888355581">
+    <state x="489" y="208" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1648896584697">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1648888355581" />
-    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1648888355581">
+    <state x="489" y="208" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.824@0.0.1536.824" timestamp="1648896584697" />
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1648889885943">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1648888355581" />
-    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1648888355581">
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1648889885943" />
+    <state width="1493" height="311" key="GridCell.Tab.0.bottom" timestamp="1648903418756">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1648888355581" />
-    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1648888355581">
+    <state width="1493" height="311" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1648903418756" />
+    <state width="1493" height="311" key="GridCell.Tab.0.center" timestamp="1648903418756">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1648888355581" />
-    <state x="277" y="57" key="SettingsEditor" timestamp="1648829923898">
+    <state width="1493" height="311" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1648903418756" />
+    <state width="1493" height="311" key="GridCell.Tab.0.left" timestamp="1648903418755">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="277" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1648829923898" />
+    <state width="1493" height="311" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1648903418755" />
+    <state width="1493" height="311" key="GridCell.Tab.0.right" timestamp="1648903418756">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="311" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1648903418756" />
+    <state x="277" y="0" key="SettingsEditor" timestamp="1648889892847">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="277" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1648889892847" />
     <state x="498" y="304" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1648829998947">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="498" y="304" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1536.824@0.0.1536.824" timestamp="1648829998947" />
+    <state x="469" y="159" key="refactoring.ChangeSignatureDialog" timestamp="1648891878337">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="469" y="159" key="refactoring.ChangeSignatureDialog/0.0.1536.824@0.0.1536.824" timestamp="1648891878337" />
   </component>
 </project>
