@@ -2,12 +2,8 @@ import java.util.Arrays;
 import java.util.Scanner;
 import Basic.*;
 import Basic.Task3;
-// import Classes.*;
-// import Conditions.*;
 import Loops.Task5;
 import com.sun.xml.internal.bind.v2.TODO;
-
-import static Loops.Task2.humanYearsCatYearsDogYears;
 
 public class AllMenu {
     static void showBasicMenu(Scanner sc) {

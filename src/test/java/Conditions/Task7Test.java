@@ -6,9 +6,9 @@ import static org.hamcrest.MatcherAssert.assertThat;
 import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 
-class Task7Test {
+public class Task7Test {
     @Test
-    void testBasicMath() {
+    public void testBasicMath() {
 
         assertEquals(0, Task7.basicMath("qwe", 1, 1).intValue());
         assertEquals(20, Task7.basicMath((String) "/", 60, 3).intValue());

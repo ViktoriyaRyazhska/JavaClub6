@@ -4,10 +4,10 @@ import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.*;
 
-class Task1Test {
+public class Task1Test {
 
     @Test
-    void testConstructor() {
+    public void testConstructor() {
         Object o = new Object();
         Task1 task1 = new Task1();
         task1.setNumber(10);
@@ -19,7 +19,7 @@ class Task1Test {
     }
 
     @Test
-    void testConstructor2() {
+    public void testConstructor2() {
         Object o = new Object();
         Task1 task1 = new Task1(10, "value", o);
         task1.setNumber(10);
