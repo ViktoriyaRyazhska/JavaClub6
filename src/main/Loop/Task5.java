@@ -2,20 +2,27 @@ package main.Loop;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 public class Task5 {
     public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter sheeps:");
+
         List<Boolean> sheeps = new ArrayList<>();
-        sheeps.add(true);
-        sheeps.add(true);
-        sheeps.add(false);
-        sheeps.add(true);
-        sheeps.add(false);
-        sheeps.add(null);
-        sheeps.add(true);
-        sheeps.add(false);
-        sheeps.add(true);
-        System.out.println(CountSheeps(sheeps));
+        boolean b = true;
+        do {
+            String str = scanner.next();
+            if (str.equals("exit")) {
+                b = false;
+            } else {
+
+                boolean isShip = str.equals("1");
+                sheeps.add(isShip);
+            }
+
+        } while (b);
+        System.out.println("Number of sheeps: "+CountSheeps(sheeps));
     }
 
     public static int CountSheeps(List<Boolean> sheeps) {

@@ -2,13 +2,16 @@ package main.Loop;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 public class Task10 {
     public static void main(String[] args) {
         List<String> animal = new ArrayList<>();
-        animal.add("tail");
-        animal.add("body");
-        animal.add("head");
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Random write 'tail body head': ");
+        animal.add(scanner.next());
+        animal.add(scanner.next());
+        animal.add(scanner.next());
         System.out.println(ReArrangeArray(animal));
     }
 

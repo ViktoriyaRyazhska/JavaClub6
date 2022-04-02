@@ -1,11 +1,17 @@
 package main.Loop;
 
+import java.util.Scanner;
+
 public class Task1 {
     // https://www.codewars.com/kata/string-repeat
 
     public static void main(String[] args) {
-        System.out.println(repeatStr(6, "I"));
-        System.out.println(repeatStr(5, "Hello"));
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("How many times repeat: ");
+        int repeat=scanner.nextInt();
+        System.out.print("Enter word to repeat: ");
+        String str = scanner.next();
+        System.out.println(repeatStr(repeat, str));
     }
     public static String repeatStr(final int repeat, final String string) {
         StringBuilder sb = new StringBuilder();

@@ -4,6 +4,7 @@ import main.Basic.BasicMenu;
 import main.Classes.ClassMenu;
 import main.Collections.CollectionsMenu;
 import main.Conditions.ConditionsMenu;
+import main.Loop.LoopMenu;
 
 import java.util.Scanner;
 
@@ -38,6 +39,9 @@ public class SettingsMenu {
                     break;
                 case 4:
                     ConditionsMenu.chooseNumberOfTask();
+                    break;
+                case 5:
+                    LoopMenu.chooseNumberOfTask();
                     break;
                 case 0:
                     System.exit(0);
