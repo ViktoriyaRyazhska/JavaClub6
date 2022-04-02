@@ -1,13 +1,16 @@
 package main.Conditions.Task5;
 
+import java.util.Scanner;
+
 public class AgeDiff {
     // https://www.codewars.com/kata/how-old-will-i-be-in-2099/
     public static void main(String[] args) {
-        System.out.println(CalculateAge(2012, 2013));
-        System.out.println(CalculateAge(3400, 3400));
-        System.out.println(CalculateAge(2012, 2011));
-        System.out.println(CalculateAge(2012, 2023));
-        System.out.println(CalculateAge(2023, 2012));
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter your birthday year: ");
+        int birth = scanner.nextInt();
+        System.out.print("Enter what year is now: ");
+        int yearTo = scanner.nextInt();
+        System.out.println(CalculateAge(birth,yearTo));
     }
 
     public static String CalculateAge(int birth, int yearTo) {

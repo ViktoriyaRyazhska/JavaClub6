@@ -3,6 +3,7 @@ package main.Menu;
 import main.Basic.BasicMenu;
 import main.Classes.ClassMenu;
 import main.Collections.CollectionsMenu;
+import main.Conditions.ConditionsMenu;
 
 import java.util.Scanner;
 
@@ -35,13 +36,17 @@ public class SettingsMenu {
                 case 3:
                     CollectionsMenu.chooseNumberOfTask();
                     break;
+                case 4:
+                    ConditionsMenu.chooseNumberOfTask();
+                    break;
                 case 0:
                     System.exit(0);
                 default:
                     final String ANSI_RED = "\u001B[31m";
                     final String ANSI_RESET = "\u001B[0m";
                     System.out.println(ANSI_RED+"ERROR"+ANSI_RESET+" You write a wrong number");
-                    menuTitle();
+                    topicNumberOfPackages();
+                    break;
 
             }
         }

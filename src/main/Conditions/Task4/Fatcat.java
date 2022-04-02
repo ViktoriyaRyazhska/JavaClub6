@@ -64,4 +64,11 @@ public class Fatcat {
         }
      }
 
+    @Override
+    public String toString() {
+        return
+                "name='" + name + '\'' +
+                ", salary=" + salary +
+                ", bonus=" + bonus ;
+    }
 }

@@ -2,6 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5830459a-e012-46af-88cc-97e95e6a83a4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/Conditions/ConditionsMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Conditions/Task10/Task10.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Conditions/Task10/Task10.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Conditions/Task12/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Conditions/Task12/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Conditions/Task14/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Conditions/Task14/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Conditions/Task2/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Conditions/Task2/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Conditions/Task4/Fatcat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Conditions/Task4/Fatcat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Conditions/Task4/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Conditions/Task4/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Conditions/Task5/AgeDiff.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Conditions/Task5/AgeDiff.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Conditions/Task7/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Conditions/Task7/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Conditions/Task9/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Conditions/Task9/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/Menu/SettingsMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Menu/SettingsMenu.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -153,7 +164,7 @@
       <option name="presentableId" value="Default" />
       <updated>1648829831013</updated>
       <workItem from="1648829837453" duration="1244000" />
-      <workItem from="1648888379782" duration="18989000" />
+      <workItem from="1648888379782" duration="24343000" />
     </task>
     <servers />
   </component>
@@ -165,6 +176,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="249" y="0" key="#Project_Structure/0.0.1536.824@0.0.1536.824" timestamp="1648829944405" />
+    <state x="531" y="113" key="#com.intellij.ide.util.MemberChooser" timestamp="1648910949276">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="531" y="113" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1648910949276" />
     <state x="489" y="208" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1648896584697">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -173,22 +188,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1648889885943" />
-    <state width="1493" height="311" key="GridCell.Tab.0.bottom" timestamp="1648908978442">
+    <state width="1493" height="311" key="GridCell.Tab.0.bottom" timestamp="1648915042327">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="311" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1648908978442" />
-    <state width="1493" height="311" key="GridCell.Tab.0.center" timestamp="1648908978442">
+    <state width="1493" height="311" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1648915042327" />
+    <state width="1493" height="311" key="GridCell.Tab.0.center" timestamp="1648915042327">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="311" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1648908978442" />
-    <state width="1493" height="311" key="GridCell.Tab.0.left" timestamp="1648908978442">
+    <state width="1493" height="311" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1648915042327" />
+    <state width="1493" height="311" key="GridCell.Tab.0.left" timestamp="1648915042327">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="311" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1648908978442" />
-    <state width="1493" height="311" key="GridCell.Tab.0.right" timestamp="1648908978442">
+    <state width="1493" height="311" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1648915042327" />
+    <state width="1493" height="311" key="GridCell.Tab.0.right" timestamp="1648915042327">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="311" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1648908978442" />
+    <state width="1493" height="311" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1648915042327" />
     <state x="277" y="0" key="SettingsEditor" timestamp="1648889892847">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -197,9 +212,9 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="498" y="304" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1536.824@0.0.1536.824" timestamp="1648829998947" />
-    <state x="469" y="159" key="refactoring.ChangeSignatureDialog" timestamp="1648891878337">
+    <state x="469" y="159" key="refactoring.ChangeSignatureDialog" timestamp="1648911733523">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="469" y="159" key="refactoring.ChangeSignatureDialog/0.0.1536.824@0.0.1536.824" timestamp="1648891878337" />
+    <state x="469" y="159" key="refactoring.ChangeSignatureDialog/0.0.1536.824@0.0.1536.824" timestamp="1648911733523" />
   </component>
 </project>

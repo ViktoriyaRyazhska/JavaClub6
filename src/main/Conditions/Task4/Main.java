@@ -13,7 +13,13 @@ public class Main {
         fatcats.add(new Fatcat("Andriy", 12400, true));
         fatcats.add(new Fatcat("Oleg", 17000, true));
         fatcats.add(new Fatcat("Artem", 14000, true));
+        System.out.println("All members: ");
+        for (Fatcat fatcat:fatcats
+             ) {
+            System.out.println(fatcat.toString());
 
+        }
+        System.out.println("--------------------------------------\nInformation:");
         for (Fatcat fatcat : fatcats
         ) {
             fatcat.GetBonus(fatcat.getSalary(), fatcat.isBonus());

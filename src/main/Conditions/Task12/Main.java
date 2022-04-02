@@ -1,7 +1,15 @@
 package main.Conditions.Task12;
 
+import java.util.Scanner;
+
 public class Main {
-    public static void main(String[] args) {System.out.println(switchItUp(0));}
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter number 1-9: ");
+        int number=scanner.nextInt();
+        System.out.println(number+" in word - "+switchItUp(number));
+    }
+
     public static String switchItUp(int number) {
         switch (number) {
             case 0:
