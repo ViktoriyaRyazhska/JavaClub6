@@ -6,9 +6,7 @@ import java.util.ArrayList;
 public class task1 {
     public static List<String> added() {
         List<String> items = new ArrayList<>();
-        items.add("obj1");
-        items.add("obj2");
-        items.add("obj3");
+        items.add("an object");
         return items;
     }
 

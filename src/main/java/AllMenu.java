@@ -1,11 +1,8 @@
-
-
 import java.util.Arrays;
 import java.util.Scanner;
 import Basic.*;
 import Classes.*;
 import Conditions.*;
-import com.sun.xml.internal.bind.v2.TODO;
 
 public class AllMenu {
     static void menuBasic(Scanner sc) {
@@ -286,7 +283,7 @@ public class AllMenu {
                     break;
                 }
                 case "12": {
-                    System.out.println(Conditions.Task12.switchItUp(99));
+                    System.out.println(Conditions.Task12.sequence(99));
                     menuBasic(sc);
                     break;
                 }

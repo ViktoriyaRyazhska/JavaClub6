@@ -1,7 +1,7 @@
 package Conditions;
 
 public class Task12 {
-    public static String switchItUp(Integer number) {
+    public static String sequence(Integer number) {
 
         // a number between 0-9, return it in words.
 
@@ -29,10 +29,5 @@ public class Task12 {
             default:
                 return Integer.toString(number);
         }
-    }
-
-    public static void main(String[] args) {
-        System.out.println(switchItUp(0));
-        System.out.println(switchItUp(99));
     }
 }
