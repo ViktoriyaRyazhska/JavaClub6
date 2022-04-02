@@ -14,13 +14,27 @@ public class ClassTask16 {
             this.damagePerAttack = damagePerAttack;
         }
     }
-
-    public static String declareWinner() {
+    public static String declareWinner(Fighter fighter1, Fighter fighter2, String firstAttacker) {
+        Fighter a = fighter1, b = fighter2;
+        if (firstAttacker.equals(fighter2.name)) {
+            a = fighter2;
+            b = fighter1;
+        }
+        while (true) {
+            if ((b.health -= a.damagePerAttack) <= 0) {
+                System.out.println("Fighter " + a.name + " wins");
+                return a.name;  // a wins
+            }
+            if ((a.health -= b.damagePerAttack) <= 0) {
+                System.out.println("Fighter " + b.name + " wins");
+                return  b.name;
+            }
+        }
+    }
+    public static void declareWinner (Scanner scanner) {
 
         System.out.println("Two fighters, one winner.");
         System.out.println("Enter first fighter stats through the spaces [name, health, damage]:");
-
-        Scanner scanner = new Scanner(System.in);
 
         String name = scanner.next();
         int health = scanner.nextInt();
@@ -47,12 +61,12 @@ public class ClassTask16 {
         while (true) {
             if ((b.health -= a.damagePerAttack) <= 0){
                 System.out.println("Fighter " + a.name + " wins");
-                return a.name;  // a wins
+
             }
-            if ((a.health -= b.damagePerAttack) <= 0){
+            if ((a.health -= b.damagePerAttack) <= 0) {
                 System.out.println("Fighter " + b.name + " wins");
-                return b.name;  // b wins
             }
+
         }
     }
 }
