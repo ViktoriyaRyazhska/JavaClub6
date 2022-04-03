@@ -1,6 +1,7 @@
 package utils;
 
 import Basic.Task3;
+import Basic.Task6;
 import Basic.task2;
 
 public class Runner {
@@ -21,7 +22,11 @@ public class Runner {
         double height = doublePositive(sc.readDouble());
         System.out.println("Result: " + Task3.getVolumeOfCuboid(length,width,height));
     }
-
+    public void TASK_6(){
+        System.out.println("Enter non-negative integer n: ");
+        int n = intPositive(sc.readInt());
+        System.out.println("Result: " + Task6.toBinary(n));
+    }
     private int intPositive(int num) {
         while (num <= 0) {
             System.out.println("Please enter number > 0");
@@ -97,6 +102,9 @@ public class Runner {
                 break;
             case 3:
                 TASK_3();
+                break;
+            case 6:
+                TASK_6();
                 break;
 
         }
