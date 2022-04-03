@@ -11,7 +11,7 @@ public class LoopsMenu {
             case 33:
                 break;
             case 34:
-                LoopsTask34.humanYearsCatYearsDogYears();
+                LoopsTask34.humanYearsCatYearsDogYears(scanner);
                 break;
             case 35:
                 break;
