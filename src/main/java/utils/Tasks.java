@@ -45,6 +45,15 @@ public enum Tasks {
                     +"\n" +"of a pixel in millimeters. It should return True if you can fit an exact number of pixels on the wall, otherwise it should return False. "),
     TASK_8(8, "Century From Year",
             "Given a year, return the century it is in."),
+    TASK_11(11,"Grasshopper - Debug","Your friend is traveling abroad to the United States so he wrote a program to convert fahrenheit to celsius. Unfortunately his code has some bugs.\n" +
+            "\n" +
+            "Find the errors in the code to get the celsius converter working properly.\n" +
+            "\n" +
+            "To convert fahrenheit to celsius:\n" +
+            "\n"+
+            "Remember that typically temperatures in the current weather conditions are given in whole numbers. \n"+
+            "It is possible for temperature sensors to report temperatures with a higher accuracy such as to the nearest tenth. \n"
+            +"Instrument error though makes this sort of accuracy unreliable for many types of temperature measuring sensors."),
     TASK_12(12, "Lombok Encapsulation",
             "In Java, we have a very powerful library named Lombok. It helps to reduce the boilerplate code."
                     +"\n" +"This Kata is a challenge created for you to learn how to use lombok."),
@@ -85,8 +94,6 @@ public enum Tasks {
             "Remove n exclamation marks in the sentence from left to right. n is positive integer."),
     TASK_72(72, "Interactive Dictionary",
             "In this kata, your job is to create a class Dictionary which you can add words to and their entries.");
-
-
 
 
 

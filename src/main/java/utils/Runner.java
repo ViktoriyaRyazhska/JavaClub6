@@ -1,5 +1,4 @@
 package utils;
-
 import Basic.*;
 import Classes.*;
 import Collections.*;
@@ -25,12 +24,6 @@ public class Runner {
         double height = doublePositive(sc.readDouble());
         System.out.println("Result: " + Task3.getVolumeOfCuboid(length,width,height));
     }
-    public void TASK_4() {
-        System.out.println("Enter the wallLength and pixelSize : ");
-        int wallLength = intPositive(sc.readInt());
-        int pixelSize = intPositive(sc.readInt());
-        System.out.println("Result: " + Task4.isDivisible( wallLength,pixelSize));
-    }
     public void TASK_6(){
         System.out.println("Enter non-negative integer n: ");
         int n = intPositive(sc.readInt());
@@ -43,6 +36,13 @@ public class Runner {
         int minute = intPositive(sc.readInt());
         int seconds = intPositive(sc.readInt());
         System.out.println("Result: " + Task7.Past(hour,minute,seconds));
+    }
+
+    public void TASK_4() {
+        System.out.println("Enter the wallLength and pixelSize : ");
+        int wallLength = intPositive(sc.readInt());
+        int pixelSize = intPositive(sc.readInt());
+        System.out.println("Result: " + Task4.isDivisible( wallLength,pixelSize));
     }
     public void TASK_8() {
         System.out.println("Enter the number : ");
@@ -181,6 +181,13 @@ public class Runner {
         k = sc.readString();
         System.out.println("Result: "+ o.look(k));
     }
+
+    public void TASK_11(){
+        System.out.println("Enter temperature in Fahrenheit: ");
+        int fahrenheit = intPositive(sc.readInt());
+        System.out.println("Result: " + Task11.convertToCelsius(fahrenheit));
+    }
+
     private int intPositive(int num) {
         while (num <= 0) {
             System.out.println("Please enter number > 0");
@@ -256,9 +263,6 @@ public class Runner {
                 break;
             case 3:
                 TASK_3();
-                break;
-            case 4:
-                TASK_4();
                 break;
             case 6:
                 TASK_6();
