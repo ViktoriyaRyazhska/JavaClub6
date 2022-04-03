@@ -35,7 +35,7 @@ public class Task5 {
         }
         return winner;
     }
-    public class Fighter {
+    public static class Fighter {
         public String name;
         public int health, damagePerAttack;
         public Fighter(String name, int health, int damagePerAttack) {
