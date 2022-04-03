@@ -2,6 +2,7 @@ package utils;
 
 import Basic.Task3;
 import Basic.Task6;
+import Basic.Task7;
 import Basic.task2;
 
 public class Runner {
@@ -27,6 +28,15 @@ public class Runner {
         int n = intPositive(sc.readInt());
         System.out.println("Result: " + Task6.toBinary(n));
     }
+
+    public void TASK_7(){
+        System.out.println("Enter hour, minute and seconds: ");
+        int hour = intPositive(sc.readInt());
+        int minute = intPositive(sc.readInt());
+        int seconds = intPositive(sc.readInt());
+        System.out.println("Result: " + Task7.Past(hour,minute,seconds));
+    }
+
     private int intPositive(int num) {
         while (num <= 0) {
             System.out.println("Please enter number > 0");
@@ -105,6 +115,9 @@ public class Runner {
                 break;
             case 6:
                 TASK_6();
+                break;
+            case 7:
+                TASK_7();
                 break;
 
         }
