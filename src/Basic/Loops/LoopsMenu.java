@@ -23,7 +23,7 @@ public class LoopsMenu {
             case 38:
                 break;
             case 39:
-                LoopsTask39.betterThanAverage();
+                LoopsTask39.betterThanAverage(scanner);
                 break;
             case 40:
                 break;
