@@ -83,6 +83,10 @@ public class AllMenu2 {
                     MainApp.showMenu();
                     break;
                 }
+                default: {
+                    showOOPMenu(sc);
+                    break;
+                }
             }
 
         }
@@ -274,6 +278,10 @@ public class AllMenu2 {
                     MainApp.showMenu();
                     break;
                 }
+                default: {
+                    showStringMenu(sc);
+                    break;
+                }
             }
 
         }
@@ -328,6 +336,10 @@ public class AllMenu2 {
 
                 case "5": {
                     MainApp.showMenu();
+                    break;
+                }
+                default: {
+                    showCollectionsMenu(sc);
                     break;
                 }
             }
