@@ -12,7 +12,7 @@ public class ConditionsTask21 {
         Scanner sc = new Scanner(System.in);
         boolean bn = sc.nextBoolean();
 
-        System.out.println("String is: " + Boolean.toString(bn));
+        System.out.println("String is: " + bn);
 
         return Boolean.toString(bn);
     }
