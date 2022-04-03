@@ -8,7 +8,7 @@ public class StringProgramTask64 {
         System.out.println(" Write a function to convert a name into initials.\n"+
                 " This kata strictly takes two words with one space in between them.\n"+
                 "The output should be two capital letters with a dot separating them.\n");
-        System.out.print ("Put name ");
+        System.out.println ("Put name ");
         String name=scanner.nextLine();
         name = name.toUpperCase();
 
