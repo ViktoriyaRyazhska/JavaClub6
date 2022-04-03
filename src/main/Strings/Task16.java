@@ -1,9 +1,13 @@
 package main.Strings;
 
+import java.util.Scanner;
+
 public class Task16 {
     public static void main(String[] args) {
-
-        System.out.println(HandleMistakes("5jhjdshfjdsh 1hksdhfke0jhew"));
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter String with handle mistakes (Example: 1hk5dhfke0jhew): ");
+        String  str= scanner.nextLine();
+        System.out.println("Result: "+HandleMistakes(str));
     }
 
     public static String HandleMistakes(String str) {

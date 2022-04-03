@@ -2,17 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5830459a-e012-46af-88cc-97e95e6a83a4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/Loop/LoopMenu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/OOP/OOPMenu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Strings/StringsMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Loop/Task1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Loop/Task1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Loop/Task10.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Loop/Task10.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Loop/Task11.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Loop/Task11.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Loop/Task13.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Loop/Task13.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Loop/Task3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Loop/Task3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Loop/Task5.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Loop/Task5.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Loop/Task6.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Loop/Task6.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Loop/Task8.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Loop/Task8.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/Menu/SettingsMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Menu/SettingsMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/OOP/OOPTask1/God.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/OOP/OOPTask1/God.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/OOP/Task1/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/OOP/Task1/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Strings/Task1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Strings/Task1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Strings/Task11.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Strings/Task11.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Strings/Task12.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Strings/Task12.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Strings/Task14.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Strings/Task14.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Strings/Task16.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Strings/Task16.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Strings/Task17.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Strings/Task17.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Strings/Task2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Strings/Task2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Strings/Task4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Strings/Task4.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Strings/Task6.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Strings/Task6.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Strings/Task7.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Strings/Task7.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Strings/Task9.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Strings/Task9.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/Loop/Task5Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/Loop/Task5Test.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +63,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/libs/mockito-core-4.4.0.jar" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.annotationProcessors" />
@@ -66,19 +74,6 @@
     </key>
   </component>
   <component name="RunManager" selected="Application.Main">
-    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="main.Classes.Task3.Main" />
-      <module name="JavaClub6" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="main.Classes.Task3.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="main.Menu.Main" />
       <module name="JavaClub6" />
@@ -92,12 +87,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Task3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="main.Collections.Task3" />
+    <configuration name="Task11" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="main.Strings.Task11" />
       <module name="JavaClub6" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="main.Collections.*" />
+          <option name="PATTERN" value="main.Strings.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -105,12 +100,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Task6" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="main.Loop.Task6" />
+    <configuration name="Task2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="main.Strings.Task2" />
       <module name="JavaClub6" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="main.Loop.*" />
+          <option name="PATTERN" value="main.Strings.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -118,12 +113,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Task8" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="main.Loop.Task8" />
+    <configuration name="Task9" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="main.Strings.Task9" />
       <module name="JavaClub6" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="main.Loop.*" />
+          <option name="PATTERN" value="main.Strings.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -131,15 +126,28 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Task11Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JavaClub6" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.Strings.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test.Strings" />
+      <option name="MAIN_CLASS_NAME" value="test.Strings.Task11Test" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -147,10 +155,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
-        <item itemvalue="Application.Task8" />
-        <item itemvalue="Application.Task6" />
-        <item itemvalue="Application.Task3" />
-        <item itemvalue="Application.Main (1)" />
+        <item itemvalue="JUnit.Task11Test" />
+        <item itemvalue="Application.Task11" />
+        <item itemvalue="Application.Task9" />
+        <item itemvalue="Application.Task2" />
       </list>
     </recent_temporary>
   </component>
@@ -164,6 +172,7 @@
       <updated>1648829831013</updated>
       <workItem from="1648829837453" duration="1244000" />
       <workItem from="1648888379782" duration="30241000" />
+      <workItem from="1648994660308" duration="7174000" />
     </task>
     <servers />
   </component>
@@ -187,33 +196,67 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1648889885943" />
-    <state width="1493" height="311" key="GridCell.Tab.0.bottom" timestamp="1648936232578">
+    <state width="1493" height="127" key="GridCell.Tab.0.bottom" timestamp="1649004264158">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="311" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1648936232578" />
-    <state width="1493" height="311" key="GridCell.Tab.0.center" timestamp="1648936232577">
+    <state width="1493" height="127" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1649004264158" />
+    <state width="1493" height="127" key="GridCell.Tab.0.center" timestamp="1649004264158">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="311" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1648936232577" />
-    <state width="1493" height="311" key="GridCell.Tab.0.left" timestamp="1648936232577">
+    <state width="1493" height="127" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1649004264158" />
+    <state width="1493" height="127" key="GridCell.Tab.0.left" timestamp="1649004264157">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="311" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1648936232577" />
-    <state width="1493" height="311" key="GridCell.Tab.0.right" timestamp="1648936232577">
+    <state width="1493" height="127" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1649004264157" />
+    <state width="1493" height="127" key="GridCell.Tab.0.right" timestamp="1649004264158">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="311" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1648936232577" />
-    <state x="277" y="0" key="SettingsEditor" timestamp="1648889892847">
+    <state width="1493" height="127" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1649004264158" />
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1649002716897">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="277" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1648889892847" />
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1649002716897" />
+    <state width="1493" height="261" key="GridCell.Tab.1.center" timestamp="1649002716897">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1649002716897" />
+    <state width="1493" height="261" key="GridCell.Tab.1.left" timestamp="1649002716897">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1649002716897" />
+    <state width="1493" height="261" key="GridCell.Tab.1.right" timestamp="1649002716897">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1649002716897" />
+    <state x="277" y="0" key="SettingsEditor" timestamp="1649000589143">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="277" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1649000589143" />
     <state x="498" y="304" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1648829998947">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="498" y="304" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1536.824@0.0.1536.824" timestamp="1648829998947" />
+    <state x="304" y="148" width="928" height="629" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1649002614841">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="304" y="148" width="928" height="629" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1536.824@0.0.1536.824" timestamp="1649002614841" />
     <state x="469" y="159" key="refactoring.ChangeSignatureDialog" timestamp="1648911733523">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="469" y="159" key="refactoring.ChangeSignatureDialog/0.0.1536.824@0.0.1536.824" timestamp="1648911733523" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1648999236835">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1648999236835" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NumberFormatException" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

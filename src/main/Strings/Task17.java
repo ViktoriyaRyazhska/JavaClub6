@@ -1,12 +1,14 @@
 package main.Strings;
 
+import java.util.Scanner;
+
 public class Task17 {
     // https://www.codewars.com/kata/alternating-case-<-equals->-alternating-case/
     public static void main(String[] args) {
-        System.out.println(toAlternativeString("hello world"));
-        System.out.println(toAlternativeString("Hello World"));
-        System.out.println(toAlternativeString("12345"));
-        System.out.println(toAlternativeString("1a2b3c4d5e"));
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter String: ");
+        String  str= scanner.nextLine();
+        System.out.println("Result: "+toAlternativeString(str));
     }
     public static String toAlternativeString(String string) {
         StringBuilder sb = new StringBuilder();

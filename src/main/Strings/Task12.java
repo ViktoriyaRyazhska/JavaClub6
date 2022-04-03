@@ -1,10 +1,15 @@
 package main.Strings;
 
+import java.util.Scanner;
+
 public class Task12 {
     // https://www.codewars.com/kata/grasshopper-debug/
     public static void main(String[] args) {
-        System.out.println(weatherInfo(50));
-        System.out.println(weatherInfo(23));
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter temperature in fahrenheit: ");
+        int temp= scanner.nextInt();
+        System.out.println("Temperature in celsius: "+convertToCelsius(temp));
+        System.out.println(weatherInfo(temp));
     }
     public static String weatherInfo(int temp) {
         double c = convertToCelsius(temp);

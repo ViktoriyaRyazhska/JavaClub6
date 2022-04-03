@@ -1,8 +1,13 @@
 package main.Strings;
 
+import java.util.Scanner;
+
 public class Task6 {
     public static void main(String[] args) {
-        System.out.println(BanjoPlay("rodger"));
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter name: ");
+        String  name= scanner.next();
+        System.out.println(BanjoPlay(name));
     }
 
     public static String BanjoPlay(String name) {
