@@ -29,7 +29,7 @@ public class Task3 implements Comparable<Task3>
         return gcd(b%a, a);
     }
 
-    public Task3 add(Task3 f2) {
+    public  Task3 add(Task3 f2) {
         long localTop  = this.top * f2.bottom + f2.top * this.bottom;
         long localBottom = this.bottom * f2.bottom;
         long gcd = gcd(localTop, localBottom);

@@ -11,7 +11,7 @@ import String.StringMenu;
 import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
         while (true) {
             System.out.println("Hello, please choose group of tasks:");
             System.out.println("1 - Basic Programs;\n2 - Classes;\n3 - Collections;\n4 - Conditions;\n5 - Loops;\n6 - OOP;\n7 - String.");
