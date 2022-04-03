@@ -5,10 +5,7 @@ import Collections.*;
 import Conditions.*;
 import Loops.*;
 import String.*;
-import Basic.Task3;
-import Basic.Task6;
-import Basic.Task7;
-import Basic.task2;
+import Basic.*;
 
 public class Runner {
     private ConsoleScanner sc;
@@ -154,6 +151,12 @@ public class Runner {
         System.out.println("Enter the search key: ");
         k = sc.readString();
         System.out.println("Result: "+ o.look(k));
+    }
+
+    public void TASK_11(){
+        System.out.println("Enter temperature in Fahrenheit: ");
+        int fahrenheit = intPositive(sc.readInt());
+        System.out.println("Result: " + Task11.convertToCelsius(fahrenheit));
     }
 
     private int intPositive(int num) {
