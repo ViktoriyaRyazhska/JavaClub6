@@ -1,7 +1,7 @@
 package utils;
 
 public enum Tasks {
-    TASK_8_3(1, "Volume of a Cuboid",
+    TASK_3(3, "Volume of a Cuboid",
             "Bob needs a fast way to calculate the volume of a cuboid with three values: length, width and the height of the cuboid. Write a function to help Bob with this calculation.");
 
     private final int id;

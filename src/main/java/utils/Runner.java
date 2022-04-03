@@ -7,7 +7,7 @@ public class Runner {
     public Runner() {
         sc = new ConsoleScanner();
     }
-    public void TASK_8_3() {
+    public void TASK_3() {
         System.out.println("Enter the length, width and the height: ");
         double length = doublePositive(sc.readDouble());
         double width = doublePositive(sc.readDouble());
@@ -86,7 +86,7 @@ public class Runner {
     public void setTasks(int number) {
         switch (number) {
             case 1:
-                TASK_8_3();
+                TASK_3();
                 break;
         }
     }
