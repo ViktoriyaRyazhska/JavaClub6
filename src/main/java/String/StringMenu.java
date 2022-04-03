@@ -74,7 +74,6 @@ public class StringMenu {
                 System.out.println("You selected task 7. There will be no space in string");
                 System.out.println("Enter a string");
                 scanner.nextLine();
-
                 String stringToCheck =scanner.nextLine();
                 System.out.println("Result is:");
                 System.out.println(Task7.noSpace(stringToCheck));
