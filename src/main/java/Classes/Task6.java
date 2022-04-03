@@ -6,7 +6,7 @@ class Block{
     private int width;
     private int length;
     private int height;
-    Block(int[] proportions){
+    public Block(int[] proportions){
         setWidth(proportions[0]);
         setLength(proportions[1]);
         setHeight(proportions[2]);

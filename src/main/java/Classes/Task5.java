@@ -22,7 +22,6 @@ public class Task5 {
             } else {
                 fighter1.health = fighter1.health - fighter2.damagePerAttack;
                 if(fighter1.health<=0) {
-                    winner = fighter2.name;
                     break;
                 } else {
                     fighter2.health = fighter2.health - fighter1.damagePerAttack;
@@ -33,6 +32,7 @@ public class Task5 {
                 }
             }
         }
+
         return winner;
     }
     public static class Fighter {
