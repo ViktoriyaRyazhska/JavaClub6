@@ -23,7 +23,7 @@ public class ConditionsMenu {
             case 23:
                 break;
             case 24:
-                ConditionsTask24.rps();
+                ConditionsTask24.rps(scanner);
                 break;
             case 25:
                 ConditionsTask25.basicOperations();
