@@ -1,4 +1,4 @@
-package main;
+package main.Strings;
 
 public class Task16 {
     public static void main(String[] args) {

@@ -57,7 +57,7 @@ public class Fighter {
 
     public static void fight(Fighter f1, Fighter f2) {
         while (f1.getHealth() > 0 || f2.getHealth() > 0) {
-            System.out.print(f1.name + " attacks " + f2.name+"\t");
+            System.out.print(f1.name + " attacks " + f2.name + "\t");
             f2.setHealth(f2.getHealth() - f1.getDamagePerAttack());
             if (f2.getHealth() > 0) {
                 System.out.println(f2.name + " now has " + f2.health + " health");
@@ -65,7 +65,7 @@ public class Fighter {
                 System.out.println(f2.name + " now has " + f2.health + " health and is dead. " + f1.name + " wins");
                 break;
             }
-            System.out.print(f2.name + " attacks " + f1.name+"\t");
+            System.out.print(f2.name + " attacks " + f1.name + "\t");
             f1.setHealth(f1.getHealth() - f2.getDamagePerAttack());
             if (f1.getHealth() > 0) {
                 System.out.println(f1.name + " now has " + f1.health + " health");
@@ -75,4 +75,26 @@ public class Fighter {
             }
         }
     }
+
+    public static String declareWinner(Fighter fighter1, Fighter fighter2, String firstAttacker) {
+
+        if (firstAttacker.equals(fighter2.name)) {
+
+            while (fighter1.health > 0 && fighter2.health > 0) {
+                fighter1.health = fighter1.health - fighter2.damagePerAttack;
+                if (fighter1.health <= 0) return fighter2.name;
+                fighter2.health = fighter2.health - fighter1.damagePerAttack;
+                if (fighter2.health <= 0) return fighter1.name;
+            }
+        } else {
+            while (fighter1.health > 0 && fighter2.health > 0) {
+                fighter2.health = fighter2.health - fighter1.damagePerAttack;
+                if (fighter2.health <= 0) return fighter1.name;
+                fighter1.health = fighter1.health - fighter2.damagePerAttack;
+                if (fighter1.health <= 0) return fighter2.name;
+            }
+        }
+        return "";
+    }
+
 }

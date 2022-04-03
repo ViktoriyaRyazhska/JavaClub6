@@ -64,6 +64,15 @@ public class Fatcat {
         }
      }
 
+    public static String bonusTime(final int salary, final boolean bonus) {
+        if(bonus) {
+            return '£' + Integer.toString(salary * 10);
+        }
+        else {
+            return '£' + Integer.toString(salary);
+        }
+    }
+
     @Override
     public String toString() {
         return
