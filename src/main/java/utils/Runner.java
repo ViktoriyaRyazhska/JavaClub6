@@ -5,7 +5,7 @@ import Classes.*;
 import Collections.*;
 import Conditions.*;
 import Loops.*;
-import OOP.Task47;
+import OOP.*;
 import String.*;
 
 import java.util.Collections;
@@ -24,7 +24,6 @@ public class Runner {
         int num2 = sc.readInt();
         System.out.println("Result: " + task2.multiply(num1, num2));
     }
-
     public void TASK_3() {
         System.out.println("Enter the length, width and the height: ");
         double length = doublePositive(sc.readDouble());
@@ -32,28 +31,26 @@ public class Runner {
         double height = doublePositive(sc.readDouble());
         System.out.println("Result: " + Task3.getVolumeOfCuboid(length, width, height));
     }
-
-    public void TASK_6() {
+    public void TASK_6(){
         System.out.println("Enter non-negative integer n: ");
         int n = intPositive(sc.readInt());
         System.out.println("Result: " + Task6.toBinary(n));
     }
 
-    public void TASK_7() {
+    public void TASK_7(){
         System.out.println("Enter hour, minute and seconds: ");
         int hour = intPositive(sc.readInt());
         int minute = intPositive(sc.readInt());
         int seconds = intPositive(sc.readInt());
-        System.out.println("Result: " + Task7.Past(hour, minute, seconds));
+        System.out.println("Result: " + Task7.Past(hour,minute,seconds));
     }
 
     public void TASK_4() {
         System.out.println("Enter the wallLength and pixelSize : ");
         int wallLength = intPositive(sc.readInt());
         int pixelSize = intPositive(sc.readInt());
-        System.out.println("Result: " + Task4.isDivisible(wallLength, pixelSize));
+        System.out.println("Result: " + Task4.isDivisible( wallLength,pixelSize));
     }
-
     public void TASK_8() {
         System.out.println("Enter the number : ");
         int num = intPositive(sc.readInt());
@@ -66,12 +63,6 @@ public class Runner {
         System.out.println("Result: " + Task10.datingRange(age));
     }
 
-    public void TASK_11() {
-        System.out.println("Enter temperature in Fahrenheit: ");
-        int fahrenheit = intPositive(sc.readInt());
-        System.out.println("Result: " + Task11.convertToCelsius(fahrenheit));
-    }
-
     public void TASK_12() {
         System.out.println("Result: " + new Task12());
     }
@@ -80,18 +71,17 @@ public class Runner {
         String name = sc.readString();
         int health = intPositive(sc.readInt());
         int damagePerAttack = intPositive(sc.readInt());
-        Task16.Fighter f1 = new Task16.Fighter(name, health, damagePerAttack);
+        Task16.Fighter f1= new Task16.Fighter(name, health, damagePerAttack);
         System.out.println("Enter the Figter2 name health damagePerAttack : ");
         name = sc.readString();
         health = intPositive(sc.readInt());
         damagePerAttack = intPositive(sc.readInt());
-        Task16.Fighter f2 = new Task16.Fighter(name, health, damagePerAttack);
+        Task16.Fighter f2= new Task16.Fighter(name, health, damagePerAttack);
         System.out.println("Enter the firstAttacker name : ");
         name = sc.readString();
-        System.out.println("Winner: " + Task16.declareWinner(f1, f2, name));
+        System.out.println("Winner: " + Task16.declareWinner(f1,f2,name));
     }
-
-    public void TASK_18() {
+    public void TASK_18(){
         System.out.println("Enter 1 number: ");
         int num = sc.readInt();
         System.out.println("Result: " + Task18.opposite(num));
@@ -107,13 +97,12 @@ public class Runner {
 
     public void TASK_20() {
         System.out.println("Enter the number : 1-true 2-false");
-        if (intPositive(sc.readInt()) == 1)
+        if(intPositive(sc.readInt())==1)
             System.out.println("Result: " + Task20.convert(true));
         else
             System.out.println("Result: " + Task20.convert(false));
     }
-
-    public void TASK_22() {
+    public void TASK_22(){
         System.out.println("Enter the year of birth:");
         int yearOfBirth = intPositive(sc.readInt());
         System.out.println("Enter the year to count years in relation to: ");
@@ -130,13 +119,12 @@ public class Runner {
 
     public void TASK_24() {
         System.out.println("Enter the opperand and two numbers : ");
-        String op = sc.readString();
+        String op=sc.readString();
         int num1 = intPositive(sc.readInt());
         int num2 = intPositive(sc.readInt());
-        System.out.println("Result: " + Task24.basicMath(op, num1, num2));
+        System.out.println("Result: " + Task24.basicMath(op,num1,num2));
     }
-
-    public void TASK_26() {
+    public void TASK_26(){
         System.out.println("Enter a boolean value:");
         boolean value = sc.readBoolean();
         System.out.println("Result: " + Task26.boolToWord(value));
@@ -158,7 +146,7 @@ public class Runner {
         System.out.println("Result: " + Task28.sequence(num1));
     }
 
-    public void TASK_30() {
+    public void TASK_30(){
         System.out.println("Enter a color of green/yellow/red: ");
         String color = sc.readString();
         System.out.println("Result: " + Task30.updateLight(color));
@@ -174,10 +162,9 @@ public class Runner {
         System.out.println("Enter the string and num of repeats : ");
         String s = sc.readString();
         int num1 = intPositive(sc.readInt());
-        System.out.println("Result: " + Task32.repeatStr(num1, s));
+        System.out.println("Result: " + Task32.repeatStr(num1,s));
     }
-
-    public void TASK_34() {
+    public void TASK_34(){
         System.out.println("Enter an array with your averages: ");
         int[] array = intArrayPositive(sc.readIntArray());
         System.out.println("Result: " + Task34.getAverage(array));
@@ -208,8 +195,15 @@ public class Runner {
 
     public void TASK_40() {
         System.out.println("Enter the int arr : ");
-        int[] arr = sc.readIntArray();
-        System.out.println("Result: " + Task40.sum(arr));
+        int []arr = sc.readIntArray();
+        System.out.println("Result: "+ Task40.sum(arr));
+    }
+    public void TASK_42(){
+        System.out.println("Enter current father's age (years): ");
+        int fatherAge = intPositive(sc.readInt());
+        System.out.println("Enter current age of his son (years): ");
+        int sonAge = intPositive(sc.readInt());
+        System.out.println("Result: " + Task42.TwiceAsOld(fatherAge, sonAge));
     }
 
     public void TASK_43() {
@@ -221,7 +215,7 @@ public class Runner {
     public void TASK_44() {
         System.out.println("Enter the number : ");
         int arr = sc.readInt();
-        System.out.println("Result: " + Task44.summation(arr));
+        System.out.println("Result: "+ Task44.summation(arr));
     }
 
     public void TASK_48() {
@@ -236,10 +230,16 @@ public class Runner {
         System.out.println("Result: " + Task51.numberToString(number));
     }
 
+    public void TASK_46(){
+        System.out.println("Enter count of sticks(1/2/3): ");
+        int countOfStiks = intPositive(sc.readInt());
+        System.out.println("Result: " + Task46.makeMove(countOfStiks));
+    }
+
     public void TASK_52() {
         System.out.println("Enter the string : ");
         String a = sc.readString();
-        System.out.println("Result: " + Task52.solution(a));
+        System.out.println("Result: "+ Task52.solution(a));
     }
 
     public void TASK_55() {
@@ -249,9 +249,22 @@ public class Runner {
     }
 
     public void TASK_56() {
-        System.out.println("Enter the name: ");
+        System.out.println("Enter the name : ");
         String a = sc.readString();
-        System.out.println("Result: " + Task56.areYouPlayingBanjo(a));
+        System.out.println("Result: "+ Task56.areYouPlayingBanjo(a));
+    }
+    public void TASK_58(){
+        System.out.println("Enter the first string: ");
+        String first = sc.readString();
+        System.out.println("Enter the second string: ");
+        String second = sc.readString();
+        System.out.println("Enter the third string: ");
+        String third = sc.readString();
+        if (first.length() == second.length() && second.length() == third.length() && first.length() == third.length())
+            System.out.println("Result: " + Task58.tripleTrouble(first, second, third));
+        else {
+            System.out.println("Length of strings are different");
+        }
     }
 
     public void TASK_59() {
@@ -263,7 +276,7 @@ public class Runner {
     public void TASK_60() {
         System.out.println("Enter the string : ");
         String a = sc.readString();
-        System.out.println("Result: " + Task60.fakeBin(a));
+        System.out.println("Result: "+ Task60.fakeBin(a));
     }
 
     public void TASK_63() {
@@ -272,11 +285,16 @@ public class Runner {
         System.out.println("Result: " + Task63.abbrevName(name));
     }
 
+    public void TASK_62(){
+        System.out.println("Enter a temperature: ");
+        int temperature = sc.readInt();
+        System.out.println("Result: " + Task62.weatherInfo(temperature));
+    }
     public void TASK_64() {
         System.out.println("Enter the string and char: ");
         String a = sc.readString();
         char c = sc.readString().charAt(0);
-        System.out.println("Result: " + Task64.strCount(a, c));
+        System.out.println("Result: "+ Task64.strCount(a,c));
     }
 
     public void TASK_67() {
@@ -285,11 +303,21 @@ public class Runner {
         System.out.println("Result: " + Task67.toAlternativeString(str));
     }
 
+    public void TASK_66(){
+        System.out.println("Enter a sentence: ");
+        String string = sc.readString();
+        System.out.println("Result: " + Task66.correct(string));
+    }
     public void TASK_68() {
         System.out.println("Enter the string with '!' and number: ");
         String a = sc.readString();
         int n = intPositive(sc.readInt());
-        System.out.println("Result: " + Task68.remove(a, n));
+        System.out.println("Result: "+ Task68.remove(a,n));
+    }
+    public void TASK_70(){
+        System.out.println("Enter a number: ");
+        int number = intPositive(sc.readInt());
+        System.out.println("Result: " + Task70.CreateList(number));
     }
 public void TASK_71(){
     System.out.println("Enter numbers: ");
@@ -301,10 +329,16 @@ public void TASK_71(){
         String k = sc.readString();
         String v = sc.readString();
         Task72 o = new Task72();
-        o.newEntry(k, v);
+        o.newEntry(k,v);
         System.out.println("Enter the search key: ");
         k = sc.readString();
-        System.out.println("Result: " + o.look(k));
+        System.out.println("Result: "+ o.look(k));
+    }
+
+    public void TASK_11(){
+        System.out.println("Enter temperature in Fahrenheit: ");
+        int fahrenheit = intPositive(sc.readInt());
+        System.out.println("Result: " + Task11.convertToCelsius(fahrenheit));
     }
 
     private int intPositive(int num) {
@@ -389,18 +423,26 @@ public void TASK_71(){
             case 7:
                 TASK_7();
                 break;
-            case 11:
-                TASK_11();
-                break;
-
             case 8:
                 TASK_8();
                 break;
             case 10:
                 TASK_10();
                 break;
+            case 11:
+                TASK_11();
+                break;
+            case 12:
+                TASK_12();
+                break;
+            case 16:
+                TASK_16();
+                break;
             case 18:
                 TASK_18();
+                break;
+            case 20:
+                TASK_20();
                 break;
             case 19:
                 TASK_19();
@@ -408,11 +450,17 @@ public void TASK_71(){
             case 22:
                 TASK_22();
                 break;
+            case 24:
+                TASK_24();
+                break;
             case 23:
                 TASK_23();
                 break;
             case 26:
                 TASK_26();
+                break;
+            case 28:
+                TASK_28();
                 break;
             case 27:
                 TASK_27();
@@ -423,14 +471,65 @@ public void TASK_71(){
             case 31:
                 TASK_31();
                 break;
+            case 32:
+                TASK_32();
+                break;
             case 34:
                 TASK_34();
                 break;
             case 35:
                 TASK_35();
                 break;
+            case 36:
+                TASK_36();
+                break;
             case 38:
                 TASK_38();
+                break;
+            case 40:
+                TASK_40();
+                break;
+            case 42:
+                TASK_42();
+                break;
+            case 44:
+                TASK_44();
+                break;
+            case 46:
+                TASK_46();
+                break;
+            case 48:
+                TASK_48();
+                break;
+            case 52:
+                TASK_52();
+                break;
+            case 56:
+                TASK_56();
+                break;
+            case 58:
+                TASK_58();
+                break;
+            case 60:
+                TASK_60();
+                break;
+            case 62:
+                TASK_62();
+                break;
+            case 64:
+                TASK_64();
+                break;
+            case 66:
+                TASK_66();
+                break;
+            case 68:
+                TASK_68();
+                break;
+            case 70:
+                TASK_70();
+                break;
+            case 72:
+                TASK_72();
                 break;
             case 39:
                 TASK_39();
