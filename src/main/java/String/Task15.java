@@ -9,10 +9,10 @@ public class Task15 {
         List<String> list = Arrays.asList(vector);
         Collections.sort(list);
         String rawResult = list.get(0);
-        String result = "";
+        StringBuilder result = new StringBuilder();
         for (int i = 0; i < rawResult.length() - 1; i++){
-            result += rawResult.charAt(i) + "***";
+            result.append(rawResult.charAt(i)).append("***");
         }
-        return result + rawResult.charAt(rawResult.length() - 1);
+        return result.toString() + rawResult.charAt(rawResult.length() - 1);
     }
 }

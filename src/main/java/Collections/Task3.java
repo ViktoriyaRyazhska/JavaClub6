@@ -3,6 +3,8 @@ package Collections;
 /**   Task 3
  * @author MichaelShv*/
 
+import java.util.Arrays;
+import java.util.LinkedList;
 import java.util.List;
 
 public class Task3 {

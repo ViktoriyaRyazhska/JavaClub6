@@ -4,7 +4,7 @@ package String;
  * @author sshaparenko*/
 
 public class Task3 {
-    public String sayHello(String [] name, String city, String state){
+    public static String sayHello(String [] name, String city, String state){
         String n = "";
         for (String a : name){
             n += a;
