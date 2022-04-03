@@ -3,8 +3,41 @@ package utils;
 public enum Tasks {
     TASK_2(2, "Multiplying two numbers", "Implement a function which multiplies two numbers."),
     TASK_3(3, "Volume of a Cuboid",
+            "Bob needs a fast way to calculate the volume of a cuboid with three values: length, width and the " +
+                    "height of the cuboid. Write a function to help Bob with this calculation."),
+    TASK_6(6, "Convert to Binary", "Given a non-negative integer n, write a function to_binary/" +
+            "ToBinary which returns that number in a binary format."),
+    TASK_10(10,"Age Range Compatibility Equation", "Everybody knows the classic \"half your age " +
+            "plus seven\" dating rule that a lot of people follow (including myself). It's the 'recommended' age range " +
+            "in which to date someone."),
+    TASK_14(14, "Fractions class", "You are provided with a skeleton of the class 'Fraction', " +
+            "which accepts two arguments (numerator, denominator).EXAMPLE:  Fraction fraction1 = new Fraction(4, 5);" +
+            "Your task is to make this class string representable, and addable while keeping the result in the minimum " +
+            "representation possible."),
+    TASK_18(18, "Opposite number","Very simple, given an integer or a floating-point number," +
+            " find its opposite."),
+    TASK_22(22, "How old will I be in 2099?", "Philip's just turned four and he wants to know how " +
+            "old he will be in various years in the future such as 2090 or 3044. His parents can't keep up calculating " +
+            "this so they've begged you to help them out by writing a programme that can answer Philip's endless " +
+            "questions.\n Your task is to write a function that takes two parameters: the year of birth and the year to " +
+            "count years in relation to. As Philip is getting more curious every day he may soon want to know how many " +
+            "years it was until he would be born, so your function needs to work with both dates in the future and in the " +
+            "past."),
+    TASK_26(26, "Convert boolean values to strings 'Yes' or 'No'.", "Complete the method that " +
+            "takes a boolean value and return a Yes string for true, or a No string for false."),
+    TASK_30(30,"Thinkful - Logic Drills: Traffic light", "You're writing code to control your " +
+            "town's traffic lights. You need a function to handle each change from green, to yellow, to red, and then to " +
+            "green again. Complete the function that takes a string as an argument representing the current state of the " +
+            "light and returns a string representing the state the light should change to."),
+    TASK_34(34, "Get the mean of an array", "It's the academic year's end, fateful moment of your " +
+            "school report. The averages must be calculated. All the students come to you and entreat you to calculate " +
+            "their average for them. Easy ! You just need to write a script.\n" +
+            "Return the average of the given array rounded down to its nearest integer."),
+    TASK_38(38, "How good are you really?", "There was a test in your class and you passed it. " +
+            "Congratulations!\n But you're an ambitious person. You want to know if you're better than the average " +
+            "student in your class.\n You receive an array with your peers' test scores. Now calculate the average and " +
+            "compare your score!\n Return True if you're better, else False!"+
             "Bob needs a fast way to calculate the volume of a cuboid with three values: length, width and the height of the cuboid. Write a function to help Bob with this calculation."),
-    TASK_6(6, "Convert to Binary", "Given a non-negative integer n, write a function to_binary/ToBinary which returns that number in a binary format."),
     TASK_7(7,"Beginner Series #2 Clock","Clock shows h hours, m minutes and s seconds after midnight.\n" +
             "\n"+ "Your task is to write a function which returns the time since midnight in milliseconds."),
     TASK_4(4, "Thinkful - Number Drills: Pixelart planning",

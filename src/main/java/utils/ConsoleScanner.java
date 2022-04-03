@@ -61,7 +61,17 @@ public class ConsoleScanner implements Scanner{
             }
         }
     }
-
+    @Override
+    public boolean readBoolean(){
+        while (true){
+            if (sc.hasNextBoolean()){
+                return sc.nextBoolean();
+            }else{
+                System.out.println("Value is not 'boolean', please try again.");
+                sc.next();
+            }
+        }
+    }
     @Override
     public String readString() {
         while (true) {

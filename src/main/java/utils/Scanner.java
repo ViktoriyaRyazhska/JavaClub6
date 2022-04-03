@@ -12,6 +12,8 @@ public interface Scanner {
 
     double readDouble();
 
+    boolean readBoolean();
+
     String readString();
 
     BigInteger readBigInteger();

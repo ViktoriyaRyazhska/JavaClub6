@@ -1,14 +1,11 @@
 package utils;
+
 import Basic.*;
 import Classes.*;
 import Collections.*;
 import Conditions.*;
 import Loops.*;
 import String.*;
-import Basic.Task3;
-import Basic.Task6;
-import Basic.Task7;
-import Basic.task2;
 
 public class Runner {
     private ConsoleScanner sc;
@@ -28,6 +25,12 @@ public class Runner {
         double height = doublePositive(sc.readDouble());
         System.out.println("Result: " + Task3.getVolumeOfCuboid(length,width,height));
     }
+    public void TASK_4() {
+        System.out.println("Enter the wallLength and pixelSize : ");
+        int wallLength = intPositive(sc.readInt());
+        int pixelSize = intPositive(sc.readInt());
+        System.out.println("Result: " + Task4.isDivisible( wallLength,pixelSize));
+    }
     public void TASK_6(){
         System.out.println("Enter non-negative integer n: ");
         int n = intPositive(sc.readInt());
@@ -41,17 +44,15 @@ public class Runner {
         int seconds = intPositive(sc.readInt());
         System.out.println("Result: " + Task7.Past(hour,minute,seconds));
     }
-
-    public void TASK_4() {
-        System.out.println("Enter the wallLength and pixelSize : ");
-        int wallLength = intPositive(sc.readInt());
-        int pixelSize = intPositive(sc.readInt());
-        System.out.println("Result: " + Task4.isDivisible( wallLength,pixelSize));
-    }
     public void TASK_8() {
         System.out.println("Enter the number : ");
         int num = intPositive(sc.readInt());
         System.out.println("Result: " + Task8.century(num));
+    }
+    public void TASK_10(){
+        System.out.println("Enter age: ");
+        int age = intPositive(sc.readInt());
+        System.out.println("Result: " + Task10.datingRange(age));
     }
     public void TASK_12() {
         System.out.println("Result: " + new Task12());
@@ -71,12 +72,24 @@ public class Runner {
         name = sc.readString();
         System.out.println("Winner: " + Task16.declareWinner(f1,f2,name));
     }
+    public void TASK_18(){
+        System.out.println("Enter 1 number: ");
+        int num = sc.readInt();
+        System.out.println("Result: " + Task18.opposite(num));
+    }
     public void TASK_20() {
         System.out.println("Enter the number : 1-true 2-false");
         if(intPositive(sc.readInt())==1)
             System.out.println("Result: " + Task20.convert(true));
         else
             System.out.println("Result: " + Task20.convert(false));
+    }
+    public void TASK_22(){
+        System.out.println("Enter the year of birth:");
+        int yearOfBirth = intPositive(sc.readInt());
+        System.out.println("Enter the year to count years in relation to: ");
+        int yearToCount = intPositive(sc.readInt());
+        System.out.println("Result: " + Task22.CalculateAge(yearOfBirth, yearToCount));
     }
     public void TASK_24() {
         System.out.println("Enter the opperand and two numbers : ");
@@ -85,10 +98,21 @@ public class Runner {
         int num2 = intPositive(sc.readInt());
         System.out.println("Result: " + Task24.basicMath(op,num1,num2));
     }
+    public void TASK_26(){
+        System.out.println("Enter a boolean value:");
+        boolean value = sc.readBoolean();
+        System.out.println("Result: " + Task26.boolToWord(value));
+    }
     public void TASK_28() {
         System.out.println("Enter the number : ");
         int num1 = intPositive(sc.readInt());
         System.out.println("Result: " + Task28.sequence(num1));
+    }
+
+    public void TASK_30(){
+        System.out.println("Enter a color of green/yellow/red: ");
+        String color = sc.readString();
+        System.out.println("Result: " + Task30.updateLight(color));
     }
     public void TASK_32() {
         System.out.println("Enter the string and num of repeats : ");
@@ -96,10 +120,18 @@ public class Runner {
         int num1 = intPositive(sc.readInt());
         System.out.println("Result: " + Task32.repeatStr(num1,s));
     }
-    public void TASK_36() {
-
-
-
+    public void TASK_34(){
+        System.out.println("Enter an array with your averages: ");
+        int[] array = intArrayPositive(sc.readIntArray());
+        System.out.println("Result: " + Task34.getAverage(array));
+    }
+    public void TASK_36() {}
+    public void TASK_38(){
+        System.out.println("Enter an array with your peers' test scores: ");
+        int[] array = intArrayPositive(sc.readIntArray());
+        System.out.println("Enter your point: ");
+        int yourPoints = intPositive(sc.readInt());
+        System.out.println("Result: " + Task38.betterThanAverage(array, yourPoints));
     }
     public void TASK_40() {
         System.out.println("Enter the int arr : ");
@@ -111,13 +143,7 @@ public class Runner {
         int arr = sc.readInt();
         System.out.println("Result: "+ Task44.summation(arr));
     }
-    public void TASK_48() {
-
-
-
-
-
-    }
+    public void TASK_48() {}
     public void TASK_52() {
         System.out.println("Enter the string : ");
         String a = sc.readString();
@@ -155,7 +181,6 @@ public class Runner {
         k = sc.readString();
         System.out.println("Result: "+ o.look(k));
     }
-
     private int intPositive(int num) {
         while (num <= 0) {
             System.out.println("Please enter number > 0");
@@ -232,13 +257,39 @@ public class Runner {
             case 3:
                 TASK_3();
                 break;
+            case 4:
+                TASK_4();
+                break;
             case 6:
                 TASK_6();
                 break;
             case 7:
                 TASK_7();
                 break;
-
+            case 8:
+                TASK_8();
+                break;
+            case 10:
+                TASK_10();
+                break;
+            case 18:
+                TASK_18();
+                break;
+            case 22:
+                TASK_22();
+                break;
+            case 26:
+                TASK_26();
+                break;
+            case 30:
+                TASK_30();
+                break;
+            case 34:
+                TASK_34();
+                break;
+            case 38:
+                TASK_38();
+                break;
         }
     }
 }
