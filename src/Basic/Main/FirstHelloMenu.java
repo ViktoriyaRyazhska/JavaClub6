@@ -53,7 +53,7 @@ public class FirstHelloMenu {
                 case 7:
                     CollectionsMenu.chooseTask();
                     break;
-                case 8:
+                case 0:
                     System.exit(0);
                 default:
                     System.out.println("Error, wrong answer");

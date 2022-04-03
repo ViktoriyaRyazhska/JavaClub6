@@ -13,7 +13,7 @@ public class CollectionsTask71 {
 
         Scanner scanner = new Scanner(System.in);
         int number = scanner.nextInt();
-        
+
         List list = new ArrayList();
 
         for (int count = 1; count <= number; count++) {

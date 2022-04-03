@@ -8,6 +8,7 @@ package StringProgram;
 import java.util.Scanner;
 
 public class StringProgramTask55 {
+
     public static Integer oppositeNum(){
         int number;
         Scanner sc = new Scanner(System.in);
