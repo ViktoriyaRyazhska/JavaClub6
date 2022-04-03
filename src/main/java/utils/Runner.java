@@ -1,5 +1,10 @@
 package utils;
-
+import Basic.*;
+import Classes.*;
+import Collections.*;
+import Conditions.*;
+import Loops.*;
+import String.*;
 import Basic.Task3;
 import Basic.Task6;
 import Basic.Task7;
@@ -35,6 +40,120 @@ public class Runner {
         int minute = intPositive(sc.readInt());
         int seconds = intPositive(sc.readInt());
         System.out.println("Result: " + Task7.Past(hour,minute,seconds));
+    }
+
+    public void TASK_4() {
+        System.out.println("Enter the wallLength and pixelSize : ");
+        int wallLength = intPositive(sc.readInt());
+        int pixelSize = intPositive(sc.readInt());
+        System.out.println("Result: " + Task4.isDivisible( wallLength,pixelSize));
+    }
+    public void TASK_8() {
+        System.out.println("Enter the number : ");
+        int num = intPositive(sc.readInt());
+        System.out.println("Result: " + Task8.century(num));
+    }
+    public void TASK_12() {
+        System.out.println("Result: " + new Task12());
+    }
+    public void TASK_16() {
+        System.out.println("Enter the Figter1 name health damagePerAttack : ");
+        String name = sc.readString();
+        int health = intPositive(sc.readInt());
+        int damagePerAttack = intPositive(sc.readInt());
+        Task16.Fighter f1= new Task16.Fighter(name, health, damagePerAttack);
+        System.out.println("Enter the Figter2 name health damagePerAttack : ");
+        name = sc.readString();
+        health = intPositive(sc.readInt());
+        damagePerAttack = intPositive(sc.readInt());
+        Task16.Fighter f2= new Task16.Fighter(name, health, damagePerAttack);
+        System.out.println("Enter the firstAttacker name : ");
+        name = sc.readString();
+        System.out.println("Winner: " + Task16.declareWinner(f1,f2,name));
+    }
+    public void TASK_20() {
+        System.out.println("Enter the number : 1-true 2-false");
+        if(intPositive(sc.readInt())==1)
+            System.out.println("Result: " + Task20.convert(true));
+        else
+            System.out.println("Result: " + Task20.convert(false));
+    }
+    public void TASK_24() {
+        System.out.println("Enter the opperand and two numbers : ");
+        String op=sc.readString();
+        int num1 = intPositive(sc.readInt());
+        int num2 = intPositive(sc.readInt());
+        System.out.println("Result: " + Task24.basicMath(op,num1,num2));
+    }
+    public void TASK_28() {
+        System.out.println("Enter the number : ");
+        int num1 = intPositive(sc.readInt());
+        System.out.println("Result: " + Task28.sequence(num1));
+    }
+    public void TASK_32() {
+        System.out.println("Enter the string and num of repeats : ");
+        String s = sc.readString();
+        int num1 = intPositive(sc.readInt());
+        System.out.println("Result: " + Task32.repeatStr(num1,s));
+    }
+    public void TASK_36() {
+
+
+
+    }
+    public void TASK_40() {
+        System.out.println("Enter the int arr : ");
+        int []arr = sc.readIntArray();
+        System.out.println("Result: "+ Task40.sum(arr));
+    }
+    public void TASK_44() {
+        System.out.println("Enter the number : ");
+        int arr = sc.readInt();
+        System.out.println("Result: "+ Task44.summation(arr));
+    }
+    public void TASK_48() {
+
+
+
+
+
+    }
+    public void TASK_52() {
+        System.out.println("Enter the string : ");
+        String a = sc.readString();
+        System.out.println("Result: "+ Task52.solution(a));
+    }
+    public void TASK_56() {
+        System.out.println("Enter the name : ");
+        String a = sc.readString();
+        System.out.println("Result: "+ Task56.areYouPlayingBanjo(a));
+    }
+    public void TASK_60() {
+        System.out.println("Enter the string : ");
+        String a = sc.readString();
+        System.out.println("Result: "+ Task60.fakeBin(a));
+    }
+    public void TASK_64() {
+        System.out.println("Enter the string and char: ");
+        String a = sc.readString();
+        char c = sc.readString().charAt(0);
+        System.out.println("Result: "+ Task64.strCount(a,c));
+    }
+    public void TASK_68() {
+        System.out.println("Enter the string with '!' and number: ");
+        String a = sc.readString();
+        int n = intPositive(sc.readInt());
+        System.out.println("Result: "+ Task68.remove(a,n));
+    }
+    public void TASK_72() {
+        System.out.println("Enter the key and value for: ");
+        String k = sc.readString();
+        String v = sc.readString();
+        Task72 o = new Task72();
+        o.newEntry(k,v);
+        System.out.println("Enter the search key: ");
+        k = sc.readString();
+        System.out.println("Result: "+ o.look(k));
     }
 
     private int intPositive(int num) {
