@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="at.meks.hamcrest.matchers" type="repository">
+    <properties maven-id="at.meks:hamcrest-matchers:0.1.1" />
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/hamcrest-matchers-0.1.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/hamcrest-core-2.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/hamcrest-2.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
