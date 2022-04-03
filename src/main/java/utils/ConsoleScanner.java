@@ -83,6 +83,17 @@ public class ConsoleScanner implements Scanner{
             }
         }
     }
+    @Override
+    public char readChar(){
+        while (true){
+            if(sc.hasNext()){
+                return sc.next().charAt(0);
+            } else {
+                System.out.println("Value is not 'char', please try again.");
+                sc.next();
+            }
+        }
+    }
 
     @Override
     public BigInteger readBigInteger() {

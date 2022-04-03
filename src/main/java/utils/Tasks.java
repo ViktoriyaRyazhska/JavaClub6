@@ -54,6 +54,8 @@ public enum Tasks {
             "Remember that typically temperatures in the current weather conditions are given in whole numbers. \n"+
             "It is possible for temperature sensors to report temperatures with a higher accuracy such as to the nearest tenth. \n"
             +"Instrument error though makes this sort of accuracy unreliable for many types of temperature measuring sensors."),
+    TASK_19(19,"Is n divisible by x and y?","Create a function that checks if a number n is divisible by two numbers x AND y. All inputs are positive, non-zero digits."
+            +"Instrument error though makes this sort of accuracy unreliable for many types of temperature measuring sensors."),
     TASK_12(12, "Lombok Encapsulation",
             "In Java, we have a very powerful library named Lombok. It helps to reduce the boilerplate code."
                     +"\n" +"This Kata is a challenge created for you to learn how to use lombok."),
@@ -61,37 +63,57 @@ public enum Tasks {
             "Create a function that returns the name of the winner in a fight between two fighters."),
     TASK_20(20, "Convert a Boolean to a String",
             "Implement a function which convert the given boolean value into its string representation."),
+    TASK_23(23,"Rock Paper Scissors!","Let's play! You have to return which player won! In case of a draw return Draw"),
     TASK_24(24, "Basic Mathematical Operations",
             "Your task is to create a function that does four basic mathematical operations."),
+    TASK_27(27,"Will there be enough space?","Bob is working as a bus driver. However, \n"+
+            "he has become extremely popular amongst the city's residents. With so many passengers wanting to get \n " +
+            "aboard his bus, he sometimes has to face the problem of not enough space left on the bus! He wants you \n"+
+            "to write a simple program telling him if he will be able to fit all the passengers."),
     TASK_28(28, "The Modulo-3 Sequence",
             "Consider a sequence where the first two numbers are 0 and 1 and the next number of the "
                     +"\n" +"sequence is the sum of the previous 2 modulo 3. Write a function that finds the nth number of the sequence."),
+    TASK_31(31,"Transportation on vacation","After a hard quarter in the office you decide to \n"+
+            "get some rest on a vacation. So you will book a flight for you and your girlfriend and try to leave all the mess behind you.\n"+
+            "You will need a rental car in order for you to get around in your vacation. The manager of the car rental makes you some good offers."),
     TASK_32(32, "String repeat",
             "Write a function called repeatStr which repeats the given string string exactly n times."),
+    TASK_35(35,"Beginner - Lost Without a Map","Given an array of integers, return a new array with each value doubled."),
     TASK_36(36, "Counting sheep...",
             "Consider an array/list of sheep where some sheep may be missing from their place. We need a "
                     +"\n" +"function that counts the number of sheep present in the array (true means present)."),
+    TASK_39(39,"Beginner - Reduce but Grow","Given a non-empty array of integers, return the result of multiplying the values together in order."),
     TASK_40(40, "Sum of positive",
             "You get an array of numbers, return the sum of all of the positives ones."),
+    TASK_43(43,"Find Nearest square number","Your task is to find the nearest square number, nearest_sq(n), of a positive integer n."),
     TASK_44(44, "Grasshopper - Summation",
             "Write a program that finds the summation of every number from 1 to num. The number will"
                     +"\n" +" always be a positive integer greater than 0."),
     TASK_48(48, "Rotations and reflections I",
             "There are exactly eight ways to map a square onto itself by rotation or reflection. We can take its"
                     +"\n" +" mirror image (reflection in horizontal, vertical, or either of two 45-degree diagonal lines); rotate it (by 90 degrees clockwise, 90 degrees anti-clockwise, or 180 degrees); or just leave it alone."),
+    TASK_51(51,"Convert a Number to a String!","We need a function that can transform a number into a string."),
     TASK_52(52, "Reversed Strings",
             "Complete the solution so that it reverses the string passed into it."),
+    TASK_55(5,"FIXME: Replace all dots","The code provided is supposed replace all the dots \".\" in the specified String str with dashes \"-\""),
     TASK_56(56, "Are You Playing Banjo?",
             "Create a function which answers the question \"Are you playing banjo?\".\n" +
                     "If your name starts with the letter \"R\" or lower case \"r\", you are playing banjo!"),
+    TASK_59(59,"Find the position!", "When provided with a letter, return its position in the alphabet."),
     TASK_60(60, "Fake Binary",
             "Given a string of digits, you should replace any digit below 5 with '0' and any digit 5 "
                     +"\n" +"and above with '1'. Return the resulting string."),
+    TASK_63(63, "Abbreviate a Two Word Name","Write a function to convert a name into initials.\n"+
+            "This kata strictly takes two words with one space in between them.\n"+
+            "The output should be two capital letters with a dot separating them"),
     TASK_64(64, "All Star Code Challenge #18",
             "Create a function that accepts 2 string arguments and returns an integer of the count of "
                     +"\n" +"occurrences the 2nd argument is found in the first one."),
+    TASK_67(67,"altERnaTIng cAsE <=> ALTerNAtiNG CaSe","altERnaTIng cAsE <=> ALTerNAtiNG CaSe"),
     TASK_68(68, "Exclamation marks series #6: Remove n exclamation marks in the sentence from left to right",
             "Remove n exclamation marks in the sentence from left to right. n is positive integer."),
+    TASK_71(71,"Filtering even numbers (Bug Fixes)","The method is supposed to remove /n"+
+            "even numbers from the list and return a list that contains the odd numbers."),
     TASK_72(72, "Interactive Dictionary",
             "In this kata, your job is to create a class Dictionary which you can add words to and their entries.");
 

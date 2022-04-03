@@ -16,6 +16,8 @@ public interface Scanner {
 
     String readString();
 
+    char readChar();
+
     BigInteger readBigInteger();
 
     BigDecimal readBigDecimal();
