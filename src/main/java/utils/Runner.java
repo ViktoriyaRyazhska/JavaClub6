@@ -1,11 +1,18 @@
 package utils;
 
 import Basic.Task3;
+import Basic.task2;
 
 public class Runner {
     private ConsoleScanner sc;
     public Runner() {
         sc = new ConsoleScanner();
+    }
+    public void TASK_2(){
+        System.out.println("Enter two numbers: ");
+        int num1 = sc.readInt();
+        int num2 = sc.readInt();
+        System.out.println("Result: " + task2.multiply(num1, num2));
     }
     public void TASK_3() {
         System.out.println("Enter the length, width and the height: ");
@@ -85,9 +92,13 @@ public class Runner {
 
     public void setTasks(int number) {
         switch (number) {
-            case 1:
+            case 2:
+                TASK_2();
+                break;
+            case 3:
                 TASK_3();
                 break;
+
         }
     }
 }
