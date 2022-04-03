@@ -108,6 +108,9 @@ public class AllMenu {
                     MainApp.showMenu();
                     break;
                 }
+                default: {
+                    showBasicMenu(sc);
+                }
             }
         }
 
@@ -190,6 +193,9 @@ public class AllMenu {
                 case "7": {
                     MainApp.showMenu();
                     break;
+                }
+                default: {
+                    showClassesMenu(sc);
                 }
             }
         }
@@ -347,6 +353,10 @@ public class AllMenu {
                 }
                 case "15": {
                     MainApp.showMenu();
+                    break;
+                }
+                default: {
+                    showConditionsMenu(sc);
                     break;
                 }
             }
@@ -508,6 +518,9 @@ public class AllMenu {
                 case "16": {
                     MainApp.showMenu();
                     break;
+                }
+                default: {
+                    showLoopsMenu(sc);
                 }
             }
         }
