@@ -1,7 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5830459a-e012-46af-88cc-97e95e6a83a4" name="Default Changelist" comment="" />
+    <list default="true" id="5830459a-e012-46af-88cc-97e95e6a83a4" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Basic/BasicMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Basic/BasicMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Classes/ClassMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Classes/ClassMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Classes/Task2/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Classes/Task2/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Conditions/ConditionsMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Conditions/ConditionsMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Conditions/Task6/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Conditions/Task6/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Loop/LoopMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Loop/LoopMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Loop/Task12.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Loop/Task12.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Loop/Task2/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Loop/Task2/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Loop/Task7.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Loop/Task7.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Strings/StringsMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Strings/StringsMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Strings/Task13.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Strings/Task13.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Strings/Task18.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Strings/Task18.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Strings/Task3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Strings/Task3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Strings/Task8.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Strings/Task8.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -80,12 +96,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Task2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="main.Strings.Task2" />
+    <configuration name="Task3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="main.Basic.Task3" />
       <module name="JavaClub6" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="main.Strings.*" />
+          <option name="PATTERN" value="main.Basic.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -93,12 +109,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Task9" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="main.Strings.Task9" />
+    <configuration name="Task7" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="main.Loop.Task7" />
       <module name="JavaClub6" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="main.Strings.*" />
+          <option name="PATTERN" value="main.Loop.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -135,10 +151,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Task7" />
+        <item itemvalue="Application.Task3" />
         <item itemvalue="JUnit.Task11Test" />
         <item itemvalue="Application.Task11" />
-        <item itemvalue="Application.Task9" />
-        <item itemvalue="Application.Task2" />
       </list>
     </recent_temporary>
   </component>
@@ -152,7 +168,7 @@
       <updated>1648829831013</updated>
       <workItem from="1648829837453" duration="1244000" />
       <workItem from="1648888379782" duration="30241000" />
-      <workItem from="1648994660308" duration="7573000" />
+      <workItem from="1648994660308" duration="11350000" />
     </task>
     <servers />
   </component>
@@ -176,22 +192,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1648889885943" />
-    <state width="1493" height="127" key="GridCell.Tab.0.bottom" timestamp="1649004442051">
+    <state width="1493" height="127" key="GridCell.Tab.0.bottom" timestamp="1649083049359">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="127" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1649004442051" />
-    <state width="1493" height="127" key="GridCell.Tab.0.center" timestamp="1649004442050">
+    <state width="1493" height="127" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1649083049359" />
+    <state width="1493" height="127" key="GridCell.Tab.0.center" timestamp="1649083049359">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="127" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1649004442050" />
-    <state width="1493" height="127" key="GridCell.Tab.0.left" timestamp="1649004442050">
+    <state width="1493" height="127" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1649083049359" />
+    <state width="1493" height="127" key="GridCell.Tab.0.left" timestamp="1649083049359">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="127" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1649004442050" />
-    <state width="1493" height="127" key="GridCell.Tab.0.right" timestamp="1649004442051">
+    <state width="1493" height="127" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1649083049359" />
+    <state width="1493" height="127" key="GridCell.Tab.0.right" timestamp="1649083049359">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="127" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1649004442051" />
+    <state width="1493" height="127" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1649083049359" />
     <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1649002716897">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

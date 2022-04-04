@@ -8,11 +8,15 @@ import java.util.Scanner;
 public class ClassMenu {
     public static void chooseNumberOfTask() {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Choose number of task:(1,3,5,6)\t| To back to Main Menu enter 0");
+        System.out.println("Choose number of task:(1,2,3,5,6)\t| To back to Main Menu enter 0");
         int numberOfTask = scanner.nextInt();
         switch (numberOfTask){
             case 1:
                 System.out.println("This task do nothing");
+                chooseNumberOfTask();
+                break;
+            case 2:
+                main.Classes.Task2.Main.main(new String[]{});
                 chooseNumberOfTask();
                 break;
             case 3:

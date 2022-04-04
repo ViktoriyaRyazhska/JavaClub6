@@ -1,9 +1,13 @@
 package main.Loop;
 
+import java.util.Scanner;
+
 public class Task12 {
     public static void main(String[] args) {
+        Scanner scanner =  new Scanner(System.in);
         System.out.print("Please enter the number: ");
-        System.out.println("The nearest square: " + Task12.nearestSquare(in.nextInt()));
+        int number = scanner.nextInt();
+        System.out.println("The nearest square: " + Task12.nearestSquare(number));
     }
     public static int nearestSquare(int number){
         int down = number, up = number;

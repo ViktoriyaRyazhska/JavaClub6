@@ -7,7 +7,7 @@ import java.util.Scanner;
 public class BasicMenu {
     public static void chooseNumberOfTask() {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Choose number of task:(1,2,4,6,7,9,11)\t| To back to Main Menu enter 0");
+        System.out.println("Choose number of task:(1,2,3,4,6,7,8,9,11)\t| To back to Main Menu enter 0");
         int numberOfTask = scanner.nextInt();
         switch (numberOfTask) {
             case 1:
@@ -16,6 +16,10 @@ public class BasicMenu {
                 break;
             case 2:
                 Task2.main(new String[]{});
+                chooseNumberOfTask();
+                break;
+            case 3:
+                Task3.main(new String[]{});
                 chooseNumberOfTask();
                 break;
             case 4:
@@ -28,6 +32,10 @@ public class BasicMenu {
                 break;
             case 7:
                 Task7.main(new String[]{});
+                chooseNumberOfTask();
+                break;
+            case 8:
+                Task8.main(new String[]{});
                 chooseNumberOfTask();
                 break;
             case 9:

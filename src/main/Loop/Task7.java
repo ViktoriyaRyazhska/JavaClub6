@@ -1,8 +1,11 @@
 package main.Loop;
 
+import java.util.Scanner;
+
 public class Task7 {
     public static void main(String[] args) {
         System.out.print("Please enter number and class points: ");
+        Scanner in = new Scanner(System.in);
         int[] array = new int[in.nextInt()];
         for (int i = 0; i < array.length; i++){
             array[i] = in.nextInt();

@@ -1,7 +1,10 @@
 package main.Strings;
 
+import java.util.Scanner;
+
 public class Task8 {
     public static void main(String[] args) {
+        Scanner scanner=new Scanner(System.in);
         System.out.println("Enter a string 3 times");
         String string1 = scanner.next();
         String string2 = scanner.next();

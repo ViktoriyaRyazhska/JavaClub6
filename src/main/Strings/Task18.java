@@ -1,7 +1,10 @@
 package main.Strings;
 
+import java.util.Scanner;
+
 public class Task18 {
     public static void main(String[] args) {
+        Scanner scanner=new Scanner(System.in);
         System.out.println("Enter a string to remove exclamation mark");
         String someString = scanner.next();
         System.out.println("Enter a number of exclamations");

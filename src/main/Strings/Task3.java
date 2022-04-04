@@ -1,11 +1,11 @@
 package main.Strings;
 
+import java.util.Scanner;
+
 public class Task3 {
     public static void main(String[] args) {
-        System.out.println("Enter 2");
-
-        int length = scanner.nextInt();
-        String[] strings = new String[length];
+        Scanner scanner=new Scanner(System.in);
+        String[] strings = new String[2];
 
         System.out.println("Enter first name");
         String firstName = scanner.next();

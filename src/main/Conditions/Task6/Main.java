@@ -15,19 +15,19 @@ public class Main {
     }
     public static String rps (String p1, String p2){
         String s = "";
-        if (p1 == "scissors" && p2 == "paper"){
+        if (p1.equals("scissors") && p2.equals("paper")){
             s = "Player 1 won!";
-        } else if (p1 == "paper" && p2 == "scissors") {
+        } else if (p1.equals("paper") && p2.equals("scissors")) {
             s =  "Player 2 won!";
-        } else if (p1 == "paper" && p2 == "rock"){
+        } else if (p1.equals("paper") && p2.equals("rock")){
             s = "Player 1 won!";
-        } else if (p1 == "rock" && p2 == "paper"){
+        } else if (p1.equals("rock") && p2.equals("paper")){
             s = "Player 2 won!";
-        } else if (p1 == "rock" && p2 == "scissors"){
+        } else if (p1.equals("rock") && p2.equals("scissors")){
             s = "Player 1 won!";
-        } else if (p1 == "scissors" && p2 == "rock"){
+        } else if (p1.equals("scissors") && p2.equals("rock")){
             s = "Player 2 won!";
-        } else if(p1 == p2){
+        } else if(p1.equals(p2)){
             s = "Draw!";
         }
         return s;

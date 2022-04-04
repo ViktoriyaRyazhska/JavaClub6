@@ -7,11 +7,15 @@ import java.util.Scanner;
 public class LoopMenu {
     public static void chooseNumberOfTask() {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Choose number of task:(1,3,5,6,8,10,11,13,15)\t| To back to Main Menu enter 0");
+        System.out.println("Choose number of task:(1,2,3,5,6,7,8,10,11,12,13,15)\t| To back to Main Menu enter 0");
         int numberOfTask = scanner.nextInt();
         switch (numberOfTask) {
             case 1:
                 Task1.main(new String[]{});
+                chooseNumberOfTask();
+                break;
+            case 2:
+                main.Loop.Task2.Main.main(new String[]{});
                 chooseNumberOfTask();
                 break;
             case 3:
@@ -26,6 +30,10 @@ public class LoopMenu {
                 Task6.main(new String[]{});
                 chooseNumberOfTask();
                 break;
+            case 7:
+                Task7.main(new String[]{});
+                chooseNumberOfTask();
+                break;
             case 8:
                 Task8.main(new String[]{});
                 chooseNumberOfTask();
@@ -36,6 +44,10 @@ public class LoopMenu {
                 break;
             case 11:
                 Task11.main(new String[]{});
+                chooseNumberOfTask();
+                break;
+            case 12:
+                Task12.main(new String[]{});
                 chooseNumberOfTask();
                 break;
             case 13:
