@@ -16,6 +16,7 @@ public class ClassesMenu {
                 ClassMenuTask14main.resTask14(scanner);
                 break;
             case 15:
+                new ClassTask15.Canvas(7,7).draw(1,1,5,4).drawCanvas();
                 break;
             case 16:
                 ClassTask16.declareWinner(scanner);
