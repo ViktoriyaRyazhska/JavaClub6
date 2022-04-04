@@ -41,7 +41,7 @@ class OOPTask51Test {
         InputStream sysInBackup = System.in;
         ByteArrayInputStream in = new ByteArrayInputStream("3".getBytes());
         System.setIn(in);
-        Assertions.assertEquals(28.27, new Circle().calculateArea());
+        Assertions.assertEquals(28.26, new Circle().calculateArea());
         System.setIn(sysInBackup);
     }
 }

@@ -86,7 +86,7 @@ class Circle implements Shape {
         System.out.println("Circle: r=");
         Scanner scanner = new Scanner(System.in);
         double radius = scanner.nextDouble();
-        return radius * radius * Math.PI;
+        return radius * radius * 3.14;
     }
 }
 
