@@ -1,6 +1,5 @@
 package OOP;
 
-import java.awt.*;
 import java.util.Scanner;
 
 public class OOPMenu {
@@ -11,6 +10,8 @@ public class OOPMenu {
             case 48:
                 break;
             case 49:
+                System.out.println("We are so sorry, but this task currently doesn't work\n"+
+        "Please choose another one");
                 break;
             case 50:
                 OOPTask50.Leetspeak.encode(scanner);
