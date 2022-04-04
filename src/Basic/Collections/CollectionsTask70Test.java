@@ -1,7 +1,6 @@
 package Collections;
 
-import StringProgram.StringProgramTask65;
-import org.testng.annotations.Test;
+import org.junit.jupiter.api.Test;
 
 import java.io.ByteArrayInputStream;
 import java.io.InputStream;
