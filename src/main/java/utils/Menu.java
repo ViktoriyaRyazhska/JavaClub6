@@ -56,7 +56,7 @@ public class Menu {
         for(Tasks t: Tasks.values()) {
             if(t.getId()>= start&t.getId()<= end) System.out.println(t.getId() + " " + t.getTaskName());
         }
-        System.out.println("show tasks detail press 0");
+        System.out.println("show tasks detail press 0 else any other button");
         if(cs.readInt()==0)
             showTaskDetails();
     }
@@ -80,8 +80,10 @@ public class Menu {
     }
 
     public void run() {
+
         System.out.println();
         System.out.println("First you need to choose a task.");
+        taskList();
         System.out.println("Enter number of task:");
         int choose = cs.readInt();
         while (choose > 72 || choose < 1) {
