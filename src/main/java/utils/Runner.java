@@ -13,9 +13,31 @@ import java.util.List;
 
 public class Runner {
     private ConsoleScanner sc;
+    private Folders users;
 
-    public Runner() {
+    public Runner(Folders folderById) {
         sc = new ConsoleScanner();
+    }
+    public void setUsers(Folders folders) {
+        this.users = folders;
+        switch (folders) {
+            case BASIC:
+                System.out.println("тут є завдання з 1 по 11: ");
+            case CLASSES:
+                System.out.println("тут є завдання з 12 по 17: ");
+            case CONDITIONS:
+                System.out.println("тут є завдання з 12 по 17: ");
+            case LOOPS:
+                System.out.println("тут є завдання з 12 по 17: ");
+            case OOP:
+                System.out.println("тут є завдання з 12 по 17: ");
+            case STRINGS:
+                System.out.println("тут є завдання з 12 по 17: ");
+            case COLLECTIONS:
+                System.out.println("тут є завдання з 12 по 17: ");
+        }
+        int start = folders.getStart();
+        int end = folders.getEnd();
     }
 
     public void TASK_1() {
