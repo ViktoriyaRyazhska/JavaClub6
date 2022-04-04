@@ -11,7 +11,7 @@ public class StringProgramTask55 {
 
     public static Integer oppositeNum(){
         int number;
-        Scanner sc = new Scanner(System.in);
+        Scanner sc = new  Scanner(System.in);
         System.out.println("Opposite number");
         System.out.print("Enter your number:");
         number = sc.nextInt();
