@@ -9,6 +9,7 @@ public class CollectionsMenu {
         int chooseNumber = scanner.nextInt();
         switch (chooseNumber) {
             case 70:
+                CollectionsTask70.push();
                 break;
             case 71:
                 CollectionsTask71.CreateList();

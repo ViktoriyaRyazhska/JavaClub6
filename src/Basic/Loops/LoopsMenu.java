@@ -14,9 +14,10 @@ public class LoopsMenu {
                 LoopsTask34.humanYearsCatYearsDogYears(scanner);
                 break;
             case 35:
+                LoopsTask35.getAverage(scanner);
                 break;
             case 36:
-                LoopsTask36.map();
+                LoopsTask36.map(scanner);
                 break;
             case 37:
                 break;
@@ -26,9 +27,10 @@ public class LoopsMenu {
                 LoopsTask39.betterThanAverage(scanner);
                 break;
             case 40:
+                LoopsTask40.ReduceButGrow();
                 break;
             case 41:
-                LoopsTask41.sum();
+                LoopsTask41.sum(scanner);
                 break;
             case 42:
                 break;
@@ -38,9 +40,10 @@ public class LoopsMenu {
                 LoopsTask44.findNearestSquare();
                 break;
             case 45:
+                LoopsTask45.getAverage();
                 break;
             case 46:
-                LoopsTask46.gap();
+                LoopsTask46.gap(scanner);
                 break;
             case 47:
                 break;

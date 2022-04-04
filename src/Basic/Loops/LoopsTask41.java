@@ -4,13 +4,12 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class LoopsTask41 {
-    public static int sum(){
+    public static int sum(Scanner scanner){
 
         System.out.println("Sum of positive");
         System.out.println("You get an array of numbers, return the sum of all of the positives ones.");
 
         System.out.println("\nEnter the amount of numbers in the array?");
-        Scanner scanner = new Scanner(System.in);
         int num = scanner.nextInt();
 
         int[] array = new int[num];
