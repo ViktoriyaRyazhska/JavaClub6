@@ -26,6 +26,8 @@ public interface Scanner {
 
     int[] readIntArray();
 
+    boolean[] readBooleanArray();
+
     String[] onlyForStockSummaryMethod();
 
     String[] readStringArray();

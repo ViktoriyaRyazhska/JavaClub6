@@ -156,7 +156,23 @@ public class ConsoleScanner implements Scanner{
         }
         return result;
     }
-
+    @Override
+    public boolean[] readBooleanArray(){
+        int size = 0;
+        String input = sc.nextLine();
+        List<String> resultList = new ArrayList<>(Arrays.asList(input.split(" ")));
+        boolean[] result = new boolean[resultList.size()];
+        while (size != resultList.size()) {
+            if (new java.util.Scanner(resultList.get(size)).hasNextBoolean()) {
+                result[size] = Boolean.parseBoolean(resultList.get(size));
+                size++;
+            } else {
+                System.out.println("Value " + resultList.get(size) + " is not Boolean, please try again.");
+                resultList.set(size, sc.next());
+            }
+        }
+        return result;
+    }
     @Override
     public String[] onlyForStockSummaryMethod() {
         String input = sc.nextLine();
