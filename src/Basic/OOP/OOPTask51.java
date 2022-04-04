@@ -13,7 +13,7 @@ public class OOPTask51 {
             }
         }
         public void chooseShapeToCalc(Scanner scanner) {
-            System.out.println("Choose shapes(If you want skip some of them, just put 0 in asking data:");
+            System.out.println("Choose shapes:");
             System.out.println("Triangle - 1");
             System.out.println("Circle-2");
             System.out.println("Rectangle-3");
