@@ -68,7 +68,7 @@ public class LoopsMenu {
                 System.out.println();
                 break;
             case 7:
-                /*System.out.println("You selected task 7: How good are you really?");
+                System.out.println("You selected task 7: How good are you really?");
                 System.out.print("Please enter number and class points: ");
                 int[] arry = new int[in.nextInt()];
                 for (int i = 0; i < arry.length; i++){
@@ -80,14 +80,24 @@ public class LoopsMenu {
                 } else {
                     System.out.println("False, you're worse than average.");
                 }
-                break;*/
-                System.out.println("Task hasn't been done yet.");
                 break;
             case 8:
-                System.out.println("Task hasn't been done yet.");
+                System.out.println("You selected task 8: Beginner - Reduce but Grow.");
+                System.out.print("Please enter length and array: ");
+                int[] ary = new int[in.nextInt()];
+                for (int i = 0; i < ary.length; i++){
+                    ary[i] = in.nextInt();
+                }
+                System.out.println("Result: " + Task8.grow(ary));
                 break;
             case 9:
-                System.out.println("Task hasn't been done yet.");
+                System.out.println("You selected task 9: Sum of positive.");
+                System.out.print("Please enter length and array: ");
+                int[] aryy = new int[in.nextInt()];
+                for (int i = 0; i < aryy.length; i++){
+                    aryy[i] = in.nextInt();
+                }
+                System.out.println("Result: " + Task9.sum(aryy));
                 break;
             case 10:
                 System.out.println("You selected task 10: My head is at the wrong end!");
@@ -118,10 +128,18 @@ public class LoopsMenu {
                 System.out.println("The sum of every number from 1 to yours: " + Task13.summation(in.nextInt()));
                 break;
             case 14:
-                System.out.println("Task hasn't been done yet.");
+                System.out.println("You selected task 14: Gap in Primes.");
+                System.out.print("Please enter int and two longs: ");
+                System.out.print("Result: ");
+                for (long i : Task14.gap(in.nextInt(), in.nextLong(), in.nextLong())){
+                    System.out.print(i + " ");
+                }
+                System.out.println();
                 break;
             case 15:
-                System.out.println("Task hasn't been done yet.");
+                System.out.println("You selected task 15: 21 Sticks.");
+                System.out.print("Please enter int: ");
+                System.out.print("Result: " + Task15.makeMove(in.nextInt()));
                 break;
             default:
                 System.out.println("No task found. Please try again.");
