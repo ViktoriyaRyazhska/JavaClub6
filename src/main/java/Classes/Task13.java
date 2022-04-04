@@ -2,12 +2,11 @@ package Classes;
 
 public class Task13 {
 
-  private static int ONE_HUNDRED = 100;
-  public static final Task13 INST = new Task13();
+  private static final int ONE_HUNDRED = 100;
 
   private final int value;
 
-  Task13() {
+  public Task13() {
     value = ONE_HUNDRED;
   }
 

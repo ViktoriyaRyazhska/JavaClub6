@@ -17,6 +17,11 @@ public class Runner {
         sc = new ConsoleScanner();
     }
 
+    public void TASK_1() {
+        System.out.println("Enter one integer: ");
+        int num1 = sc.readInt();
+        System.out.println("Result: " + Task1.doubleInteger(num1));
+    }
     public void TASK_2() {
         System.out.println("Enter two numbers: ");
         int num1 = sc.readInt();
@@ -36,6 +41,11 @@ public class Runner {
         int pixelSize = intPositive(sc.readInt());
         System.out.println("Result: " + Task4.isDivisible( wallLength,pixelSize));
     }
+    public void TASK_5() {
+        System.out.println("Enter the name to greet: ");
+        String name = sc.readString();
+        System.out.println("Result: " + Task5.greet(name));
+    }
     public void TASK_6(){
         System.out.println("Enter non-negative integer n: ");
         int n = intPositive(sc.readInt());
@@ -50,8 +60,13 @@ public class Runner {
     }
     public void TASK_8() {
         System.out.println("Enter the number : ");
-        int num = intPositive(sc.readInt());
+        int num = sc.readInt();
         System.out.println("Result: " + Task8.century(num));
+    }
+    public void TASK_9() {
+        System.out.println("Enter the number : ");
+        int num = sc.readInt();
+        System.out.println("Result: " + Task9.makeNegative(num));
     }
     public void TASK_10() {
         System.out.println("Enter age: ");
@@ -66,6 +81,14 @@ public class Runner {
     public void TASK_12() {
         System.out.println("Result: " + new Task12());
     }
+
+    public void TASK_13() {
+        Task13 instance = new Task13();
+        System.out.println("Enter the number : ");
+        int num = sc.readInt();
+        System.out.println("Result: " + instance.plus100(num));
+    }
+
     public void TASK_14(){
         System.out.println("Enter numerator: ");
         int numerator = intPositive(sc.readInt());
@@ -88,6 +111,13 @@ public class Runner {
         name = sc.readString();
         System.out.println("Winner: " + Task16.declareWinner(f1,f2,name));
     }
+    public void TASK_17() {
+        System.out.println("Enter the length, width and the height as int array: ");
+        int[] input = intArrayPositive(sc.readIntArray());
+        Task17 instance = new Task17(input);
+        System.out.println("Volume of block: " + instance.getVolume() + "\n"
+                + "Surface area:" + instance.getSurfaceArea());
+    }
     public void TASK_18() {
         System.out.println("Enter 1 number: ");
         int num = sc.readInt();
@@ -106,6 +136,20 @@ public class Runner {
             System.out.println("Result: " + Task20.convert(true));
         else
             System.out.println("Result: " + Task20.convert(false));
+    }
+    public void TASK_21() {
+        System.out.println("Enter the salary:");
+        int salary = intPositive(sc.readInt());
+        boolean bonus;
+        System.out.println("Do we get a bonus? Enter the number : 1-true 2-false");
+
+        if(intPositive(sc.readInt())==1) {
+            bonus = true;
+        } else {
+            bonus = false;
+        }
+
+        System.out.println("Result: " + Task21.bonusTime(salary,bonus));
     }
     public void TASK_22() {
         System.out.println("Enter the year of birth:");
@@ -127,6 +171,13 @@ public class Runner {
         int num2 = intPositive(sc.readInt());
         System.out.println("Result: " + Task24.basicMath(op,num1,num2));
     }
+    public void TASK_25() {
+        System.out.println("Enter the number of petals in flower one:");
+        int flo1 = intPositive(sc.readInt());
+        System.out.println("Enter the number of petals in flower two:");
+        int flo2 = intPositive(sc.readInt());
+        System.out.println("Result: " + Task25.isLove(flo1,flo2));
+    }
     public void TASK_26() {
         System.out.println("Enter a boolean value:");
         boolean value = sc.readBoolean();
@@ -146,6 +197,14 @@ public class Runner {
         int num1 = intPositive(sc.readInt());
         System.out.println("Result: " + Task28.sequence(num1));
     }
+    public void TASK_29() {
+        int num = -1;
+        while (num > 9 || num < 0) {
+            System.out.println("Please enter number between 0 and 9");
+            num = sc.readInt();
+        }
+        System.out.println("Result: " + Task29.switchItUp(num));
+    }
     public void TASK_30() {
         System.out.println("Enter a color of green/yellow/red: ");
         String color = sc.readString();
@@ -162,6 +221,11 @@ public class Runner {
         int num1 = intPositive(sc.readInt());
         System.out.println("Result: " + Task32.repeatStr(num1,s));
     }
+    public void TASK_33() {
+        System.out.println("Enter the human years: ");
+        int years = intPositive(sc.readInt());
+        System.out.println("Result: " + Task33.humanYearsCatYearsDogYears(years));
+    }
     public void TASK_34() {
         System.out.println("Enter an array with your averages: ");
         int[] array = intArrayPositive(sc.readIntArray());
@@ -176,6 +240,11 @@ public class Runner {
         System.out.println("Enter an array of sheep where some sheep may be missing from their place: ");
         Boolean[] array = sc.readBooleanArray();
         System.out.println("Result: " + Task36.countSheeps(array));
+    }
+    public void TASK_37() {
+        System.out.println("Enter positive int number: ");
+        int a = intPositive(sc.readInt());
+        System.out.println("Result " + Task37.reverse(a).toString());
     }
     public void TASK_38() {
         System.out.println("Enter an array with your peers' test scores: ");
@@ -385,6 +454,9 @@ public class Runner {
 
     public void setTasks(int number) {
         switch (number) {
+            case 1:
+                TASK_1();
+                break;
             case 2:
                 TASK_2();
                 break;
