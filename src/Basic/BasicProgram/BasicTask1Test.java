@@ -7,6 +7,6 @@ class BasicTask1Test {
 
     @Test
     void doubleInteger() {
-        Assert.assertEquals( "Nope!" , 4, BasicTask1.doubleInteger(2));
+        Assert.assertEquals("Nope!", 4, BasicTask1.doubleInteger(2));
     }
 }
