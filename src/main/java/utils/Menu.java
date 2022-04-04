@@ -6,7 +6,7 @@ public class Menu {
     static int start;
     static int end;
     public void menu() {
-        constructorRunner();
+
         int choiceFolder;
         int choice;
 
@@ -52,11 +52,13 @@ public class Menu {
     }
 
     public void taskList() {
+        constructorRunner();
         for(Tasks t: Tasks.values()) {
             if(t.getId()>= start&t.getId()<= end) System.out.println(t.getId() + " " + t.getTaskName());
         }
-
-        System.out.println();
+        System.out.println("show tasks detail press 0");
+        if(cs.readInt()==0)
+            showTaskDetails();
     }
 
     public void showMenu() {
@@ -72,7 +74,8 @@ public class Menu {
 
     public void showTaskDetails() {
         System.out.println("Enter number of method from 1 to 72");
-        System.out.println(Tasks.getDescription(cs.readInt()));
+        int a=cs.readInt();
+        System.out.println(Tasks.getDescription(a));
         System.out.println();
     }
 
