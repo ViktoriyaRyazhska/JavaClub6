@@ -3,8 +3,7 @@ package Loops;
 import java.util.Scanner;
 
 public class LoopsMenu {
-    public static void chooseTask() {
-        Scanner scanner = new Scanner(System.in);
+    public static void chooseTask(Scanner scanner) {
         System.out.println("Choose the number of tasks from 33 to 47:");
         int chooseNumber = scanner.nextInt();
         switch (chooseNumber) {

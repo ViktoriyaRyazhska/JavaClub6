@@ -3,8 +3,8 @@ package Collections;
 import java.util.Scanner;
 
 public class CollectionsMenu {
-    public static void chooseTask() {
-        Scanner scanner = new Scanner(System.in);
+    public static void chooseTask(Scanner scanner) {
+
         System.out.println("Choose the number of tasks from 70 to 73:");
         int chooseNumber = scanner.nextInt();
         switch (chooseNumber) {
