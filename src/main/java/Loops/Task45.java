@@ -1,6 +1,6 @@
 package Loops;
 
-class Task45 {
+public class Task45 {
 
     public static long[] gap(int g, long m, long n) {
 

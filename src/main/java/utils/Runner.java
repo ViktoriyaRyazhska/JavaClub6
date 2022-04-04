@@ -5,6 +5,7 @@ import Classes.*;
 import Collections.*;
 import Conditions.*;
 import Loops.*;
+import OOP.Task49;
 import String.*;
 
 import java.util.Collections;
@@ -263,6 +264,11 @@ public class Runner {
         int []arr = sc.readIntArray();
         System.out.println("Result: "+ Task40.sum(arr));
     }
+    public void TASK_41() {
+        System.out.println("Enter the string arr: ");
+        String[] array = sc.readStringArray();
+        System.out.println("Result: "+ Task41.fixTheMeerkat(array).toString());
+    }
     public void TASK_42() {
         System.out.println("Enter current father's age (years): ");
         int fatherAge = intPositive(sc.readInt());
@@ -280,6 +286,13 @@ public class Runner {
         int arr = sc.readInt();
         System.out.println("Result: "+ Task44.summation(arr));
     }
+    public void TASK_45() {
+        System.out.println("Enter the number gap in primes, we are looking for, start number and end number of the search: ");
+        int g = intPositive(sc.readInt());
+        int m = intPositive(sc.readInt());
+        int n = intPositive(sc.readInt());
+        System.out.println("Result: "+ Task45.gap(g,m,n).toString());
+    }
     public void TASK_46() {
         System.out.println("Enter count of sticks(1/2/3): ");
         int countOfStiks = intPositive(sc.readInt());
@@ -287,6 +300,13 @@ public class Runner {
     }
     public void TASK_47() {}
     public void TASK_48() {}
+
+    public void TASK_49() {
+        Task49 encoder = new Task49();
+        System.out.println("Enter the string u want to encode: ");
+        String input = sc.readString();
+        System.out.println("Result: " + encoder.encode(input));
+    }
     public void TASK_51() {
         System.out.println("Enter a number: ");
         int number = intPositive(sc.readInt());
@@ -297,6 +317,17 @@ public class Runner {
         String a = sc.readString();
         System.out.println("Result: "+ Task52.solution(a));
     }
+
+    public void TASK_53() {
+        System.out.println("Enter the array of names to say hello: ");
+        String[] names = sc.readStringArray();
+        System.out.println("Enter the city: ");
+        String city = sc.readString();
+        System.out.println("Enter the state: ");
+        String state = sc.readString();
+        System.out.println(" Result: " + Task53.sayHello(names,city,state));
+    }
+
     public void TASK_55() {
         System.out.println("Enter few dots \".\": ");
         String dotsStr = sc.readString();
@@ -306,6 +337,11 @@ public class Runner {
         System.out.println("Enter the name : ");
         String a = sc.readString();
         System.out.println("Result: "+ Task56.areYouPlayingBanjo(a));
+    }
+    public void TASK_57() {
+        System.out.println("Enter string:");
+        String a = sc.readString();
+        System.out.println("Result: "+ Task57.noSpace(a));
     }
     public void TASK_58() {
         System.out.println("Enter the first string: ");
@@ -330,6 +366,11 @@ public class Runner {
         String a = sc.readString();
         System.out.println("Result: "+ Task60.fakeBin(a));
     }
+    public void TASK_61() {
+        System.out.println(" Enter string like: \"x years old\", where x is a random number between 0 and 9.");
+        String a = sc.readString();
+        System.out.println("Result: "+ Task61.howOld(a));
+    }
     public void TASK_62() {
         System.out.println("Enter a temperature: ");
         int temperature = sc.readInt();
@@ -346,6 +387,11 @@ public class Runner {
         char c = sc.readString().charAt(0);
         System.out.println("Result: "+ Task64.strCount(a,c));
     }
+    public void TASK_65() {
+        System.out.println("Enter some strings: ");
+        String[] array = sc.readStringArray();
+        System.out.println("Result: " + Task65.twoSort(array));
+    }
     public void TASK_66() {
         System.out.println("Enter a sentence: ");
         String string = sc.readString();
@@ -361,6 +407,21 @@ public class Runner {
         String a = sc.readString();
         int n = intPositive(sc.readInt());
         System.out.println("Result: "+ Task68.remove(a,n));
+    }
+    public void TASK_69() {
+        System.out.println(" Do u want 2 push a hash/an object into array? " +
+                "Enter the number : 1-yes 2-no");
+        boolean yes;
+        if(intPositive(sc.readInt())==1) {
+            yes = true;
+        } else {
+            yes = false;
+        }
+        if (yes) {
+            System.out.println("You pushed an object into array! Now your array size is: " + Task69.push().size());
+        } else {
+            System.out.println("Well, as u want");
+        }
     }
     public void TASK_70() {
         System.out.println("Enter a number: ");
@@ -463,6 +524,9 @@ public class Runner {
             case 3:
                 TASK_3();
                 break;
+            case 5:
+                TASK_5();
+                break;
             case 6:
                 TASK_6();
                 break;
@@ -471,6 +535,9 @@ public class Runner {
                 break;
             case 8:
                 TASK_8();
+                break;
+            case 9:
+                TASK_9();
                 break;
             case 10:
                 TASK_10();
@@ -481,11 +548,17 @@ public class Runner {
             case 12:
                 TASK_12();
                 break;
+            case 13:
+                TASK_13();
+                break;
             case 14:
                 TASK_14();
                 break;
             case 16:
                 TASK_16();
+                break;
+            case 17:
+                TASK_17();
                 break;
             case 18:
                 TASK_18();
@@ -496,6 +569,9 @@ public class Runner {
             case 19:
                 TASK_19();
                 break;
+            case 21:
+                TASK_21();
+                break;
             case 22:
                 TASK_22();
                 break;
@@ -504,6 +580,9 @@ public class Runner {
                 break;
             case 23:
                 TASK_23();
+                break;
+            case 25:
+                TASK_25();
                 break;
             case 26:
                 TASK_26();
@@ -514,6 +593,9 @@ public class Runner {
             case 27:
                 TASK_27();
                 break;
+            case 29:
+                TASK_29();
+                break;
             case 30:
                 TASK_30();
                 break;
@@ -522,6 +604,9 @@ public class Runner {
                 break;
             case 32:
                 TASK_32();
+                break;
+            case 33:
+                TASK_33();
                 break;
             case 34:
                 TASK_34();
@@ -532,6 +617,9 @@ public class Runner {
             case 36:
                 TASK_36();
                 break;
+            case 37:
+                TASK_37();
+                break;
             case 38:
                 TASK_38();
                 break;
@@ -540,6 +628,9 @@ public class Runner {
                 break;
             case 40:
                 TASK_40();
+                break;
+            case 41:
+                TASK_41();
                 break;
             case 42:
                 TASK_42();
@@ -550,17 +641,26 @@ public class Runner {
             case 44:
                 TASK_44();
                 break;
+            case 45:
+                TASK_45();
+                break;
             case 46:
                 TASK_46();
                 break;
             case 48:
                 TASK_48();
                 break;
+            case 49:
+                TASK_49();
+                break;
             case 51:
                 TASK_51();
                 break;
             case 52:
                 TASK_52();
+                break;
+            case 53:
+                TASK_53();
                 break;
             case 54:
                 TASK_18();
@@ -571,6 +671,9 @@ public class Runner {
             case 56:
                 TASK_56();
                 break;
+            case 57:
+                TASK_57();
+                break;
             case 58:
                 TASK_58();
                 break;
@@ -579,6 +682,9 @@ public class Runner {
                 break;
             case 60:
                 TASK_60();
+                break;
+            case 61:
+                TASK_61();
                 break;
             case 62:
                 TASK_62();
@@ -589,6 +695,9 @@ public class Runner {
             case 64:
                 TASK_64();
                 break;
+            case 65:
+                TASK_65();
+                break;
             case 66:
                 TASK_66();
                 break;
@@ -597,6 +706,9 @@ public class Runner {
                 break;
             case 68:
                 TASK_68();
+                break;
+            case 69:
+                TASK_69();
                 break;
             case 70:
                 TASK_70();
