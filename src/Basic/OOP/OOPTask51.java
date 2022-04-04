@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class OOPTask51 {
 
-    public class Calculator {
+    public static class Calculator {
         public double getTotalArea(Shape... shapes) {
             double totalArea = Arrays.stream(shapes).mapToDouble(Shape::calculateArea).sum();
             return Math.round(totalArea * 100.0) / 100.0;
@@ -15,7 +15,7 @@ public class OOPTask51 {
         double calculateArea();
     }
 
-    class Square implements Shape {
+    static class Square implements Shape {
         private double side;
         public Square(double side) {
             this.side = side;
@@ -25,7 +25,7 @@ public class OOPTask51 {
         }
     }
 
-    class Rectangle implements Shape {
+    static class Rectangle implements Shape {
         private double height;
         private double width;
         public Rectangle(double height, double width) {
@@ -37,7 +37,7 @@ public class OOPTask51 {
         }
     }
 
-    class Circle implements Shape {
+    static class Circle implements Shape {
         private double radius;
         public Circle(double radius) {
             this.radius = radius;
@@ -47,7 +47,7 @@ public class OOPTask51 {
         }
     }
 
-    class Triangle implements Shape {
+    static class Triangle implements Shape {
         private double triangleBase;
         private double triangleHeight;
         public Triangle(double triangleBase, double triangleHeight) {

@@ -38,4 +38,22 @@ public class LoopsTask46 {
         }
         return true;
     }
+
+
+    public static long[] gap(int g, long m, long n) {
+
+        long last = Long.MIN_VALUE;
+        for (long i = m; i < n; i++) {
+            if (isPrime(i)) {
+                if (i - last == g) {
+                    System.out.println("The prime couple is " + Arrays.toString(new long[]{last, i}));
+                    return new long[]{last, i};
+                }
+                last = i;
+            }
+        }
+
+        return null;
+
+    }
 }

@@ -1,7 +1,7 @@
 package Collections;
 
 import StringProgram.StringProgramTask65;
-import org.junit.Test;
+import org.testng.annotations.Test;
 
 import java.io.ByteArrayInputStream;
 import java.io.InputStream;

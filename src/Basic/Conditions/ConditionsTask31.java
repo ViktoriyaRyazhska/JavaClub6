@@ -11,11 +11,11 @@ public class ConditionsTask31 {
         String current = sc.next();
 
         switch (current) {
-            case "red" : {
+            case "red": {
                 System.out.println("Light should change to green");
                 return "green";
             }
-            case "yellow" : {
+            case "yellow": {
                 System.out.println("Light should change to red");
                 return "red";
             }
@@ -23,7 +23,28 @@ public class ConditionsTask31 {
                 System.out.println("Light should change to yellow");
                 return "yellow";
             }
-            default : throw new IllegalArgumentException();
+            default:
+                throw new IllegalArgumentException();
+        }
+    }
+
+    public static String updateLight(String current) {
+
+        switch (current) {
+            case "red": {
+                System.out.println("Light should change to green");
+                return "green";
+            }
+            case "yellow": {
+                System.out.println("Light should change to red");
+                return "red";
+            }
+            case "green": {
+                System.out.println("Light should change to yellow");
+                return "yellow";
+            }
+            default:
+                throw new IllegalArgumentException();
         }
     }
 }

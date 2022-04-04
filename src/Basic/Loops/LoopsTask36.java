@@ -30,4 +30,9 @@ public class LoopsTask36 {
                 .map(s -> s*2)
                 .toArray();
     }
+    public static int[] map(int[] arr) {
+        return Arrays.stream(arr)
+                .map(s -> s*2)
+                .toArray();
+    }
 }
