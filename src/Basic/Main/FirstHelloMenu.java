@@ -39,19 +39,19 @@ public class FirstHelloMenu {
                     ClassesMenu.chooseTask(scanner);
                     break;
                 case 3:
-                    ConditionsMenu.chooseTask();
+                    ConditionsMenu.chooseTask(scanner);
                     break;
                 case 4:
-                    LoopsMenu.chooseTask();
+                    LoopsMenu.chooseTask(scanner);
                     break;
                 case 5:
                     StringProgramMenu.chooseTask();
                     break;
                 case 6:
-                    OOPMenu.chooseTask();
+                    OOPMenu.chooseTask(scanner);
                     break;
                 case 7:
-                    CollectionsMenu.chooseTask();
+                    CollectionsMenu.chooseTask(scanner);
                     break;
                 case 0:
                     System.exit(0);

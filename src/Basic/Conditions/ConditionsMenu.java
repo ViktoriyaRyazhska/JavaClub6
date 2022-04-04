@@ -6,8 +6,7 @@ import Conditions.ConditionsTask29;
 import java.util.Scanner;
 
 public class ConditionsMenu {
-    public static void chooseTask() {
-        Scanner scanner = new Scanner(System.in);
+    public static void chooseTask(Scanner scanner) {
         System.out.println("Choose the number of tasks from 19 to 32:");
         int chooseNumber = scanner.nextInt();
         switch (chooseNumber) {

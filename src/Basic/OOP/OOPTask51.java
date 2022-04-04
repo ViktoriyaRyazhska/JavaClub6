@@ -1,12 +1,14 @@
 package OOP;
 
 import java.util.Arrays;
+import java.util.Scanner;
 
 public class OOPTask51 {
-
+Scanner scanner=new Scanner(System.in);
     public static class Calculator {
         public double getTotalArea(Shape... shapes) {
             double totalArea = Arrays.stream(shapes).mapToDouble(Shape::calculateArea).sum();
+            System.out.println(Math.round(totalArea * 100.0) / 100.0);
             return Math.round(totalArea * 100.0) / 100.0;
         }
     }
@@ -16,10 +18,13 @@ public class OOPTask51 {
     }
 
     static class Square implements Shape {
+
         private double side;
+
         public Square(double side) {
             this.side = side;
         }
+
         public double calculateArea() {
             return side * side;
         }
@@ -28,10 +33,12 @@ public class OOPTask51 {
     static class Rectangle implements Shape {
         private double height;
         private double width;
+
         public Rectangle(double height, double width) {
             this.height = height;
             this.width = width;
         }
+
         public double calculateArea() {
             return height * width;
         }
@@ -39,9 +46,11 @@ public class OOPTask51 {
 
     static class Circle implements Shape {
         private double radius;
+
         public Circle(double radius) {
             this.radius = radius;
         }
+
         public double calculateArea() {
             return radius * radius * Math.PI;
         }
@@ -50,10 +59,12 @@ public class OOPTask51 {
     static class Triangle implements Shape {
         private double triangleBase;
         private double triangleHeight;
+
         public Triangle(double triangleBase, double triangleHeight) {
             this.triangleBase = triangleBase;
             this.triangleHeight = triangleHeight;
         }
+
         public double calculateArea() {
             return (triangleBase * triangleHeight) / 2;
         }
