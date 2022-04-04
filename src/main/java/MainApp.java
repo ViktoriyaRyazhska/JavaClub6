@@ -11,6 +11,7 @@ public class MainApp {
         System.out.println("5 - OOP");
         System.out.println("6 - String");
         System.out.println("7 - Collections");
+        System.out.println("8 - Exit");
 
         Scanner sc = new Scanner(System.in);
         System.out.println();
@@ -49,6 +50,14 @@ public class MainApp {
                 }
                 case "7": {
                     AllMenu2.showCollectionsMenu(sc);
+                    break;
+                }
+                case "8": {
+                    System.exit(1);
+                    break;
+                }
+                default: {
+                    showMenu();
                     break;
                 }
 

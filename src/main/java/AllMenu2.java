@@ -83,6 +83,10 @@ public class AllMenu2 {
                     MainApp.showMenu();
                     break;
                 }
+                default: {
+                    showOOPMenu(sc);
+                    break;
+                }
             }
 
         }
@@ -274,6 +278,10 @@ public class AllMenu2 {
                     MainApp.showMenu();
                     break;
                 }
+                default: {
+                    showStringMenu(sc);
+                    break;
+                }
             }
 
         }
@@ -304,9 +312,7 @@ public class AllMenu2 {
                 }
 
                 case "2": {
-                    // TODO:
-                    // System.out.println(Task2.CreateList(4));
-
+                    System.out.println(Collections.Task2.CreateList(4));
                     showCollectionsMenu(sc);
                     break;
                 }
@@ -320,14 +326,21 @@ public class AllMenu2 {
                     break;
                 }
                 case "4": {
-                    // TODO:
-
+                    Collections.Task4 task = new Collections.Task4();
+                    task.newEntry("Chair", "Chair uses for sitting");
+                    System.out.println("*Dictionary contains meaning of Chair");
+                    System.out.println(task.look("Chair"));
+                    System.out.println(task.look("Table"));
                     showCollectionsMenu(sc);
                     break;
                 }
 
                 case "5": {
                     MainApp.showMenu();
+                    break;
+                }
+                default: {
+                    showCollectionsMenu(sc);
                     break;
                 }
             }
