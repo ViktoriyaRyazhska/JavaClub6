@@ -6,6 +6,7 @@ import java.util.Scanner;
 
 import Collections.*;
 import OOP.*;
+import OOP.Task4.Triangle;
 import String.Task1;
 import String.Task10;
 import String.Task11;
@@ -46,7 +47,6 @@ public class AllMenu2 {
             switch (sc.next()) {
 
                 case "1": {
-
                     System.out.println(Arrays.toString(OOP.Task1.create()));
                     showOOPMenu(sc);
                     break;
@@ -70,14 +70,11 @@ public class AllMenu2 {
                     break;
                 }
                 case "4": {
-                    // TODO:
-                    // Task4 sut = new Task4();
-                    // double triangleBase = 6;
-                    // double triangleHeight = 4;
+                    OOP.Task4.Task4 triangle = new OOP.Task4.Task4();
+                    double triangleBase = 6;
+                    double triangleHeight = 4;
                     System.out.println("triangleBase = 6,  triangleHeight = 4 ");
-                    // System.out.println(sut.getTotalArea(new Triangle(triangleBase,
-                    // triangleHeight)));
-
+                    System.out.println(triangle.getTotalArea(new Triangle(triangleBase, triangleHeight)));
                     showOOPMenu(sc);
                     break;
                 }
