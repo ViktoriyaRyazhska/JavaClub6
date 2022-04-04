@@ -490,6 +490,9 @@ public class Runner {
             case 52:
                 TASK_52();
                 break;
+            case 54:
+                TASK_18();
+                break;
             case 55:
                 TASK_55();
                 break;
