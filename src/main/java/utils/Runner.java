@@ -5,7 +5,6 @@ import Classes.*;
 import Collections.*;
 import Conditions.*;
 import Loops.*;
-import OOP.*;
 import String.*;
 
 import java.util.Collections;
@@ -67,6 +66,13 @@ public class Runner {
     public void TASK_12() {
         System.out.println("Result: " + new Task12());
     }
+    public void TASK_14(){
+        System.out.println("Enter numerator: ");
+        int numerator = intPositive(sc.readInt());
+        System.out.println("Enter denominator: ");
+        int denominator = intPositive(sc.readInt());
+        System.out.println(Task14.add(new Task14(numerator, denominator)));
+    }
     public void TASK_16() {
         System.out.println("Enter the Figter1 name health damagePerAttack : ");
         String name = sc.readString();
@@ -82,7 +88,7 @@ public class Runner {
         name = sc.readString();
         System.out.println("Winner: " + Task16.declareWinner(f1,f2,name));
     }
-    public void TASK_18(){
+    public void TASK_18() {
         System.out.println("Enter 1 number: ");
         int num = sc.readInt();
         System.out.println("Result: " + Task18.opposite(num));
@@ -101,7 +107,7 @@ public class Runner {
         else
             System.out.println("Result: " + Task20.convert(false));
     }
-    public void TASK_22(){
+    public void TASK_22() {
         System.out.println("Enter the year of birth:");
         int yearOfBirth = intPositive(sc.readInt());
         System.out.println("Enter the year to count years in relation to: ");
@@ -121,7 +127,7 @@ public class Runner {
         int num2 = intPositive(sc.readInt());
         System.out.println("Result: " + Task24.basicMath(op,num1,num2));
     }
-    public void TASK_26(){
+    public void TASK_26() {
         System.out.println("Enter a boolean value:");
         boolean value = sc.readBoolean();
         System.out.println("Result: " + Task26.boolToWord(value));
@@ -140,7 +146,7 @@ public class Runner {
         int num1 = intPositive(sc.readInt());
         System.out.println("Result: " + Task28.sequence(num1));
     }
-    public void TASK_30(){
+    public void TASK_30() {
         System.out.println("Enter a color of green/yellow/red: ");
         String color = sc.readString();
         System.out.println("Result: " + Task30.updateLight(color));
@@ -156,7 +162,7 @@ public class Runner {
         int num1 = intPositive(sc.readInt());
         System.out.println("Result: " + Task32.repeatStr(num1,s));
     }
-    public void TASK_34(){
+    public void TASK_34() {
         System.out.println("Enter an array with your averages: ");
         int[] array = intArrayPositive(sc.readIntArray());
         System.out.println("Result: " + Task34.getAverage(array));
@@ -167,6 +173,9 @@ public class Runner {
         System.out.println("Result: " + Task35.map(arr));
     }
     public void TASK_36() {
+        System.out.println("Enter an array of sheep where some sheep may be missing from their place: ");
+        Boolean[] array = sc.readBooleanArray();
+        System.out.println("Result: " + Task36.countSheeps(array));
     }
     public void TASK_38() {
         System.out.println("Enter an array with your peers' test scores: ");
@@ -185,7 +194,7 @@ public class Runner {
         int []arr = sc.readIntArray();
         System.out.println("Result: "+ Task40.sum(arr));
     }
-    public void TASK_42(){
+    public void TASK_42() {
         System.out.println("Enter current father's age (years): ");
         int fatherAge = intPositive(sc.readInt());
         System.out.println("Enter current age of his son (years): ");
@@ -202,12 +211,12 @@ public class Runner {
         int arr = sc.readInt();
         System.out.println("Result: "+ Task44.summation(arr));
     }
-    public void TASK_46(){
+    public void TASK_46() {
         System.out.println("Enter count of sticks(1/2/3): ");
         int countOfStiks = intPositive(sc.readInt());
         System.out.println("Result: " + Task46.makeMove(countOfStiks));
     }
-    public void TASK_47(){}
+    public void TASK_47() {}
     public void TASK_48() {}
     public void TASK_51() {
         System.out.println("Enter a number: ");
@@ -229,7 +238,7 @@ public class Runner {
         String a = sc.readString();
         System.out.println("Result: "+ Task56.areYouPlayingBanjo(a));
     }
-    public void TASK_58(){
+    public void TASK_58() {
         System.out.println("Enter the first string: ");
         String first = sc.readString();
         System.out.println("Enter the second string: ");
@@ -252,7 +261,7 @@ public class Runner {
         String a = sc.readString();
         System.out.println("Result: "+ Task60.fakeBin(a));
     }
-    public void TASK_62(){
+    public void TASK_62() {
         System.out.println("Enter a temperature: ");
         int temperature = sc.readInt();
         System.out.println("Result: " + Task62.weatherInfo(temperature));
@@ -268,7 +277,7 @@ public class Runner {
         char c = sc.readString().charAt(0);
         System.out.println("Result: "+ Task64.strCount(a,c));
     }
-    public void TASK_66(){
+    public void TASK_66() {
         System.out.println("Enter a sentence: ");
         String string = sc.readString();
         System.out.println("Result: " + Task66.correct(string));
@@ -284,12 +293,12 @@ public class Runner {
         int n = intPositive(sc.readInt());
         System.out.println("Result: "+ Task68.remove(a,n));
     }
-    public void TASK_70(){
+    public void TASK_70() {
         System.out.println("Enter a number: ");
         int number = intPositive(sc.readInt());
         System.out.println("Result: " + Task70.CreateList(number));
     }
-    public void TASK_71(){
+    public void TASK_71() {
         System.out.println("Enter numbers: ");
         List<Integer> list = Collections.singletonList(intPositive(sc.readInt()));
         System.out.println("Result: " + Task71.filterOddNumber(list));
@@ -399,6 +408,9 @@ public class Runner {
                 break;
             case 12:
                 TASK_12();
+                break;
+            case 14:
+                TASK_14();
                 break;
             case 16:
                 TASK_16();
@@ -513,6 +525,9 @@ public class Runner {
                 break;
             case 70:
                 TASK_70();
+                break;
+            case 71:
+                TASK_71();
                 break;
             case 72:
                 TASK_72();

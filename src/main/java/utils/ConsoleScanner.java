@@ -157,11 +157,11 @@ public class ConsoleScanner implements Scanner{
         return result;
     }
     @Override
-    public boolean[] readBooleanArray(){
+    public Boolean[] readBooleanArray(){
         int size = 0;
         String input = sc.nextLine();
         List<String> resultList = new ArrayList<>(Arrays.asList(input.split(" ")));
-        boolean[] result = new boolean[resultList.size()];
+        Boolean[] result = new Boolean[resultList.size()];
         while (size != resultList.size()) {
             if (new java.util.Scanner(resultList.get(size)).hasNextBoolean()) {
                 result[size] = Boolean.parseBoolean(resultList.get(size));
