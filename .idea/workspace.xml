@@ -1,27 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5830459a-e012-46af-88cc-97e95e6a83a4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/OOP/OOPMenu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/Strings/StringsMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Menu/SettingsMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Menu/SettingsMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/OOP/OOPTask1/God.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/OOP/OOPTask1/God.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/OOP/Task1/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/OOP/Task1/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Strings/Task1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Strings/Task1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Strings/Task11.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Strings/Task11.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Strings/Task12.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Strings/Task12.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Strings/Task14.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Strings/Task14.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Strings/Task16.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Strings/Task16.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Strings/Task17.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Strings/Task17.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Strings/Task2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Strings/Task2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Strings/Task4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Strings/Task4.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Strings/Task6.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Strings/Task6.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Strings/Task7.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Strings/Task7.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Strings/Task9.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Strings/Task9.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/Loop/Task5Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/Loop/Task5Test.java" afterDir="false" />
-    </list>
+    <list default="true" id="5830459a-e012-46af-88cc-97e95e6a83a4" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -172,7 +152,7 @@
       <updated>1648829831013</updated>
       <workItem from="1648829837453" duration="1244000" />
       <workItem from="1648888379782" duration="30241000" />
-      <workItem from="1648994660308" duration="7174000" />
+      <workItem from="1648994660308" duration="7573000" />
     </task>
     <servers />
   </component>
@@ -196,22 +176,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1648889885943" />
-    <state width="1493" height="127" key="GridCell.Tab.0.bottom" timestamp="1649004264158">
+    <state width="1493" height="127" key="GridCell.Tab.0.bottom" timestamp="1649004442051">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="127" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1649004264158" />
-    <state width="1493" height="127" key="GridCell.Tab.0.center" timestamp="1649004264158">
+    <state width="1493" height="127" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1649004442051" />
+    <state width="1493" height="127" key="GridCell.Tab.0.center" timestamp="1649004442050">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="127" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1649004264158" />
-    <state width="1493" height="127" key="GridCell.Tab.0.left" timestamp="1649004264157">
+    <state width="1493" height="127" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1649004442050" />
+    <state width="1493" height="127" key="GridCell.Tab.0.left" timestamp="1649004442050">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="127" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1649004264157" />
-    <state width="1493" height="127" key="GridCell.Tab.0.right" timestamp="1649004264158">
+    <state width="1493" height="127" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1649004442050" />
+    <state width="1493" height="127" key="GridCell.Tab.0.right" timestamp="1649004442051">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="127" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1649004264158" />
+    <state width="1493" height="127" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1649004442051" />
     <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1649002716897">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
