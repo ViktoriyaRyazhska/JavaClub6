@@ -8,7 +8,6 @@ class LoopsTask34Test {
 
     @Test
     public void one() {
-
         assertArrayEquals(new int[]{1, 15, 15}, LoopsTask34.humanYearsCatYearsDogYears(1));
     }
 

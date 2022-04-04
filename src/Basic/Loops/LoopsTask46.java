@@ -4,12 +4,12 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class LoopsTask46 {
-    public static long[] gap() {
+    public static long[] gap(Scanner scanner) {
 
         System.out.println("Gap in Primes.");
 
         System.out.println("Enter wished gap between prime numbers: ");
-        Scanner scanner = new Scanner(System.in);
+
         int g = scanner.nextInt();
 
         System.out.println("Enter lover bound to find prime numbers couples: ");

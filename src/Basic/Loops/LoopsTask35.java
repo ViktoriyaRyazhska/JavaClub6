@@ -18,8 +18,7 @@ public class LoopsTask35 {
 
         return sum / marks.length;
     }
-    public static int getAverage(){
-        Scanner sc = new Scanner(System.in);
+    public static int getAverage(Scanner sc){
         int sum=0;
         int c=0;
         System.out.println("It's the academic year's end, fateful moment of your school report.\n The averages must be calculated.\n All the students come to you and entreat you to calculate their average for them.");
