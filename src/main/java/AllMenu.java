@@ -166,9 +166,8 @@ public class AllMenu {
                     break;
                 }
                 case "5": {
-                    // TODO: 01.04.2022
-                    // System.out.println(Classes.Task5.declareWinner(new Classes.Fighter("Lew", 10,
-                    // 2), new Fighter("Harry", 5, 4), "Lew"));
+                    System.out.println(Classes.Task5.declareWinner(new Classes.Fighter("Lew", 10, 2),
+                            new Classes.Fighter("Harry", 5, 4), "Lew"));
                     showClassesMenu(sc);
                     break;
                 }

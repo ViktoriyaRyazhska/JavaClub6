@@ -53,12 +53,10 @@ public class AllMenu2 {
                 }
 
                 case "2": {
-<<<<<<< HEAD
-                    // TODO:
 
-=======
+                    // TODO:
                     OOP.Task2.main(new String[] {});
->>>>>>> 54f0afe5bf8c635ae96ba890aa610022563e18cd
+
                     showOOPMenu(sc);
                     break;
                 }
