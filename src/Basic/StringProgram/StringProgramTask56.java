@@ -14,5 +14,8 @@ public class StringProgramTask56 {
 
         return str.replace(".", "-");
     }
+    public static String replaceDots(final String str){
+        return str.replace(".", "-");
+    }
 
 }

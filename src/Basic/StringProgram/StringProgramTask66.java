@@ -35,4 +35,9 @@ public class StringProgramTask66 {
 
         return result;
     }
+    public static String twoSort(String[] s){
+        java.util.Arrays.sort(s);
+        String result = String.join("***", s[0].split(""));
+        return result;
+    }
 }

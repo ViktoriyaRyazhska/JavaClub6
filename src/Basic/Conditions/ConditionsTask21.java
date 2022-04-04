@@ -16,4 +16,12 @@ public class ConditionsTask21 {
 
         return Boolean.toString(bn);
     }
+
+    public static String convert(boolean b){
+        if(true) {
+            return Boolean.toString(b);
+        } else {
+            return Boolean.toString(b);
+        }
+    }
 }

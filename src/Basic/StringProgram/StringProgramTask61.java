@@ -15,4 +15,8 @@ public class StringProgramTask61 {
         return str.replaceAll("[0-4]", "0").replaceAll("[5-9]", "1");
     }
 
+    public static String fakeBin(String numberString) {
+        return numberString.replaceAll("[0-4]", "0").replaceAll("[5-9]", "1");
+    }
+
 }
