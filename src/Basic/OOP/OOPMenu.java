@@ -16,7 +16,7 @@ public class OOPMenu {
                 OOPTask50.Leetspeak.encode(scanner);
                 break;
             case 51:
-                new OOPTask51.Calculator().getTotalArea();
+                 new OOPTask51.Calculator().calc(scanner);
                 break;
         }
     }

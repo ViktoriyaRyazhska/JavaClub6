@@ -9,15 +9,6 @@ package StringProgram;
 import java.util.Scanner;
 
 public class StringProgramTask65 {
-    public static int strCount(String str, char letter) {
-        int counter = 0;
-        for(char character : str.toCharArray()) {
-            if(letter == character) {
-                counter++;
-            }
-        }
-        return counter;
-    }
     public static int strCount(){
         int counter = 0;
         String str;
