@@ -13,6 +13,7 @@ public enum Folders {
     private final int id;
     private final String folderName;
     private final int start;
+    private final int end;
 
     public int getStart() {
         return start;
@@ -22,7 +23,7 @@ public enum Folders {
         return end;
     }
 
-    private final int end;
+
 
     Folders(int id, String folderName, int start, int end) {
         this.id = id;

@@ -3,8 +3,8 @@ package utils;
 public class Menu {
     ConsoleScanner cs = new ConsoleScanner();
     Runner runner;
-    private static int start;
-    private static int end;
+    static int start;
+    static int end;
     public void menu() {
         constructorRunner();
         int choiceFolder;
@@ -46,12 +46,12 @@ public class Menu {
             }
         } while (choose < 1 || choose > 7);
         runner = new Runner(Folders.getFolderById(choose));
+        start = Folders.getFolderById(choose).getStart();
+        end = Folders.getFolderById(choose).getEnd();
         System.out.println();
     }
 
     public void taskList() {
-        System.out.println(start);
-        System.out.println(end);
         for(Tasks t: Tasks.values()) {
             if(t.getId()>= start&t.getId()<= end) System.out.println(t.getId() + " " + t.getTaskName());
         }
@@ -95,7 +95,6 @@ public class Menu {
         for (Folders user : Folders.values()) {
             System.out.println(user.getId() + " " + user.getFolderName() + " " + user.getCountTask());
         }
-        System.out.println();
     }
 
     public void setImplementationByUser() {
@@ -106,6 +105,8 @@ public class Menu {
             choose = cs.readInt();
         } while (choose < 1 || choose > 7);
         runner.setUsers(Folders.getFolderById(choose));
+        start = Folders.getFolderById(choose).getStart();
+        end = Folders.getFolderById(choose).getEnd();
         System.out.println();
     }
 }
