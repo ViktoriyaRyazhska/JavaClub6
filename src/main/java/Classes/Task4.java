@@ -14,8 +14,8 @@ public class Task4 {
 //        System.out.println("---------\n|       |\n| xxxxx |\n| x   x |\n| x   x |\n| xxxxx |\n|       |\n|       |\n---------");
 //        System.out.println(c.drawCanvas());
 
-        Task4 c = new Task4(14, 14);
-        c.draw(1, 1, 10, 10)
+        Task4 c = new Task4(30, 10);
+        c.draw(1, 1, 5, 5)
                 .fill(3, 3, 'o');
         System.out.println("---------\n|       |\n| xxxxx |\n| xooox |\n| xooox |\n| xxxxx |\n|       |\n|       |\n---------");
         System.out.println(c.drawCanvas());
@@ -45,7 +45,7 @@ public static void Enter(Scanner sc){
 
 }
     public Task4(int width, int height) {
-        canvas = new char[width + 2][height + 2];
+        canvas = new char[height + 2][width + 2];
         for (int i = canvas.length - 1; i >= 0; i--) {
             for (int i1 = canvas[i].length - 1; i1 >= 0; i1--) {
                 canvas[i][i1] = ' ';
