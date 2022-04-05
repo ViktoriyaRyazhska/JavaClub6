@@ -23,19 +23,19 @@ public class Runner {
         this.folders = folderById;
         switch (folders) {
             case BASIC:
-                System.out.println("тут є завдання з 1 по 11: ");
+                System.out.println("Tasks from 1 to 11");
             case CLASSES:
-                System.out.println("тут є завдання з 12 по 17: ");
+                System.out.println("Tasks from 12 to 17");
             case CONDITIONS:
-                System.out.println("тут є завдання з 12 по 17: ");
+                System.out.println("Tasks from 18 to 31");
             case LOOPS:
-                System.out.println("тут є завдання з 12 по 17: ");
+                System.out.println("Tasks from 32 to 46");
             case OOP:
-                System.out.println("тут є завдання з 12 по 17: ");
+                System.out.println("Tasks from 47 to 50");
             case STRINGS:
-                System.out.println("тут є завдання з 12 по 17: ");
+                System.out.println("Tasks from 51 to 68");
             case COLLECTIONS:
-                System.out.println("тут є завдання з 12 по 17: ");
+                System.out.println("Tasks from 69 to 72");
         }
         int[] startEnd = new int[2];
     }

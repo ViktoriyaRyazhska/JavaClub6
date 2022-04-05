@@ -36,7 +36,7 @@ public class Menu {
 
     }
     private void constructorRunner() {
-        System.out.println("Hello!\nTo continue, please, choose folder:");
+        System.out.println("Hello!\nTo continue, please, choose folder with tasks:");
         usersList();
         int choose;
         do {
@@ -71,20 +71,30 @@ public class Menu {
     }
 
     public void showTaskDetails() {
-        System.out.println("Enter number of method from 1 to 72");
-        System.out.println(Tasks.getDescription(cs.readInt()));
+        System.out.println("Enter number of method from " + start +" to " + end);
+        int choose = cs.readInt();
+        while (choose > end || choose < start) {
+            System.out.println("Enter from " + start + " to " + end);
+            choose = cs.readInt();
+        }
+        System.out.println("Task №" + choose + " " + Tasks.getTaskNameById(choose));
+        System.out.println("Description:");
+        System.out.println(Tasks.getDescription(choose));
         System.out.println();
     }
 
     public void run() {
         System.out.println();
         System.out.println("First you need to choose a task.");
-        System.out.println("Enter number of task:");
+        System.out.println("Enter number of task in range " + start + "-" + end +":");
         int choose = cs.readInt();
-        while (choose > 72 || choose < 1) {
-            System.out.println("Enter from 1 to 72");
+        while (choose > end || choose < start) {
+            System.out.println("Enter from " + start + " to " + end);
             choose = cs.readInt();
         }
+        System.out.println("Task №" + choose + " " + Tasks.getTaskNameById(choose));
+        System.out.println("Description:");
+        System.out.println(Tasks.getDescription(choose));
         runner.setTasks(choose);
         System.out.println("--------------------------------------------------");
     }

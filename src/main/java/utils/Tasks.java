@@ -216,4 +216,14 @@ public enum Tasks {
     public String getTaskName() {
         return taskName;
     }
+
+    public static String getTaskNameById(int id) {
+        for (Tasks task : values()) {
+            if (task.id == id) {
+                return task.taskName;
+            }
+        }
+        return null;
+    }
+
 }

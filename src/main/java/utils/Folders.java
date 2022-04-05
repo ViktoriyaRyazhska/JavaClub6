@@ -50,7 +50,7 @@ public enum Folders {
     }
 
     public String getCountTask() {
-        return "Range of tasks: " + start + " - " + end;
+        return ": task numbers from " + start + " to " + end;
     }
 
 
