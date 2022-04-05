@@ -5,12 +5,18 @@ import Classes.*;
 import Collections.*;
 import Conditions.*;
 import Loops.*;
+
+
+import OOP.*;
 import OOP.Task49;
 import String.*;
 import java.util.Arrays;
 
 import java.util.Collections;
 import java.util.List;
+
+import static OOP.Task48.*;
+
 
 public class Runner {
     private ConsoleScanner sc;
@@ -333,7 +339,25 @@ public class Runner {
         System.out.println("Result: " + Task46.makeMove(countOfStiks));
     }
     public void TASK_47() {}
-    public void TASK_48() {}
+    public void TASK_48() {
+        Task48 r = IDENTITY;
+        System.out.println("you have IDENTITY object select an action:\n 1- inv() \n2-is_rotation()\n3-is_reflection()" +
+                "\n4-then(REFLECT_FORWARD_DIAGONAL)\n");
+        switch(sc.readInt()){
+            case 1:
+                System.out.println(r.inv().toString());
+                break;
+            case 2:  System.out.println(r.is_rotation());
+                break;
+            case 3: System.out.println(r.is_reflection());
+                break;
+            case 4: System.out.println(r.then(REFLECT_FORWARD_DIAGONAL).toString()); ;
+                break;
+
+
+        }
+
+    }
 
     public void TASK_49() {
         Task49 encoder = new Task49();

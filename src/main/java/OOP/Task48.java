@@ -14,14 +14,14 @@ public class Task48 {
     }
 
 
-        static Task48 IDENTITY = new Task48(Act.Identity);
-        static Task48 ROTATE_90_ANTICLOCKWISE = new Task48(Act.Rotation, Direction.Anticlockwise, 90);
-        static Task48 ROTATE_180 = new Task48(Act.Rotation, 180);
-        static Task48 ROTATE_90_CLOCKWISE = new Task48(Act.Rotation, 90);
-        static Task48 REFLECT_VERTICAL = new Task48(Act.Reflection);
-        static Task48 REFLECT_FORWARD_DIAGONAL = new Task48(Act.Reflection);
-        static Task48 REFLECT_HORIZONTAL = new Task48(Act.Reflection);
-        static Task48 REFLECT_REVERSE_DIAGONAL = new Task48(Act.Reflection);
+    public static Task48 IDENTITY = new Task48(Act.Identity);
+    public static Task48 ROTATE_90_ANTICLOCKWISE = new Task48(Act.Rotation, Direction.Anticlockwise, 90);
+    public static Task48 ROTATE_180 = new Task48(Act.Rotation, 180);
+    public static Task48 ROTATE_90_CLOCKWISE = new Task48(Act.Rotation, 90);
+    public static Task48 REFLECT_VERTICAL = new Task48(Act.Reflection);
+    public static Task48 REFLECT_FORWARD_DIAGONAL = new Task48(Act.Reflection);
+    public static Task48 REFLECT_HORIZONTAL = new Task48(Act.Reflection);
+    public static Task48 REFLECT_REVERSE_DIAGONAL = new Task48(Act.Reflection);
 
         private int degrees = 0;
         private Direction direction = Direction.Clockwise;
@@ -48,7 +48,7 @@ public class Task48 {
             degrees = iDegrees;
         }
 
-        Task48 then(Task48 other) {
+    public Task48 then(Task48 other) {
             if (other.is_rotation()) {
                 if (other.direction == Direction.Clockwise) {
                     degrees += other.degrees;
@@ -63,7 +63,7 @@ public class Task48 {
             }
         }
 
-        Task48 inv() {
+    public Task48 inv() {
             if (act == Act.Rotation) {
                 if (direction == Direction.Clockwise) {
                     direction = Direction.Anticlockwise;
@@ -74,11 +74,11 @@ public class Task48 {
             return this;
         }
 
-        boolean is_rotation() {
+    public boolean is_rotation() {
             return act == Act.Rotation;
         }
 
-        boolean is_reflection() {
+    public  boolean is_reflection() {
             return act == Act.Reflection;
         }
 
