@@ -1,5 +1,7 @@
 package Conditions;
 
+import Main.Main;
+import static Main.FirstHelloMenu.sorryMessage;
 import java.util.Scanner;
 
 public class ConditionsMenu {
@@ -7,45 +9,24 @@ public class ConditionsMenu {
         System.out.println("Choose the number of tasks from 19 to 32:");
         int chooseNumber = scanner.nextInt();
         switch (chooseNumber) {
-            case 19:
-                ConditionsTask19.opposite();
-                break;
-            case 20:
-                ConditionsTask20.divisible();
-                break;
-            case 21:
-                ConditionsTask21.convert();
-                break;
-            case 22:
-                ConditionsTask22.bonusTime();
-                break;
-            case 23:
-                break;
-            case 24:
-                ConditionsTask24.rps(scanner);
-                break;
-            case 25:
-                ConditionsTask25.basicOperations();
-                break;
-            case 26:
-                ConditionsTask26.isLove();
-                break;
-            case 27: ConditionsTask27.boolToWord();
-                break;
-            case 28:
-                break;
-            case 29:
-                ConditionsTask29.sequence(scanner);
-                break;
-            case 30:
-                ConditionsTask30.switchItUp();
-                break;
-            case 31:
-                ConditionsTask31.updateLight();
-                break;
-            case 32:
-                ConditionsTask32.rentalCarCost();
-                break;
+            case 19 -> ConditionsTask19.opposite();
+            case 20 -> ConditionsTask20.divisible();
+            case 21 -> ConditionsTask21.convert();
+            case 22 -> ConditionsTask22.bonusTime();
+            case 23 -> sorryMessage(23);
+            case 24 -> ConditionsTask24.rps(scanner);
+            case 25 -> ConditionsTask25.basicOperations();
+            case 26 -> ConditionsTask26.isLove();
+            case 27 -> ConditionsTask27.boolToWord();
+            case 28 -> sorryMessage(28);
+            case 29 -> ConditionsTask29.sequence(scanner);
+            case 30 -> ConditionsTask30.switchItUp();
+            case 31 -> ConditionsTask31.updateLight();
+            case 32 -> ConditionsTask32.rentalCarCost();
+            default -> {
+                System.out.println(Main.RED_UNDERLINED + "Error, wrong answer" + Main.ANSI_RESET);
+                chooseTask(scanner);
+            }
         }
     }
 }
