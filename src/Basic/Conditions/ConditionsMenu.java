@@ -34,6 +34,7 @@ public class ConditionsMenu {
                 ConditionsTask26.isLove();
                 break;
             case 27:
+                ConditionsTask27.boolToWord();
                 break;
             case 28:
                 break;
