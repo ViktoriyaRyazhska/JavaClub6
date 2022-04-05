@@ -42,7 +42,7 @@ public class FirstHelloMenu {
         }
     }
     public static void sorryMessage(int taskNumber){
-        System.out.println("We are so sorry, but  task"+taskNumber+"currently doesn't work\n"+
+        System.out.println("We are so sorry, but  Task"+taskNumber+" currently doesn't work\n"+
                 "Please choose another one");
     }
 }
