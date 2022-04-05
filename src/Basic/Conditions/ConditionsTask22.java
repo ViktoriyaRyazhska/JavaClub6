@@ -14,7 +14,7 @@ public class ConditionsTask22 {
         System.out.print("Enter your salary: ");
         Scanner sc = new Scanner(System.in);
         int salary = sc.nextInt();
-        System.out.print("Enter boolean [true] or [false].");
+        System.out.print("Bonus:[true] or [false]?");
         boolean bonus = sc.nextBoolean();
         int totalSalary;
         if (bonus) {
