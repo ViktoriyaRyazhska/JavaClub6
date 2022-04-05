@@ -510,10 +510,11 @@ public class Runner {
         System.out.println("Result: " + Task71.filterOddNumber(list));
     }
     public void TASK_72() {
-        System.out.println("Enter the key and value for: ");
+        System.out.println("Enter the key : ");
         String k = sc.readString();
+        System.out.println("Enter the value : ");
         String v = sc.readString();
-        Task72 o = new Task72();
+        Task72 o= new Task72();
         o.newEntry(k,v);
         System.out.println("Enter the search key: ");
         k = sc.readString();
