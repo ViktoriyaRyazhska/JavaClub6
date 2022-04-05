@@ -11,7 +11,7 @@ public class ClassesMenu {
         int chooseNumber = scanner.nextInt();
         switch (chooseNumber) {
             case 12 -> new ClassTask12().result();
-            case 13 -> sorryMessage(13);
+            case 13 -> ClassTask13.INST.plus100(scanner);
             case 14 -> ClassTask14main.resTask14(scanner);
             case 15 -> ClassTask15main.resTask15(scanner);
             case 16 -> ClassTask16.declareWinner(scanner);
