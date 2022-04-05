@@ -42,7 +42,29 @@ public class ClassesMenu {
 
                 break;
             case 4:
-                System.out.println("Nothing here hehe");
+
+                System.out.println("You`ve chosen task4 : constructing figures");
+                System.out.println("choose your borders by firstly setting width and height");
+                System.out.println("width, height");
+                scanner.nextLine();
+                int x1 = scanner.nextInt();
+                int x2 = scanner.nextInt();
+                Task4 task4 = new Task4(x1,x2);
+                System.out.println("then write x1,y1 and x2,y2 of \"x\" which will fill the rectangle");
+                 x1 = scanner.nextInt();
+                 int y1 = scanner.nextInt();
+                 x2 = scanner.nextInt();
+                 int y2 = scanner.nextInt();
+                System.out.println("now write coordinates(smaller than previous) of symbols which will be filled inside");
+                System.out.println("x,y,char");
+                int x = scanner.nextInt();
+                int y = scanner.nextInt();
+                scanner.nextLine();
+                String o = scanner.nextLine();
+                char o1 = o.charAt(0);
+                task4.draw(x1,y1,x2,y2).fill(x,y,o1);
+                System.out.println(task4.drawCanvas());
+                System.out.println("Never mind i don`t get how it works");
                 Thread.sleep(1300);
                 break;
             case 5:
