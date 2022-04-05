@@ -1,5 +1,7 @@
 package Loops;
 
+import Main.Main;
+
 import java.util.Scanner;
 
 public class LoopsMenu {
@@ -46,7 +48,9 @@ public class LoopsMenu {
                 break;
             case 47:
                 break;
-
+            default:
+                System.out.println(Main.RED_UNDERLINED +"Error, wrong answer"+Main.ANSI_RESET);
+                chooseTask(scanner);
         }
     }
 }

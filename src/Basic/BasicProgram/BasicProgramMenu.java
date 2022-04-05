@@ -1,5 +1,7 @@
 package BasicProgram;
 
+import Main.Main;
+
 import java.util.Scanner;
 
 public class BasicProgramMenu {
@@ -40,6 +42,9 @@ public class BasicProgramMenu {
             case 11:
                 BasicTask11.weatherInfo(scanner);
                 break;
+            default:
+                System.out.println(Main.RED_UNDERLINED +"Error, wrong answer"+Main.ANSI_RESET);
+                chooseTask(scanner);
         }
     }
 

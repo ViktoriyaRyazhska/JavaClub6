@@ -1,5 +1,7 @@
 package Collections;
 
+import Main.Main;
+
 import java.util.Scanner;
 
 public class CollectionsMenu {
@@ -18,6 +20,9 @@ public class CollectionsMenu {
                 break;
             case 73:
                 break;
+            default:
+                System.out.println(Main.RED_UNDERLINED +"Error, wrong answer"+Main.ANSI_RESET);
+                chooseTask(scanner);
         }
     }
 }
