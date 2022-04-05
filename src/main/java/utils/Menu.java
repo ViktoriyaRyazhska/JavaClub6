@@ -103,7 +103,7 @@ public class Menu {
         System.out.println();
         System.out.println("List of folders:");
         for (Folders user : Folders.values()) {
-            System.out.println(user.getId() + " " + user.getFolderName() + " " + user.getCountTask());
+            System.out.println(user.getId() + " " + user.getFolderName() + user.getCountTask());
         }
     }
 
