@@ -19,6 +19,9 @@ public class OOPMenu {
             case 51:
                  new OOPTask51.Calculator().calc(scanner);
                 break;
+            default:
+                System.out.println("Error, wrong answer, put number from 48 to 51");
+                chooseTask(scanner);
         }
     }
 }

@@ -1,5 +1,7 @@
 package Classes;
 
+import Main.Main;
+
 import java.util.Scanner;
 
 public class ClassesMenu {
@@ -23,6 +25,9 @@ public class ClassesMenu {
                 break;
             case 17:
                 break;
+            default:
+                System.out.println(Main.RED_UNDERLINED +"Error, wrong answer"+Main.ANSI_RESET);
+                chooseTask(scanner);
         }
     }
 }

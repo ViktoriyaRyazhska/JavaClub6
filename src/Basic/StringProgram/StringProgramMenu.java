@@ -1,10 +1,11 @@
 package StringProgram;
 
+import Main.Main;
+
 import java.util.Scanner;
 
 public class StringProgramMenu {
-    public static void chooseTask() {
-        Scanner scanner = new Scanner(System.in);
+    public static void chooseTask(Scanner scanner) {
         System.out.println("Choose the number of tasks from 52 to 69:");
         int chooseNumber = scanner.nextInt();
         switch (chooseNumber) {
@@ -53,6 +54,9 @@ public class StringProgramMenu {
             case 69:
                 StringProgramTask69.remove();
                 break;
+            default:
+                System.out.println(Main.RED_UNDERLINED +"Error, wrong answer"+Main.ANSI_RESET);
+                chooseTask(scanner);
         }
     }
 }

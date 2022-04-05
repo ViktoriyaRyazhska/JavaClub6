@@ -1,7 +1,6 @@
 package Conditions;
 
-import Conditions.ConditionsTask24;
-import Conditions.ConditionsTask29;
+import Main.Main;
 
 import java.util.Scanner;
 
@@ -50,6 +49,9 @@ public class ConditionsMenu {
             case 32:
                 ConditionsTask32.rentalCarCost();
                 break;
+            default:
+                System.out.println(Main.RED_UNDERLINED +"Error, wrong answer"+Main.ANSI_RESET);
+                chooseTask(scanner);
         }
     }
 }
