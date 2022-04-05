@@ -422,7 +422,7 @@ public class Runner {
         System.out.println("Result: "+ Task64.strCount(a,c));
     }
     public void TASK_65() {
-        System.out.println("Enter some strings: ");
+        System.out.println("Enter some words: ");
         String[] array = sc.readStringArray();
         System.out.println("Result: " + Task65.twoSort(array));
     }

@@ -120,7 +120,7 @@ public enum Tasks {
     TASK_44(44, "Grasshopper - Summation",
             "Write a program that finds the summation of every number from 1 to num. The number will"
                     +"\n" +" always be a positive integer greater than 0."),
-    TASK_45(46, "Gap in Primes"," This function should return the first pair of two prime numbers spaced with a gap of g between the limits m, n if these numbers exist otherwise `nil or null or None or Nothing (or ... depending on the language)."),
+    TASK_45(45, "Gap in Primes"," This function should return the first pair of two prime numbers spaced with a gap of g between the limits m, n if these numbers exist otherwise `nil or null or None or Nothing (or ... depending on the language)."),
     TASK_46(46, "21 Sticks","Create a robot that will always win the game. Your robot will always" +
             " go first. The function should take an integer and returns 1, 2, or 3."),
     TASK_48(48, "Rotations and reflections I",
