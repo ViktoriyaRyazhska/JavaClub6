@@ -36,12 +36,11 @@ public static void Enter(Scanner sc){
 //    System.out.println("Enter board height (int): ");
 //    final int height = sc.nextInt();
 
-    Task4 c = new Task4(14, 14);
-
-    c.draw(1, 1, 10, 10)
-            .fill(3, 3, 'o');
+    Task4 c = new Task4(7, 7);
+    c.draw(1, 1, 5, 4).fill(3, 3, 'o');
     System.out.println("---------\n|       |\n| xxxxx |\n| xooox |\n| xooox |\n| xxxxx |\n|       |\n|       |\n---------");
     System.out.println(c.drawCanvas());
+
 
 }
     public Task4(int width, int height) {
