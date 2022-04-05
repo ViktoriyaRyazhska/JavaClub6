@@ -24,10 +24,10 @@ public class Menu {
                     showTaskDetails();
                     break;
                 case 4:
-                    usersList();
+                    FoldersList();
                     break;
                 case 5:
-                    setImplementationByUser();
+                    setNewFolder();
                     break;
 
             }
@@ -37,7 +37,7 @@ public class Menu {
     }
     private void constructorRunner() {
         System.out.println("Hello!\nTo continue, please, choose folder with tasks:");
-        usersList();
+        FoldersList();
         int choose;
         do {
             choose = cs.readInt();
@@ -71,7 +71,8 @@ public class Menu {
     }
 
     public void showTaskDetails() {
-        System.out.println("Enter number of method from " + start +" to " + end);
+        System.out.println("First you need to choose a task.");
+        System.out.println("Enter number of task from " + start +" to " + end);
         int choose = cs.readInt();
         while (choose > end || choose < start) {
             System.out.println("Enter from " + start + " to " + end);
@@ -99,7 +100,7 @@ public class Menu {
         System.out.println("--------------------------------------------------");
     }
 
-    public void usersList() {
+    public void FoldersList() {
         System.out.println();
         System.out.println("List of folders:");
         for (Folders user : Folders.values()) {
@@ -107,14 +108,14 @@ public class Menu {
         }
     }
 
-    public void setImplementationByUser() {
-        usersList();
+    public void setNewFolder() {
+        FoldersList();
         System.out.println("Make your choice:");
         int choose;
         do {
             choose = cs.readInt();
         } while (choose < 1 || choose > 7);
-        runner.setUsers(Folders.getFolderById(choose));
+        runner.setFolders(Folders.getFolderById(choose));
         start = Folders.getFolderById(choose).getStart();
         end = Folders.getFolderById(choose).getEnd();
         System.out.println();

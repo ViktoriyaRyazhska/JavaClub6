@@ -7,6 +7,7 @@ import Conditions.*;
 import Loops.*;
 import OOP.Task49;
 import String.*;
+import java.util.Arrays;
 
 import java.util.Collections;
 import java.util.List;
@@ -19,23 +20,30 @@ public class Runner {
     public Runner(Folders folderById) {
         sc = new ConsoleScanner();
     }
-    public void setUsers(Folders folderById) {
+    public void setFolders(Folders folderById) {
         this.folders = folderById;
         switch (folders) {
             case BASIC:
                 System.out.println("Tasks from 1 to 11");
+                break;
             case CLASSES:
                 System.out.println("Tasks from 12 to 17");
+                break;
             case CONDITIONS:
                 System.out.println("Tasks from 18 to 31");
+                break;
             case LOOPS:
                 System.out.println("Tasks from 32 to 46");
+                break;
             case OOP:
                 System.out.println("Tasks from 47 to 50");
+                break;
             case STRINGS:
                 System.out.println("Tasks from 51 to 68");
+                break;
             case COLLECTIONS:
                 System.out.println("Tasks from 69 to 72");
+                break;
         }
         int[] startEnd = new int[2];
     }
@@ -136,8 +144,11 @@ public class Runner {
         System.out.println("Winner: " + Task16.declareWinner(f1,f2,name));
     }
     public void TASK_17() {
-        System.out.println("Enter the length, width and the height as int array: ");
-        int[] input = intArrayPositive(sc.readIntArray());
+        System.out.println("Enter the length, width and the height: ");
+        int[] input = new int[3];
+        input[0] = intPositive(sc.readInt());
+        input[1] = intPositive(sc.readInt());
+        input[2] = intPositive(sc.readInt());
         Task17 instance = new Task17(input);
         System.out.println("Volume of block: " + instance.getVolume() + "\n"
                 + "Surface area:" + instance.getSurfaceArea());
@@ -248,7 +259,7 @@ public class Runner {
     public void TASK_33() {
         System.out.println("Enter the human years: ");
         int years = intPositive(sc.readInt());
-        System.out.println("Result: " + Task33.humanYearsCatYearsDogYears(years));
+        System.out.println("Result: " + Arrays.toString(Task33.humanYearsCatYearsDogYears(years)));
     }
     public void TASK_34() {
         System.out.println("Enter an array with your averages: ");
@@ -268,7 +279,7 @@ public class Runner {
     public void TASK_37() {
         System.out.println("Enter positive int number: ");
         int a = intPositive(sc.readInt());
-        System.out.println("Result " + Task37.reverse(a).toString());
+        System.out.println("Result " + Arrays.toString(Task37.reverse(a)));
     }
     public void TASK_38() {
         System.out.println("Enter an array with your peers' test scores: ");
@@ -290,7 +301,7 @@ public class Runner {
     public void TASK_41() {
         System.out.println("Enter the string arr: ");
         String[] array = sc.readStringArray();
-        System.out.println("Result: "+ Task41.fixTheMeerkat(array).toString());
+        System.out.println("Result: "+ Arrays.toString(Task41.fixTheMeerkat(array)));
     }
     public void TASK_42() {
         System.out.println("Enter current father's age (years): ");
@@ -314,7 +325,7 @@ public class Runner {
         int g = intPositive(sc.readInt());
         int m = intPositive(sc.readInt());
         int n = intPositive(sc.readInt());
-        System.out.println("Result: "+ Task45.gap(g,m,n).toString());
+        System.out.println("Result: "+ Arrays.toString(Task45.gap(g,m,n)));
     }
     public void TASK_46() {
         System.out.println("Enter count of sticks(1/2/3): ");
