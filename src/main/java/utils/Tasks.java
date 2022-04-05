@@ -127,6 +127,7 @@ public enum Tasks {
             "There are exactly eight ways to map a square onto itself by rotation or reflection. We can take its"
                     +"\n" +" mirror image (reflection in horizontal, vertical, or either of two 45-degree diagonal lines); rotate it (by 90 degrees clockwise, 90 degrees anti-clockwise, or 180 degrees); or just leave it alone."),
     TASK_49(49,"L3375p34k","The objective of this Kata is to provide some way to encode a string into its leetspeak version."),
+    TASK_51(51,"onvert a Number to a String!","We need a function that can transform a number into a string."),
     TASK_52(52, "Reversed Strings",
             "Complete the solution so that it reverses the string passed into it."),
     TASK_53(53,"Welcome to the City","Create a method sayHello/say_hello/SayHello that takes as input a name, city, and state to welcome a person. " +
