@@ -32,15 +32,15 @@ public class AllMenu {
             switch (sc.next()) {
 
                 case "1": {
-                    System.out.println("Input: 2");
-                    System.out.println(task1.doubleInteger(2));
+                    System.out.println("Input: 3");
+                    System.out.println("2 * 3 = " + task1.doubleInteger(3));
                     showBasicMenu(sc);
                     break;
                 }
 
                 case "2": {
-                    System.out.println("Input: 2 , 3");
-                    System.out.println(Basic.Task2.multiply(2, 3));
+                    System.out.println("Input: 7 , 5");
+                    System.out.println("7 * 5 = " + Basic.Task2.multiply(7, 5));
                     showBasicMenu(sc);
                     break;
                 }
@@ -48,13 +48,13 @@ public class AllMenu {
                 case "3": {
 
                     System.out.println("Input:  10, 12, 5");
-                    System.out.println(Task3.getVolumeOfCubiod(10, 12, 5));
+                    System.out.println("Volume of a cuboid = " + Task3.getVolumeOfCubiod(10, 12, 5));
                     showBasicMenu(sc);
                     break;
                 }
                 case "4": {
                     System.out.println("Input:  100, 21");
-                    System.out.println(Basic.Task4.isDivisible(100, 21));
+                    System.out.println("This is " + Basic.Task4.isDivisible(100, 21) + " divisible numbers");
                     showBasicMenu(sc);
                     break;
                 }
@@ -69,19 +69,19 @@ public class AllMenu {
                 }
                 case "6": {
                     System.out.println("Input:  100");
-                    System.out.println(Basic.Task6.toBinary(100));
+                    System.out.println("In binary it is a " + Basic.Task6.toBinary(100));
                     showBasicMenu(sc);
                     break;
                 }
                 case "7": {
                     System.out.println("Input:  1, 1, 1");
-                    System.out.println(Basic.Task7.past(1, 1, 1));
+                    System.out.println("1hour 1minute and 1second = " + Basic.Task7.past(1, 1, 1) + " milliseconds");
                     showBasicMenu(sc);
                     break;
                 }
                 case "8": {
                     System.out.println("Input:  1962");
-                    System.out.println(Basic.Task8.century(1962));
+                    System.out.println("1962 year is the " +Basic.Task8.century(1962) + "th century");
                     showBasicMenu(sc);
                     break;
                 }
@@ -93,7 +93,7 @@ public class AllMenu {
                 }
                 case "10": {
                     System.out.println("Input:  21");
-                    System.out.println(Basic.Task10.datingRange(21));
+                    System.out.println("You can date with people who have " + Basic.Task10.datingRange(21) + " years");
                     showBasicMenu(sc);
                     break;
                 }
@@ -139,7 +139,9 @@ public class AllMenu {
 
                 case "1": {
                     System.out.println("Input:  10, value, asd");
-                    System.out.println(new Classes.Task1(10, "value", "asd").toString());
+
+                    Classes.Task1 task = new Classes.Task1(10, "value", "asd");
+                    System.out.println(task.getNumber() + " " + task.getStringValue() + " " + task.getAnObject());
                     showClassesMenu(sc);
                     break;
                 }
@@ -166,7 +168,8 @@ public class AllMenu {
                     break;
                 }
                 case "5": {
-                    System.out.println(Classes.Task5.declareWinner(new Classes.Fighter("Lew", 10, 2),
+                    System.out.println("Fighter 1 - Lew health=10 damage=2\nFighter 2 - Harry health=5 damage=4\nFIGHT!!!");
+                    System.out.println("The winner is " +Classes.Task5.declareWinner(new Classes.Fighter("Lew", 10, 2),
                             new Classes.Fighter("Harry", 5, 4), "Lew"));
                     showClassesMenu(sc);
                     break;
