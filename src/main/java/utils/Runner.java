@@ -287,7 +287,7 @@ public class Runner {
     public void TASK_35() {
         System.out.println("Enter an array of int: ");
         int[] arr = intArrayPositive(sc.readIntArray());
-        System.out.println("Result: " + Task35.map(arr));
+        System.out.println("Result: " + Arrays.toString(Task35.map(arr)));
     }
     public void TASK_36() {
         System.out.println("Enter an array of sheep where some sheep may be missing from their place: ");
