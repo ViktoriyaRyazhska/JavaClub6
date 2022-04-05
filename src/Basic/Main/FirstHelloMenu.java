@@ -29,32 +29,20 @@ public class FirstHelloMenu {
             helloMenu();
             int chooseNumber = scanner.nextInt();
             switch (chooseNumber) {
-                case 1:
-                    BasicProgramMenu.chooseTask(scanner);
-                    break;
-                case 2:
-                    ClassesMenu.chooseTask(scanner);
-                    break;
-                case 3:
-                    ConditionsMenu.chooseTask(scanner);
-                    break;
-                case 4:
-                    LoopsMenu.chooseTask(scanner);
-                    break;
-                case 5:
-                    StringProgramMenu.chooseTask(scanner);
-                    break;
-                case 6:
-                    OOPMenu.chooseTask(scanner);
-                    break;
-                case 7:
-                    CollectionsMenu.chooseTask(scanner);
-                    break;
-                case 0:
-                    System.exit(0);
-                default:
-                    System.out.println("Error, wrong answer, put number from 1 to 7");
+                case 1 -> BasicProgramMenu.chooseTask(scanner);
+                case 2 -> ClassesMenu.chooseTask(scanner);
+                case 3 -> ConditionsMenu.chooseTask(scanner);
+                case 4 -> LoopsMenu.chooseTask(scanner);
+                case 5 -> StringProgramMenu.chooseTask(scanner);
+                case 6 -> OOPMenu.chooseTask(scanner);
+                case 7 -> CollectionsMenu.chooseTask(scanner);
+                case 0 -> System.exit(0);
+                default -> System.out.println("Error, wrong answer, put number from 1 to 7");
             }
         }
+    }
+    public static void sorryMessage(int taskNumber){
+        System.out.println("We are so sorry, but  task"+taskNumber+"currently doesn't work\n"+
+                "Please choose another one");
     }
 }
