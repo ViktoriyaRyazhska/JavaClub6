@@ -11,11 +11,12 @@ public class ClassesMenu {
         int chooseNumber = scanner.nextInt();
         switch (chooseNumber) {
             case 12:
+                new ClassTask12().result();
                 break;
             case 13:
                 break;
             case 14:
-                ClassMenuTask14main.resTask14(scanner);
+                ClassTask14main.resTask14(scanner);
                 break;
             case 15:
                 ClassTask15main.resTask15(scanner);
