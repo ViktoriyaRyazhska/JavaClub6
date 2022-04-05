@@ -68,8 +68,11 @@ public class Runner {
     }
     public void TASK_3() {
         System.out.println("Enter the length, width and the height: ");
+        System.out.println("Enter the length: ");
         double length = doublePositive(sc.readDouble());
+        System.out.println("Enter the width: ");
         double width = doublePositive(sc.readDouble());
+        System.out.println("Enter the height: ");
         double height = doublePositive(sc.readDouble());
         System.out.println("Result: " + Task3.getVolumeOfCuboid(length, width, height));
     }
@@ -91,8 +94,11 @@ public class Runner {
     }
     public void TASK_7(){
         System.out.println("Enter hour, minute and seconds: ");
+        System.out.println("Enter hour: ");
         int hour = intPositive(sc.readInt());
+        System.out.println("Enter minute: ");
         int minute = intPositive(sc.readInt());
+        System.out.println("Enter seconds: ");
         int seconds = intPositive(sc.readInt());
         System.out.println("Result: " + Task7.Past(hour,minute,seconds));
     }
@@ -134,6 +140,10 @@ public class Runner {
         int denominator = intPositive(sc.readInt());
         System.out.println(Task14.add(new Task14(numerator, denominator)));
     }
+    public void TASK_15(){
+        int x = intPositive(sc.readInt());
+
+    }
     public void TASK_16() {
         System.out.println("Enter the Figter1 name health damagePerAttack : ");
         String name = sc.readString();
@@ -166,8 +176,11 @@ public class Runner {
     }
     public void TASK_19() {
         System.out.println("Enter number n, x and y: ");
+        System.out.println("Enter number n: ");
         long n = longPositive(sc.readLong());
+        System.out.println("Enter number x: ");
         long x = longPositive(sc.readLong());
+        System.out.println("Enter number y: ");
         long y = longPositive(sc.readLong());
         System.out.println("Result: " + Task19.isDivisible(n, x, y));
     }
@@ -201,7 +214,9 @@ public class Runner {
     }
     public void TASK_23() {
         System.out.println("Enter \"paper\" or\"rock\" or \"scissors\" for two players:");
+        System.out.println("Enter for first player: ");
         String player1 = sc.readString();
+        System.out.println("Enter for second player: ");
         String player2 = sc.readString();
         System.out.println("Result: " + Task23.rps(player1, player2));
     }
@@ -228,8 +243,11 @@ public class Runner {
         System.out.println("Enter a \"cap\" - is the amount of people the bus can hold excluding the driver\n" +
                 "\"on\" - is the number of people on the bus excluding the driver\n" +
                 "\"wait\" is the number of people waiting to get on to the bus excluding the driver");
+        System.out.println("Enter amount of people the bus can hold:");
         int cap = intPositive(sc.readInt());
+        System.out.println("Enter number of people on the bus:");
         int on = intPositive(sc.readInt());
+        System.out.println("Enter number of people waiting to get on to the bus:");
         int wait = intPositive(sc.readInt());
         System.out.println("Result: " + Task27.enough(cap, on, wait));
     }
@@ -254,7 +272,7 @@ public class Runner {
     public void TASK_31() {
         System.out.println("Enter number of days: ");
         int days = intPositive(sc.readInt());
-        System.out.println("Result: " + Task31.rentalCarCost(days));
+        System.out.println("Result: " + Task31.rentalCarCost(days)+"$");
     }
     public void TASK_32() {
         System.out.println("Enter the string and num of repeats : ");
@@ -275,7 +293,7 @@ public class Runner {
     public void TASK_35() {
         System.out.println("Enter an array of int: ");
         int[] arr = intArrayPositive(sc.readIntArray());
-        System.out.println("Result: " + Task35.map(arr));
+        System.out.println("Result: " + Arrays.toString(Task35.map(arr)));
     }
     public void TASK_36() {
         System.out.println("Enter an array of sheep where some sheep may be missing from their place: ");
@@ -317,7 +335,7 @@ public class Runner {
         System.out.println("Result: " + Task42.TwiceAsOld(fatherAge, sonAge));
     }
     public void TASK_43() {
-        System.out.println("Enter the int namber : ");
+        System.out.println("Enter the int number : ");
         int number = intPositive(sc.readInt());
         System.out.println("Result: " + Task43.nearestSq(number));
     }
@@ -446,7 +464,7 @@ public class Runner {
         System.out.println("Result: "+ Task64.strCount(a,c));
     }
     public void TASK_65() {
-        System.out.println("Enter some strings: ");
+        System.out.println("Enter some words: ");
         String[] array = sc.readStringArray();
         System.out.println("Result: " + Task65.twoSort(array));
     }
@@ -487,7 +505,7 @@ public class Runner {
         System.out.println("Result: " + Task70.CreateList(number));
     }
     public void TASK_71() {
-        System.out.println("Enter numbers: ");
+        System.out.println("Enter int numbers: ");
         List<Integer> list = Collections.singletonList(intPositive(sc.readInt()));
         System.out.println("Result: " + Task71.filterOddNumber(list));
     }
