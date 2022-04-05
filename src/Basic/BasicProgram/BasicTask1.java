@@ -4,8 +4,7 @@ import java.util.Scanner;
 
 public class BasicTask1 {
     public static int doubleInteger(int i) {
-        int result=i*i;
-        return result;
+        return i*i;
 
     }
     public static void doubleInteger(Scanner scanner){

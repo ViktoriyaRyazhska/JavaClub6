@@ -2,7 +2,7 @@ package Classes;
 
 import java.util.Scanner;
 
-public class ClassMenuTask14main {
+public class ClassTask14main {
     public static void resTask14(Scanner scanner) {
         System.out.println("You are provided with a skeleton of the class 'Fraction',\n" +
                 " which accepts two arguments (numerator, denominator).\n" +
@@ -16,6 +16,6 @@ public class ClassMenuTask14main {
         long topNew = scanner.nextLong();
         System.out.print("bottomSecond= ");
         long bottomNew = scanner.nextLong();
-        new ClassMenuTask14(top, bottom).add(new ClassMenuTask14(topNew, bottomNew));
+        new ClassTask14(top, bottom).add(new ClassTask14(topNew, bottomNew));
     }
 }

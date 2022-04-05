@@ -2,14 +2,14 @@ package Classes;
 
 import java.util.Scanner;
 
-public class ClassMenuTask14 implements Comparable<ClassMenuTask14> {
+public class ClassTask14 implements Comparable<ClassTask14> {
     Scanner scanner = new Scanner(System.in);
     private final long top;
     private final long bottom;
     long topNew;
     long bottomNew;
 
-    public ClassMenuTask14(long numerator, long denominator) {
+    public ClassTask14(long numerator, long denominator) {
         this.top = numerator;
         this.bottom = denominator;
     }
@@ -21,11 +21,11 @@ public class ClassMenuTask14 implements Comparable<ClassMenuTask14> {
 
     @Override
     public boolean equals(Object o) {
-        return compareTo((ClassMenuTask14) o) == 0;
+        return compareTo((ClassTask14) o) == 0;
     }
 
     @Override
-    public int compareTo(ClassMenuTask14 f2) {
+    public int compareTo(ClassTask14 f2) {
         return Long.compare(top * f2.bottom, f2.top * bottom);
     }
 
@@ -49,14 +49,14 @@ public class ClassMenuTask14 implements Comparable<ClassMenuTask14> {
     }
 
     //Add two fractions
-    public ClassMenuTask14 add(ClassMenuTask14 f2) {
+    public ClassTask14 add(ClassTask14 f2) {
         topNew = this.getTop() * f2.bottom + this.getBottom() * f2.top;
         bottomNew = this.getBottom() * f2.bottom;
         long div = greatestCommonDivide(topNew, bottomNew);
         topNew = topNew / div;
         bottomNew = bottomNew / div;
         System.out.println(topNew + "/" + bottomNew);
-        return new ClassMenuTask14(topNew, bottomNew);
+        return new ClassTask14(topNew, bottomNew);
     }
 
     public String toString() {
