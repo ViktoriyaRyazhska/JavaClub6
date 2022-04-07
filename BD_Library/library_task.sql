@@ -133,8 +133,27 @@ where title='Title6' and copies > 0 ;
 -- -----------------------------------------------------
 -- Get the most popular and the most unpopular books in selected period
 -- -----------------------------------------------------
--- TODO
-select * from book;
+
+SELECT
+	b.title  as Popular,
+    COUNT(b.title) AS CountRequest
+FROM  request r
+JOIN  book b on r.book_id = b.id
+WHERE  r.first_day between '2022-01-01 00:00:00' and '2023-01-01 00:00:00' 
+GROUP BY b.title
+ORDER BY Popular DESC
+LIMIT    1;
+
+SELECT
+	b.title  as Unpopular,
+    COUNT(b.title) AS CountRequest
+FROM  request r
+JOIN  book b on r.book_id = b.id
+WHERE  r.first_day between '2022-01-01 00:00:00' and '2023-01-01 00:00:00' 
+GROUP BY b.title
+ORDER BY Unpopular ASC
+LIMIT    1;
+
 
 
 -- -----------------------------------------------------
