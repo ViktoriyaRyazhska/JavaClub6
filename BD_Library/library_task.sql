@@ -225,3 +225,66 @@ where r.first_day between '2022-01-01 00:00:00' and now();
 
 select * from user;
 select * from request;
+
+
+
+-- ////////////////////////////////////////////////////////////////////////////
+-- ////////////////////////////////////////////////////////////////////////////
+-- ROMAN PRYSTAIKO QUERIES
+-- ////////////////////////////////////////////////////////////////////////////
+
+-- -----------------------------------------------------
+-- Find books by author (main author, co-author)
+-- -----------------------------------------------------
+SET @m_autor = 'author';
+Select * From book where m_autor like CONCAT('%', @m_autor, '%');
+
+SET @m_co_autor = 'co_author2';
+Select * From book where co_autor like CONCAT('%', @m_co_autor, '%');
+
+-- -----------------------------------------------------
+-- Get his/her statistics (how many and how long books were been read, reading now)
+-- -----------------------------------------------------
+Select tbl.name, 
+		Sum(counter) as books, 
+        sum(days_read) as days_read,
+        sum(days_reading) as days_reading
+From        
+(Select 1 as counter, CONCAT(u.name, ' ', u.surname) as name, 
+DATEDIFF(r.date_return, r.first_day) as days_read, 
+DATEDIFF((IF( r.date_return IS NULL,now(),null)), r.first_day) as days_reading,
+r.date_return
+ From user as u left outer join 
+request as r on u.id = r.user_id) as tbl group by tbl.name, tbl.date_return;
+
+
+-- -----------------------------------------------------
+-- Give book to Reader
+-- -----------------------------------------------------
+SET @id = 4;
+SET @book_id = 1;
+SET @first_day = '01.02.2022';
+SET @last_day = '01.09.2022';
+SET @user_id = 1;
+
+INSERT INTO  request (id, first_day, last_day, user_id, book_id) 
+select request_id, first_day, last_day, user_id, tbl2.book_id
+from ( 
+		select 
+		@id as request_id,
+        @first_day as first_day, 
+        @last_day as last_day,
+        @user_id as user_id,
+        copies - Sum(not_returned) as copies, book_id
+		from(
+			Select  1 as not_returned, book_id 
+			from request as r 
+			where r.book_id = @book_id 
+			and r.date_return is null
+		) as tbl right outer join book as b on b.id = tbl.book_id where b.id = @book_id 
+		group by book_id
+	) as tbl2 where copies > 0 ;
+-- ////////////////////////////////////////////////////////////////////////////
+
+
+
