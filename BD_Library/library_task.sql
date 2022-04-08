@@ -91,19 +91,19 @@ INSERT INTO user (name, surname, email, password, date_registr, birthday, role) 
 ('Name6', 'Surname6', 'email_6@email.com','12346587','2022-11-10 00:00:00', '2001-03-31','ROLE_USER');
 
 INSERT INTO book (title, m_autor, co_autor, genre, copies) VALUES 
-('Title1', 'Autor1', 'Co_autor1','genre1',5), 
-('Title2', 'Autor2', 'Co_autor2','genre1',1),
-('Title3', 'Autor1', 'Co_autor1','genre2',8),
-('Title4', 'Autor3', 'Co_autor3','genre2',100),
-('Title5', 'Autor3', 'Co_autor3','genre3',345),
-('Title6', 'Autor2', 'Co_autor1','genre1',0);
+('Title1', 'Author1', 'Co_author1','genre1',5), 
+('Title2', 'Author2', 'Co_author2','genre1',1),
+('Title3', 'Author1', 'Co_author1','genre2',8),
+('Title4', 'Author3', 'Co_author3','genre2',100),
+('Title5', 'Author3', 'Co_author3','genre3',345),
+('Title6', 'Author2', 'Co_author1','genre1',0);
 
 INSERT INTO request (first_day, last_day, date_return, user_id, book_id) VALUES 
-('2022-01-01 00:00:00', DATE_ADD(NOW(), INTERVAL 14 DAY), '0000-00-00 00:00:00', 1, 5),
+('2022-01-01 00:00:00', DATE_ADD(NOW(), INTERVAL 14 DAY), null, 1, 5),
 ('2022-03-03 00:00:00', DATE_ADD(NOW(), INTERVAL 14 DAY), '2022-03-14 00:00:00', 1, 4),
 ('2022-08-09 00:00:00', DATE_ADD(NOW(), INTERVAL 14 DAY), '2022-08-29 00:00:00', 1, 1),
 ('2022-11-11 00:00:00', DATE_ADD(NOW(), INTERVAL 14 DAY), '2022-11-20 00:00:00', 2, 5),
-('2022-12-31 00:00:00', DATE_ADD(NOW(), INTERVAL 14 DAY), '0000-00-00 00:00:00', 3, 5);
+('2022-12-31 00:00:00', DATE_ADD(NOW(), INTERVAL 14 DAY), null, 3, 5);
 -- -----------------------------------------------------
 -- Random data for testing
 -- -----------------------------------------------------
@@ -184,15 +184,15 @@ SELECT
     count(r.id) - (SELECT count(r.id)
      FROM request r
      join user u on r.user_id = u.id
-     WHERE r.date_return = '0000-00-00 00:00:00' and u.name = 'Name1') as AlreadyRead,
+     WHERE r.date_return is null and u.name = 'Name3') as AlreadyRead,
 	count(r.id) - (SELECT count(r.id)
      FROM request r
      join user u on r.user_id = u.id
-     WHERE r.date_return != '0000-00-00 00:00:00' and u.name = 'Name1' ) as isReading
+     WHERE r.date_return is  not null and u.name = 'Name3' ) as isReading
 FROM  request r
 join user u on r.user_id = u.id
 join book b on r.book_id = b.id
-where u.name = 'Name1';
+where u.name = 'Name3';
 
 SELECT
     u.name,
@@ -201,7 +201,7 @@ SELECT
 FROM  request r
 join user u on r.user_id = u.id
 join book b on r.book_id = b.id
-where u.name = 'Name1' and r.date_return = '0000-00-00 00:00:00';
+where u.name = 'Name1' and r.date_return is null;
 
 SELECT
     u.name,
@@ -210,7 +210,7 @@ SELECT
 FROM  request r
 join user u on r.user_id = u.id
 join book b on r.book_id = b.id
-where u.name = 'Name1' and r.date_return != '0000-00-00 00:00:00';
+where u.name = 'Name1' and r.date_return is not null;
 
 
 -- -----------------------------------------------------
@@ -223,12 +223,6 @@ join book b on r.book_id = b.id
 where r.first_day between '2022-01-01 00:00:00' and now();
 
 
-select * from user;
-select * from request;
-
-
-
--- ////////////////////////////////////////////////////////////////////////////
 -- ////////////////////////////////////////////////////////////////////////////
 -- ROMAN PRYSTAIKO QUERIES
 -- ////////////////////////////////////////////////////////////////////////////
@@ -236,10 +230,10 @@ select * from request;
 -- -----------------------------------------------------
 -- Find books by author (main author, co-author)
 -- -----------------------------------------------------
-SET @m_autor = 'author';
+SET @m_autor = 'author1';
 Select * From book where m_autor like CONCAT('%', @m_autor, '%');
 
-SET @m_co_autor = 'co_author2';
+SET @m_co_autor = 'Co_author1';
 Select * From book where co_autor like CONCAT('%', @m_co_autor, '%');
 
 -- -----------------------------------------------------
@@ -287,4 +281,7 @@ from (
 -- ////////////////////////////////////////////////////////////////////////////
 
 
+select * from book;
+select * from user;
+select * from request;
 
