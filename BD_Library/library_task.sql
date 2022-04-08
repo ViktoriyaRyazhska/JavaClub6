@@ -278,6 +278,47 @@ from (
 		) as tbl right outer join book as b on b.id = tbl.book_id where b.id = @book_id 
 		group by book_id
 	) as tbl2 where copies > 0 ;
+	
+
+
+-- ----------------------------------------------------------------------------------------
+-- Get statistics by Readers (average age, time of working with Library, average number of requests to Library in selected period)
+-- ----------------------------------------------------------------------------------------
+Select
+avg(YEAR(now()) - YEAR(u.birthday)
+    - (DATE_FORMAT(now(), '%m%d') < DATE_FORMAT(u.birthday, '%m%d'))) as avg_age
+From user as u;
+		
+        
+Select
+id,
+CONCAT(u.name, ' ', u.surname) as name, 
+ YEAR(now()) - YEAR(date_registr)
+    - (DATE_FORMAT(now(), '%m%d') < DATE_FORMAT(date_registr, '%m%d')) as  timework
+From user as u;
+		
+        
+SET @user_id = 1;
+SET @dDateFrom = '01.02.2022';
+SET @dDateTo = '01.09.2022';
+
+select avg(requests) as avg_requests_count,
+dDateFrom, dDateTo
+From (
+	Select sum(counter) as requests,
+	dDateFrom, dDateTo, user_id
+	from (
+		select
+		1 as counter, 
+		@dDateFrom as dDateFrom,
+		@dDateTo as dDateTo,
+		user_id
+		from request
+		where first_day >= @dDateFrom and (last_day <= @dDateTo  or (date_return <= @dDateTo or date_return = null))
+	  ) as tbl 
+) as tbl2
+        
+
 -- ////////////////////////////////////////////////////////////////////////////
 
 
