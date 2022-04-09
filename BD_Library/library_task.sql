@@ -188,7 +188,7 @@ CONCAT(a.name, ' ', a.surname) as CoAuthor  -- не знаю як поверну
       join book_authors ba on ba.author_id = a.id
       join book b on ba.book_id = b.id
      WHERE ba.is_main is not true 
-     order by b.title;
+     order by b.id;
 
      
 
@@ -234,10 +234,10 @@ select * from request;
 -- -----------------------------------------------------
 
 UPDATE book , book_authors
-SET book.title='TitleUpdate',  book.genre='genre6', 
-book.copies = 9, book_authors.author_id = 2
-WHERE book.id = book_authors.book_id AND book.id in (3) AND book_authors.is_main = true; -- не знаю як оновити CoAuthor
-
+SET book.title='TitleUpdate',  book.genre='genre6', book.copies = 9, 
+book_authors.author_id = (CASE book_authors.is_main WHEN true THEN 3
+													WHEN false THEN 4  END)
+WHERE book.id = book_authors.book_id AND book.id in (3);
 
 
 -- -----------------------------------------------------
