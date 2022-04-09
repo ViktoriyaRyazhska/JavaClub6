@@ -117,60 +117,6 @@ ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Random data for testing
--- -----------------------------------------------------
-
-INSERT INTO role (role) VALUES 
-('ROLE_USER'),
-('ROLE_ADMIN');
-
-INSERT INTO user (name, surname, email, password, date_registr, birthday, role) VALUES 
-('Name1', 'Surname1', 'email_1@email.com','12345678','2022-02-16 00:00:00', '2000-10-10', 1), 
-('Name1', 'Surname1', 'email_1@email.com','12345678','2022-02-17 00:00:00', '2000-10-10', 2),
-('Name2', 'Surname2', 'email_2@email.com','12345687','2017-12-10 00:00:00', '2001-01-01',2),
-('Name3', 'Surname3', 'email_3@email.com','21345687','2018-08-09 00:00:00', '1999-04-02',2),
-('Name4', 'Surname4', 'email_4@email.com','12435687','2021-04-04 00:00:00', '1999-11-11',2),
-('Name5', 'Surname5', 'email_5@email.com','12354687','2021-06-03 00:00:00', '2001-08-09',2),
-('Name6', 'Surname6', 'email_6@email.com','12346587','2022-01-10 00:00:00', '2001-03-31',2);
-
-
-INSERT INTO author (name, surname) VALUES 
-('Author1', 'Author1'),
-('Author2', 'Author2'),
-('Author3', 'Author3'),
-('Author4', 'Author4');
-
-INSERT INTO book (title, genre, copies) VALUES 
-('Title1','genre1',5), 
-('Title2','genre1',1),
-('Title3', 'genre2',8),
-('Title4', 'genre2',100),
-('Title5', 'genre3',345),
-('Title6', 'genre1',0);
-
-INSERT INTO book_authors (book_id, author_id, is_main) VALUES 
-(1, 1, true), (1, 2, false),
-(2, 1, true), (2, 2, false),
-(3, 3, true), (3, 1, false),
-(4, 4, true), (4, 2, false),
-(5, 3, true), (5, 1, false),
-(6, 2, true), (6, 1, false) ;
-
-INSERT INTO request (first_day, last_day, date_return, user_id, book_id) VALUES 
-('2022-01-01 00:00:00', DATE_ADD(NOW(), INTERVAL 14 DAY), null, 2, 5),
-('2022-03-03 00:00:00', DATE_ADD(NOW(), INTERVAL 14 DAY), '2022-03-14 00:00:00', 2, 4),
-('2022-02-09 00:00:00', DATE_ADD(NOW(), INTERVAL 14 DAY), '2022-02-28 00:00:00', 3, 1),
-('2022-01-11 00:00:00', DATE_ADD(NOW(), INTERVAL 14 DAY), '2022-01-20 00:00:00', 4, 5),
-('2022-04-01 00:00:00', DATE_ADD(NOW(), INTERVAL 14 DAY), null, 5, 5),
-('2022-04-01 00:00:00', DATE_ADD(NOW(), INTERVAL 14 DAY), null, 5, 1);
--- -----------------------------------------------------
--- Random data for testing
--- -----------------------------------------------------
-
-
-
-
--- -----------------------------------------------------
 -- Get information about all books
 -- -----------------------------------------------------
 SELECT b.*,
@@ -205,6 +151,21 @@ where title='Title4';
 
 
 -- -----------------------------------------------------
+-- Find books by author (main author, co-author)            TODO
+-- -----------------------------------------------------
+SET @m_autor = 'author1';
+Select * From book where m_autor like CONCAT('%', @m_autor, '%');
+
+SET @m_co_autor = 'Co_author1';
+Select * From book where co_autor like CONCAT('%', @m_co_autor, '%');
+
+
+-- -----------------------------------------------------
+-- Find book by title          TODO
+-- -----------------------------------------------------
+
+
+-- -----------------------------------------------------
 -- Get the most popular and the most unpopular books in selected period
 -- -----------------------------------------------------
 SELECT
@@ -227,12 +188,36 @@ GROUP BY b.title
 ORDER BY Unpopular ASC
 LIMIT    1;
 
-select * from request;
+
+-- -----------------------------------------------------
+-- Return book         TODO
+-- -----------------------------------------------------
+
+
+-- -----------------------------------------------------
+-- Get his/her statistics (how many and how long books were been read, reading now)
+-- -----------------------------------------------------
+Select tbl.name, 
+		Sum(counter) as books, 
+        sum(days_read) as days_read,
+        sum(days_reading) as days_reading
+From        
+(Select 1 as counter, CONCAT(u.name, ' ', u.surname) as name, 
+DATEDIFF(r.date_return, r.first_day) as days_read, 
+DATEDIFF((IF( r.date_return IS NULL,now(),null)), r.first_day) as days_reading,
+r.date_return
+ From user as u left outer join 
+request as r on u.id = r.user_id) as tbl group by tbl.name, tbl.date_return;
+
+
+-- -----------------------------------------------------
+-- Register book with copies        TODO
+-- -----------------------------------------------------
+
 
 -- -----------------------------------------------------
 -- Update book’ information
 -- -----------------------------------------------------
-
 UPDATE book , book_authors
 SET book.title='TitleUpdate',  book.genre='genre6', book.copies = 9, 
 book_authors.author_id = (CASE book_authors.is_main WHEN true THEN 3
@@ -241,17 +226,51 @@ WHERE book.id = book_authors.book_id AND book.id in (3);
 
 
 -- -----------------------------------------------------
--- Delete One copy/Book with all copies
+-- Delete One copy/Book with all copies             TODO
 -- -----------------------------------------------------
 update book set  copies = 7  where id in (3);
-DELETE FROM book WHERE id in (4);
+DELETE FROM book WHERE id in (2);
 select * from book;
 
+-- -----------------------------------------------------
+-- Give book to Reader
+-- -----------------------------------------------------
+SET @id = 4;
+SET @book_id = 1;
+SET @first_day = '01.02.2022';
+SET @last_day = '01.09.2022';
+SET @user_id = 1;
+
+INSERT INTO  request (id, first_day, last_day, user_id, book_id) 
+select request_id, first_day, last_day, user_id, tbl2.book_id
+from ( 
+		select 
+		@id as request_id,
+        @first_day as first_day, 
+        @last_day as last_day,
+        @user_id as user_id,
+        copies - Sum(not_returned) as copies, book_id
+		from(
+			Select  1 as not_returned, book_id 
+			from request as r 
+			where r.book_id = @book_id 
+			and r.date_return is null
+		) as tbl right outer join book as b on b.id = tbl.book_id where b.id = @book_id 
+		group by book_id
+	) as tbl2 where copies > 0 ;
+
+
 
 -- -----------------------------------------------------
--- Get statistics by Reader (books which this user has read, is reading, how long he is our client)
+-- Set title of book and display count of this Book’ copies 
+-- with information about them (available/unavailable in Library)     TODO
 -- -----------------------------------------------------
 
+
+-- -----------------------------------------------------
+-- Get statistics by Reader (books which this user has read, is reading, 
+-- how long he is our client)
+-- -----------------------------------------------------
 SET @AlreadyRead = (SELECT count(r.id)
      FROM request r
      join user u on r.user_id = u.id
@@ -289,76 +308,15 @@ join book b on r.book_id = b.id
 where u.name = 'Name4' and r.date_return is not null;
 
 
--- -----------------------------------------------------
--- How many books were giving in selected period?
--- -----------------------------------------------------
-SELECT
-   count(b.id)  as Giving
-FROM  request r
-join book b on r.book_id = b.id
-where r.first_day between '2022-01-01 00:00:00' and now();
-
-
--- ////////////////////////////////////////////////////////////////////////////
--- ROMAN PRYSTAIKO QUERIES
--- ////////////////////////////////////////////////////////////////////////////
 
 -- -----------------------------------------------------
--- Find books by author (main author, co-author)
+-- Get statistics by Book (general, by copies, average time of reading)   TODO
 -- -----------------------------------------------------
-SET @m_autor = 'author1';
-Select * From book where m_autor like CONCAT('%', @m_autor, '%');
-
-SET @m_co_autor = 'Co_author1';
-Select * From book where co_autor like CONCAT('%', @m_co_autor, '%');
-
--- -----------------------------------------------------
--- Get his/her statistics (how many and how long books were been read, reading now)
--- -----------------------------------------------------
-Select tbl.name, 
-		Sum(counter) as books, 
-        sum(days_read) as days_read,
-        sum(days_reading) as days_reading
-From        
-(Select 1 as counter, CONCAT(u.name, ' ', u.surname) as name, 
-DATEDIFF(r.date_return, r.first_day) as days_read, 
-DATEDIFF((IF( r.date_return IS NULL,now(),null)), r.first_day) as days_reading,
-r.date_return
- From user as u left outer join 
-request as r on u.id = r.user_id) as tbl group by tbl.name, tbl.date_return;
-
-
--- -----------------------------------------------------
--- Give book to Reader
--- -----------------------------------------------------
-SET @id = 4;
-SET @book_id = 1;
-SET @first_day = '01.02.2022';
-SET @last_day = '01.09.2022';
-SET @user_id = 1;
-
-INSERT INTO  request (id, first_day, last_day, user_id, book_id) 
-select request_id, first_day, last_day, user_id, tbl2.book_id
-from ( 
-		select 
-		@id as request_id,
-        @first_day as first_day, 
-        @last_day as last_day,
-        @user_id as user_id,
-        copies - Sum(not_returned) as copies, book_id
-		from(
-			Select  1 as not_returned, book_id 
-			from request as r 
-			where r.book_id = @book_id 
-			and r.date_return is null
-		) as tbl right outer join book as b on b.id = tbl.book_id where b.id = @book_id 
-		group by book_id
-	) as tbl2 where copies > 0 ;
-	
 
 
 -- ----------------------------------------------------------------------------------------
--- Get statistics by Readers (average age, time of working with Library, average number of requests to Library in selected period)
+-- Get statistics by Readers (average age, time of working with Library,
+-- average number of requests to Library in selected period)
 -- ----------------------------------------------------------------------------------------
 Select
 avg(YEAR(now()) - YEAR(u.birthday)
@@ -392,10 +350,28 @@ From (
 		where first_day >= @dDateFrom and (last_day <= @dDateTo  or (date_return <= @dDateTo or date_return = null))
 	  ) as tbl 
 ) as tbl2;
-        
+
+
+-- -----------------------------------------------------
+-- Get list of users who has not returned book in time 
+-- with detailed information about them                       TODO
+-- -----------------------------------------------------
+
+
+-- -----------------------------------------------------
+-- How many books were giving in selected period?
+-- -----------------------------------------------------
+SELECT
+   count(b.id)  as Giving
+FROM  request r
+join book b on r.book_id = b.id
+where r.first_day between '2022-01-01 00:00:00' and now();
+
+
+
 
 -- ////////////////////////////////////////////////////////////////////////////
-
+select * from author;
 select * from book_authors;
 select * from book;
 select * from user;
