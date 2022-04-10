@@ -6,9 +6,9 @@ USE `library_task` ;
 -- Table `library_task`.`role`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `library_task`.`role` (
-  `id` INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
-  `role` VARCHAR(45) NULL)
-ENGINE = InnoDB;
+    `id` INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    `role` VARCHAR(45) NULL
+)  ENGINE=INNODB;
 
 -- -----------------------------------------------------
 -- Table `library_task`.`user`
@@ -192,9 +192,11 @@ LIMIT    1;
 
 
 -- -----------------------------------------------------
--- Return book         TODO
+-- Return book      
 -- -----------------------------------------------------
-
+UPDATE request, book
+SET request.date_return = NOW(), book.copies = book.copies + 1
+WHERE request.id = 1 and book.id = 2;
 
 -- -----------------------------------------------------
 -- Get his/her statistics (how many and how long books were been read, reading now)
@@ -232,11 +234,16 @@ WHERE book.id = book_authors.book_id AND book.id in (3);
 
 
 -- -----------------------------------------------------
--- Delete One copy/Book with all copies             TODO
+-- Delete One copy/Book with all copies            
 -- -----------------------------------------------------
-update book set  copies = 7  where id in (3);
-DELETE FROM book WHERE id in (2);
-select * from book;
+SET @copy = 3;
+
+UPDATE book
+SET book.copies = book.copies - @copy
+WHERE book.id = 7
+
+DELETE FROM book
+WHERE book.id = 8
 
 -- -----------------------------------------------------
 -- Give book to Reader
@@ -323,8 +330,12 @@ where u.name = 'Name4' and r.date_return is not null;
 
 
 -- -----------------------------------------------------
--- Get statistics by Book (general, by copies, average time of reading)   TODO
+-- Get statistics by Book (general, by copies, average time of reading)   
 -- -----------------------------------------------------
+SELECT ROUND(AVG(DATEDIFF(request.date_return, request.first_day))) as AVERAGE_TIME
+FROM request
+WHERE request.book_id = 2 and request.date_return is not NULL;
+
 
 
 -- ----------------------------------------------------------------------------------------
