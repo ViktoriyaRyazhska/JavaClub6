@@ -161,9 +161,11 @@ Select * From book where co_autor like CONCAT('%', @m_co_autor, '%');
 
 
 -- -----------------------------------------------------
--- Find book by title          TODO
+-- Find book by title          
 -- -----------------------------------------------------
 
+SET @btitle = 'renat';
+Select * From book where title like CONCAT('%', @btitle, '%');
 
 -- -----------------------------------------------------
 -- Get the most popular and the most unpopular books in selected period
@@ -214,6 +216,10 @@ request as r on u.id = r.user_id) as tbl group by tbl.name, tbl.date_return;
 -- Register book with copies        TODO
 -- -----------------------------------------------------
 
+Set @title = 'renat';
+Set @genre = 'fantasy';
+Set @copies = 10;
+INSERT book (title, genre, copies) Values (@title, @genre, @copies);
 
 -- -----------------------------------------------------
 -- Update book’ information
@@ -263,9 +269,16 @@ from (
 
 -- -----------------------------------------------------
 -- Set title of book and display count of this Book’ copies 
--- with information about them (available/unavailable in Library)     TODO
+-- with information about them (available/unavailable in Library)     
 -- -----------------------------------------------------
 
+Set @title = 'Astronomy';
+
+set @genId = (SELECT id from book where title = @title);
+set @reqId = (SELECT book_id from request where book_id = @genId and date_return = null);
+Set @copies = (Select copies from book where id = @genId) - (Select count(book_id) from request where book_id = @reqId);
+
+Set @available = (select if (@copies > 0, true, false));
 
 -- -----------------------------------------------------
 -- Get statistics by Reader (books which this user has read, is reading, 
@@ -354,10 +367,10 @@ From (
 
 -- -----------------------------------------------------
 -- Get list of users who has not returned book in time 
--- with detailed information about them                       TODO
+-- with detailed information about them                      
 -- -----------------------------------------------------
 
-
+Select user.id, user.name, user.surname, user.email, user.password, user.date_registr, user.birthday, user.role from user, request where user.id = request.user_id and DATEDIFF(request.last_day, request.date_return) > 0
 -- -----------------------------------------------------
 -- How many books were giving in selected period?
 -- -----------------------------------------------------
@@ -376,4 +389,5 @@ select * from book_authors;
 select * from book;
 select * from user;
 select * from request;
+
 
