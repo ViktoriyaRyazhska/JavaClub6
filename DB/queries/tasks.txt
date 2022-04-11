@@ -92,3 +92,31 @@ SELECT
 FROM  book b
           join user_book ub on b.id = ub.fk_book
 where ub.rent_date between '2020-01-01 00:00:00' and now();
+
+
+/*Request needed book */
+INSERT INTO user_book VALUES (id_user, id_book, 3, null, null, null)
+
+/*Get his/her statistics (how many and how long books were been read, reading now)*/
+SELECT user.name, user.surname, book.title, rent_date, return_date
+FROM user_book
+JOIN user ON user_book.fk_user = user.id_user
+JOIN book ON user_book.fk_book = book.id_book
+WHERE return_date IS NOT NULL
+GROUP BY id_user;
+
+SELECT user.name, user.surname, book.title, rent_date
+FROM user_book
+JOIN user ON user_book.fk_user = user.id_user
+JOIN book ON user_book.fk_book = book.id_book
+WHERE return_date IS NULL
+GROUP BY id_user;
+
+/*Get the most popular books in selected period*/
+SELECT title,COUNT(book.title) AS CountRequest
+       from book
+ JOIN user_book on book.id  = user_book.fk_book
+WHERE user_book.rent_date between 'first_date' and 'second_date'
+GROUP BY book.title
+ORDER BY book.title
+LIMIT    1;
