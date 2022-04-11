@@ -1,0 +1,31 @@
+-- get books which user has read
+SELECT user.name, user.surname, book.title  
+FROM user_book
+JOIN user ON user_book.fk_user = user.id_user
+JOIN book ON user_book.fk_book = book.id_book
+WHERE return_date IS NOT NULL
+GROUP BY id_user;
+
+-- get books which user is reading
+SELECT user.name, user.surname, book.title  
+FROM user_book
+JOIN user ON user_book.fk_user = user.id_user
+JOIN book ON user_book.fk_book = book.id_book
+WHERE return_date IS NULL
+AND should_return_date IS NOT NULL
+GROUP BY id_user;
+
+-- age of readers
+SELECT name, surname, 
+DATEDIFF(birth_date, CURDATE()) / 365.25 * -1
+AS avAge
+FROM user
+WHERE user_role = 1;
+
+-- return book not in time
+SELECT user.id_user, user.name, user.surname, user.registration_date,
+user.birth_date, user.email, user.password, user_book.return_date, 
+user_book.rent_date, user_book.should_return_date
+FROM user
+JOIN user_book ON user.id_user = user_book.fk_user
+WHERE user_book.return_date > user_book.should_return_date;
