@@ -4,33 +4,31 @@ import javax.persistence.*;
 import java.util.List;
 
 @Entity
-@Table(name = "author")
-public class Author {
+@Table(name = "user_role")
+public class UserRole {
     @Id
-    @GeneratedValue()
+    @GeneratedValue
     @Column(name = "id")
     private int id;
     @Column(name = "name")
     private String name;
-    @Column(name = "surname")
-    private String surname;
-    @OneToMany(mappedBy = "fkAuthor")
-    private List<AuthorBook> books;
-    public Author() {
+    @OneToMany(mappedBy = "fkRole")
+    private List<User> users;
+    public UserRole() {
     }
 
-    public List<AuthorBook> getBooks() {
-        return books;
+    public List<User> getUsers() {
+        return users;
     }
 
     @Override
     public String toString() {
-        return "Author{" +
+        return "UserRole{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
-                ", surname='" + surname + '\'' +
                 '}';
     }
+
     public int getId() {
         return id;
     }
@@ -45,13 +43,5 @@ public class Author {
 
     public void setName(String name) {
         this.name = name;
-    }
-
-    public String getSurname() {
-        return surname;
-    }
-
-    public void setSurname(String surname) {
-        this.surname = surname;
     }
 }
