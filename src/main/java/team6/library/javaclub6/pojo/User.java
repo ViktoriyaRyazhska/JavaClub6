@@ -13,16 +13,22 @@ public class User implements Serializable {
     @GeneratedValue
     @Column(name = "id")
     private int id;
+
     @Column(name = "name")
     private String name;
+
     @Column(name = "surname")
     private String surname;
+
     @Column(name = "registration_date")
     private Date registrationDate;
+
     @Column(name = "birth_date")
     private Date birthDate;
+
     @Column(name = "email")
     private String email;
+
     @Column(name = "password")
     private String password;
     @Id

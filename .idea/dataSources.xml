@@ -8,5 +8,16 @@
       <jdbc-url>jdbc:mysql://ubd01.mysql.ukraine.com.ua/ubd01_javaclub6</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
+    <data-source source="LOCAL" name="hibernate.cfg.xml/Hibernate" uuid="05d434e1-dbde-43b3-ac81-ff822c4f623a">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <imported>true</imported>
+      <remarks>Hibernate
+
+C:/Users/Administrator/IdeaProjects/JavaClub/src/main/resources/hibernate.cfg.xml</remarks>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://ubd01.mysql.tools/ubd01_javaclub6</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
   </component>
 </project>
