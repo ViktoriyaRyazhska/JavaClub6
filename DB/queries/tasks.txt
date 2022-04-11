@@ -4,11 +4,24 @@ from book
 join author_book ab on book.id = ab.fk_book
 order by book.id;
 
+
+
 /*Check if needed book is available*/
 SELECT title, copy_number,
        IF(copy_number = 0, 'unavailable', 'available')
 from book
 where title='Twilight';
+
+/*Get the most unpopular books in selected period*/
+SELECT title,COUNT(book.title) AS CountRequest
+       from book
+ JOIN user_book on book.id  = user_book.fk_book
+WHERE user_book.rent_date between '2000-01-01 00:00:00' and '2005-01-01 00:00:00'
+GROUP BY book.title
+ORDER BY book.title DESC
+LIMIT    1;
+
+
 
 /*Find books by main author*/
 select deploy_date, title, copy_number
@@ -27,6 +40,16 @@ select *
 from book
 join author_book ab on book.id = ab.fk_book
 where title like 'Harry Potter%';
+
+
+/*"Set title of book and display count of this Book’ copies with information
+about them (available/unavailable in Library)"*/
+Set @title = 'Twilight';
+set @genId = (SELECT id from book where title = @title);
+set @reqId = (SELECT fk_book  from user_book where fk_book = @genId and return_date IS NULL);
+Set @copies = (Select copy_number from book where id = @genId) - (Select count(id) from book where id = @reqId);
+Set @available = (select if (@copies > 0, true, false));
+
 
 
 -- get books which user has read
@@ -60,3 +83,12 @@ user_book.rent_date, user_book.should_return_date
 FROM user
 JOIN user_book ON user.id_user = user_book.fk_user
 WHERE user_book.return_date > user_book.should_return_date;
+
+
+
+/*How many books were given in selected period?*/
+SELECT
+    count(b.id) as Given
+FROM  book b
+          join user_book ub on b.id = ub.fk_book
+where ub.rent_date between '2020-01-01 00:00:00' and now();
