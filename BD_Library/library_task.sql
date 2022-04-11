@@ -120,8 +120,7 @@ ENGINE = InnoDB;
 -- Get information about all books
 -- -----------------------------------------------------
 SELECT b.*,
-CONCAT(a.name, ' ', a.surname) as Author,
-CONCAT(a.name, ' ', a.surname) as CoAuthor  -- не знаю як повернути CoAuthor
+CONCAT(a.name, ' ', a.surname) as Author  
       FROM author a 
       join book_authors ba on ba.author_id = a.id
       join book b on ba.book_id = b.id
@@ -135,7 +134,6 @@ CONCAT(a.name, ' ', a.surname) as CoAuthor  -- не знаю як поверну
       join book b on ba.book_id = b.id
      WHERE ba.is_main is not true 
      order by b.id;
-
      
 
 -- -----------------------------------------------------
@@ -151,13 +149,24 @@ where title='Title4';
 
 
 -- -----------------------------------------------------
--- Find books by author (main author, co-author)            TODO
+-- Find books by author (main author, co-author)         
 -- -----------------------------------------------------
 SET @m_autor = 'author1';
-Select * From book where m_autor like CONCAT('%', @m_autor, '%');
+SELECT b.*,
+CONCAT(a.name, ' ', a.surname) as Author  
+      FROM author a 
+      join book_authors ba on ba.author_id = a.id
+      join book b on ba.book_id = b.id
+     WHERE ba.is_main is true and a.name like CONCAT('%', @m_autor, '%');
 
-SET @m_co_autor = 'Co_author1';
-Select * From book where co_autor like CONCAT('%', @m_co_autor, '%');
+SET @m_co_autor = 'author4';
+    SELECT b.*,
+    CONCAT(a.name, ' ', a.surname) as CoAuthor
+      FROM author a 
+      join book_authors ba on ba.author_id = a.id
+      join book b on ba.book_id = b.id
+     WHERE ba.is_main is not true and a.name like CONCAT('%', @m_co_autor, '%')
+     order by b.id;
 
 
 -- -----------------------------------------------------
@@ -215,7 +224,7 @@ request as r on u.id = r.user_id) as tbl group by tbl.name, tbl.date_return;
 
 
 -- -----------------------------------------------------
--- Register book with copies        TODO
+-- Register book with copies      
 -- -----------------------------------------------------
 
 Set @title = 'renat';
@@ -228,8 +237,7 @@ INSERT book (title, genre, copies) Values (@title, @genre, @copies);
 -- -----------------------------------------------------
 UPDATE book , book_authors
 SET book.title='TitleUpdate',  book.genre='genre6', book.copies = 9, 
-book_authors.author_id = (CASE book_authors.is_main WHEN true THEN 3
-													WHEN false THEN 4  END)
+book_authors.author_id = (CASE book_authors.is_main WHEN true THEN 3  WHEN false THEN 4  END)
 WHERE book.id = book_authors.book_id AND book.id in (3);
 
 
@@ -240,10 +248,10 @@ SET @copy = 3;
 
 UPDATE book
 SET book.copies = book.copies - @copy
-WHERE book.id = 7
+WHERE book.id = 7;
 
 DELETE FROM book
-WHERE book.id = 8
+WHERE book.id = 8;
 
 -- -----------------------------------------------------
 -- Give book to Reader
@@ -381,7 +389,15 @@ From (
 -- with detailed information about them                      
 -- -----------------------------------------------------
 
-Select user.id, user.name, user.surname, user.email, user.password, user.date_registr, user.birthday, user.role from user, request where user.id = request.user_id and DATEDIFF(request.last_day, request.date_return) > 0
+Select user.id, CONCAT(user.name, ' ', user.surname) as Name ,
+user.date_registr, user.birthday,
+book.title as Book,
+DATEDIFF(request.date_return, request.last_day) as OverdueDays,
+request.last_day, request.date_return 
+from user, request , book
+where user.id = request.user_id and request.book_id = book.id and DATEDIFF(request.date_return, request.last_day) > 0;
+
+
 -- -----------------------------------------------------
 -- How many books were giving in selected period?
 -- -----------------------------------------------------
