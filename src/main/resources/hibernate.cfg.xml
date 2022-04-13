@@ -10,12 +10,6 @@
         <property name = "hibernate.connection.username">ubd01_javaclub6</property>
         <property name = "hibernate.connection.password">Evxe22R4%^</property>
         <property name="hibernate.show_sql">true</property>
-        <mapping class="team6.library.javaclub6.pojo.Author"/>
-        <mapping class="team6.library.javaclub6.pojo.AuthorBook"/>
-        <mapping class="team6.library.javaclub6.pojo.Book"/>
-        <mapping class="team6.library.javaclub6.pojo.User"/>
-        <mapping class="team6.library.javaclub6.pojo.UserBook"/>
-        <mapping class="team6.library.javaclub6.pojo.UserRole"/>
-        <mapping class="team6.library.javaclub6.pojo.RequestStatus"/>
+        <mapping class="team6.library.javaclub6.model.Book"/>
     </session-factory>
 </hibernate-configuration>

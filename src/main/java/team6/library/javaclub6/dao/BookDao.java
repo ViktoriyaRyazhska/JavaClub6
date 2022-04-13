@@ -1,0 +1,9 @@
+package team6.library.javaclub6.dao;
+
+import team6.library.javaclub6.model.Book;
+
+import java.util.List;
+
+public interface BookDao {
+    List<Book> list();
+}
