@@ -15,7 +15,7 @@ public class AuthorBook implements Serializable {
     @Id
     @ManyToOne
     @JoinColumn(name = "fk_book")
-    private Book fkBook;
+    private Book fkBooks;
     @Column(name = "status")
     private boolean status;
 
@@ -26,7 +26,7 @@ public class AuthorBook implements Serializable {
     public String toString() {
         return "AuthorBook{" +
                 "fkAuthor=" + fkAuthor.toString() +
-                ", fkBook=" + fkBook.toString() +
+                ", fkBook=" + fkBooks.toString() +
                 ", status=" + status +
                 '}';
     }
@@ -40,11 +40,11 @@ public class AuthorBook implements Serializable {
     }
 
     public Book getFkBook() {
-        return fkBook;
+        return fkBooks;
     }
 
     public void setFkBook(Book fkBook) {
-        this.fkBook = fkBook;
+        this.fkBooks = fkBook;
     }
 
     public boolean getStatus() {

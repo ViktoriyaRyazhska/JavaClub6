@@ -15,10 +15,10 @@ public class App {
         configuration.addAnnotatedClass(Author.class);
         configuration.addAnnotatedClass(AuthorBook.class);
         configuration.addAnnotatedClass(Book.class);
-        //configuration.addAnnotatedClass(RequestStatus.class);
-        //configuration.addAnnotatedClass(User.class);
-        //configuration.addAnnotatedClass(UserBook.class);
-        //configuration.addAnnotatedClass(UserRole.class);
+        configuration.addAnnotatedClass(RequestStatus.class);
+        configuration.addAnnotatedClass(User.class);
+        configuration.addAnnotatedClass(UserBook.class);
+        configuration.addAnnotatedClass(UserRole.class);
         StandardServiceRegistryBuilder ssrb = new StandardServiceRegistryBuilder().applySettings(configuration.getProperties());
         SessionFactory sf = configuration.buildSessionFactory(ssrb.build());
         //Create user

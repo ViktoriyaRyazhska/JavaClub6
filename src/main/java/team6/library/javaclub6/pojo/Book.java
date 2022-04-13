@@ -17,19 +17,19 @@ public class Book {
     private Date deployDate;
     @Column(name = "copy_number")
     private int copyNumber;
-    @OneToMany(mappedBy = "fkBook")
+    @OneToMany(mappedBy = "fkBooks")
     private List<AuthorBook> authors;
-    //@OneToMany(mappedBy = "fkBook")
-    //private List<UserBook> users;
+    @OneToMany(mappedBy = "fkBook")
+    private List<UserBook> users;
     public Book() {
     }
     public List<AuthorBook> getAuthors() {
         return authors;
     }
 
-    //public List<UserBook> getUsers() {
-    //    return users;
-    //}
+    public List<UserBook> getUsers() {
+        return users;
+    }
 
     @Override
     public String toString() {
