@@ -1,16 +1,12 @@
 package com.booklib.entity;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
-import javax.persistence.Table;
+import javax.persistence.*;
 import java.util.Date;
+import lombok.*;
 
 @Entity
+@Getter
+@Setter
 @Table(name = "request")
 public class Request {
 
@@ -44,54 +40,6 @@ public class Request {
         this.last_day = last_day;
         this.date_return = date_return;
         this.user = user;
-        this.book = book;
-    }
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public Date getFirst_day() {
-        return first_day;
-    }
-
-    public void setFirst_day(Date first_day) {
-        this.first_day = first_day;
-    }
-
-    public Date getLast_day() {
-        return last_day;
-    }
-
-    public void setLast_day(Date last_day) {
-        this.last_day = last_day;
-    }
-
-    public Date getDate_return() {
-        return date_return;
-    }
-
-    public void setDate_return(Date date_return) {
-        this.date_return = date_return;
-    }
-
-    public User getUser() {
-        return user;
-    }
-
-    public void setUser(User user) {
-        this.user = user;
-    }
-
-    public Book getBook() {
-        return book;
-    }
-
-    public void setBook(Book book) {
         this.book = book;
     }
 
