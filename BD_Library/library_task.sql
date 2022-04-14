@@ -415,6 +415,7 @@ select * from author;
 select * from book_authors;
 select * from book;
 select * from user;
+select * from role;
 select * from request;
 
 
