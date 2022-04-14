@@ -1,5 +1,18 @@
 package com.booklib.entity;
 
-public enum UserRole {
-    ROLE_ADMIN, ROLE_USER;
+import javax.persistence.*;
+import lombok.*;
+
+@Entity
+@Setter
+@Getter
+@Table(name = "role")
+public class UserRole {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+
+    @Column(name = "role")
+    private String role;
+
 }
