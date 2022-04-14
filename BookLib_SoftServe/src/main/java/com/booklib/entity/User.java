@@ -51,6 +51,6 @@ public class User {
     @NotEmpty(message = "Please Enter Date of Birth")
     private Date birthday;
 
-    @ManyToOne(fetch = FetchType.LAZY)
-    private Set<UserRole> roles;
+    //@ManyToOne(fetch = FetchType.LAZY)
+    //private Set<UserRole> roles;
 }
