@@ -1,0 +1,31 @@
+package team6.library.javaclub6.dao;
+
+import team6.library.javaclub6.model.User;
+import org.hibernate.SessionFactory;
+import org.hibernate.query.Query;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public class UserDaoImp implements UserDao{
+
+    @Autowired
+    private SessionFactory sessionFactory;
+
+    @Override
+    public User findById(int id){
+        return sessionFactory.getCurrentSession().get(User.class, id);
+    }
+
+    @Override
+    public User findByEmail(String email) {
+        Query query= sessionFactory.getCurrentSession().createQuery("from User where email=:email");
+        query.setParameter("email", email);
+        return (User) query.uniqueResult();
+    }
+
+    @Override
+    public void save(User user) {
+        sessionFactory.getCurrentSession().persist(user);
+    }
+}

@@ -29,5 +29,7 @@
         </tr>
     </c:forEach>
 </table>
+<a href = "/books/">Return</a>
+<a href = ""></a>
 </body>
 </html>
