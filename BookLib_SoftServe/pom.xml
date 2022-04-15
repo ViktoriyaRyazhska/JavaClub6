@@ -14,6 +14,7 @@
         <maven.compiler.target>8</maven.compiler.target>
         <failOnMissingWebXml>false</failOnMissingWebXml>
         <spring.version>5.3.17</spring.version>
+        <springsecurity.version>5.6.2</springsecurity.version>
         <hibernate.version>5.6.7.Final</hibernate.version>
         <hibernate.entity.version>5.6.7.Final</hibernate.entity.version>
         <hibernate.validator>5.4.1.Final</hibernate.validator>
