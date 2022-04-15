@@ -1,8 +1,15 @@
-package com.library.models;
+package com.library.model;
 
-import jakarta.persistence.*;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.OneToMany;
+import javax.persistence.Table;
 
 import java.util.List;
+
+@Entity
 @Table(name = "roles")
 public class Role {
     @Id
