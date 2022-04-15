@@ -1,0 +1,32 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="JavaClab6Library:war exploded">
+    <output-path>$PROJECT_DIR$/target/LibrarySoft</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <exploded>true</exploded>
+        <module>JavaClab6Library</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="JavaClab6Library" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: org.springframework:spring-core:5.3.17" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-jcl:5.3.17" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-beans:5.3.17" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-context:5.3.17" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-aop:5.3.17" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-expression:5.3.17" />
+          <element id="library" level="project" name="Maven: jakarta.annotation:jakarta.annotation-api:2.0.0" />
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/target/LibrarySoft/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="JavaClab6Library/web/Web" />
+    </root>
+  </artifact>
+</component>

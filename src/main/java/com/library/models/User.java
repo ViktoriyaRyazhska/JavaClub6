@@ -1,4 +1,4 @@
-package com.spring.model;
+package com.library.models;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotEmpty;
@@ -7,7 +7,6 @@ import org.springframework.format.annotation.DateTimeFormat;
 
 import java.util.Date;
 
-@Entity
 @Table(name = "users")
 public class User {
     @Id

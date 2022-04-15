@@ -1,11 +1,10 @@
-package com.spring.model;
+package com.library.models;
 
 import jakarta.persistence.*;
 
 import java.util.HashSet;
 import java.util.Set;
 
-@Entity
 @Table(name = "authors")
 public class Author {
     @Id

@@ -1,4 +1,4 @@
-package com.spring.model;
+package com.library.models;
 
 import jakarta.persistence.*;
 import org.springframework.format.annotation.DateTimeFormat;
@@ -6,7 +6,6 @@ import org.springframework.lang.Nullable;
 
 import java.util.Date;
 
-@Entity
 @Table(name = "requests")
 public class Request {
 

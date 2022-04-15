@@ -7,7 +7,11 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="LibrarySoft" />
+        <module name="JavaClab6Library" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="JavaClab6Library" target="1.7" />
+    </bytecodeTargetLevel>
   </component>
 </project>

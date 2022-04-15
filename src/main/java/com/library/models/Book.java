@@ -1,4 +1,4 @@
-package com.spring.model;
+package com.library.models;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotEmpty;
@@ -6,7 +6,6 @@ import jakarta.validation.constraints.NotEmpty;
 import java.util.HashSet;
 import java.util.Set;
 
-@Entity
 @Table(name = "books")
 public class Book {
     @Id
