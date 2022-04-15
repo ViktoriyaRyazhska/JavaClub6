@@ -9,7 +9,7 @@ import org.springframework.web.servlet.view.InternalResourceViewResolver;
 import org.springframework.web.servlet.view.JstlView;
 
 @Configuration
-@ComponentScan("team6.library.javaclub6")
+@ComponentScan({"team6.library.javaclub6"})
 @EnableWebMvc
 public class SpringConfig implements WebMvcConfigurer {
 

@@ -20,20 +20,23 @@
     <spring.version>5.3.18</spring.version>
     <hibernate.version>5.6.1.Final</hibernate.version>
     <springsecurity.version>5.6.2</springsecurity.version>
+    <mysql.version>8.0.28</mysql.version>
+    <servlet.version>4.0.1</servlet.version>
+    <jsp.version>2.3.1</jsp.version>
+    <jstl.version>1.2.2</jstl.version>
+    <taglibs.version>1.1.2</taglibs.version>
+    <hibernatevalidator.version>7.0.4.Final</hibernatevalidator.version>
+    <persistence.version>2.2</persistence.version>
+    <validator.version>2.0.1.Final</validator.version>
+    <lombok.version>1.18.22</lombok.version>
   </properties>
 
   <dependencies>
-    <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>4.11</version>
-      <scope>test</scope>
-    </dependency>
     <!-- MySQL Connector/J Dependency -->
     <dependency>
       <groupId>mysql</groupId>
       <artifactId>mysql-connector-java</artifactId>
-      <version>8.0.28</version>
+      <version>${mysql.version}</version>
     </dependency>
     <!-- Spring Core Dependency -->
     <dependency>
@@ -75,62 +78,70 @@
     <dependency>
       <groupId>javax.servlet</groupId>
       <artifactId>javax.servlet-api</artifactId>
-      <version>4.0.1</version>
+      <version>${servlet.version}</version>
       <scope>provided</scope>
     </dependency>
     <!-- JSP Dependency -->
     <dependency>
       <groupId>javax.servlet.jsp</groupId>
       <artifactId>javax.servlet.jsp-api</artifactId>
-      <version>2.3.1</version>
+      <version>${jsp.version}</version>
       <scope>provided</scope>
     </dependency>
     <!-- JSTL Dependency -->
     <dependency>
       <groupId>javax.servlet.jsp.jstl</groupId>
       <artifactId>javax.servlet.jsp.jstl-api</artifactId>
-      <version>1.2.2</version>
+      <version>${jstl.version}</version>
     </dependency>
     <!-- TagLibs Dependency -->
     <dependency>
       <groupId>taglibs</groupId>
       <artifactId>standard</artifactId>
-      <version>1.1.2</version>
+      <version>${taglibs.version}</version>
     </dependency>
+    <!-- Hibernate Validator Dependency -->
     <dependency>
       <groupId>org.hibernate</groupId>
       <artifactId>hibernate-validator</artifactId>
-      <version>7.0.4.Final</version>
+      <version>${hibernatevalidator.version}</version>
     </dependency>
-    <!-- Spring Security Core -->
+    <!-- Spring Security Core Dependency -->
     <dependency>
       <groupId>org.springframework.security</groupId>
       <artifactId>spring-security-core</artifactId>
       <version>${springsecurity.version}</version>
     </dependency>
-
-    <!-- Spring Security Config -->
+    <!-- Spring Security Config Dependency -->
     <dependency>
       <groupId>org.springframework.security</groupId>
       <artifactId>spring-security-config</artifactId>
       <version>${springsecurity.version}</version>
     </dependency>
-
-    <!-- Spring Security Web -->
+    <!-- Spring Security Web Dependency -->
     <dependency>
       <groupId>org.springframework.security</groupId>
       <artifactId>spring-security-web</artifactId>
       <version>${springsecurity.version}</version>
     </dependency>
+    <!-- Java Persistence Dependency -->
     <dependency>
       <groupId>javax.persistence</groupId>
       <artifactId>javax.persistence-api</artifactId>
-      <version>2.2</version>
+      <version>${persistence.version}</version>
     </dependency>
+    <!-- Java Validator Dependency -->
     <dependency>
       <groupId>javax.validation</groupId>
       <artifactId>validation-api</artifactId>
-      <version>2.0.1.Final</version>
+      <version>${validator.version}</version>
+    </dependency>
+    <!-- Lombok Dependency -->
+    <dependency>
+      <groupId>org.projectlombok</groupId>
+      <artifactId>lombok</artifactId>
+      <version>${lombok.version}</version>
+      <scope>provided</scope>
     </dependency>
   </dependencies>
 

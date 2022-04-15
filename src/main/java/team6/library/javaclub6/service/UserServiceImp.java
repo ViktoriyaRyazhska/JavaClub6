@@ -5,18 +5,18 @@ import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
-import org.springframework.stereotype.Repository;
+import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import team6.library.javaclub6.dao.UserDao;
 import team6.library.javaclub6.model.Role;
 import team6.library.javaclub6.model.User;
 import team6.library.javaclub6.model.UserRole;
-
 import java.util.Collection;
 import java.util.stream.Collectors;
 
-@Repository
+@Service
 public class UserServiceImp implements UserService {
+
     @Autowired
     private UserDao userDao;
 
@@ -25,7 +25,7 @@ public class UserServiceImp implements UserService {
         return userDao.findById(id);
     }
 
-    @Transactional
+    @Transactional(readOnly = true)
     public User findByEmail(String email) {
         return userDao.findByEmail(email);
     }
@@ -43,6 +43,7 @@ public class UserServiceImp implements UserService {
         }
         return new org.springframework.security.core.userdetails.User(user.getEmail(), user.getPassword(), mapRolesToAuthorities(user.getRoles().stream().map(UserRole::getFkRole).collect(Collectors.toList())));
     }
+
     private Collection<? extends GrantedAuthority> mapRolesToAuthorities(Collection<Role> roles){
         return roles.stream().map(r -> new SimpleGrantedAuthority(r.getName())).collect(Collectors.toList());
     }

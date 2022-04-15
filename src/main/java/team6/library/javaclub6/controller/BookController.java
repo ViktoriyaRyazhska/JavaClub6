@@ -10,8 +10,10 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 @RequestMapping("/books")
 public class BookController {
+
     @Autowired
     private BookService bookService;
+
     @GetMapping("")
     public String index(){
         return "books/index";

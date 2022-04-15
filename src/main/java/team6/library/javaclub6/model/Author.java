@@ -2,19 +2,20 @@ package team6.library.javaclub6.model;
 
 import lombok.Data;
 import javax.persistence.*;
-import java.io.Serializable;
 import java.util.List;
 
 @Entity
-@Table(name = "role")
+@Table(name = "author")
 @Data
-public class Role implements Serializable {
+public class Author {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
     private int id;
     @Column(name = "name")
     private String name;
-    @OneToMany(mappedBy = "fkRole")
-    private List<UserRole> users;
+    @Column(name = "surname")
+    private String surname;
+    @OneToMany(mappedBy = "fkAuthor")
+    private List<AuthorBook> books;
 }

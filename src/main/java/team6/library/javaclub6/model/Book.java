@@ -1,12 +1,15 @@
 package team6.library.javaclub6.model;
 
+import lombok.Data;
 import javax.persistence.*;
+import java.io.Serializable;
 import java.sql.Date;
 import java.util.List;
 
 @Entity
 @Table(name = "book")
-public class Book {
+@Data
+public class Book implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
@@ -17,59 +20,8 @@ public class Book {
     private Date deployDate;
     @Column(name = "copy_number")
     private int copyNumber;
-//    @OneToMany(mappedBy = "fkBooks")
-//    private List<AuthorBook> authors;
-//    @OneToMany(mappedBy = "fkBook")
-//    private List<UserBook> users;
-    public Book() {
-    }
-    //public List<AuthorBook> getAuthors() {
-    //    return authors;
-    //}
-
-//    public List<UserBook> getUsers() {
-//        return users;
-//    }
-
-    @Override
-    public String toString() {
-        return "Book{" +
-                "id=" + id +
-                ", title='" + title + '\'' +
-                ", deployDate=" + deployDate +
-                ", copyNumber=" + copyNumber +
-                '}';
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public String getTitle() {
-        return title;
-    }
-
-    public void setTitle(String title) {
-        this.title = title;
-    }
-
-    public Date getDeployDate() {
-        return deployDate;
-    }
-
-    public void setDeployDate(Date deployDate) {
-        this.deployDate = deployDate;
-    }
-
-    public int getCopyNumber() {
-        return copyNumber;
-    }
-
-    public void setCopyNumber(int copyNumber) {
-        this.copyNumber = copyNumber;
-    }
+    @OneToMany(mappedBy = "fkBook")
+    private List<AuthorBook> authors;
+    @OneToMany(mappedBy = "fkBook")
+    private List<UserBook> users;
 }

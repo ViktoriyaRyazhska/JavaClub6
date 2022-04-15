@@ -6,15 +6,15 @@ import java.io.Serializable;
 import java.util.List;
 
 @Entity
-@Table(name = "role")
+@Table(name = "request_status")
 @Data
-public class Role implements Serializable {
+public class RequestStatus implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
     private int id;
     @Column(name = "name")
     private String name;
-    @OneToMany(mappedBy = "fkRole")
-    private List<UserRole> users;
+    @OneToMany(mappedBy = "fkStatus")
+    private List<UserBook> requests;
 }
