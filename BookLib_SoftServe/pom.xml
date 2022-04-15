@@ -14,6 +14,7 @@
         <maven.compiler.target>8</maven.compiler.target>
         <failOnMissingWebXml>false</failOnMissingWebXml>
         <spring.version>5.3.17</spring.version>
+        <springsecurity.version>5.6.2</springsecurity.version>
         <hibernate.version>5.6.7.Final</hibernate.version>
         <hibernate.entity.version>5.6.7.Final</hibernate.entity.version>
         <hibernate.validator>5.4.1.Final</hibernate.validator>
@@ -26,6 +27,36 @@
         <mysql.version>8.0.28</mysql.version>
     </properties>
     <dependencies>
+    <!-- Spring Core Dependency -->
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-core</artifactId>
+      <version>${spring.version}</version>
+    </dependency>
+    <!-- Spring Context Dependency -->
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-context</artifactId>
+      <version>${spring.version}</version>
+    </dependency>
+    <!-- Spring Security Core -->
+    <dependency>
+      <groupId>org.springframework.security</groupId>
+      <artifactId>spring-security-core</artifactId>
+      <version>${springsecurity.version}</version>
+    </dependency>
+    <!-- Spring Security Config -->
+    <dependency>
+      <groupId>org.springframework.security</groupId>
+      <artifactId>spring-security-config</artifactId>
+      <version>${springsecurity.version}</version>
+    </dependency>
+    <!-- Spring Security Web -->
+    <dependency>
+      <groupId>org.springframework.security</groupId>
+      <artifactId>spring-security-web</artifactId>
+      <version>${springsecurity.version}</version>
+    </dependency>
         <!-- Spring MVC Dependency -->
         <dependency>
             <groupId>org.springframework</groupId>
