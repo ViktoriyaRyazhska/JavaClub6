@@ -3,12 +3,13 @@ com\booklib\dao\UserDaoImp.class
 com\booklib\service\UserService.class
 com\booklib\config\HibernateConfig.class
 com\booklib\service\UserServiceImp.class
+com\booklib\entity\Notification.class
 com\booklib\entity\Book.class
 com\booklib\entity\User.class
 com\booklib\config\AppInitializer.class
 com\booklib\controller\UserController.class
-com\booklib\entity\UserRole.class
 com\booklib\config\WebMvcConfig.class
 com\booklib\dao\UserDao.class
 com\booklib\entity\Author.class
 com\booklib\entity\Book_Author.class
+com\booklib\entity\Roles.class
