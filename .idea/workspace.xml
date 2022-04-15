@@ -4,7 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="194cb97e-1b7d-487a-972e-bd1785f7de6a" name="Changes" comment="" />
+    <list default="true" id="879a6f41-2103-4543-87d0-611e3a0ad8ad" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/BookLib_SoftServe/src/main/java/com/booklib/entity/Notification.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookLib_SoftServe/src/main/java/com/booklib/entity/UserRole.java" beforeDir="false" afterPath="$PROJECT_DIR$/BookLib_SoftServe/src/main/java/com/booklib/entity/UserRole.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookLib_SoftServe/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/BookLib_SoftServe/src/main/resources/hibernate.cfg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookLib_SoftServe/src/main/webApp/WEB-INF/views/editUsers.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/BookLib_SoftServe/src/main/webApp/WEB-INF/views/editUsers.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookLib_SoftServe/target/classes/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/BookLib_SoftServe/target/classes/hibernate.cfg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookLib_SoftServe/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/BookLib_SoftServe/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookLib_SoftServe/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/BookLib_SoftServe/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,20 +27,14 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitSEFilterConfiguration">
-    <file-type-list>
-      <filtered-out-file-type name="LOCAL_BRANCH" />
-      <filtered-out-file-type name="REMOTE_BRANCH" />
-      <filtered-out-file-type name="TAG" />
-      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
-    </file-type-list>
-  </component>
-  <component name="MarkdownSettingsMigration">
-    <option name="stateVersion" value="1" />
-  </component>
-  <component name="ProjectId" id="27Ia2RppfzZ27u9inGu2FnQvXXq" />
+  <component name="ProjectId" id="27pU1yR2AxWUGxaVEUjVk1moLvN" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -39,96 +42,20 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="dart.analysis.tool.window.visible" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/IdeaProjects/untitled" />
-    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.repository.indices" />
-    <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
-  <component name="RunManager" selected="Application.MainApp">
-    <configuration name="MainApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="MainApp" />
-      <module name="JavaClub6" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Task5" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Classes.Task5" />
-      <module name="JavaClub6" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Classes.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Task2Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="JavaClub6" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="OOP.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="OOP" />
-      <option name="MAIN_CLASS_NAME" value="OOP.Task2Test" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Task4Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="JavaClub6" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Classes.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Classes" />
-      <option name="MAIN_CLASS_NAME" value="Classes.Task4Test" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Task5Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="JavaClub6" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Classes.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Classes" />
-      <option name="MAIN_CLASS_NAME" value="Classes.Task5Test" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.MainApp" />
-        <item itemvalue="JUnit.Task2Test" />
-        <item itemvalue="JUnit.Task5Test" />
-        <item itemvalue="Application.Task5" />
-        <item itemvalue="JUnit.Task4Test" />
-      </list>
-    </recent_temporary>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn jar:jar install:install" />
+    </option>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="194cb97e-1b7d-487a-972e-bd1785f7de6a" name="Changes" comment="" />
-      <created>1649009848423</created>
+      <changelist id="879a6f41-2103-4543-87d0-611e3a0ad8ad" name="Default Changelist" comment="" />
+      <created>1650016310366</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1649009848423</updated>
+      <updated>1650016310366</updated>
     </task>
     <servers />
   </component>
