@@ -1,15 +1,15 @@
-G:\PROJECTS\SoftServe\JavaClub6\Teem5\BookLibrary\BookLib_SoftServe\src\main\java\com\booklib\entity\Author.java
-G:\PROJECTS\SoftServe\JavaClub6\Teem5\BookLibrary\BookLib_SoftServe\src\main\java\com\booklib\entity\User.java
-G:\PROJECTS\SoftServe\JavaClub6\Teem5\BookLibrary\BookLib_SoftServe\src\main\java\com\booklib\dao\UserDao.java
-G:\PROJECTS\SoftServe\JavaClub6\Teem5\BookLibrary\BookLib_SoftServe\src\main\java\com\booklib\service\UserServiceImp.java
-G:\PROJECTS\SoftServe\JavaClub6\Teem5\BookLibrary\BookLib_SoftServe\src\main\java\com\booklib\config\HibernateConfig.java
-G:\PROJECTS\SoftServe\JavaClub6\Teem5\BookLibrary\BookLib_SoftServe\src\main\java\com\booklib\entity\Roles.java
-G:\PROJECTS\SoftServe\JavaClub6\Teem5\BookLibrary\BookLib_SoftServe\src\main\java\com\booklib\config\AppInitializer.java
-G:\PROJECTS\SoftServe\JavaClub6\Teem5\BookLibrary\BookLib_SoftServe\src\main\java\com\booklib\entity\Book.java
-G:\PROJECTS\SoftServe\JavaClub6\Teem5\BookLibrary\BookLib_SoftServe\src\main\java\com\booklib\entity\Notification.java
-G:\PROJECTS\SoftServe\JavaClub6\Teem5\BookLibrary\BookLib_SoftServe\src\main\java\com\booklib\service\UserService.java
-G:\PROJECTS\SoftServe\JavaClub6\Teem5\BookLibrary\BookLib_SoftServe\src\main\java\com\booklib\controller\UserController.java
-G:\PROJECTS\SoftServe\JavaClub6\Teem5\BookLibrary\BookLib_SoftServe\src\main\java\com\booklib\dao\UserDaoImp.java
-G:\PROJECTS\SoftServe\JavaClub6\Teem5\BookLibrary\BookLib_SoftServe\src\main\java\com\booklib\config\WebMvcConfig.java
-G:\PROJECTS\SoftServe\JavaClub6\Teem5\BookLibrary\BookLib_SoftServe\src\main\java\com\booklib\entity\Book_Author.java
-G:\PROJECTS\SoftServe\JavaClub6\Teem5\BookLibrary\BookLib_SoftServe\src\main\java\com\booklib\entity\Request.java
+e:\IT Academy Java club\JavaClub6\BookLib_SoftServe\src\main\java\com\booklib\config\AppInitializer.java
+e:\IT Academy Java club\JavaClub6\BookLib_SoftServe\src\main\java\com\booklib\config\HibernateConfig.java
+e:\IT Academy Java club\JavaClub6\BookLib_SoftServe\src\main\java\com\booklib\dao\UserDaoImp.java
+e:\IT Academy Java club\JavaClub6\BookLib_SoftServe\src\main\java\com\booklib\service\UserServiceImp.java
+e:\IT Academy Java club\JavaClub6\BookLib_SoftServe\src\main\java\com\booklib\entity\Book_Author.java
+e:\IT Academy Java club\JavaClub6\BookLib_SoftServe\src\main\java\com\booklib\dao\UserDao.java
+e:\IT Academy Java club\JavaClub6\BookLib_SoftServe\src\main\java\com\booklib\entity\Request.java
+e:\IT Academy Java club\JavaClub6\BookLib_SoftServe\src\main\java\com\booklib\entity\Notification.java
+e:\IT Academy Java club\JavaClub6\BookLib_SoftServe\src\main\java\com\booklib\service\UserService.java
+e:\IT Academy Java club\JavaClub6\BookLib_SoftServe\src\main\java\com\booklib\entity\User.java
+e:\IT Academy Java club\JavaClub6\BookLib_SoftServe\src\main\java\com\booklib\config\WebMvcConfig.java
+e:\IT Academy Java club\JavaClub6\BookLib_SoftServe\src\main\java\com\booklib\entity\Roles.java
+e:\IT Academy Java club\JavaClub6\BookLib_SoftServe\src\main\java\com\booklib\entity\Author.java
+e:\IT Academy Java club\JavaClub6\BookLib_SoftServe\src\main\java\com\booklib\controller\UserController.java
+e:\IT Academy Java club\JavaClub6\BookLib_SoftServe\src\main\java\com\booklib\entity\Book.java

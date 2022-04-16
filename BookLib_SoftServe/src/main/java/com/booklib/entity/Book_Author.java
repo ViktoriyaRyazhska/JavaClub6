@@ -5,14 +5,15 @@ import lombok.Setter;
 import org.hibernate.validator.constraints.NotEmpty;
 
 import javax.persistence.*;
+
+import java.io.Serializable;
 import java.util.Objects;
-import java.util.Set;
 
 @Entity
 @Setter
 @Getter
 @Table(name = "book_author")
-public class Book_Author {
+public class Book_Author implements Serializable {
 
     @Id
     @ManyToOne
@@ -25,15 +26,17 @@ public class Book_Author {
     private Book book_id;
 
     @Column(name = "is_main")
-    private boolean is_main;
+    private Boolean is_main;
 
     public Book_Author() {
     }
 
     @Override
     public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
+        if (this == o)
+            return true;
+        if (o == null || getClass() != o.getClass())
+            return false;
         Book_Author that = (Book_Author) o;
         return is_main == that.is_main && author_id.equals(that.author_id) && book_id.equals(that.book_id);
     }

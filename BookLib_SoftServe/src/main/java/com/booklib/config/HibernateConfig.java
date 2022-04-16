@@ -4,16 +4,21 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
-import org.springframework.context.annotation.ComponentScans;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.orm.hibernate5.HibernateTransactionManager;
 import org.springframework.orm.hibernate5.LocalSessionFactoryBean;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
+import com.booklib.entity.Author;
+import com.booklib.entity.Book;
+import com.booklib.entity.Book_Author;
+import com.booklib.entity.Request;
+import com.booklib.entity.Roles;
 import com.booklib.entity.User;
 
 @Configuration
 @EnableTransactionManagement
+@ComponentScan({ "com.booklib.config" })
 public class HibernateConfig {
 
     @Autowired
@@ -23,7 +28,8 @@ public class HibernateConfig {
     public LocalSessionFactoryBean getSessionFactory() {
         LocalSessionFactoryBean factoryBean = new LocalSessionFactoryBean();
         factoryBean.setConfigLocation(context.getResource("classpath:hibernate.cfg.xml"));
-        factoryBean.setAnnotatedClasses(User.class);
+        factoryBean.setAnnotatedClasses(User.class, Roles.class, Book.class, Author.class, Book_Author.class,
+                Request.class);
         return factoryBean;
     }
 

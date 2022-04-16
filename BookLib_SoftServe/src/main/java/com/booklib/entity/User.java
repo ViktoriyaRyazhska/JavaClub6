@@ -10,6 +10,7 @@ import lombok.Setter;
 import org.hibernate.validator.constraints.Email;
 import org.hibernate.validator.constraints.NotEmpty;
 
+import java.io.Serializable;
 import java.util.Date;
 import java.util.Set;
 
@@ -19,7 +20,7 @@ import java.util.Set;
 @AllArgsConstructor
 @NoArgsConstructor
 @Table(name = "user")
-public class User {
+public class User implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -51,8 +52,9 @@ public class User {
     @NotEmpty(message = "Please Enter Date of Birth")
     private Date birthday;
 
-//    @ManyToMany(cascade = { CascadeType.ALL })
-//    @JoinTable(name = "user_roles", joinColumns = { @JoinColumn(name = "user_id") }, inverseJoinColumns = {
-//            @JoinColumn(name = "role_id") })
-//    private Set<Roles> roles;
+    @ManyToMany(cascade = { CascadeType.ALL })
+    @JoinTable(name = "user_roles", joinColumns = { @JoinColumn(name = "user_id")
+    }, inverseJoinColumns = {
+            @JoinColumn(name = "role_id") })
+    private Set<Roles> roles;
 }

@@ -1,16 +1,16 @@
 package com.booklib.entity;
 
+import java.io.Serializable;
 import java.util.Set;
 
 import javax.persistence.*;
 import lombok.*;
-//import org.springframework.context.annotation.Primary;
 
 @Entity
 @Setter
 @Getter
 @Table(name = "roles")
-public class Roles {
+public class Roles implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -20,6 +20,5 @@ public class Roles {
 
     @ManyToMany(mappedBy = "roles")
     private Set<User> users;
-
 
 }
