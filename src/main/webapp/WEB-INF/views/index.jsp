@@ -11,8 +11,8 @@
     <title>Home</title>
 </head>
 <body>
-<h2>Home</h2>
-<a href = "/books">Go to Books Page</a>
+<h2>Library</h2>
 <a href = "/register">Registration</a>
+<a href = "/login">Login</a>
 </body>
 </html>
