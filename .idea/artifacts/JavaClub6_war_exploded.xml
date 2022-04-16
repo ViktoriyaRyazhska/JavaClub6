@@ -13,6 +13,63 @@
         <element id="directory" name="classes">
           <element id="module-output" name="JavaClub6" />
         </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: org.springframework:spring-webmvc:5.3.18" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-aop:5.3.18" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-beans:5.3.18" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-context:5.3.18" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-core:5.3.18" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-jcl:5.3.18" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-expression:5.3.18" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-web:5.3.18" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-orm:5.3.18" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-jdbc:5.3.18" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-tx:5.3.18" />
+          <element id="library" level="project" name="Maven: org.hibernate.orm:hibernate-core:6.0.0.Final" />
+          <element id="library" level="project" name="Maven: jakarta.persistence:jakarta.persistence-api:3.0.0" />
+          <element id="library" level="project" name="Maven: jakarta.transaction:jakarta.transaction-api:2.0.0" />
+          <element id="library" level="project" name="Maven: org.jboss.logging:jboss-logging:3.4.3.Final" />
+          <element id="library" level="project" name="Maven: org.jboss:jandex:2.4.2.Final" />
+          <element id="library" level="project" name="Maven: com.fasterxml:classmate:1.5.1" />
+          <element id="library" level="project" name="Maven: org.hibernate.common:hibernate-commons-annotations:6.0.0.CR1" />
+          <element id="library" level="project" name="Maven: net.bytebuddy:byte-buddy:1.12.8" />
+          <element id="library" level="project" name="Maven: jakarta.activation:jakarta.activation-api:2.0.1" />
+          <element id="library" level="project" name="Maven: jakarta.xml.bind:jakarta.xml.bind-api:3.0.1" />
+          <element id="library" level="project" name="Maven: com.sun.activation:jakarta.activation:2.0.1" />
+          <element id="library" level="project" name="Maven: org.glassfish.jaxb:jaxb-runtime:3.0.2" />
+          <element id="library" level="project" name="Maven: org.glassfish.jaxb:jaxb-core:3.0.2" />
+          <element id="library" level="project" name="Maven: org.glassfish.jaxb:txw2:3.0.2" />
+          <element id="library" level="project" name="Maven: com.sun.istack:istack-commons-runtime:4.0.1" />
+          <element id="library" level="project" name="Maven: jakarta.inject:jakarta.inject-api:2.0.0" />
+          <element id="library" level="project" name="Maven: org.antlr:antlr4-runtime:4.9.1" />
+          <element id="library" level="project" name="Maven: org.hibernate.orm:hibernate-c3p0:6.0.0.Final" />
+          <element id="library" level="project" name="Maven: com.mchange:c3p0:0.9.5.5" />
+          <element id="library" level="project" name="Maven: com.mchange:mchange-commons-java:0.2.19" />
+          <element id="library" level="project" name="Maven: org.hibernate.validator:hibernate-validator:7.0.4.Final" />
+          <element id="library" level="project" name="Maven: jakarta.validation:jakarta.validation-api:3.0.0" />
+          <element id="library" level="project" name="Maven: javax.servlet.jsp.jstl:javax.servlet.jsp.jstl-api:1.2.2" />
+          <element id="library" level="project" name="Maven: taglibs:standard:1.1.2" />
+          <element id="library" level="project" name="Maven: mysql:mysql-connector-java:8.0.28" />
+          <element id="library" level="project" name="Maven: com.google.protobuf:protobuf-java:3.11.4" />
+          <element id="library" level="project" name="Maven: org.projectlombok:lombok:1.18.22" />
+          <element id="library" level="project" name="Maven: org.apache.tomcat:tomcat-catalina:10.1.0-M14" />
+          <element id="library" level="project" name="Maven: org.apache.tomcat:tomcat-servlet-api:10.1.0-M14" />
+          <element id="library" level="project" name="Maven: org.apache.tomcat:tomcat-jsp-api:10.1.0-M14" />
+          <element id="library" level="project" name="Maven: org.apache.tomcat:tomcat-el-api:10.1.0-M14" />
+          <element id="library" level="project" name="Maven: org.apache.tomcat:tomcat-juli:10.1.0-M14" />
+          <element id="library" level="project" name="Maven: org.apache.tomcat:tomcat-annotations-api:10.1.0-M14" />
+          <element id="library" level="project" name="Maven: org.apache.tomcat:tomcat-api:10.1.0-M14" />
+          <element id="library" level="project" name="Maven: org.apache.tomcat:tomcat-jni:10.1.0-M14" />
+          <element id="library" level="project" name="Maven: org.apache.tomcat:tomcat-coyote:10.1.0-M14" />
+          <element id="library" level="project" name="Maven: org.apache.tomcat:tomcat-util:10.1.0-M14" />
+          <element id="library" level="project" name="Maven: org.apache.tomcat:tomcat-util-scan:10.1.0-M14" />
+          <element id="library" level="project" name="Maven: org.apache.tomcat:tomcat-jaspic-api:10.1.0-M14" />
+          <element id="library" level="project" name="Maven: org.springframework.security:spring-security-core:5.6.2" />
+          <element id="library" level="project" name="Maven: org.springframework.security:spring-security-crypto:5.6.2" />
+          <element id="library" level="project" name="Maven: org.springframework.security:spring-security-web:5.6.2" />
+          <element id="library" level="project" name="Maven: org.springframework.security:spring-security-config:5.6.2" />
+          <element id="library" level="project" name="Maven: javax.validation:validation-api:2.0.1.Final" />
+        </element>
       </element>
       <element id="directory" name="META-INF">
         <element id="file-copy" path="$PROJECT_DIR$/target/JavaClub6LibraryWebApp/META-INF/MANIFEST.MF" />
