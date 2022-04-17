@@ -5,4 +5,5 @@ import java.util.List;
 
 public interface BookService {
     List<Book> list();
+    Book findById(int id);
 }

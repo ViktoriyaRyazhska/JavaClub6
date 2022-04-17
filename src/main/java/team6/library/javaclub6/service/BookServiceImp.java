@@ -17,4 +17,9 @@ public class BookServiceImp implements BookService {
     public List<Book> list() {
         return bookDao.list();
     }
+
+    @Transactional
+    public Book findById(int id) {
+        return bookDao.findById(id);
+    }
 }

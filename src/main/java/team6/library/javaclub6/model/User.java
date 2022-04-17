@@ -1,6 +1,8 @@
 package team6.library.javaclub6.model;
 
 import lombok.Data;
+import lombok.ToString;
+
 import javax.persistence.*;
 import java.io.Serializable;
 import java.sql.Date;
@@ -27,7 +29,7 @@ public class User implements Serializable {
     @Column(name = "password")
     private String password;
     @OneToMany(mappedBy = "fkUser")
-    private List<UserRole> roles;
+    @ToString.Exclude private List<UserRole> roles;
     @OneToMany(mappedBy = "fkUser")
-    private List<UserBook> books;
+    @ToString.Exclude private List<UserBook> books;
 }

@@ -1,6 +1,8 @@
 package team6.library.javaclub6.model;
 
 import lombok.Data;
+import lombok.ToString;
+
 import javax.persistence.*;
 import java.util.List;
 
@@ -17,5 +19,5 @@ public class Author {
     @Column(name = "surname")
     private String surname;
     @OneToMany(mappedBy = "fkAuthor")
-    private List<AuthorBook> books;
+    @ToString.Exclude private List<AuthorBook> books;
 }
