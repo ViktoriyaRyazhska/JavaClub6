@@ -7,7 +7,11 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="JavaClub6" />
+        <module name="Library" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Library" target="1.7" />
+    </bytecodeTargetLevel>
   </component>
 </project>
