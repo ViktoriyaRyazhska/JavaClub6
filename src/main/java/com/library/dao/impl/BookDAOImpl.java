@@ -22,7 +22,7 @@ public class BookDAOImpl implements BookDAO {
 
     @Override
     public List<Book> findAll() {
-        return sessionFactory.getCurrentSession().createQuery("from Books").list();
+        return sessionFactory.getCurrentSession().createQuery("from Book").list();
     }
 
     @Override
