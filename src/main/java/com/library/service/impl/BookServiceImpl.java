@@ -1,6 +1,7 @@
 package com.library.service.impl;
 
 import com.library.dao.BookDAO;
+import com.library.model.Author;
 import com.library.model.Book;
 import com.library.service.BookService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,8 +13,12 @@ import java.util.List;
 @Service
 public class BookServiceImpl implements BookService {
 
-    @Autowired
     private BookDAO bookDAO;
+
+    @Autowired
+    public BookServiceImpl(BookDAO bookDAO) {
+        this.bookDAO = bookDAO;
+    }
 
     @Override
     @Transactional
@@ -29,14 +34,19 @@ public class BookServiceImpl implements BookService {
 
     @Override
     @Transactional
-    public Book findBookById(Integer id) {
+    public Book findBookById(Long id) {
         return bookDAO.findBookById(id);
     }
 
     @Override
     @Transactional
-    public Book findBookByTitle(String title) {
+    public List<Book> findBookByTitle(String title) {
         return bookDAO.findBookByTitle(title);
+    }
+
+    @Override
+    public List<Book> findBookByAuthor(Author author) {
+        return bookDAO.findBookByAuthor(author);
     }
 
     @Override
@@ -50,4 +60,5 @@ public class BookServiceImpl implements BookService {
     public void deleteBook(Book book) {
         bookDAO.deleteBook(book);
     }
+
 }

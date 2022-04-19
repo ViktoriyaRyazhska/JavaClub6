@@ -1,6 +1,7 @@
 package com.library.dao.impl;
 
 import com.library.dao.BookDAO;
+import com.library.model.Author;
 import com.library.model.Book;
 import org.hibernate.SessionFactory;
 import org.hibernate.query.Query;
@@ -17,29 +18,38 @@ public class BookDAOImpl implements BookDAO {
 
     @Override
     public void addBook(Book book) {
-        sessionFactory.getCurrentSession().persist(book);
+        sessionFactory.getCurrentSession().save(book);
     }
 
     @Override
     public List<Book> findAll() {
-        return sessionFactory.getCurrentSession().createQuery("from Books").list();
+        return sessionFactory.getCurrentSession().createQuery("from Book").list();
     }
 
     @Override
-    public Book findBookById(Integer id) {
+    public Book findBookById(Long id) {
         return sessionFactory.getCurrentSession().get(Book.class, id);
     }
 
     @Override
-    public Book findBookByTitle(String title) {
-        Query query = sessionFactory.getCurrentSession().createQuery("from books where title=:title");
+    public List<Book> findBookByTitle(String title) {
+        Query query = sessionFactory.getCurrentSession().createQuery("from book where title=:title");
         query.setParameter("title", title);
-        return (Book) query.uniqueResult();
+        return query.list();
+    }
+
+    @Override
+    public List<Book> findBookByAuthor(Author author) {
+        Long authorId = author.getAuthorId();
+        Query query = sessionFactory.getCurrentSession().createQuery("from book join book_author on book_id where author.id=:authorId");
+        return query.list();
     }
 
 //    @Override
 //    public List<Book> findBookByAuthor(Author author) {
-//        return null;
+//        Long authorId = author.getAuthorId();
+//        Query query = sessionFactory.getCurrentSession().createQuery("from book join book_author on book_id where author.id=:authorId");
+//        return query.list();
 //    }
 
     @Override
@@ -51,4 +61,5 @@ public class BookDAOImpl implements BookDAO {
     public void deleteBook(Book book) {
         sessionFactory.getCurrentSession().delete(book);
     }
+
 }

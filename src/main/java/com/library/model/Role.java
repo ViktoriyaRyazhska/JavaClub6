@@ -1,5 +1,10 @@
 package com.library.model;
 
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -9,6 +14,10 @@ import javax.persistence.Table;
 
 import java.util.List;
 
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
 @Entity
 @Table(name = "roles")
 public class Role {
@@ -22,30 +31,4 @@ public class Role {
     @OneToMany(mappedBy = "role")
     private List<User> users;
 
-    public Role() {
-    }
-
-    public long getId() {
-        return roleId;
-    }
-
-    public void setId(long id) {
-        this.roleId = id;
-    }
-
-    public String getRoleTitle() {
-        return roleTitle;
-    }
-
-    public void setRoleTitle(String roleTitle) {
-        this.roleTitle = roleTitle;
-    }
-
-    public List<User> getUsers() {
-        return users;
-    }
-
-    public void setUsers(List<User> users) {
-        this.users = users;
-    }
 }
