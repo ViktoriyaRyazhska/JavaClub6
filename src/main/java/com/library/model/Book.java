@@ -1,4 +1,4 @@
- package com.library.model;
+package com.library.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -22,9 +22,6 @@ import javax.validation.constraints.NotEmpty;
 import java.util.HashSet;
 import java.util.Set;
 
-@Getter
-@Setter
-@NoArgsConstructor
 @Entity
 @Table(name = "books")
 public class Book {
@@ -50,7 +47,6 @@ public class Book {
     )
     Set<Author> authorSet = new HashSet<>();
 
-<<<<<<< HEAD
     public Book() {
     }
 
@@ -70,11 +66,11 @@ public class Book {
         this.title = title;
     }
 
-    public long getAmountOfCopies() {
+    public Integer getAmountOfCopies() {
         return amountOfCopies;
     }
 
-    public void setAmountOfCopies(long amountOfCopies) {
+    public void setAmountOfCopies(Integer amountOfCopies) {
         this.amountOfCopies = amountOfCopies;
     }
 
@@ -86,6 +82,4 @@ public class Book {
         this.authorSet = authorSet;
     }
 }
-=======
-}
->>>>>>> refs/remotes/origin/Team2Library
+

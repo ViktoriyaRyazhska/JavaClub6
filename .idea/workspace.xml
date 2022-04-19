@@ -10,20 +10,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3fe0153a-a71c-46cd-8145-9da68c20aeb8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/JavaClub.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/JavaClub.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/JavaClub_war.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/JavaClub_war_exploded.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_5_3_18.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_5_3_19.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/library/dao/UserDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/library/dao/impl/UserDAOImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/library/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/library/service/impl/UserServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/library/controller/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/library/controller/HomeController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/library/dao/impl/BookDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/library/dao/impl/BookDAOImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/library/model/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/library/model/Book.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/index.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/library/controller/HomeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/library/controller/HomeController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/library/controller/BookController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/library/controller/BookController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/library/dao/BookDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/library/dao/BookDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/library/dao/impl/BookDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/library/dao/impl/BookDAOImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/library/model/Author.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/library/model/Author.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/library/model/Book.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/library/model/Book.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/library/model/Request.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/library/model/Request.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/library/model/Role.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/library/model/Role.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/library/model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/library/model/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/library/service/BookService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/library/service/BookService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/library/service/impl/BookServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/library/service/impl/BookServiceImpl.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +38,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -73,6 +79,17 @@
     <property name="settings.editor.selected.configurable" value="com.poratu.idea.plugins.tomcat.setting.TomcatSettingConfigurable" />
   </component>
   <component name="RunManager">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.62" ALTERNATIVE_JRE_ENABLED="false">
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
@@ -147,7 +164,7 @@
     </configuration>
     <configuration name="Tomcat" type="com.poratu.idea.plugins.tomcat" factoryName="SMART_TOMCAT_FACTORY">
       <option name="adminPort" value="8005" />
-      <option name="contextPath" value="/JavaClub" />
+      <option name="contextPath" value="/library" />
       <option name="docBase" value="$PROJECT_DIR$/src/main/webapp" />
       <option name="envOptions">
         <map />
@@ -203,7 +220,7 @@
       <workItem from="1650129242255" duration="3930000" />
       <workItem from="1650279864125" duration="3560000" />
       <workItem from="1650373319181" duration="588000" />
-      <workItem from="1650374162057" duration="1724000" />
+      <workItem from="1650374162057" duration="9772000" />
     </task>
     <servers />
   </component>
@@ -227,10 +244,14 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="547" y="290" key="#Tomcat_Server/0.0.1536.824@0.0.1536.824" timestamp="1650127177771" />
-    <state x="223" y="0" width="1089" height="824" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1650374560258">
+    <state x="223" y="0" width="1089" height="824" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1650377933923">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="223" y="0" width="1089" height="824" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1650374560258" />
+    <state x="223" y="0" width="1089" height="824" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1650377933923" />
+    <state x="574" y="118" key="#com.intellij.ide.util.MemberChooser" timestamp="1650397117838">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="574" y="118" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1650397117838" />
     <state x="498" y="233" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1650112558779">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -247,22 +268,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1650374351802" />
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1650375434531">
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1650397041797">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1650375434531" />
-    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1650375434530">
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1650397041797" />
+    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1650397041797">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1650375434530" />
-    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1650375434530">
+    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1650397041797" />
+    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1650397041797">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1650375434530" />
-    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1650375434531">
+    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1650397041797" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1650397041797">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1650375434531" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1650397041797" />
     <state width="1024" height="210" key="GridCell.Tab.1.bottom" timestamp="1650372653658">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

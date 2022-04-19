@@ -61,9 +61,4 @@ public class BookDAOImpl implements BookDAO {
     public void deleteBook(Book book) {
         sessionFactory.getCurrentSession().delete(book);
     }
-<<<<<<< HEAD
 }
-=======
-
-}
->>>>>>> refs/remotes/origin/Team2Library
