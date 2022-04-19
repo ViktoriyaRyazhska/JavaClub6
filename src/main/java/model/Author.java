@@ -34,7 +34,7 @@ public class Author {
     @NotEmpty(message = "Please Enter your name")
     private String lastName;
 
-    @OneToMany(mappedBy = "author")
-    private Set<BooksAuthor> booksAuthors;
+    @ManyToMany(mappedBy = "author")
+    private Set<Book> books;
 
 }

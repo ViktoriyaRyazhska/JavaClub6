@@ -18,7 +18,7 @@ import java.util.Set;
 @AllArgsConstructor
 @NoArgsConstructor
 @Table(name = "books")
-public class Books {
+public class Book {
 
     @Id
     @Column(name = "id")
@@ -49,10 +49,10 @@ public class Books {
     @NotEmpty(message = "Please Enter last update")
     private Date lastUpdate;
 
-    @OneToMany(mappedBy = "books")
-    private Set<BooksAuthor> booksAuthors;
+    @ManyToMany(mappedBy = "books")
+    private Set<Author> authors;
 
-    @OneToMany(mappedBy = "books")
-    private Set<BooksUser> booksUsers;
+    @ManyToMany(mappedBy = "books")
+    private Set<User> users;
 
 }

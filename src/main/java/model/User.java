@@ -1,8 +1,5 @@
 package model;
 
-import javax.persistence.*;
-import javax.validation.constraints.Size;
-
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -10,7 +7,8 @@ import lombok.Setter;
 import org.hibernate.validator.constraints.Email;
 import org.hibernate.validator.constraints.NotEmpty;
 
-import java.io.Serializable;
+import javax.persistence.*;
+import javax.validation.constraints.Size;
 import java.util.Date;
 import java.util.Set;
 
@@ -53,11 +51,11 @@ public class User {
     @NotEmpty(message = "Please Enter Date Registration")
     private Date date_registr;
 
-    @ManyToMany(cascade = {CascadeType.ALL})
+    @ManyToOne(cascade = {CascadeType.ALL})
     @JoinTable(name = "role", joinColumns = {@JoinColumn(name = "id")
     }, inverseJoinColumns = {
             @JoinColumn(name = "role_id")})
-    private Set<Role> roles;
+    private Role roles;
 
     @OneToMany(mappedBy = "user")
     private Set<BooksUser> booksUsers;
