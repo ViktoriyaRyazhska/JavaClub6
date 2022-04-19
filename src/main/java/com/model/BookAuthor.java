@@ -1,4 +1,4 @@
-package model;
+package com.model;
 import javax.persistence.*;
 import javax.validation.constraints.NotEmpty;
 @Entity

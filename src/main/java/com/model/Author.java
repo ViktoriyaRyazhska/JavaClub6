@@ -1,4 +1,4 @@
-package model;
+package com.model;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -22,6 +22,14 @@ public class Author {
     @NotEmpty()
     private String authorLastName;
 
+    public Author(String s, String s1) {}
+
+    public Author(Long authorId, String authorFirstName, String authorLastName) {
+        this.authorId = authorId;
+        this.authorFirstName = authorFirstName;
+        this.authorLastName = authorLastName;
+    }
+
     public Long getAuthorId() {
         return authorId;
     }
@@ -44,5 +52,10 @@ public class Author {
 
     public void setAuthorLastName(String authorLastName) {
         this.authorLastName = authorLastName;
+    }
+
+    @Override
+    public String toString(){
+        return String.format("Author [authorId = %d, authorFirstName=%s,authorLastName=%d", authorId,authorFirstName,authorLastName);
     }
 }

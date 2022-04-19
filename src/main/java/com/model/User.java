@@ -1,4 +1,4 @@
-package model;
+package com.model;
 
 
 import javax.persistence.*;
@@ -10,6 +10,7 @@ import java.util.Date;
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+
     @Column(name = "user_id")
     private Long userId;
 
@@ -32,6 +33,10 @@ public class User {
     @Column(name = "user_date_register")
     @NotEmpty()
     private Date userDateRegister;
+
+
+    @NotEmpty
+    private Role role;
 
     public Long getUserId() {
         return userId;
