@@ -14,11 +14,10 @@ public class Role {
 
     @Column(name = "role")
     @NotEmpty()
-    private String roleTitle;
+    private String role;
+
 
     private Set<User> users;
-
-    public Role() {}
 
     public Long getId() {
         return id;
@@ -29,11 +28,11 @@ public class Role {
     }
 
     public String getRole() {
-        return roleTitle;
+        return role;
     }
 
-    public void setRole(String roleTitle) {
-        this.roleTitle = roleTitle;
+    public void setRole(String role) {
+        this.role = role;
     }
 
     public Set<User> getUsers() {
