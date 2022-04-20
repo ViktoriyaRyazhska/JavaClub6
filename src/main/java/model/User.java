@@ -10,6 +10,7 @@ import org.hibernate.validator.constraints.NotEmpty;
 import javax.persistence.*;
 import javax.validation.constraints.Size;
 import java.util.Date;
+import java.util.HashSet;
 import java.util.Set;
 
 @Entity
@@ -49,7 +50,10 @@ public class User {
 
     @Column(name = "date_registration", nullable = false)
     @NotEmpty(message = "Please Enter Date Registration")
-    private Date date_registr;
+    private Date date_register;
+
+    @ManyToOne
+    private Role role;
 
     @ManyToOne(cascade = {CascadeType.ALL})
     @JoinTable(name = "role", joinColumns = {@JoinColumn(name = "id")
@@ -57,7 +61,13 @@ public class User {
             @JoinColumn(name = "role_id")})
     private Role roles;
 
-    @OneToMany(mappedBy = "user")
-    private Set<BooksUser> booksUsers;
+    @ManyToMany(cascade = { CascadeType.ALL })
+    @JoinTable(
+            name = "book_user",
+            joinColumns = { @JoinColumn(name = "user_id") },
+            inverseJoinColumns = { @JoinColumn(name = "book_id") }
+    )
+    Set<Book> books = new HashSet<>();
+
 
 }

@@ -29,8 +29,8 @@
         <tr>
           <td>Name</td>
           <td>
-            <form:input path="name" /> <br />
-            <form:errors path="name" cssClass="error" />
+            <form:input path="lastName" /> <br />
+            <form:errors path="lastName" cssClass="error" />
           </td>
         </tr>
         <tr>

@@ -15,72 +15,34 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <maven.compiler.source>1.8</maven.compiler.source>
-    <maven.compiler.target>1.8</maven.compiler.target>
-    <spring.version>5.3.18</spring.version>
-    <springsecurity.version>5.6.2</springsecurity.version>
-    <hibernate.version>6.0.0.Final</hibernate.version>
-    <hibernate.entity.version>5.6.7.Final</hibernate.entity.version>
-    <hibernate.validator>7.0.4.Final</hibernate.validator>
-    <c3p0.version>0.9.5.5</c3p0.version>
-    <jstl.version>1.2.2</jstl.version>
+    <maven.compiler.source>1.7</maven.compiler.source>
+    <maven.compiler.target>1.7</maven.compiler.target>
+    <failOnMissingWebXml>false</failOnMissingWebXml>
+    <mysql.version>8.0.28</mysql.version>
+    <spring.version>5.2.0.RELEASE</spring.version>
+    <hibernate.version>5.4.7.Final</hibernate.version>
+    <hibernate.validator>5.4.1.Final</hibernate.validator>
+    <c3p0.version>0.9.5.2</c3p0.version>
+    <jstl.version>1.2.1</jstl.version>
     <tld.version>1.1.2</tld.version>
     <servlets.version>3.1.0</servlets.version>
-    <jsp.version>2.3.3</jsp.version>
+    <jsp.version>2.3.1</jsp.version>
     <hsqldb.version>1.8.0.10</hsqldb.version>
-    <mysql.version>8.0.28</mysql.version>
 
   </properties>
 
   <dependencies>
+    <!-- MySQL Connector/J Dependency -->
     <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>4.11</version>
-      <scope>test</scope>
+      <groupId>mysql</groupId>
+      <artifactId>mysql-connector-java</artifactId>
+      <version>${mysql.version}</version>
     </dependency>
 
-    <!-- Spring Core Dependency -->
-    <dependency>
-      <groupId>org.springframework</groupId>
-      <artifactId>spring-core</artifactId>
-      <version>${spring.version}</version>
-    </dependency>
-    <!-- Spring Context Dependency -->
-    <dependency>
-      <groupId>org.springframework</groupId>
-      <artifactId>spring-context</artifactId>
-      <version>${spring.version}</version>
-    </dependency>
-    <!-- Spring Security Core -->
-    <dependency>
-      <groupId>org.springframework.security</groupId>
-      <artifactId>spring-security-core</artifactId>
-      <version>${springsecurity.version}</version>
-    </dependency>
-    <!-- Spring Security Config -->
-    <dependency>
-      <groupId>org.springframework.security</groupId>
-      <artifactId>spring-security-config</artifactId>
-      <version>${springsecurity.version}</version>
-    </dependency>
-    <!-- Spring Security Web -->
-    <dependency>
-      <groupId>org.springframework.security</groupId>
-      <artifactId>spring-security-web</artifactId>
-      <version>${springsecurity.version}</version>
-    </dependency>
     <!-- Spring MVC Dependency -->
     <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-webmvc</artifactId>
-      <version>${spring.version}</version>
-    </dependency>
-
-    <!-- Spring WEB Dependency -->
-    <dependency>
-      <groupId>org.springframework</groupId>
-      <artifactId>spring-web</artifactId>
       <version>${spring.version}</version>
     </dependency>
 
@@ -98,30 +60,11 @@
       <version>${hibernate.version}</version>
     </dependency>
 
-    <!-- Hibernate Core -->
-    <dependency>
-      <groupId>org.hibernate</groupId>
-      <artifactId>hibernate-entitymanager</artifactId>
-      <version>${hibernate.entity.version}</version>
-    </dependency>
-
     <!-- Hibernate-C3P0 Integration -->
     <dependency>
       <groupId>org.hibernate</groupId>
       <artifactId>hibernate-c3p0</artifactId>
       <version>${hibernate.version}</version>
-    </dependency>
-
-    <dependency>
-      <groupId>org.slf4j</groupId>
-      <artifactId>slf4j-api</artifactId>
-      <version>1.7.36</version>
-    </dependency>
-
-    <dependency>
-      <groupId>org.jboss.logging</groupId>
-      <artifactId>jboss-logging</artifactId>
-      <version>3.4.3.Final</version>
     </dependency>
 
     <!-- c3p0 -->
@@ -155,7 +98,7 @@
     <dependency>
       <groupId>javax.servlet</groupId>
       <artifactId>javax.servlet-api</artifactId>
-      <version>4.0.1</version>
+      <version>${servlets.version}</version>
       <scope>provided</scope>
     </dependency>
 
@@ -167,22 +110,25 @@
       <scope>provided</scope>
     </dependency>
 
+    <!-- HSQL Dependency -->
     <dependency>
-      <groupId>mysql</groupId>
-      <artifactId>mysql-connector-java</artifactId>
-      <version>${mysql.version}</version>
+      <groupId>hsqldb</groupId>
+      <artifactId>hsqldb</artifactId>
+      <version>${hsqldb.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.11</version>
+      <scope>test</scope>
     </dependency>
 
+    <!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
     <dependency>
       <groupId>org.projectlombok</groupId>
       <artifactId>lombok</artifactId>
       <version>1.18.22</version>
-    </dependency>
-
-    <dependency>
-      <groupId>javax.validation</groupId>
-      <artifactId>validation-api</artifactId>
-      <version>2.0.1.Final</version>
+      <scope>provided</scope>
     </dependency>
 
   </dependencies>
@@ -220,15 +166,19 @@
           <artifactId>maven-deploy-plugin</artifactId>
           <version>2.8.2</version>
         </plugin>
-        <plugin>
-          <groupId>org.apache.tomcat.maven</groupId>
-          <artifactId>tomcat7-maven-plugin</artifactId>
-          <version>2.2</version>
-          <configuration>
-            <path>/</path>
-          </configuration>
-        </plugin>
+
+
       </plugins>
     </pluginManagement>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <configuration>
+          <source>8</source>
+          <target>8</target>
+        </configuration>
+      </plugin>
+    </plugins>
   </build>
 </project>

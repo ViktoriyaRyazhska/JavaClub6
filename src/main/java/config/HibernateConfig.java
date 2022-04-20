@@ -1,5 +1,6 @@
 package config;
 
+import model.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Bean;
@@ -9,12 +10,9 @@ import org.springframework.orm.hibernate5.HibernateTransactionManager;
 import org.springframework.orm.hibernate5.LocalSessionFactoryBean;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
-import model.Role;
-import model.User;
-
 @Configuration
 @EnableTransactionManagement
-@ComponentScan({"config"})
+@ComponentScan({ "config" })
 public class HibernateConfig {
 
     @Autowired
@@ -24,7 +22,7 @@ public class HibernateConfig {
     public LocalSessionFactoryBean getSessionFactory() {
         LocalSessionFactoryBean factoryBean = new LocalSessionFactoryBean();
         factoryBean.setConfigLocation(context.getResource("classpath:hibernate.cfg.xml"));
-        factoryBean.setAnnotatedClasses(User.class, Role.class);
+        factoryBean.setAnnotatedClasses(User.class, Role.class, Author.class, Book.class, BookUser.class);
         return factoryBean;
     }
 

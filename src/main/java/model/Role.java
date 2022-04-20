@@ -19,7 +19,10 @@ public class Role {
     @Column(name = "name")
     private String role;
 
-   /* @OneToMany(mappedBy = "role")
-    private Set<User> users;*/
+    @OneToMany(cascade=CascadeType.ALL)
+    @JoinColumn(name="user_id")
+    private Set<User> users;
+
+
 
 }

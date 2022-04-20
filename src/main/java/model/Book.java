@@ -10,6 +10,7 @@ import javax.persistence.*;
 import javax.validation.constraints.Size;
 import java.time.Year;
 import java.util.Date;
+import java.util.HashSet;
 import java.util.Set;
 
 @Entity
@@ -30,9 +31,6 @@ public class Book {
     @NotEmpty(message = "Please Enter title")
     private String title;
 
-    @Column(name = "description", nullable = true, length = 500)
-    private String description;
-
     @Column(name = "realize_year", nullable = false)
     @NotEmpty(message = "Please Enter year")
     private Year realizeYear;
@@ -41,7 +39,7 @@ public class Book {
     @NotEmpty(message = "Please Enter total quantity")
     private int totalQuantity;
 
-    @Column(name = "total_quantity", nullable = false)
+    @Column(name = "in_reading", nullable = false)
     @NotEmpty(message = "Please Enter total quantity")
     private int inReading;
 
@@ -50,9 +48,11 @@ public class Book {
     private Date lastUpdate;
 
     @ManyToMany(mappedBy = "books")
-    private Set<Author> authors;
+    private Set<Author> authors = new HashSet<>();
 
     @ManyToMany(mappedBy = "books")
-    private Set<User> users;
+    private Set<User> users = new HashSet<>();
+
+
 
 }
