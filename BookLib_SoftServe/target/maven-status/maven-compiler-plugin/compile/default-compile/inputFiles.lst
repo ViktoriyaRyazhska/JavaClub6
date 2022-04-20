@@ -2,7 +2,6 @@ e:\IT Academy Java club\JavaClub6\BookLib_SoftServe\src\main\java\com\booklib\co
 e:\IT Academy Java club\JavaClub6\BookLib_SoftServe\src\main\java\com\booklib\config\HibernateConfig.java
 e:\IT Academy Java club\JavaClub6\BookLib_SoftServe\src\main\java\com\booklib\dao\UserDaoImp.java
 e:\IT Academy Java club\JavaClub6\BookLib_SoftServe\src\main\java\com\booklib\service\UserServiceImp.java
-e:\IT Academy Java club\JavaClub6\BookLib_SoftServe\src\main\java\com\booklib\entity\Book_Author.java
 e:\IT Academy Java club\JavaClub6\BookLib_SoftServe\src\main\java\com\booklib\dao\UserDao.java
 e:\IT Academy Java club\JavaClub6\BookLib_SoftServe\src\main\java\com\booklib\entity\Request.java
 e:\IT Academy Java club\JavaClub6\BookLib_SoftServe\src\main\java\com\booklib\entity\Notification.java

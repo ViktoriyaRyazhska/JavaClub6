@@ -1,13 +1,15 @@
 package com.booklib.entity;
 
-
 import lombok.Getter;
 import lombok.Setter;
 import org.hibernate.validator.constraints.NotEmpty;
 
 import javax.persistence.*;
 import javax.validation.constraints.Size;
+
+import java.util.HashSet;
 import java.util.Objects;
+import java.util.Set;
 
 @Entity
 @Setter
@@ -27,13 +29,18 @@ public class Author {
     @NotEmpty(message = "Please Enter your surname")
     private String surname;
 
+    @ManyToMany(mappedBy = "coauthors")
+    private Set<Book> bookSet = new HashSet<>();
+
     public Author() {
     }
 
     @Override
     public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
+        if (this == o)
+            return true;
+        if (o == null || getClass() != o.getClass())
+            return false;
         Author author = (Author) o;
         return id.equals(author.id) && name.equals(author.name) && surname.equals(author.surname);
     }

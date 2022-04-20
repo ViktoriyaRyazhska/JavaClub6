@@ -52,9 +52,7 @@ public class User implements Serializable {
     @NotEmpty(message = "Please Enter Date of Birth")
     private Date birthday;
 
-    @ManyToMany(cascade = { CascadeType.ALL })
-    @JoinTable(name = "user_roles", joinColumns = { @JoinColumn(name = "user_id")
-    }, inverseJoinColumns = {
-            @JoinColumn(name = "role_id") })
-    private Set<Roles> roles;
+    @ManyToOne
+    @JoinColumn(name = "roles ", referencedColumnName = "id")
+    private Roles roles;
 }

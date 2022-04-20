@@ -11,5 +11,4 @@ com\booklib\controller\UserController.class
 com\booklib\config\WebMvcConfig.class
 com\booklib\dao\UserDao.class
 com\booklib\entity\Author.class
-com\booklib\entity\Book_Author.class
 com\booklib\entity\Roles.class

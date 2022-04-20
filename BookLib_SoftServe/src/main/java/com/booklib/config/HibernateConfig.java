@@ -11,7 +11,6 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 import com.booklib.entity.Author;
 import com.booklib.entity.Book;
-import com.booklib.entity.Book_Author;
 import com.booklib.entity.Request;
 import com.booklib.entity.Roles;
 import com.booklib.entity.User;
@@ -28,8 +27,7 @@ public class HibernateConfig {
     public LocalSessionFactoryBean getSessionFactory() {
         LocalSessionFactoryBean factoryBean = new LocalSessionFactoryBean();
         factoryBean.setConfigLocation(context.getResource("classpath:hibernate.cfg.xml"));
-        factoryBean.setAnnotatedClasses(User.class, Roles.class, Book.class, Author.class, Book_Author.class,
-                Request.class);
+        factoryBean.setAnnotatedClasses(User.class, Roles.class, Book.class, Author.class, Request.class);
         return factoryBean;
     }
 
