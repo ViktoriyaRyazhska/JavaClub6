@@ -1,7 +1,6 @@
 package com.booklib.entity;
 
 import java.io.Serializable;
-import java.util.Set;
 
 import javax.persistence.*;
 import lombok.*;

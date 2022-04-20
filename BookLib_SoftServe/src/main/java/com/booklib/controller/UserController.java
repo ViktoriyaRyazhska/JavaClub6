@@ -18,6 +18,17 @@ public class UserController {
     private UserService userService;
 
     @GetMapping("/")
+    public String hello(Locale locale) {
+        return "hello";
+    }
+
+    @GetMapping("/allUsers")
+    public String users(Locale locale, Model model) {
+        model.addAttribute("users", userService.list());
+        return "allUsers";
+    }
+
+    @GetMapping("/editUsers")
     public String userForm(Locale locale, Model model) {
         model.addAttribute("users", userService.list());
         return "editUsers";
@@ -27,4 +38,5 @@ public class UserController {
     public User formBackingObject() {
         return new User();
     }
+
 }
