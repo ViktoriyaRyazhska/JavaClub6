@@ -8,6 +8,7 @@
     <div class="container">
         <h1>Welcome to the Library!</h1>
         <a href="books">List of books</a>
+        <a href="user">User</a>
     </div>
     </body>
 </html>
