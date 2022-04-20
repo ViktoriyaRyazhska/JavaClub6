@@ -15,13 +15,20 @@
                 <td>${book.title}</td>
             </tr>
             <tr>
-                <td>Author(s) </td>
-                <td>
-                    <c:forEach items="${authors}" var="author">
-                        <c:set var="authorName" value="${author.name} ${author.surname}"/>
-                        ${authorName}<br>
-                    </c:forEach>
-                </td>
+                <td>Main Author </td>
+                <td>${book.mainAuthor.getName()} ${book.mainAuthor.getSurname()}</td>
+            </tr>
+            <tr>
+                <td>Co Author(s) </td>
+                <c:if test="${authors.size() == 0}"><td>none</td></c:if>
+                <c:if test="${authors.size() != 0}">
+                    <td>
+                        <c:forEach items="${authors}" var="author">
+                            <c:set var="authorName" value="${author.name} ${author.surname}"/>
+                            ${authorName}<br>
+                        </c:forEach>
+                    </td>
+                </c:if>
             </tr>
             <tr>
                 <td>Amount of copies </td>
@@ -31,6 +38,5 @@
         <a href="/library/books">Back to List</a><br>
         <a href="/library">Home</a>
     </div>
-
     </body>
 </html>
