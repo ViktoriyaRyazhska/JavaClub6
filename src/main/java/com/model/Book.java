@@ -28,6 +28,12 @@ public class Book {
     @NotEmpty()
     private long actualAmount;
 
+    @Column(name = "main_author_id")
+    @NotEmpty()
+    private long mainAuthorId;
+
+
+
     public Long getBookId() {
         return bookId;
     }
