@@ -17,4 +17,10 @@ public class BookServiceImp implements BookService {
     public List<Book> list() {
         return bookDao.list();
     }
+
+    @Transactional(readOnly = true, rollbackFor = { java.lang.Exception.class })
+    public List<Book> findBookByTitle(String title) {
+        return bookDao.findBookByTitle(title);
+    }
+
 }

@@ -127,12 +127,16 @@ CONCAT(a.name, ' ', a.surname) as Author
      WHERE ba.is_main is true;
   
   
-    SELECT b.*,
+    SELECT b.title,
+    b.genre,
+    b.copies,
+--      CONCAT(a.name, ' ', a.surname)as Author,
+    bb.main_author as Author,
     CONCAT(a.name, ' ', a.surname) as CoAuthor
       FROM author a 
-      join book_authors ba on ba.author_id = a.id
-      join book b on ba.book_id = b.id
-     WHERE ba.is_main is not true 
+      join books_coauthors ba on ba.author_id = a.id
+      join book b on ba.book_id = b.id and b.main_author = a.id
+	-- WHERE b.main_author is a.id
      order by b.id;
      
 
@@ -412,10 +416,10 @@ where r.first_day between '2022-01-01 00:00:00' and now();
 
 -- ////////////////////////////////////////////////////////////////////////////
 select * from author;
-select * from book_authors;
+select * from books_coauthors;
 select * from book;
 select * from user;
-select * from role;
+select * from roles;
 select * from request;
 
 

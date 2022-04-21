@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 import javax.persistence.TypedQuery;
+import org.hibernate.query.Query;
 import java.util.List;
 
 @Repository
@@ -20,4 +21,13 @@ public class BookDaoImp implements BookDao {
         TypedQuery<Book> query = sessionFactory.getCurrentSession().createQuery("from Book");
         return query.getResultList();
     }
+
+    @Override
+    public List<Book> findBookByTitle(String title) {
+        @SuppressWarnings("unchecked")
+        TypedQuery<Book> query = sessionFactory.getCurrentSession().createQuery("from Book where title like :title");
+        query.setParameter("title", title);
+        return query.getResultList();
+    }
+
 }

@@ -1,44 +1,64 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1" %>
     <%@taglib uri="http://www.springframework.org/tags/form" prefix="form" %>
         <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-            <!DOC TYPE html>
-                <html>
+            <%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
+                <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+                    <!DOC TYPE html>
+                        <html>
 
-                <head>
-                    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-                    <title>All Books</title>
-                    <style type="text/css">
-                        table {
-                            width: 50%;
-                            border-collapse: collapse;
-                            border-spacing: 0px;
-                        }
+                        <head>
+                            <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+                            <title>All Books</title>
+                            <style type="text/css">
+                                table {
+                                    width: 50%;
+                                    border-collapse: collapse;
+                                    border-spacing: 0px;
+                                }
 
-                        table td {
-                            border: 1px solid #565454;
-                            padding: 20px;
-                        }
-                    </style>
-                </head>
+                                table td {
+                                    border: 1px solid #565454;
+                                    padding: 20px;
+                                }
 
-                <body>
-                    <h2>Books List</h2>
-                    <table>
-                        <tr>
-                            <td><strong>Title</strong></td>
-                            <td><strong>Genre</strong></td>
-                            <td><strong>Copies</strong></td>
-                            <td><strong>Main_author</strong></td>
-                        </tr>
-                        <c:forEach items="${books}" var="book">
-                            <tr>
-                                <td>${book.title}</td>
-                                <td>${book.genre}</td>
-                                <td>${book.copies}</td>
-                                <td>${book.main_author.name} ${book.main_author.surname}</td>
-                            </tr>
-                        </c:forEach>
-                    </table>
-                </body>
+                                .error {
+                                    color: red;
+                                }
+                            </style>
+                        </head>
 
-                </html>
+                        <body>
+                            <a href="<spring:url value='/'/>">back</a>
+                            <h2>Books List</h2>
+                            <c:if test="${empty books}">
+                                <div>Not found</div>
+                            </c:if>
+
+                            <c:if test="${not empty books}">
+                                <table>
+                                    <tr>
+                                        <td><strong>Title</strong></td>
+                                        <td><strong>Genre</strong></td>
+                                        <td><strong>Copies</strong></td>
+                                        <td><strong>Main_author</strong></td>
+                                        <td><strong>Availability</strong></td>
+                                    </tr>
+                                    <c:forEach items="${books}" var="book">
+                                        <tr>
+                                            <td>${book.title}</td>
+                                            <td>${book.genre}</td>
+                                            <td>${book.copies}</td>
+                                            <td>${book.main_author.name} ${book.main_author.surname}</td>
+                                            <c:if test="${book.copies eq 0}">
+                                                <td class="error">unavailable</td>
+                                            </c:if>
+                                            <c:if test="${book.copies ne 0}">
+                                                <td>available</td>
+                                            </c:if>
+                                        </tr>
+                                    </c:forEach>
+                                </table>
+                            </c:if>
+                        </body>
+
+                        </html>

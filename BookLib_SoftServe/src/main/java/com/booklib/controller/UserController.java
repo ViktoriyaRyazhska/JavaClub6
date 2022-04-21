@@ -30,7 +30,7 @@ public class UserController {
 
     @GetMapping("/editUsers")
     public String userForm(Locale locale, Model model) {
-        model.addAttribute("users", userService.list());
+        // model.addAttribute("users", userService.list());
         return "editUsers";
     }
 
