@@ -24,6 +24,7 @@
                         </head>
 
                         <body>
+                            <a href="<spring:url value='/'/>">back</a>
                             <h2>Users List</h2>
                             <table>
                                 <tr>
