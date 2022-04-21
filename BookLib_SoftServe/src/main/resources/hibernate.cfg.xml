@@ -6,7 +6,7 @@
     <session-factory>
         <!--        <property name="hibernate.connection.username">*****</property>-->
         <!--        <property name="hibernate.connection.password">*****s</property>-->
-        <!--        <property name="hibernate.hbm2ddl.auto">create</property>-->
+        <!--        <property name="hibernate.hbm2ddl.auto">update</property>-->
 
         <property name="hibernate.bytecode.use_reflection_optimizer">false</property>
         <property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>

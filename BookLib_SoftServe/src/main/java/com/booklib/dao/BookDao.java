@@ -8,4 +8,6 @@ public interface BookDao {
     List<Book> list();
 
     List<Book> findBookByTitle(String title);
+
+    Book findBookById(Long id);
 }
