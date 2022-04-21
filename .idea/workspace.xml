@@ -5,12 +5,41 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2191047e-4f65-4476-b393-b1b80d3d20d7" name="Changes" comment="cfg">
+      <change afterPath="$PROJECT_DIR$/BookLib_SoftServe/src/main/java/com/booklib/dao/AuthorDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BookLib_SoftServe/src/main/java/com/booklib/dao/AuthorDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookLib_SoftServe/src/main/java/com/booklib/controller/BookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/BookLib_SoftServe/src/main/java/com/booklib/controller/BookController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookLib_SoftServe/src/main/java/com/booklib/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/BookLib_SoftServe/src/main/java/com/booklib/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookLib_SoftServe/src/main/java/com/booklib/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/BookLib_SoftServe/src/main/java/com/booklib/dao/UserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookLib_SoftServe/src/main/java/com/booklib/dao/UserDaoImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/BookLib_SoftServe/src/main/java/com/booklib/dao/UserDaoImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookLib_SoftServe/src/main/java/com/booklib/entity/Author.java" beforeDir="false" afterPath="$PROJECT_DIR$/BookLib_SoftServe/src/main/java/com/booklib/entity/Author.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookLib_SoftServe/src/main/java/com/booklib/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/BookLib_SoftServe/src/main/java/com/booklib/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookLib_SoftServe/src/main/java/com/booklib/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/BookLib_SoftServe/src/main/java/com/booklib/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookLib_SoftServe/src/main/java/com/booklib/service/UserServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/BookLib_SoftServe/src/main/java/com/booklib/service/UserServiceImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookLib_SoftServe/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/BookLib_SoftServe/src/main/resources/hibernate.cfg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookLib_SoftServe/src/main/webApp/WEB-INF/views/allBooks.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/BookLib_SoftServe/src/main/webApp/WEB-INF/views/allBooks.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookLib_SoftServe/src/main/webApp/WEB-INF/views/editUsers.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/BookLib_SoftServe/src/main/webApp/WEB-INF/views/editUsers.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookLib_SoftServe/target/classes/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/BookLib_SoftServe/target/classes/hibernate.cfg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookLib_SoftServe/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/BookLib_SoftServe/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookLib_SoftServe/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/BookLib_SoftServe/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookLib_SoftServe/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/views/allBooks_jsp.java" beforeDir="false" afterPath="$PROJECT_DIR$/BookLib_SoftServe/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/views/allBooks_jsp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookLib_SoftServe/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/views/allUsers_jsp.java" beforeDir="false" afterPath="$PROJECT_DIR$/BookLib_SoftServe/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/views/allUsers_jsp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BookLib_SoftServe/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/views/editUsers_jsp.java" beforeDir="false" afterPath="$PROJECT_DIR$/BookLib_SoftServe/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/views/editUsers_jsp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookLib_SoftServe/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/views/hello_jsp.java" beforeDir="false" afterPath="$PROJECT_DIR$/BookLib_SoftServe/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/views/hello_jsp.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -55,9 +84,26 @@
     <property name="Git.Branch.Popup.ShowAllRemotes" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Unnamed" type="Remote" nameIsGenerated="true">
+      <module name="BookLib" />
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="8080" />
+      <option name="AUTO_RESTART" value="false" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="8080" />
+        <option name="LOCAL" value="false" />
+      </RunnerSettings>
+      <method v="2" />
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -75,7 +121,14 @@
       <option name="project" value="LOCAL" />
       <updated>1650048935959</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="cfg">
+      <created>1650104114362</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1650104114362</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -92,5 +145,16 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="cfg" />
     <option name="LAST_COMMIT_MESSAGE" value="cfg" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/BookLib_SoftServe/src/main/java/com/booklib/dao/UserDaoImp.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

@@ -3,6 +3,7 @@ package com.booklib.controller;
 import java.util.Locale;
 
 import com.booklib.entity.Book;
+
 import com.booklib.service.BookService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -22,4 +23,10 @@ public class BookController {
         model.addAttribute("books", bookService.list());
         return "allBooks";
     }
+
+    @ModelAttribute("book")
+    public Book formBackingObject() {
+        return new Book();
+    }
+
 }

@@ -14,8 +14,10 @@ import java.util.Set;
 @Setter
 @Getter
 @Table(name = "author")
-public class Author {
 
+public class Author {
+enum  dir{
+}
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;

@@ -1,6 +1,7 @@
 package com.booklib.entity;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
 import lombok.AllArgsConstructor;
@@ -44,11 +45,11 @@ public class User implements Serializable {
     private String password;
 
     @Column(nullable = false)
-    @NotEmpty(message = "Please Enter Date Registration")
+    @NotNull(message = "Please Enter Date Registration")
     private Date date_registr;
 
     @Column(nullable = false)
-    @NotEmpty(message = "Please Enter Date of Birth")
+    @NotNull(message = "Please Enter Date of Birth")
     private Date birthday;
 
     @ManyToOne
