@@ -29,4 +29,8 @@ public class UserDaoImp implements UserDao{
     public void save(User user) {
         sessionFactory.getCurrentSession().persist(user);
     }
+    @Override
+    public void update(User user) {
+        sessionFactory.getCurrentSession().update(user);
+    }
 }

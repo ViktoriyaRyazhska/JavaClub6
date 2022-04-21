@@ -1,16 +1,32 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: max12
-  Date: 4/16/2022
-  Time: 4:36 PM
-  To change this template use File | Settings | File Templates.
---%>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>User Page</title>
+    <title>Library by team6</title>
 </head>
 <body>
+<div class="w3-bar w3-black">
+    <div class="w3-bar-item">Library by team6</div>
+    <a href="/logout" class="w3-bar-item w3-right w3-button w3-hover-red">Log Out</a>
+    <a href="/user/userbookslist" class="w3-bar-item w3-button w3-right w3-hover-red">Your Books</a>
+    <div class="w3-bar-item w3-right">Hello, ${nameAndSurname}!</div>
+</div>
+<div>
+    <div class="w3-left w3-container">
+        <p>Popular books in this month:</p>
 
+    </div>
+    <div class="w3-bar-block w3-right" style="width:120px">
+        <div class="w3-bar-item">Your upcoming deadlines: </div>
+        <div class="w3-bar-item">
+        <c:forEach items="${userbooks}" var="userbook">
+            <p>Book ${userbook.fkBook.title}</p>
+            <p>Should return ${userbook.shouldReturnDate}</p>
+        </c:forEach>
+        </div>
+    </div>
+</div>
 </body>
 </html>

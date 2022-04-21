@@ -29,6 +29,7 @@
     <persistence.version>2.2</persistence.version>
     <validator.version>2.0.1.Final</validator.version>
     <lombok.version>1.18.22</lombok.version>
+    <c3p0.version>0.9.5.5</c3p0.version>
   </properties>
 
   <dependencies>
@@ -142,6 +143,19 @@
       <artifactId>lombok</artifactId>
       <version>${lombok.version}</version>
       <scope>provided</scope>
+    </dependency>
+    <!-- Hibernate-C3P0 Integration -->
+    <dependency>
+      <groupId>org.hibernate</groupId>
+      <artifactId>hibernate-c3p0</artifactId>
+      <version>${hibernate.version}</version>
+    </dependency>
+
+    <!-- c3p0 -->
+    <dependency>
+      <groupId>com.mchange</groupId>
+      <artifactId>c3p0</artifactId>
+      <version>${c3p0.version}</version>
     </dependency>
   </dependencies>
 

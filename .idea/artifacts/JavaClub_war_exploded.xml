@@ -52,6 +52,9 @@
           <element id="library" level="project" name="Maven: org.springframework.security:spring-security-web:5.6.2" />
           <element id="library" level="project" name="Maven: javax.persistence:javax.persistence-api:2.2" />
           <element id="library" level="project" name="Maven: javax.validation:validation-api:2.0.1.Final" />
+          <element id="library" level="project" name="Maven: org.hibernate:hibernate-c3p0:5.6.1.Final" />
+          <element id="library" level="project" name="Maven: com.mchange:c3p0:0.9.5.5" />
+          <element id="library" level="project" name="Maven: com.mchange:mchange-commons-java:0.2.19" />
         </element>
       </element>
       <element id="directory" name="META-INF">

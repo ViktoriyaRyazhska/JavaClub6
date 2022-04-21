@@ -6,6 +6,7 @@ import org.springframework.transaction.annotation.Transactional;
 import team6.library.javaclub6.dao.UserBookDao;
 import team6.library.javaclub6.model.Book;
 import team6.library.javaclub6.model.User;
+import team6.library.javaclub6.model.UserBook;
 
 @Service
 public class UserBookServiceImp implements UserBookService{
@@ -17,4 +18,11 @@ public class UserBookServiceImp implements UserBookService{
     public void newRequest(Book book, User user) {
         userBookDao.newRequest(book, user);
     }
+
+    @Transactional
+    public void returnBook(UserBook userBook) {
+        userBookDao.returnBook(userBook);
+    }
+
+
 }

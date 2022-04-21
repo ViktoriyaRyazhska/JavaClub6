@@ -30,6 +30,6 @@ public class User implements Serializable {
     private String password;
     @OneToMany(mappedBy = "fkUser")
     @ToString.Exclude private List<UserRole> roles;
-    @OneToMany(mappedBy = "fkUser")
+    @OneToMany(fetch = FetchType.EAGER, mappedBy = "fkUser")
     @ToString.Exclude private List<UserBook> books;
 }

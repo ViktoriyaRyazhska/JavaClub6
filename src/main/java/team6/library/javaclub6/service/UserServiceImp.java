@@ -8,10 +8,12 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import team6.library.javaclub6.dao.UserDao;
-import team6.library.javaclub6.model.Role;
-import team6.library.javaclub6.model.User;
-import team6.library.javaclub6.model.UserRole;
+import team6.library.javaclub6.model.*;
+
+import java.util.ArrayList;
 import java.util.Collection;
+import java.util.Comparator;
+import java.util.List;
 import java.util.stream.Collectors;
 
 @Service
@@ -46,5 +48,24 @@ public class UserServiceImp implements UserService {
 
     private Collection<? extends GrantedAuthority> mapRolesToAuthorities(Collection<Role> roles){
         return roles.stream().map(r -> new SimpleGrantedAuthority(r.getName())).collect(Collectors.toList());
+    }
+
+    @Transactional
+    public void update(User user){
+        userDao.update(user);
+    }
+
+    @Transactional
+    public List<UserBook> getUserBooks(User user){
+        List<UserBook> userBooks = new ArrayList<>();
+        for (UserBook i:user.getBooks()) {
+            if (i.getFkStatus().getId() == 1){
+                if (i.getReturnDate() == null){
+                    userBooks.add(i);
+                }
+            }
+        }
+        userBooks.sort(Comparator.comparing(UserBook::getShouldReturnDate));
+        return userBooks;
     }
 }

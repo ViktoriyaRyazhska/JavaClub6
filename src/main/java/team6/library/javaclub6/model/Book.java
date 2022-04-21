@@ -22,7 +22,7 @@ public class Book implements Serializable {
     private Date deployDate;
     @Column(name = "copy_number")
     private int copyNumber;
-    @OneToMany(mappedBy = "fkBook")
+    @OneToMany(fetch = FetchType.EAGER, mappedBy = "fkBook")
     @ToString.Exclude private List<AuthorBook> authors;
     @OneToMany(mappedBy = "fkBook")
     @ToString.Exclude private List<UserBook> users;
