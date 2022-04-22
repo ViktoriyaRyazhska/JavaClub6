@@ -75,6 +75,11 @@
                                                     <input type="hidden" value="${book.id}" name="id">
                                                     <button type="submit">Delete</button>
                                                 </form:form>
+                                                <form:form action="${contextPath}/addRequest" method="POST"
+                                                    enctype="multipart/form-data">
+                                                    <input type="hidden" value="${book.id}" name="id">
+                                                    <button type="submit">Take TODO:</button>
+                                                </form:form>
                                             </td>
                                         </tr>
                                     </c:forEach>

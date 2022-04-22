@@ -6,7 +6,7 @@
                     <html>
 
                     <body onload='document.loginForm.username.focus();'>
-                        <h1>Login</h1>
+                        <h1>Login TODO:</h1>
 
                         <c:if test="${not empty errorMessge}">
                             <div style="color:red; font-weight: bold; margin: 30px 0px;">${errorMessge}</div>

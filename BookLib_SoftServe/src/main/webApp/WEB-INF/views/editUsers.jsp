@@ -29,7 +29,7 @@
 
             <body>
               <a href="<spring:url value='/'/>">back</a>
-              <h1>Input Form</h1>
+              <h1>Input Form TODO:</h1>
               <form:form action="addUser" method="post" modelAttribute="user">
                 <table>
                   <tr>
