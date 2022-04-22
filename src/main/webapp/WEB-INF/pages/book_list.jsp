@@ -3,34 +3,59 @@
 <html>
 <head>
     <title>Books</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 </head>
 <body>
-    <div class="container">
-        <h1>Books</h1>
-        <table class="table">
-            <thead>
+<div class="container">
+    <h1>Books</h1>
+    <input type="text" class="form-control" placeholder="Book search..." aria-describedby="basic-addon2"
+           id="searchBookInput" onkeyup="searchFunction()">
+    <table class="table" id="booksTableElement">
+        <thead>
+        <tr>
+            <th>Title</th>
+            <th>Copies</th>
+            <th>Author</th>
+        </tr>
+        </thead>
+        <tbody>
+        <c:forEach var="book" items="${books}">
             <tr>
-                <th>Title</th>
-                <th>Copies</th>
-                <th>Author</th>
+                <td>${book.title}</td>
+                <td>${book.amountOfCopies}</td>
+                <td>${book.mainAuthor.getName()} ${book.mainAuthor.getSurname()}</td>
+                <td><a href="/library/books/${book.bookId}">Details</a></td>
+                <td><a href="/library/books/update/${book.bookId}">Edit</a></td>
+                <td><a href="/library/books/delete/${book.bookId}">Delete</a></td>
             </tr>
-            </thead>
-            <tbody>
-            <c:forEach var="book" items="${books}">
-                <tr>
-                    <td>${book.title}</td>
-                    <td>${book.amountOfCopies}</td>
-                    <td>${book.mainAuthor.getName()} ${book.mainAuthor.getSurname()}</td>
-                    <td><a href="/library/books/${book.bookId}">Details</a></td>
-                    <td>Edit</td>
-                    <td><a href="/library/books/delete/${book.bookId}">Delete</a></td>
-                </tr>
-            </c:forEach>
-            </tbody>
-        </table>
-        <a href="/library/books/add">Add new book</a><br>
-        <a href="/library">Home</a>
-    </div>
+        </c:forEach>
+        </tbody>
+    </table>
+    <a href="/library/books/add">Add new book</a><br>
+    <a href="/library">Home</a>
+</div>
+<script type="text/javascript">
+    function searchFunction() {
+        var userRequestInput, filteredRequest, table, tr, i;
+        userRequestInput = document.getElementById("searchBookInput");
+        filteredRequest = userRequestInput.value.toUpperCase();
+        table = document.getElementById("booksTableElement");
+        tr = table.getElementsByTagName("tr");
+        for (i = 0; i < tr.length; i++) {
+            title = tr[i].getElementsByTagName("td")[0];
+            author = tr[i].getElementsByTagName("td")[2];
+            if (title || author) {
+                titleValue = title.textContent || title.innerText;
+                authorValue = author.textContent || author.innerText;
+                if (titleValue.toUpperCase().indexOf(filteredRequest) > -1 || authorValue.toUpperCase().indexOf(filteredRequest) > -1) {
+                    tr[i].style.display = "";
+                } else {
+                    tr[i].style.display = "none";
+                }
+            }
+        }
+    }
+</script>
 </body>
 </html>
