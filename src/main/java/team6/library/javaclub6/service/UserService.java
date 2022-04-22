@@ -13,4 +13,5 @@ public interface UserService extends UserDetailsService {
     void save(User user);
     void update(User user);
     List<UserBook> getUserBooks(User user);
+    List<UserBook> getHistory(User user);
 }

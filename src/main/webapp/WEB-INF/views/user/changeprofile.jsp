@@ -8,19 +8,19 @@
 </head>
 <body class="w3-black">
 
-<form:form action="/user/change" method="post" modelAttribute="user" cssClass="w3-container w3-black">
+<form action="/user/change" method="post" class="w3-container w3-black">
     <h2>Change Profile</h2>
     <p><label>Name</label><br>
-        <form:input path="name"/></p>
+        <input type="text" name="name" value=""/></p>
     <p><label>Surname</label><br>
-        <form:input path="surname"/></p>
+        <input type="text" name="surname" value=""/></p>
     <p><label>Email</label><br>
-        <form:input path="email"/></p>
+        <input type="email" name="email" value=""/></p>
     <p><label>Date of birth</label><br>
-        <form:input path="birthDate"/></p>
+        <input type="date" name="birthDate" value=""/></p>
     <p><label>Password</label><br>
-        <form:input path="password"/></p>
+        <input type="password" name="password" value=""/></p>
     <button type="submit" class="w3-button w3-hover-red">Submit</button>
-</form:form>
+</form>
 </body>
 </html>

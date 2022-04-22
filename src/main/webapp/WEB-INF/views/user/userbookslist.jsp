@@ -10,6 +10,7 @@
 <div class="w3-bar w3-black">
     <div class="w3-bar-item">Library by team6</div>
     <a href="/logout" class="w3-bar-item w3-right w3-button w3-hover-red">Log Out</a>
+    <a href="/user/history" class="w3-bar-item w3-button w3-right w3-hover-red">History</a>
     <a href="/user/" class="w3-bar-item w3-button w3-right w3-hover-red">Home</a>
 </div>
 <div class="w3-container">
@@ -25,8 +26,6 @@
         <th><strong>Should return date</strong></th>
     </tr>
     <c:forEach items="${userbooks}" var="book">
-        <c:if test="${book.fkStatus.name == 'Accepted'}">
-            <c:if test="${book.returnDate == null}">
         <tr>
             <td>${book.fkBook.id}</td>
             <td>${book.fkBook.title}</td>
@@ -47,8 +46,6 @@
                 <button type="submit" class="w3-button">Return</button>
             </form></td>
         </tr>
-        </c:if>
-        </c:if>
     </c:forEach>
 </table>
 <script>

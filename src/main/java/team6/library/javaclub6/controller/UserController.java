@@ -1,7 +1,7 @@
 package team6.library.javaclub6.controller;
 
-import lombok.Data;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.bcrypt.BCrypt;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -39,8 +39,10 @@ public class UserController {
     @GetMapping("")
     public String index(Model model, Principal principal){
         User user = userService.findByEmail(principal.getName());
+        Date currentDate = new Date(System.currentTimeMillis());
         model.addAttribute("nameAndSurname", user.getName() + " " + user.getSurname());
         model.addAttribute("userbooks", userService.getUserBooks(user));
+        model.addAttribute("popularList", bookService.popularList(currentDate.getYear(), currentDate.getMonth()));
         return "user/index";
     }
 
@@ -56,6 +58,44 @@ public class UserController {
         model.addAttribute("nameAndSurname", user.getName() + " " + user.getSurname());
         model.addAttribute("userbooks", userService.getUserBooks(user));
         return "user/userbookslist";
+    }
+
+    @GetMapping("/profile")
+    public String profile(Model model, Principal principal){
+        User user = userService.findByEmail(principal.getName());
+        model.addAttribute("currentUser", user);
+        return "/user/profile";
+    }
+
+    @GetMapping("/changeprofile")
+    public ModelAndView changeProfile(){
+        return new ModelAndView("/user/changeprofile", "user", new User());
+    }
+
+    @GetMapping("/history")
+    public String history(Model model, Principal principal){
+        User user = userService.findByEmail(principal.getName());
+        model.addAttribute("userbooks", userService.getHistory(user));
+        return "/user/history";
+    }
+
+    @PostMapping("change")
+    public String change(HttpServletRequest request, Principal principal){
+        User user = userService.findByEmail(principal.getName());
+        if (!request.getParameter("name").equals("")){
+            user.setName(request.getParameter("name"));
+        }
+        if (!request.getParameter("surname").equals("")){
+            user.setSurname(request.getParameter("surname"));
+        }
+        if (!request.getParameter("password").equals("")){
+            user.setPassword(BCrypt.hashpw(request.getParameter("password"), BCrypt.gensalt(12)));
+        }
+        if (!request.getParameter("birthDate").equals("")){
+            user.setBirthDate(Date.valueOf(request.getParameter("birthDate")));
+        }
+        userService.update(user);
+        return "redirect:/user/profile";
     }
 
     @PostMapping("/rentBook")

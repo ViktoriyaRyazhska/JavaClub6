@@ -6,4 +6,5 @@ import java.util.List;
 public interface BookService {
     List<Book> list();
     Book findById(int id);
+    List<Book> popularList(int year, int month);
 }
