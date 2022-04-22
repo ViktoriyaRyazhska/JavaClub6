@@ -22,4 +22,9 @@ public class BookServiceImp implements BookService {
     public Book findById(int id) {
         return bookDao.findById(id);
     }
+
+    @Transactional
+    public void save(Book book){
+        bookDao.save(book);
+    }
 }

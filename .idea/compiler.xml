@@ -8,10 +8,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="JavaClub" />
+        <module name="JavaClub6" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="JavaClub" target="8" />
+      <module name="JavaClub6" target="8" />
     </bytecodeTargetLevel>
   </component>
 </project>

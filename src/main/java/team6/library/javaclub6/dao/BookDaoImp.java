@@ -30,4 +30,9 @@ public class BookDaoImp implements BookDao {
         Book result = sessionFactory.getCurrentSession().get(Book.class, id);
         return result;
     }
+
+    @Override
+    public void save(Book book) {
+        sessionFactory.getCurrentSession().persist(book);
+    }
 }

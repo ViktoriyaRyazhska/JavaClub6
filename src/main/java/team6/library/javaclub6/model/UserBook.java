@@ -27,4 +27,53 @@ public class UserBook implements Serializable {
     private Date rentDate;
     @Column(name = "should_return_date")
     private Date shouldReturnDate;
+
+    public User getFkUser() {
+        return fkUser;
+    }
+    public Book getFkBook() {
+        return fkBook;
+    }
+    public RequestStatus getFkStatus() {
+        return fkStatus;
+    }
+    public Date getReturnDate() {
+        return returnDate;
+    }
+    public Date getRentDate() {
+        return rentDate;
+    }
+    public Date getShouldReturnDate() {
+        return shouldReturnDate;
+    }
+    public void setFkUser(User fkUser) {
+        this.fkUser = fkUser;
+    }
+    public void setFkBook(Book fkBook) {
+        this.fkBook = fkBook;
+    }
+    public void setFkStatus(RequestStatus fkStatus) {
+        this.fkStatus = fkStatus;
+    }
+    public void setReturnDate(Date returnDate) {
+        this.returnDate = returnDate;
+    }
+    public void setRentDate(Date rentDate) {
+        this.rentDate = rentDate;
+    }
+    public void setShouldReturnDate(Date shouldReturnDate) {
+        this.shouldReturnDate = shouldReturnDate;
+    }
+
+    @Override
+    public String toString() {
+        return "UserBook{" +
+                "fkUser=" + fkUser +
+                ", fkBook=" + fkBook +
+                ", fkStatus=" + fkStatus +
+                ", returnDate=" + returnDate +
+                ", rentDate=" + rentDate +
+                ", shouldReturnDate=" + shouldReturnDate +
+                '}';
+    }
 }
