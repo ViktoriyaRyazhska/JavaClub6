@@ -8,8 +8,6 @@ import team6.library.javaclub6.model.Book;
 import team6.library.javaclub6.model.User;
 import team6.library.javaclub6.model.UserBook;
 
-import java.util.List;
-
 @Service
 public class UserBookServiceImp implements UserBookService{
 
@@ -25,12 +23,6 @@ public class UserBookServiceImp implements UserBookService{
     public void returnBook(UserBook userBook) {
         userBookDao.returnBook(userBook);
     }
-
-    @Transactional
-    public List<UserBook> hasReadBookList(){
-        return userBookDao.hasReadBookList();
-    }
-
 
 
 }

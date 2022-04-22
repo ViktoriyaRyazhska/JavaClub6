@@ -68,4 +68,15 @@ public class UserServiceImp implements UserService {
         userBooks.sort(Comparator.comparing(UserBook::getShouldReturnDate));
         return userBooks;
     }
+    @Transactional
+    public List<UserBook> getHistory(User user){
+        List<UserBook> userBooks = new ArrayList<>();
+        for (UserBook i:user.getBooks()) {
+            if (i.getReturnDate() != null){
+                userBooks.add(i);
+            }
+        }
+        userBooks.sort(Comparator.comparing(UserBook::getRentDate));
+        return userBooks;
+    }
 }
