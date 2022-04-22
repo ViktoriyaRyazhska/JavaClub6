@@ -17,6 +17,8 @@
             <th>Title</th>
             <th>Copies</th>
             <th>Author</th>
+            <th hidden>Co-authors</th>
+
         </tr>
         </thead>
         <tbody>
@@ -25,6 +27,12 @@
                 <td>${book.title}</td>
                 <td>${book.amountOfCopies}</td>
                 <td>${book.mainAuthor.getName()} ${book.mainAuthor.getSurname()}</td>
+                <td hidden>
+                    <c:forEach items="${book.authorSet}" var="author">
+                        <c:set var="authorName" value="${author.name} ${author.surname}"/>
+                        ${authorName}<br>
+                    </c:forEach>
+                </td>
                 <td><a href="/library/books/${book.bookId}">Details</a></td>
                 <td><a href="/library/books/update/${book.bookId}">Edit</a></td>
                 <td><a href="/library/books/delete/${book.bookId}">Delete</a></td>
@@ -45,10 +53,12 @@
         for (i = 0; i < tr.length; i++) {
             title = tr[i].getElementsByTagName("td")[0];
             author = tr[i].getElementsByTagName("td")[2];
-            if (title || author) {
+            co_authors = tr[i].getElementsByTagName("td")[3];
+            if (title || author || co_authors) {
                 titleValue = title.textContent || title.innerText;
                 authorValue = author.textContent || author.innerText;
-                if (titleValue.toUpperCase().indexOf(filteredRequest) > -1 || authorValue.toUpperCase().indexOf(filteredRequest) > -1) {
+                co_authorsValue = co_authors.textContent || co_authors.innerText;
+                if (titleValue.toUpperCase().indexOf(filteredRequest) > -1 || authorValue.toUpperCase().indexOf(filteredRequest) > -1 || co_authorsValue.toUpperCase().indexOf(filteredRequest) > -1) {
                     tr[i].style.display = "";
                 } else {
                     tr[i].style.display = "none";
