@@ -31,16 +31,16 @@ public class UserController {
         return new User();
     }
 
-//    @PostMapping("/addUser")
-//    public String saveUser(@ModelAttribute("user") @Valid User user,
-//                           BindingResult result, Model model) {
-//
-//        if (result.hasErrors()) {
-//            model.addAttribute("users", userService.list());
-//            return "editUsers";
-//        }
-//
-//        userService.save(user);
-//        return "redirect:/";
-//    }
+    @PostMapping("/addUser")
+    public String saveUser(@ModelAttribute("user") @Valid User user,
+                           BindingResult result, Model model) {
+
+        if (result.hasErrors()) {
+            model.addAttribute("users", userService.list());
+            return "editUsers";
+        }
+
+        userService.save(user);
+        return "redirect:/";
+    }
 }

@@ -21,4 +21,17 @@ public class AuthorDAOImp implements AuthorDAO{
         TypedQuery<Author> query = sessionFactory.getCurrentSession().createQuery("from Author ");
         return query.getResultList();
     }
+
+    @Override
+    public Author findAuthorById(Long id) {
+        return sessionFactory.getCurrentSession().get(Author.class, id);
+    }
+
+    @Override
+    public void addAuthor(Author author) {
+        sessionFactory.getCurrentSession().save(author);
+    }
+
+    @Override
+    public void deleteAuthor(Author author) {sessionFactory.getCurrentSession().delete(author); }
 }

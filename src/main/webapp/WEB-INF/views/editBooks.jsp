@@ -1,5 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-         pageEncoding="ISO-8859-1"%>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
 <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html>
@@ -27,7 +26,6 @@
             <th>TOTAL_QUANTITY</th>
             <th>IN-READING</th>
             <th>LAST_UPDATE</th>
-
             <th>ACTION</th>
         </tr>
         <c:forEach var="book" items="${books}" >
@@ -38,8 +36,6 @@
                 <td>${book.getTotalQuantity()}</td>
                 <td>${book.getInReading()}</td>
                 <td>${book.getLastUpdate()}</td>
-
-
                 <td>
                     <a href="edit?id=$(book.id)">Edit</a>
                     &nbsp;&nbsp;&nbsp;

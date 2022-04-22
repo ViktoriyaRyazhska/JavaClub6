@@ -20,4 +20,17 @@ public class AuthorServiceImp implements AuthorService{
 
         return (List<Author>) authorDAO.list();
     }
+
+    @Override
+    public Author findAuthorById(Long id) {
+        return authorDAO.findAuthorById(id);
+    }
+
+    @Override
+    public void addAuthor(Author author) {
+        authorDAO.addAuthor(author);
+    }
+
+    @Override
+    public void deleteAuthor(Author author) { authorDAO.deleteAuthor(author); }
 }

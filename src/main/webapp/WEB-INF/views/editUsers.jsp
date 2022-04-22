@@ -1,52 +1,62 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-         pageEncoding="ISO-8859-1"%>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
 <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html>
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-    <title>Authors</title>
-
+    <title>Spring5 MVC Hibernate Demo</title>
+    <style type="text/css">
+        .error {
+            color: red;
+        }
+        table {
+            width: 50%;
+            border-collapse: collapse;
+            border-spacing: 0px;
+        }
+        table td {
+            border: 1px solid #565454;
+            padding: 20px;
+        }
+    </style>
 </head>
 <body>
-<div>
-    <h1>Users</h1>
-
-    <form method="get" action="search">
-        <input type="text" name="keyword"> &nbsp;
-        <input type="submit" value="Search">
-    </form>
-
-    <h3><a href="/new">New Author</a></h3>
-    <table border="1" cellpadding="5">
+<h1>Input Form</h1>
+<form:form action="addUser" method="post" modelAttribute="user">
+    <table>
         <tr>
-            <th>ID</th>
-            <th>FIRST_NAME</th>
-            <th>LAST_NAME</th>
-            <th>EMAIL</th>
-            <th>PASSWORD</th>
-            <th>BIRTHDAY</th>
-            <th>DATE_REGISTRATION</th>
-            <th>ACTION</th>
+            <td>Name</td>
+            <td>
+                <form:input path="name" /> <br />
+                <form:errors path="name" cssClass="error" />
+            </td>
         </tr>
-        <c:forEach var="user" items="${users}" >
-            <tr>
-                <td>${user.getId()}</td>
-                <td>${user.getFirstName()}</td>
-                <td>${user.getLastName()}</td>
-                <td>${user.getEmail()}</td>
-                <td>${user.getPassword()}</td>
-                <td>${user.getBirthday()}</td>
-                <td>${user.getDateRegistration()}</td>
-                <td>
-                    <a href="edit?id=$(user.id)">Edit</a>
-                    &nbsp;&nbsp;&nbsp;
-                    <a href="delete?id$(user.id)">Delete</a>
-                </td>
-            </tr>
-        </c:forEach>
+        <tr>
+            <td>Email</td>
+            <td>
+                <form:input path="email" /> <br />
+                <form:errors path="email" cssClass="error" />
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2"><button type="submit">Submit</button></td>
+        </tr>
     </table>
-</div>
+</form:form>
+
+<h2>Users List</h2>
+<table>
+    <tr>
+        <td><strong>Name</strong></td>
+        <td><strong>Email</strong></td>
+    </tr>
+    <c:forEach items="${users}" var="user">
+        <tr>
+            <td>${user.name}</td>
+            <td>${user.email}</td>
+        </tr>
+    </c:forEach>
+</table>
 </body>
 </html>

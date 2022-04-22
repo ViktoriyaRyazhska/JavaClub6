@@ -7,4 +7,7 @@ import java.util.List;
 
 public interface AuthorService {
     List<Author> list();
+    Author findAuthorById(Long id);
+    void addAuthor(Author author);
+    void deleteAuthor(Author author);
 }

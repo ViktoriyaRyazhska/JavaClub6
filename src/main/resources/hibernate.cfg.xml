@@ -9,8 +9,8 @@
         <property name="hibernate.show_sql">true</property>
         <property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
         <property name="hibernate.connection.username">root</property>
-        <property name="hibernate.connection.password">root</property>
-        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/new_schema</property>
+        <property name="hibernate.connection.password">Oleksandr1983</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/javaclub6</property>
         <property name="hibernate.hbm2ddl.auto">update</property>
 
         <property name="hibernate.c3p0.min_size">5</property>

@@ -47,8 +47,8 @@ public class Book {
     @NotEmpty(message = "Please Enter last update")
     private Date lastUpdate;
 
-    @ManyToMany(mappedBy = "books")
-    private Set<Author> authors = new HashSet<>();
+//    @ManyToMany(mappedBy = "books")
+//    private Set<Author> authors = new HashSet<>();
 //
 //    @ManyToMany(mappedBy = "books")
 //    private Set<User> users = new HashSet<>();
