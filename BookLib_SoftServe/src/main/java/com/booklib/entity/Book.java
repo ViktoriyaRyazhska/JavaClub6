@@ -8,6 +8,9 @@ import java.util.Set;
 
 import javax.persistence.*;
 
+import org.hibernate.annotations.OnDelete;
+import org.hibernate.annotations.OnDeleteAction;
+
 @Entity
 @Getter
 @Setter
@@ -26,7 +29,8 @@ public class Book {
     @Column(name = "copies")
     private int copies;
 
-    @ManyToMany(cascade = CascadeType.ALL)
+    @ManyToMany(cascade = { CascadeType.MERGE, CascadeType.PERSIST }, fetch = FetchType.EAGER)
+    @OnDelete(action = OnDeleteAction.NO_ACTION)
     @JoinTable(name = "books_coauthors", joinColumns = { @JoinColumn(name = "book_id") }, inverseJoinColumns = {
             @JoinColumn(name = "author_id") })
     Set<Author> coauthors = new HashSet<>();

@@ -42,6 +42,7 @@
                                         <td><strong>Copies</strong></td>
                                         <td><strong>Main_author</strong></td>
                                         <td><strong>Availability</strong></td>
+                                        <td><strong>Buttons</strong></td>
                                     </tr>
                                     <c:forEach items="${books}" var="book">
                                         <tr>
@@ -55,6 +56,18 @@
                                             <c:if test="${book.copies ne 0}">
                                                 <td>available</td>
                                             </c:if>
+                                            <td>
+                                                <form:form action="${contextPath}/single-book" method="GET"
+                                                    enctype="multipart/form-data">
+                                                    <input type="hidden" value="${book.id}" name="id">
+                                                    <button type="submit">Open</button>
+                                                </form:form>
+                                                <!--TODO: <form:form action="${contextPath}/single-book" method="GET"
+                                                enctype="multipart/form-data">
+                                                <input type="hidden" value="${book.id}" name="id">
+                                                <button type="submit">Delete</button>
+                                            </form:form> -->
+                                            </td>
                                         </tr>
                                     </c:forEach>
                                 </table>

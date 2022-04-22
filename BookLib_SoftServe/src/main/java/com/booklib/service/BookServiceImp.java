@@ -23,4 +23,9 @@ public class BookServiceImp implements BookService {
         return bookDao.findBookByTitle(title);
     }
 
+    @Transactional(readOnly = true, rollbackFor = { java.lang.Exception.class })
+    public Book findBookById(Long id) {
+        return bookDao.findBookById(id);
+    }
+
 }
