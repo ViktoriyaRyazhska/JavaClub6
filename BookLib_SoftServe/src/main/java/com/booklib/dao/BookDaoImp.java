@@ -37,4 +37,21 @@ public class BookDaoImp implements BookDao {
         return query.getSingleResult();
     }
 
+    @Override
+    public void deleteBook(Book book) {
+        sessionFactory.getCurrentSession().delete(book);
+    }
+
+    @Override
+    public void updateCopies(Long id, Integer copies) {
+        // sessionFactory.getCurrentSession().update(book);
+        int query = sessionFactory.getCurrentSession().createQuery(
+                "update Book b " +
+                        "set b.copies = :copies " +
+                        "where b.id = :id")
+                .setParameter("copies", copies)
+                .setParameter("id", id)
+                .executeUpdate();
+    }
+
 }
