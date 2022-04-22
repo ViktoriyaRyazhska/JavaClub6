@@ -12,7 +12,7 @@
 </head>
 <body>
 <h2>Admin Page</h2>
-<a href="">Register book with copies</a><br>
+<a href="/admin/registerBook">Register book with copies</a><br>
 <a href="">Update book’ information</a><br>
 <a href="">Delete One copy/Book with all copies</a><br>
 <a href="">Give book to Reader</a><br>
