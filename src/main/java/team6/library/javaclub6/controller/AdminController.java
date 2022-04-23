@@ -5,10 +5,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.ui.ModelMap;
 import org.springframework.validation.BindingResult;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 import team6.library.javaclub6.model.Author;
 import team6.library.javaclub6.model.AuthorBook;
@@ -22,6 +19,9 @@ import team6.library.javaclub6.service.UserBookService;
 import javax.servlet.http.HttpServletRequest;
 import java.security.Principal;
 import java.sql.Date;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 @Controller
 @RequestMapping("/admin")
@@ -51,27 +51,46 @@ public class AdminController {
         System.out.println("THIS IS OBJECT IN CONTROLLER" + userBookService.hasReadBookList());
         return "admin/userReadBooks";
     }
-//    @GetMapping("/registerBook")
-//    public ModelAndView showForm(){
-//        return new ModelAndView("admin/registerBook", "book", new Book());
-//    }
-
-    @GetMapping("/registerBook")
-    public String getForm(Model model){
-        model.addAttribute("authorBook", new AuthorBook());
-        model.addAttribute("book", new Book());
-        model.addAttribute("author", new Author());
-        return "admin/registerBook";
+    @GetMapping("/showFrom")
+    public ModelAndView showForm(){
+        Map<String, Object> model = new HashMap<>();
+        model.put("author", new Author());
+        model.put("book", new Book());
+        System.out.println("MODEL.BOOK"+model.get("book"));
+        return new ModelAndView("admin/registerBook", "model", model);
     }
+
+//    @GetMapping("/registerBook")
+//    public String getForm(Model model){
+//        model.addAttribute("authorBook", new AuthorBook());
+//        model.addAttribute("book", new Book());
+//        model.addAttribute("author", new Author());
+//        return "admin/registerBook";
+//    }
 
     @PostMapping("/registerBook")
     public String submit(@ModelAttribute("authorBook") AuthorBook authorBook,
-                         @ModelAttribute("book") Book book,
-                         @ModelAttribute("author") Author author, Model model){
-        model.addAttribute("authorBook", authorBook);
-        model.addAttribute("book", book);
-        model.addAttribute("author", author);
-        book.setDeployDate(new Date(System.currentTimeMillis()));
+                         @RequestParam String title,
+                         @RequestParam Date deployDate,
+                         @RequestParam int copyNumber,
+                         @RequestParam String name,
+                         @RequestParam String surname, Model model){
+        //model.addAttribute("authorBook", authorBook);
+        //Book book = (Book) model.getAttribute("book");
+        //Author author = (Author) model.getAttribute("author");
+        //model.addAttribute("author", author);
+        //book.setDeployDate(new Date(System.currentTimeMillis()));
+        Book book = new Book();
+        book.setTitle(title);
+        book.setDeployDate(deployDate);
+        book.setCopyNumber(copyNumber);
+
+        Author author = new Author();
+        author.setName(name);
+        author.setSurname(surname);
+
+        System.out.println("attribute!" + model.getAttribute("book"));
+        System.out.println("OBJECT" + book);
         bookService.save(book);
         authorBookService.newAuthorBook(book, authorService.findByNameSurname(author.getName(), author.getSurname()));
         return "admin/index";

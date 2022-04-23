@@ -33,27 +33,37 @@
 <%--        <button type="submit" class="w3-button w3-hover-red">Submit</button>--%>
 <%--    </form:form>--%>
 
-    <form action="" method="post">
-        <spring:bind path="book.title">
-            <input type="text" name="TITLE" value="${status.value}"><br />
-        </spring:bind>
+<%--    <form action="#" th:action="@{/registerBook}" th:object="${model}" method="post">--%>
+<%--        <spring:bind path="model.book.title">--%>
+<%--            <input type="text" name="TITLE" th:field="${model.book.title}"><br />--%>
+<%--        </spring:bind>--%>
 
-        <spring:bind path="book.deployDate">
-            <input type="text" name="DEPLOYDATE" value="${status.value}"><br />
-        </spring:bind>
+<%--        <spring:bind path="model.book.deployDate">--%>
+<%--            <input type="text" name="DEPLOYDATE" th:field="${model.book.deployDate}"><br />--%>
+<%--        </spring:bind>--%>
 
-        <spring:bind path="book.copyNumber">
-            <input type="text" name="COPYNUMBER" value="${status.value}"><br />
-        </spring:bind>
+<%--        <spring:bind path="model.book.copyNumber">--%>
+<%--            <input type="text" name="COPYNUMBER" th:field="${model.book.copyNumber}"><br />--%>
+<%--        </spring:bind>--%>
 
-        <spring:bind path="author.name">
-            <input type="text" name="${status.value}" value="${status.value}"><br />
-        </spring:bind>
+<%--        <spring:bind path="model.author.name">--%>
+<%--            <input type="text" name="${status.value}" th:field="${model.author.name}"><br />--%>
+<%--        </spring:bind>--%>
 
-        <spring:bind path="author.surname">
-            <input type="text" name="${status.value}" value="${status.value}"><br />
-        </spring:bind>
-        <input type="submit" value="Create"/>
-    </form>
+<%--        <spring:bind path="model.author.surname">--%>
+<%--            <input type="text" name="${status.value}" th:field="${model.author.surname}"><br />--%>
+<%--        </spring:bind>--%>
+<%--        <input type="submit" value="Create"/>--%>
+<%--    </form>--%>
+
+<form:form action="/admin/registerBook" modelAttribute="model" method="post">
+
+    <input type="text" name="title" th:field="${model.book.title}"><br />
+    <input type="text" name="deployDate" th:field="${model.book.deployDate}"><br />
+    <input type="text" name="copyNumber" th:field="${model.book.copyNumber}"><br />
+    <input type="text" name="name" th:field="${model.author.name}"><br />
+    <input type="text" name="surname" th:field="${model.author.surname}"><br />
+    <input type="submit" th:field="Create"/>
+</form:form>
 </body>
 </html>
