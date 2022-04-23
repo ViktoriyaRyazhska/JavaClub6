@@ -15,24 +15,26 @@
         <thead>
         <tr>
             <th>Title</th>
-            <th>Copies</th>
             <th>Author</th>
-            <th hidden>Co-authors</th>
-
+            <th>Co-author(s)</th>
+            <th>Copies</th>
         </tr>
         </thead>
         <tbody>
         <c:forEach var="book" items="${books}">
             <tr>
                 <td>${book.title}</td>
-                <td>${book.amountOfCopies}</td>
                 <td>${book.mainAuthor.getName()} ${book.mainAuthor.getSurname()}</td>
-                <td hidden>
+                <c:if test="${book.authorSet.size() == 0}"><td>-</td></c:if>
+                <c:if test="${book.authorSet.size() != 0}">
+                <td>
                     <c:forEach items="${book.authorSet}" var="author">
                         <c:set var="authorName" value="${author.name} ${author.surname}"/>
                         ${authorName}<br>
                     </c:forEach>
                 </td>
+                </c:if>
+                <td>${book.amountOfCopies}</td>
                 <td><a href="/library/books/${book.bookId}">Details</a></td>
                 <td><a href="/library/books/update/${book.bookId}">Edit</a></td>
                 <td><a href="/library/books/delete/${book.bookId}">Delete</a></td>

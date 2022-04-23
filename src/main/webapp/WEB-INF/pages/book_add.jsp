@@ -14,7 +14,7 @@
         <table class="table table-borderless">
             <tr>
                 <td>Title </td>
-                <td><form:input path="title" class="input-group-text"/></td>
+                <td><form:input path="title" class="form-control"/></td>
             </tr>
             <tr>
                 <td>Main author </td>
@@ -40,7 +40,7 @@
             </tr>
             <tr>
                 <td>Amount of Copies </td>
-                <td><form:input path="amountOfCopies" class="input-group-text"/></td>
+                <td><form:input path="amountOfCopies" class="form-control"/></td>
             </tr>
         </table>
         <p>

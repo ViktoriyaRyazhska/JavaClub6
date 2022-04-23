@@ -9,6 +9,7 @@ public interface BookService {
 
     void addBook(Book book);
     List<Book> findAll();
+    List<Book> popularBooks();
     Book findBookById(Long id);
     List<Book> findBookByTitle(String title);
     List<Book> findBookByAuthor(Author author);

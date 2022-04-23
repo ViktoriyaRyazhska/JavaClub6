@@ -3,17 +3,25 @@ package com.library.service.impl;
 import com.library.dao.BookDAO;
 import com.library.model.Author;
 import com.library.model.Book;
+import com.library.model.Request;
 import com.library.service.BookService;
+import com.library.service.RequestService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 @Service
 public class BookServiceImpl implements BookService {
 
     private BookDAO bookDAO;
+
+    @Autowired
+    private RequestService requestService;
 
     @Autowired
     public BookServiceImpl(BookDAO bookDAO) {
@@ -24,6 +32,25 @@ public class BookServiceImpl implements BookService {
     @Transactional
     public void addBook(Book book) {
         bookDAO.addBook(book);
+    }
+
+    @Override
+    @Transactional
+    public List<Book> popularBooks() {
+        LocalDate endDate = LocalDate.now();
+        LocalDate startDate = endDate.minusMonths(1);
+        List<Request> requests = requestService.findByDateRange(startDate, endDate);
+        List<Book> popularBooks = new ArrayList<>();
+        HashMap<Book, Integer> times = new HashMap<>();
+        for (Request request : requests) {
+            if (times.containsKey(request.getBook())) {
+                times.replace(request.getBook(), times.get(request.getBook()), times.get(request.getBook()) + 1);
+            } else {
+                times.put(request.getBook(), 1);
+                popularBooks.add(request.getBook());
+            }
+        }
+        return popularBooks;
     }
 
     @Override

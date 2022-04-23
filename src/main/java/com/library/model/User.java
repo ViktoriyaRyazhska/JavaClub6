@@ -31,11 +31,11 @@ public class User {
     @Column(name = "user_id")
     private long userId;
 
-    @Column
+    @Column(name = "first_name")
     @NotEmpty(message = "Please, enter your first name")
     private String name;
 
-    @Column
+    @Column(name = "last_name")
     @NotEmpty(message = "Please, enter your last name")
     private String surname;
 
