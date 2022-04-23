@@ -36,7 +36,7 @@
                 </c:if>
                 <td>${book.amountOfCopies}</td>
                 <td><a href="/library/books/${book.bookId}">Details</a></td>
-                <td><a href="/library/books/update/${book.bookId}">Edit</a></td>
+                <td><a href="/library/books/edit/${book.bookId}">Edit</a></td>
                 <td><a href="/library/books/delete/${book.bookId}">Delete</a></td>
             </tr>
         </c:forEach>
