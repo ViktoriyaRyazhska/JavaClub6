@@ -74,7 +74,7 @@ public class AdminController {
         book.setDeployDate(new Date(System.currentTimeMillis()));
         bookService.save(book);
         authorBookService.newAuthorBook(book, authorService.findByNameSurname(author.getName(), author.getSurname()));
-        return "admin/result";
+        return "admin/index";
     }
 
 //    @PostMapping("/registerBook")
