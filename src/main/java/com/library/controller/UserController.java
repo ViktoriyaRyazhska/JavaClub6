@@ -8,8 +8,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping("/user")
 public class UserController {
 
-    @GetMapping
+    @GetMapping("")
     public String mainPage(){
-        return "user_main_page";
+        return "user/user_main_page";
     }
 }
