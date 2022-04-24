@@ -22,24 +22,37 @@
         <tr>
             <th>ID</th>
             <th>TITLE</th>
-<%--            <th>REALIZE_YEAR</th>--%>
-            <th>TOTAL_QUANTITY</th>
-            <th>IN-READING</th>
-            <th>LAST_UPDATE</th>
+            <th>REALIZE YEAR</th>
+            <th>AUTHOR</th>
+            <th>BOOK AVAILABILITY</th>
+
+
+<%--            <th>TOTAL_QUANTITY</th>--%>
+<%--            <th>IN-READING</th>--%>
+<%--            <th>LAST_UPDATE</th>--%>
             <th>ACTION</th>
         </tr>
         <c:forEach var="book" items="${books}" >
             <tr>
                 <td>${book.getId()}</td>
                 <td>${book.getTitle()}</td>
-<%--                <td>${book.getRealizeYear()}</td>--%>
-                <td>${book.getTotalQuantity()}</td>
-                <td>${book.getInReading()}</td>
-                <td>${book.getLastUpdate()}</td>
+                <td>${book.getRealizeYear()}</td>
+<%--                <c:forEach items="${book.authors}" var="author">--%>
+<%--                    ${author.author_id.firstName} ${author.author_id.lastName}--%>
+<%--                    <br>--%>
+<%--                </c:forEach>--%>
+
+<%--                </td>--%>
+<%--                <td>${book.deployDate.toString()}</td>--%>
+                <c:if test="${book.totalQuantity-book.inReading == 0}"><td style="color:red">unavailable</td></c:if>
+                <c:if test="${book.totalQuantity-book.inReading != 0}">
+                <td style="color:blue">available</td>
+                </c:if>
+<%--                <td>${book.getTotalQuantity()}</td>--%>
+<%--                <td>${book.getInReading()}</td>--%>
+<%--                <td>${book.getLastUpdate()}</td>--%>
                 <td>
                     <a href="edit?id=$(book.id)">Edit</a>
-                    &nbsp;&nbsp;&nbsp;
-                    <a href="delete?id$(book.id)">Delete</a>
                 </td>
             </tr>
         </c:forEach>

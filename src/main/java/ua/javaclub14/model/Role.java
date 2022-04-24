@@ -9,7 +9,7 @@ import java.util.Set;
 @Entity
 @Setter
 @Getter
-@Table(name = "role")
+@Table(name = "roles")
 public class Role {
     @Id
     @Column(name = "id")
@@ -19,9 +19,8 @@ public class Role {
     @Column(name = "name")
     private String role;
 
-//    @OneToMany(cascade=CascadeType.ALL)
-//    @JoinColumn(name="user_id")
-//    private Set<User> users;
+    @OneToMany(mappedBy = "roleId")
+    private Set<User> users;
 
 
 

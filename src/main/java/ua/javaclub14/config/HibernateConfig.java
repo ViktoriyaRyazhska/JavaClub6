@@ -7,9 +7,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.orm.hibernate5.HibernateTransactionManager;
 import org.springframework.orm.hibernate5.LocalSessionFactoryBean;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
-import ua.javaclub14.model.Author;
-import ua.javaclub14.model.Book;
-import ua.javaclub14.model.User;
+import ua.javaclub14.model.*;
 
 
 @Configuration
@@ -23,7 +21,7 @@ public class HibernateConfig {
     public LocalSessionFactoryBean getSessionFactory() {
         LocalSessionFactoryBean factoryBean = new LocalSessionFactoryBean();
         factoryBean.setConfigLocation(context.getResource("classpath:hibernate.cfg.xml"));
-        factoryBean.setAnnotatedClasses(User.class, Author.class, Book.class);
+        factoryBean.setAnnotatedClasses(User.class, Author.class, Book.class, Role.class, BookUser.class);
         return factoryBean;
     }
 

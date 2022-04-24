@@ -18,7 +18,7 @@ import java.util.Set;
 @Getter
 @AllArgsConstructor
 @NoArgsConstructor
-@Table(name = "book")
+@Table(name = "books")
 public class Book {
 
     @Id
@@ -31,9 +31,9 @@ public class Book {
     @NotEmpty(message = "Please Enter title")
     private String title;
 
-//    @Column(name = "realize_year", nullable = false)
-//    @NotEmpty(message = "Please Enter year")
-//    private Year realizeYear;
+    @Column(name = "realize_year", nullable = false)
+    @NotEmpty(message = "Please Enter year")
+    private int realizeYear;
 
     @Column(name = "total_quantity", nullable = false)
     @NotEmpty(message = "Please Enter total quantity")
@@ -47,11 +47,15 @@ public class Book {
     @NotEmpty(message = "Please Enter last update")
     private Date lastUpdate;
 
-//    @ManyToMany(mappedBy = "books")
-//    private Set<Author> authors = new HashSet<>();
+    @Column(name = "role_id", nullable = false)
+    @NotEmpty(message = "Please Enter author's role ")
+    private Long roleId;
+
+    @ManyToMany(mappedBy = "books")
+    private Set<Author> authors = new HashSet<>();
 //
-//    @ManyToMany(mappedBy = "books")
-//    private Set<User> users = new HashSet<>();
+    @ManyToMany(mappedBy = "books")
+    private Set<User> users = new HashSet<>();
 
 
 

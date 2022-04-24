@@ -15,7 +15,7 @@ import java.util.Date;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-@Table(name = "book_user")
+@Table(name = "books_users")
 public class BookUser {
     @Id
     @Column(name = "id")
@@ -27,8 +27,8 @@ public class BookUser {
     @NotEmpty(message = "Please Enter your name")
     private Date startDate;
 
-    @Column(name = "realize_date", nullable = false, length = 50)
+    @Column(name = "return_date", nullable = true, length = 50)
     @Size(max = 20, min = 3, message = "{user.name.invalid}")
     @NotEmpty(message = "Please Enter your name")
-    private Date realizeDate;
+    private Date returnDate;
 }

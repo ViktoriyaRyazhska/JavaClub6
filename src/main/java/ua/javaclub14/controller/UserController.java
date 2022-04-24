@@ -23,7 +23,7 @@ public class UserController {
     @GetMapping("/editUsers")
     public String userForm(Locale locale, Model model) {
         model.addAttribute("users", userService.list());
-        return "editUsers";
+        return "editLogin";
     }
 
     @ModelAttribute("user")
@@ -37,7 +37,7 @@ public class UserController {
 
         if (result.hasErrors()) {
             model.addAttribute("users", userService.list());
-            return "editUsers";
+            return "editLogin";
         }
 
         userService.save(user);
