@@ -9,14 +9,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.WebDataBinder;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.InitBinder;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
+import java.util.Set;
 
 @Controller
 @RequestMapping("/books")
@@ -68,6 +64,32 @@ public class BookController {
     public String deleteBook(@PathVariable Long id) {
         Book book = bookService.findBookById(id);
         bookService.deleteBook(book);
+        return "redirect:/books";
+    }
+
+    @RequestMapping("/edit/{id}")
+    public String editBook(@PathVariable("id") long id, Model model){
+        model.addAttribute("book", this.bookService.findBookById(id));
+        model.addAttribute("title", this.bookService.findBookById(id).getTitle());
+        model.addAttribute("mainAuthor", this.bookService.findBookById(id).getMainAuthor());
+        //all authors
+        model.addAttribute("authors", authorService.findAll());
+        //all authors of book
+        model.addAttribute("authorsSet", bookService.findBookById(id).getAuthorSet());
+        model.addAttribute("amountOfCopies", bookService.findBookById(id).getAmountOfCopies());
+
+
+        return "book_edit";
+    }
+
+    @PostMapping("/edit/{id}")
+    public String editBook(@PathVariable("id") long id, @RequestParam String title, @RequestParam Integer amountOfCopies, @RequestParam Author mainAuthor, @RequestParam(required = false)Set<Author> authorsSet) {
+        Book book = this.bookService.findBookById(id);
+        book.setTitle(title);
+        book.setAmountOfCopies(amountOfCopies);
+        book.setMainAuthor(mainAuthor);
+        book.setAuthorSet(authorsSet);
+        this.bookService.updateBook(book);
         return "redirect:/books";
     }
 
