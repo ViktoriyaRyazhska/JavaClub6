@@ -21,6 +21,7 @@ import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 import javax.validation.constraints.NotEmpty;
 import java.util.HashSet;
+import java.util.Objects;
 import java.util.Set;
 
 @Getter
@@ -59,5 +60,19 @@ public class Book {
     public Set<Author> getAuthorsSet() {
         return authorSet;
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Book book = (Book) o;
+        return Objects.equals(bookId, book.bookId);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(bookId);
+    }
+
 }
 
