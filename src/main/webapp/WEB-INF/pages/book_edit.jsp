@@ -31,11 +31,11 @@
             <tr>
                 <td>Co-authors</td>
                 <td>
-                        <%--TODO selected authors is necessary--%>
+                        <%--FIXME selected authors is necessary--%>
                     <form:select class="form-select" path="authorsSet" multiple="true">
                         <c:forEach items="${authors}" var="author">
                             <c:set var="authorName" value="${author.name} ${author.surname}"/>
-                            <form:option value="${author.authorId}" label="${authorName}"/>
+                            <form:option value="${author.authorId}" label="${authorName}" selected="${book.authorSet.contains(author)? 'selected' : '' }"/>
                         </c:forEach>
                     </form:select></td>
             </tr>
