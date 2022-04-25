@@ -15,7 +15,7 @@ import javax.validation.Valid;
 import java.util.Set;
 
 @Controller
-@RequestMapping("/books")
+@RequestMapping("admin/books")
 public class BookController {
 
     @Autowired
@@ -35,7 +35,7 @@ public class BookController {
     @GetMapping
     public String allBooks(Model model) {
         model.addAttribute("books", bookService.findAll());
-        return "book_list";
+        return "admin/book_list";
     }
 
     @GetMapping("/add")
@@ -43,13 +43,13 @@ public class BookController {
         Book book = new Book();
         model.addAttribute("book", book);
         model.addAttribute("authors", authorService.findAll());
-        return "book_add";
+        return "admin/book_add";
     }
 
     @PostMapping("/add")
     public String addBook(@Valid @ModelAttribute Book book) {
         bookService.addBook(book);
-        return "redirect:/books";
+        return "redirect:/admin/books";
     }
 
     @GetMapping("/{id}")
@@ -57,14 +57,14 @@ public class BookController {
         Book book = bookService.findBookById(id);
         model.addAttribute("book", book);
         model.addAttribute("authors", book.getAuthorSet());
-        return "book_details";
+        return "admin/book_details";
     }
 
     @GetMapping("delete/{id}")
     public String deleteBook(@PathVariable Long id) {
         Book book = bookService.findBookById(id);
         bookService.deleteBook(book);
-        return "redirect:/books";
+        return "redirect:/admin/books";
     }
 
     @RequestMapping("/edit/{id}")
@@ -77,9 +77,7 @@ public class BookController {
         //all authors of book
         model.addAttribute("authorsSet", bookService.findBookById(id).getAuthorSet());
         model.addAttribute("amountOfCopies", bookService.findBookById(id).getAmountOfCopies());
-
-
-        return "book_edit";
+        return "admin/book_edit";
     }
 
     @PostMapping("/edit/{id}")
@@ -90,7 +88,7 @@ public class BookController {
         book.setMainAuthor(mainAuthor);
         book.setAuthorSet(authorsSet);
         this.bookService.updateBook(book);
-        return "redirect:/books";
+        return "redirect:/admin/books";
     }
 
 }

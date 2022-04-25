@@ -12,8 +12,12 @@ import org.springframework.transaction.annotation.Transactional;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.List;
+import java.util.Map;
+import java.util.Set;
 
 @Service
 public class BookServiceImpl implements BookService {
@@ -36,27 +40,32 @@ public class BookServiceImpl implements BookService {
 
     @Override
     @Transactional
+    public List<Book> findAll() {
+        return bookDAO.findAll();
+    }
+
+    @Override
+    @Transactional
     public List<Book> popularBooks() {
         LocalDate endDate = LocalDate.now();
         LocalDate startDate = endDate.minusMonths(1);
         List<Request> requests = requestService.findByDateRange(startDate, endDate);
-        List<Book> popularBooks = new ArrayList<>();
         HashMap<Book, Integer> times = new HashMap<>();
         for (Request request : requests) {
             if (times.containsKey(request.getBook())) {
                 times.replace(request.getBook(), times.get(request.getBook()), times.get(request.getBook()) + 1);
             } else {
                 times.put(request.getBook(), 1);
-                popularBooks.add(request.getBook());
             }
         }
-        return popularBooks;
-    }
-
-    @Override
-    @Transactional
-    public List<Book> findAll() {
-        return bookDAO.findAll();
+        LinkedHashMap<Book, Integer> sortedTimes = new LinkedHashMap<>();
+        times
+                .entrySet()
+                .stream()
+                .sorted(Map.Entry.comparingByValue(Comparator.reverseOrder()))
+                .forEachOrdered(value -> sortedTimes.put(value.getKey(), value.getValue()));
+        Set<Book> booksSet = sortedTimes.keySet();
+        return new ArrayList<>(booksSet);
     }
 
     @Override
