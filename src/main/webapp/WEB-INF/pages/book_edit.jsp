@@ -23,9 +23,10 @@
                     <form:select class="form-select" path="mainAuthor">
                         <c:forEach items="${authors}" var="author">
                             <c:set var="authorName" value="${author.name} ${author.surname}"/>
-                            <form:option value="${author.authorId}" label="${authorName}"/>
+                            <form:option value="${author.authorId}" label="${authorName}" selected="${author.authorId == book.mainAuthor.authorId? 'selected' : '' }"/>
                         </c:forEach>
                     </form:select></td>
+
             </tr>
             <tr>
                 <td>Co-authors</td>

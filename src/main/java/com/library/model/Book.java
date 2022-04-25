@@ -56,8 +56,8 @@ public class Book {
     )
     Set<Author> authorSet = new HashSet<>();
 
-    public String getAuthorsSet() {
-        return authorSet.toString();
+    public Set<Author> getAuthorsSet() {
+        return authorSet;
     }
 }
 
