@@ -17,7 +17,7 @@
         <input type="submit" value="Search">
     </form>
 
-    <h3><a href="/new">New Book</a></h3>
+<%--    <h3><a href="/new">New Book</a></h3>--%>
     <table border="1" cellpadding="5">
         <tr>
             <th>ID</th>
@@ -37,22 +37,21 @@
                 <td>${book.getId()}</td>
                 <td>${book.getTitle()}</td>
                 <td>${book.getRealizeYear()}</td>
-<%--                <c:forEach items="${book.authors}" var="author">--%>
-<%--                    ${author.author_id.firstName} ${author.author_id.lastName}--%>
-<%--                    <br>--%>
-<%--                </c:forEach>--%>
+                <c:forEach items="${authors}" var="author">
+
+                    <c:if test="${book.getRoleId() == author.getId()}"><td>${author.getFirstName()} ${author.getLastName()}</td>
+                    </c:if>
+                    <br>
+                </c:forEach>
 
 <%--                </td>--%>
 <%--                <td>${book.deployDate.toString()}</td>--%>
                 <c:if test="${book.totalQuantity-book.inReading == 0}"><td style="color:red">unavailable</td></c:if>
-                <c:if test="${book.totalQuantity-book.inReading != 0}">
-                <td style="color:blue">available</td>
-                </c:if>
-<%--                <td>${book.getTotalQuantity()}</td>--%>
-<%--                <td>${book.getInReading()}</td>--%>
-<%--                <td>${book.getLastUpdate()}</td>--%>
+                <c:if test="${book.totalQuantity-book.inReading != 0}"> <td style="color:blue">available</td></c:if>
+
+
                 <td>
-                    <a href="edit?id=$(book.id)">Edit</a>
+                    <a href="edit?id=$(book.getId())">Edit</a>
                 </td>
             </tr>
         </c:forEach>

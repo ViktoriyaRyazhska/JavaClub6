@@ -14,6 +14,11 @@ public class BookServiceImp implements BookService {
     @Autowired
     private BookDAO bookDAO;
 
+//    @Override
+//    public Book findBookById(Long id) {
+//        return bookDAO.findBookById(id);
+//    }
+
     @Override
     public List<Book> list() {
         return (List<Book>) bookDAO.list();
