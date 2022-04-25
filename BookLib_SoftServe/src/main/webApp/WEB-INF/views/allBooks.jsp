@@ -48,7 +48,15 @@
                                         <tr>
                                             <td>${book.title}</td>
                                             <td>${book.genre}</td>
-                                            <td>${book.copies}</td>
+                                            <td>${book.copies}
+                                                <c:if test="${book.copies ne 0}">
+                                                    <form:form action="${contextPath}/updateCopies" method="GET"
+                                                        enctype="multipart/form-data">
+                                                        <input type="hidden" value="${book.id}" name="id">
+                                                        <button type="submit">&#8595;</button>
+                                                    </form:form>
+                                                </c:if>
+                                            </td>
                                             <td>${book.main_author.name} ${book.main_author.surname}</td>
                                             <c:if test="${book.copies eq 0}">
                                                 <td class="error">unavailable</td>
@@ -62,11 +70,16 @@
                                                     <input type="hidden" value="${book.id}" name="id">
                                                     <button type="submit">Open</button>
                                                 </form:form>
-                                                <!--TODO: <form:form action="${contextPath}/single-book" method="GET"
-                                                enctype="multipart/form-data">
-                                                <input type="hidden" value="${book.id}" name="id">
-                                                <button type="submit">Delete</button>
-                                            </form:form> -->
+                                                <form:form action="${contextPath}/deleteBook" method="GET"
+                                                    enctype="multipart/form-data">
+                                                    <input type="hidden" value="${book.id}" name="id">
+                                                    <button type="submit">Delete</button>
+                                                </form:form>
+                                                <form:form action="${contextPath}/addRequest" method="POST"
+                                                    enctype="multipart/form-data">
+                                                    <input type="hidden" value="${book.id}" name="id">
+                                                    <button type="submit">Take TODO:</button>
+                                                </form:form>
                                             </td>
                                         </tr>
                                     </c:forEach>

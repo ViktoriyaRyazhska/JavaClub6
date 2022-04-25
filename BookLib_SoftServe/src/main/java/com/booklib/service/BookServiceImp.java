@@ -28,4 +28,17 @@ public class BookServiceImp implements BookService {
         return bookDao.findBookById(id);
     }
 
+    @Override
+    @Transactional
+    public void updateCopies(Long id, Integer copies) {
+        bookDao.updateCopies(id, copies);
+
+    }
+
+    @Override
+    @Transactional
+    public void deleteBook(Book book) {
+        bookDao.deleteBook(book);
+
+    }
 }

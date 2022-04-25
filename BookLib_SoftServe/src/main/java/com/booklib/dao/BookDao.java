@@ -10,4 +10,8 @@ public interface BookDao {
     List<Book> findBookByTitle(String title);
 
     Book findBookById(Long id);
+
+    void updateCopies(Long id, Integer copies);
+
+    void deleteBook(Book book);
 }

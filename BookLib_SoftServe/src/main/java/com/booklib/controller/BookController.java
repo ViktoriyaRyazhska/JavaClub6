@@ -1,10 +1,8 @@
 package com.booklib.controller;
 
-import java.util.Iterator;
 import java.util.List;
 import java.util.Locale;
 
-import com.booklib.entity.Author;
 import com.booklib.entity.Book;
 import com.booklib.service.BookService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -50,6 +48,21 @@ public class BookController {
         model.addAttribute("book", bookService.findBookById(Long.parseLong(id)));
         model.addAttribute("authors", bookService.findBookById(Long.parseLong(id)).getCoauthors());
         return "single-book";
+    }
+
+    @GetMapping("/updateCopies")
+    public String updateCopies(@RequestParam String id) {
+        Book book = bookService.findBookById(Long.parseLong(id));
+        int copies = book.getCopies() - 1;
+        bookService.updateCopies(Long.parseLong(id), copies);
+        return "redirect:/allBooks";
+    }
+
+    @GetMapping("/deleteBook")
+    public String deleteBook(@RequestParam String id) {
+        Book book = bookService.findBookById(Long.parseLong(id));
+        bookService.deleteBook(book);
+        return "redirect:/allBooks";
     }
 
 }

@@ -25,4 +25,12 @@ public class UserDaoImp implements UserDao {
         TypedQuery<User> query = sessionFactory.getCurrentSession().createQuery("from User");
         return query.getResultList();
     }
+
+    @Override
+    public User findByEmail(String email) {
+        @SuppressWarnings("unchecked")
+        TypedQuery<User> query = sessionFactory.getCurrentSession().createQuery("from User where email like :email");
+        query.setParameter("email", email);
+        return query.getSingleResult();
+    }
 }
