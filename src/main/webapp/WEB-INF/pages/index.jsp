@@ -16,12 +16,12 @@
         </div>
     </nav>
     <div class="container">
-<<<<<<< HEAD
+<%--  HEAD START--%>
         <h1>Welcome to the Library!</h1>
         <a href="books">List of books </a><br>
         <a href="user">User </a><br>
         <a href="login">Log In</a>
-=======
+<%--    HEAD END--%>
         <c:set var="number" value="0"></c:set>
         <h5>Popular books this month</h5>
         <table class="table" id="booksTableElement">
@@ -53,7 +53,6 @@
             </c:forEach>
             </tbody>
         </table>
->>>>>>> bca239b2dd2f36119569e21b72c52b55aaf34ca6
     </div>
     </body>
 </html>
