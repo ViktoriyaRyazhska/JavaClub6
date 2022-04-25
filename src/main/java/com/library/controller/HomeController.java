@@ -17,4 +17,11 @@ public class HomeController {
         model.addAttribute("books", bookService.popularBooks());
         return "index";
     }
+
+    @GetMapping("/books")
+    public String allBooks(Model model) {
+        model.addAttribute("books", bookService.findAll());
+        return "book_list";
+    }
+
 }
