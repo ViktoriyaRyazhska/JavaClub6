@@ -62,7 +62,7 @@
         table = document.getElementById("booksTableElement");
         tr = table.getElementsByTagName("tr");
         for (i = 0; i < tr.length; i++) {
-            title = tr[i].getElementsByTagName("td")[0];
+            title = tr[i].getElementsByTagName("td")[1];
             author = tr[i].getElementsByTagName("td")[2];
             co_authors = tr[i].getElementsByTagName("td")[3];
             if (title || author || co_authors) {
