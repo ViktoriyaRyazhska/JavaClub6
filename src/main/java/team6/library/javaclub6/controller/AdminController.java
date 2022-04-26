@@ -3,24 +3,18 @@ package team6.library.javaclub6.controller;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.ui.ModelMap;
-import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 import team6.library.javaclub6.model.Author;
 import team6.library.javaclub6.model.AuthorBook;
 import team6.library.javaclub6.model.Book;
-import team6.library.javaclub6.model.UserBook;
 import team6.library.javaclub6.service.AuthorBookService;
 import team6.library.javaclub6.service.AuthorService;
 import team6.library.javaclub6.service.BookService;
 import team6.library.javaclub6.service.UserBookService;
 
-import javax.servlet.http.HttpServletRequest;
-import java.security.Principal;
 import java.sql.Date;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 @Controller
@@ -37,8 +31,6 @@ public class AdminController {
 
     @Autowired
     AuthorBookService authorBookService;
-
-
 
     @GetMapping("")
     public String index(){
@@ -57,8 +49,7 @@ public class AdminController {
         Map<String, Object> model = new HashMap<>();
         model.put("author", new Author());
         model.put("book", new Book());
-        System.out.println("MODEL.BOOK"+model.get("book"));
-        return new ModelAndView("admin/registerBook", "model", model);
+        return new ModelAndView("admin/registerbook/registerBook", "model", model);
     }
 
     @PostMapping("/registerBook")
