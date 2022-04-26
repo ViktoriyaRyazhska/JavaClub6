@@ -91,4 +91,17 @@ public class BookController {
         return "redirect:/admin/books";
     }
 
+    @GetMapping("/addAuthor")
+    public String showFormAuthor(Model model) {
+        Author author = new Author();
+        model.addAttribute("author", author);
+        return "admin/author_add";
+    }
+
+    @PostMapping("/addAuthor")
+    public String addAuthor(@Valid @ModelAttribute Author author) {
+        authorService.addAuthor(author);
+        return "redirect:/admin/books/add";
+    }
+
 }

@@ -16,7 +16,7 @@
 <div class="container" align="center">
     <div class="card" style="width: 50%; padding: 30px; margin: 30px">
     <h1>Log in</h1>
-    <form name='login' action="/login" method='POST' style="margin-bottom: 0px">
+    <form name='login' action="login" method='POST' style="margin-bottom: 0px">
 <%--        <table>--%>
 <%--            <tr>--%>
 <%--                <td>Email:</td>--%>
