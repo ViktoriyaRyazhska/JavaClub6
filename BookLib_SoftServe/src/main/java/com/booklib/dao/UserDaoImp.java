@@ -1,6 +1,7 @@
 package com.booklib.dao;
 
 import com.booklib.entity.User;
+import com.booklib.entity.Roles;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
@@ -14,10 +15,18 @@ public class UserDaoImp implements UserDao {
     @Autowired
     private SessionFactory sessionFactory;
 
-     @Override
-     public void save(User user) {
-     sessionFactory.getCurrentSession().save(user);
-     }
+    @Override
+    public void save(User user) {
+        sessionFactory.getCurrentSession().save(user);
+    }
+
+    @Override
+    public Roles findRole(Long id) {
+        @SuppressWarnings("unchecked")
+        TypedQuery<Roles> query = sessionFactory.getCurrentSession().createQuery("from Roles where id like :id");
+        query.setParameter("id", id);
+        return query.getSingleResult();
+    }
 
     @Override
     public List<User> list() {

@@ -32,8 +32,8 @@ public class User implements Serializable {
     private String name;
 
     @Column(nullable = false, length = 50)
-    @Size(max = 20, min = 3, message = "{user.name.invalid}")
-    @NotEmpty(message = "Please Enter your name")
+    @Size(max = 20, min = 3, message = "{user.surname.invalid}")
+    @NotEmpty(message = "Please Enter your surname")
     private String surname;
 
     @Column(unique = true)
@@ -42,6 +42,7 @@ public class User implements Serializable {
     private String email;
 
     @Column(nullable = false, length = 50)
+    @NotEmpty(message = "Please Enter your password")
     private String password;
 
     @Column(nullable = false)

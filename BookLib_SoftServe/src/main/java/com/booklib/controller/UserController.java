@@ -2,6 +2,7 @@ package com.booklib.controller;
 
 import java.util.Locale;
 
+import com.booklib.entity.Roles;
 import com.booklib.entity.User;
 import com.booklib.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -31,16 +32,23 @@ public class UserController {
         return "allUsers";
     }
 
-    @GetMapping("/editUsers")
-//    public String userForm(Locale locale, Model model) {
-        public String userForm(@ModelAttribute("user") @Valid User user,
-                               BindingResult result, Model model) {
-        if (result.hasErrors()) {
+    @GetMapping("/addUser")
+    public String addUser(Locale locale, Model model) {
         model.addAttribute("users", userService.list());
-        return "editUsers";
+        return "addUser";
+    }
+
+    @PostMapping("/addUser")
+    public String userForm(@ModelAttribute("user") @Valid User user,
+            BindingResult result, Model model) {
+        if (result.hasErrors()) {
+            model.addAttribute("users", userService.list());
+            return "addUser";
         }
+        // Roles role = userService.findRole(2L);
+        // user.setRoles(role);
         userService.save(user);
-        return "redirect:/";
+        return "redirect:/allUsers";
     }
 
     @ModelAttribute("user")
