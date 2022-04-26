@@ -2,6 +2,7 @@ package com.booklib.dao;
 
 import com.booklib.entity.Author;
 import com.booklib.entity.Book;
+import com.booklib.entity.User;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
@@ -20,6 +21,11 @@ public class BookDaoImp implements BookDao {
         @SuppressWarnings("unchecked")
         TypedQuery<Book> query = sessionFactory.getCurrentSession().createQuery("from Book");
         return query.getResultList();
+    }
+
+    @Override
+    public void save(Book book) {
+        sessionFactory.getCurrentSession().save(book);
     }
 
     @Override

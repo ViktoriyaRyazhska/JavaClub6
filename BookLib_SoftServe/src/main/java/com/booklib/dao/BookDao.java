@@ -2,6 +2,7 @@ package com.booklib.dao;
 
 import com.booklib.entity.Author;
 import com.booklib.entity.Book;
+import com.booklib.entity.User;
 
 import java.util.List;
 
@@ -17,4 +18,6 @@ public interface BookDao {
     void updateCopies(Long id, Integer copies);
 
     void deleteBook(Book book);
+
+    void save(Book book);
 }
