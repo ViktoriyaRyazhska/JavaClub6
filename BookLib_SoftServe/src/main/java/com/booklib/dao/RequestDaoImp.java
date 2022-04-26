@@ -1,5 +1,6 @@
 package com.booklib.dao;
 
+import com.booklib.entity.Book;
 import com.booklib.entity.User;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,6 +11,7 @@ import javax.persistence.TypedQuery;
 import com.booklib.entity.Request;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.HashSet;
 import java.util.List;
 
@@ -44,16 +46,20 @@ public class RequestDaoImp implements RequestDao {
 
     @Override
     public List<User> getCurrentReaders() {
-        //Select user.id, CONCAT(user.name, ' ', user.surname) as Name ,
-        //user.date_registr, user.birthday, book.title as Book,
-        //DATEDIFF(request.date_return, request.last_day) as OverdueDays,
-        //request.last_day, request.date_return
-        //from user, request, book
-        //where user.id = request.user_id and request.book_id = book.id and OverdueDays > 0;
-
         TypedQuery<User> query = sessionFactory.getCurrentSession().createQuery("select user from Request where DATEDIFF(date_return, last_day) > 0");
 
         return new ArrayList<>(new HashSet<>(query.getResultList()));
+    }
+
+    @Override
+    public long getGivenBooksWithinPeriod(Date from, Date to) {
+
+        TypedQuery<Book> query = sessionFactory.getCurrentSession().createQuery("select book from Request where date_return = null and " +
+                "DATEDIFF(:to, last_day) >= 0 and DATEDIFF(first_day, :from) >= 0");
+        query.setParameter("to", to);
+        query.setParameter("from", from);
+
+        return new HashSet<>(query.getResultList()).size();
     }
 
 }

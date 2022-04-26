@@ -3,6 +3,7 @@ package com.booklib.dao;
 import com.booklib.entity.Request;
 import com.booklib.entity.User;
 
+import java.util.Date;
 import java.util.List;
 
 public interface RequestDao {
@@ -13,4 +14,6 @@ public interface RequestDao {
     void save(Request request);
 
     List<User> getCurrentReaders();
+
+    long getGivenBooksWithinPeriod(Date from, Date to);
 }
