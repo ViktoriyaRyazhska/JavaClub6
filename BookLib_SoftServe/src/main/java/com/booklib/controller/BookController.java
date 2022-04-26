@@ -30,6 +30,7 @@ public class BookController {
     public Book formBackingObject() {
         return new Book();
     }
+
     @GetMapping("/allBooks/{title}")
     public String booksByTitle(@PathVariable("title") String title, Model model) {
         System.out.println(title);

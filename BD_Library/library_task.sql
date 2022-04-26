@@ -394,13 +394,11 @@ From (
 -- -----------------------------------------------------
 
 Select user.id, CONCAT(user.name, ' ', user.surname) as Name ,
-user.date_registr, user.birthday,
-book.title as Book,
+user.date_registr, user.birthday, book.title as Book,
 DATEDIFF(request.date_return, request.last_day) as OverdueDays,
 request.last_day, request.date_return 
-from user, request , book
-where user.id = request.user_id and request.book_id = book.id and DATEDIFF(request.date_return, request.last_day) > 0;
-
+from user, request, book
+where user.id = request.user_id and request.book_id = book.id and OverdueDays > 0;
 
 -- -----------------------------------------------------
 -- How many books were giving in selected period?
