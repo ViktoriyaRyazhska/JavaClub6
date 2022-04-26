@@ -16,8 +16,8 @@ import java.util.Set;
 @Table(name = "author")
 
 public class Author {
-enum  dir{
-}
+    // enum dir{
+    // }
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;

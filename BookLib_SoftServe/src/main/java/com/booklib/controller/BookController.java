@@ -3,7 +3,10 @@ package com.booklib.controller;
 import java.util.List;
 import java.util.Locale;
 
+import com.booklib.dao.AuthorDao;
+import com.booklib.entity.Author;
 import com.booklib.entity.Book;
+import com.booklib.service.AuthorService;
 import com.booklib.service.BookService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -19,6 +22,8 @@ public class BookController {
 
     @Autowired
     private BookService bookService;
+    @Autowired
+    private AuthorService authorService;
 
     @GetMapping("/allBooks")
     public String books(Locale locale, Model model) {
@@ -44,6 +49,22 @@ public class BookController {
         }
 
     }
+
+    @GetMapping("/allBooks/author={author}")
+    public String booksByAuthor(@PathVariable("author") String author, Model model) {
+        System.out.println(author);
+
+        if (author.isEmpty()) {
+            return "allBooks";
+        }
+
+        Author authors = authorService.findAuthorBySurname(author);
+        List<Book> bookList = bookService.findBookByAuthor(authors);
+        model.addAttribute("books", bookList);
+        return "allBooks";
+
+    }
+
     @GetMapping("/single-book")
     public String singleBook(@RequestParam String id, Model model) {
         model.addAttribute("book", bookService.findBookById(Long.parseLong(id)));

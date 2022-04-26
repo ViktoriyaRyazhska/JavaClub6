@@ -1,5 +1,6 @@
 package com.booklib.dao;
 
+import com.booklib.entity.Author;
 import com.booklib.entity.Book;
 
 import java.util.List;
@@ -8,6 +9,8 @@ public interface BookDao {
     List<Book> list();
 
     List<Book> findBookByTitle(String title);
+
+    List<Book> findBookByAuthor(Author author);
 
     Book findBookById(Long id);
 

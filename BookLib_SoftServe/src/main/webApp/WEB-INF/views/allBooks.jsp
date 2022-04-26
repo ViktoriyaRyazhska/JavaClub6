@@ -29,6 +29,11 @@
 
                         <body>
                             <a href="<spring:url value='/'/>">back</a>
+                            <li><a href="<spring:url value='/allBooks/Title1'/>">Find by Title: /allBooks/{Title1}</a>
+                            </li>
+                            <li><a href="<spring:url value='/allBooks/author=Author1'/>">Find by Author:
+                                    /allBooks/author={Author1}</a>
+                            </li>
                             <h2>Books List</h2>
                             <c:if test="${empty books}">
                                 <div>Not found</div>
@@ -87,4 +92,4 @@
                             </c:if>
                         </body>
 
-                </html>
+                        </html>

@@ -36,6 +36,6 @@ public class Book {
     Set<Author> coauthors = new HashSet<>();
 
     @ManyToOne
-    @JoinColumn(name = "main_author", referencedColumnName = "id")
+    @JoinColumn(name = "author", referencedColumnName = "id")
     private Author main_author;
 }

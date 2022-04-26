@@ -5,7 +5,9 @@ import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
+import javax.persistence.TypedQuery;
 import java.util.List;
+
 @Repository
 public class AuthorDaoImpl implements AuthorDao {
     @Autowired
@@ -18,12 +20,24 @@ public class AuthorDaoImpl implements AuthorDao {
 
     @Override
     public List<Author> findAll() {
-        return sessionFactory.getCurrentSession().createQuery("from Author").list();
+        @SuppressWarnings("unchecked")
+        TypedQuery<Author> query = sessionFactory.getCurrentSession()
+                .createQuery("from Author");
+        return query.getResultList();
     }
 
     @Override
     public Author findAuthorById(Long id) {
         return sessionFactory.getCurrentSession().get(Author.class, id);
+    }
+
+    @Override
+    public Author findAuthorBySurname(String surname) {
+        @SuppressWarnings("unchecked")
+        TypedQuery<Author> query = sessionFactory.getCurrentSession()
+                .createQuery("from Author where surname like :surname");
+        query.setParameter("surname", surname);
+        return query.getSingleResult();
     }
 
 }

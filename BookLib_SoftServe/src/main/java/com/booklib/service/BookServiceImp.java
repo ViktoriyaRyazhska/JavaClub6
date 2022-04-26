@@ -1,6 +1,7 @@
 package com.booklib.service;
 
 import com.booklib.dao.BookDao;
+import com.booklib.entity.Author;
 import com.booklib.entity.Book;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -21,6 +22,11 @@ public class BookServiceImp implements BookService {
     @Transactional(readOnly = true, rollbackFor = { java.lang.Exception.class })
     public List<Book> findBookByTitle(String title) {
         return bookDao.findBookByTitle(title);
+    }
+
+    @Transactional(readOnly = true, rollbackFor = { java.lang.Exception.class })
+    public List<Book> findBookByAuthor(Author author) {
+        return bookDao.findBookByAuthor(author);
     }
 
     @Transactional(readOnly = true, rollbackFor = { java.lang.Exception.class })

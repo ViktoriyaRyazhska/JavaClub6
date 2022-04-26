@@ -20,7 +20,9 @@ e:\IT Academy Java club\JavaClub6\BookLib_SoftServe\src\main\java\com\booklib\se
 e:\IT Academy Java club\JavaClub6\BookLib_SoftServe\src\main\java\com\booklib\entity\User.java
 e:\IT Academy Java club\JavaClub6\BookLib_SoftServe\src\main\java\com\booklib\dao\AuthorDaoImpl.java
 e:\IT Academy Java club\JavaClub6\BookLib_SoftServe\src\main\java\com\booklib\controller\RequestController.java
+e:\IT Academy Java club\JavaClub6\BookLib_SoftServe\src\main\java\com\booklib\service\AuthorServiceImp.java
 e:\IT Academy Java club\JavaClub6\BookLib_SoftServe\src\main\java\com\booklib\service\RequestService.java
 e:\IT Academy Java club\JavaClub6\BookLib_SoftServe\src\main\java\com\booklib\entity\Roles.java
+e:\IT Academy Java club\JavaClub6\BookLib_SoftServe\src\main\java\com\booklib\service\AuthorService.java
 e:\IT Academy Java club\JavaClub6\BookLib_SoftServe\src\main\java\com\booklib\controller\UserController.java
 e:\IT Academy Java club\JavaClub6\BookLib_SoftServe\src\main\java\com\booklib\service\BookService.java

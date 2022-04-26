@@ -1,5 +1,6 @@
 package com.booklib.dao;
 
+import com.booklib.entity.Author;
 import com.booklib.entity.Book;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -26,6 +27,15 @@ public class BookDaoImp implements BookDao {
         @SuppressWarnings("unchecked")
         TypedQuery<Book> query = sessionFactory.getCurrentSession().createQuery("from Book where title like :title");
         query.setParameter("title", title);
+        return query.getResultList();
+    }
+
+    @Override
+    public List<Book> findBookByAuthor(Author author) {
+        @SuppressWarnings("unchecked")
+        TypedQuery<Book> query = sessionFactory.getCurrentSession()
+                .createQuery("from Book where main_author= :author");
+        query.setParameter("author", author);
         return query.getResultList();
     }
 

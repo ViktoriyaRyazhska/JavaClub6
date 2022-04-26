@@ -7,8 +7,11 @@ import java.util.List;
 public interface AuthorDao {
 
     void addAuthor(Author author);
+
     List<Author> findAll();
+
     Author findAuthorById(Long id);
 
-}
+    Author findAuthorBySurname(String name);
 
+}
