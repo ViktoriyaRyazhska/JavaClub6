@@ -16,4 +16,14 @@ public class AuthorServiceImp implements AuthorService {
     public Author findByNameSurname(String name, String surname) {
         return authorDao.findByNameSurname(name, surname);
     }
+
+    @Transactional
+    public boolean finaByNameSurnameBool(String name, String surname) {
+        return authorDao.finaByNameSurnameBool(name, surname);
+    }
+
+    @Transactional
+    public void saveAuthor(Author author) {
+        authorDao.saveAuthor(author);
+    }
 }

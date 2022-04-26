@@ -51,6 +51,7 @@ public class AdminController {
         System.out.println("THIS IS OBJECT IN CONTROLLER" + userBookService.hasReadBookList());
         return "admin/userReadBooks";
     }
+
     @GetMapping("/showFrom")
     public ModelAndView showForm(){
         Map<String, Object> model = new HashMap<>();
@@ -60,26 +61,14 @@ public class AdminController {
         return new ModelAndView("admin/registerBook", "model", model);
     }
 
-//    @GetMapping("/registerBook")
-//    public String getForm(Model model){
-//        model.addAttribute("authorBook", new AuthorBook());
-//        model.addAttribute("book", new Book());
-//        model.addAttribute("author", new Author());
-//        return "admin/registerBook";
-//    }
-
     @PostMapping("/registerBook")
     public String submit(@ModelAttribute("authorBook") AuthorBook authorBook,
                          @RequestParam String title,
                          @RequestParam Date deployDate,
                          @RequestParam int copyNumber,
                          @RequestParam String name,
-                         @RequestParam String surname, Model model){
-        //model.addAttribute("authorBook", authorBook);
-        //Book book = (Book) model.getAttribute("book");
-        //Author author = (Author) model.getAttribute("author");
-        //model.addAttribute("author", author);
-        //book.setDeployDate(new Date(System.currentTimeMillis()));
+                         @RequestParam String surname){
+
         Book book = new Book();
         book.setTitle(title);
         book.setDeployDate(deployDate);
@@ -89,23 +78,12 @@ public class AdminController {
         author.setName(name);
         author.setSurname(surname);
 
-        System.out.println("attribute!" + model.getAttribute("book"));
-        System.out.println("OBJECT" + book);
         bookService.save(book);
+        if (!authorService.finaByNameSurnameBool(author.getName(), author.getSurname())) {
+            authorService.saveAuthor(author);
+        }
         authorBookService.newAuthorBook(book, authorService.findByNameSurname(author.getName(), author.getSurname()));
         return "admin/index";
     }
 
-//    @PostMapping("/registerBook")
-//    public String submit(@ModelAttribute("book") Book book, BindingResult result, ModelMap model){
-//        Author author = new Author();
-//        model.addAttribute("title", book.getTitle());
-//        model.addAttribute("deployDate", book.getDeployDate());
-//        model.addAttribute("copyNumber", book.getCopyNumber());
-//        model.addAttribute("name", author.getName());
-//        model.addAttribute("surname", author.getSurname());
-//        //bookService.save(book);
-//        authorBookService.newAuthorBook(book, authorService.findByNameSurname(author.getName(), author.getSurname()));
-//        return "redirect:/";
-//    }
 }
