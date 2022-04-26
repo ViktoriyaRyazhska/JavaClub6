@@ -55,4 +55,9 @@ public class BookServiceImp implements BookService {
         Collections.reverse(result);
         return result.subList(0, 5);
     }
+
+    @Transactional
+    public List<Book> findByTitle(String title) {
+        return bookDao.findByTitle(title);
+    }
 }

@@ -40,15 +40,11 @@ public class AdminController {
     @GetMapping("/userReadBooks")
     public String userReadBooks(Model model){
         model.addAttribute("userReadBook", userBookService.hasReadBookList());
-        System.out.println("THIS IS OBJECT IN CONTROLLER" + userBookService.hasReadBookList());
         return "admin/userReadBooks";
     }
 
     @GetMapping("/showFrom")
     public String showForm(){
-        //Map<String, Object> model = new HashMap<>();
-        //model.put("author", new Author());
-        //model.put("book", new Book());
         return "admin/registerbook/registerBook";
     }
 
@@ -77,4 +73,14 @@ public class AdminController {
         return "admin/index";
     }
 
+    @GetMapping("/search")
+    public String search(){
+        return "admin/updatebook/updateBook";
+    }
+
+    @PostMapping("/searchBook")
+    public String searchShowBooks(@RequestParam String title, Model model){
+        model.addAttribute("book", bookService.findByTitle(title));
+        return "admin/updatebook/updateBook";
+    }
 }

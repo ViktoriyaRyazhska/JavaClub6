@@ -7,4 +7,5 @@ public interface BookDao {
     List<Book> list();
     Book findById(int id);
     void save(Book book);
+    List<Book> findByTitle(String title);
 }

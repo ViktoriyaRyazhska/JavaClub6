@@ -12,8 +12,8 @@
 </head>
 <body>
 <h2>Admin Page</h2>
-<a href="/admin/showFrom">Register book with copies</a><br>
-<a href="">Update book’ information</a><br>
+<a href="admin/showFrom">Register book with copies</a><br>
+<a href="admin/search">Update book’ information</a><br>
 <a href="">Delete One copy/Book with all copies</a><br>
 <a href="">Give book to Reader</a><br>
 <a href="">Set title of book and display count of this Book’ copies with information about them (available/unavailable in Library)</a><br>
