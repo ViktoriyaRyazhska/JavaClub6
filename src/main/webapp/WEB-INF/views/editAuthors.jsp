@@ -4,7 +4,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>Spring5 MVC Hibernate Demo</title>
     <style type="text/css">
         .error {
@@ -70,10 +70,10 @@
 
 
 
-<%--<form method="get" action="search">--%>
-<%--    <input type="text" name="keyword"> &nbsp;--%>
-<%--    <input type="submit" value="Search">--%>
-<%--</form>--%>
+<form method="get" action="search?s=${keyword}">
+    <input type="text" name="keyword"> &nbsp;
+    <input type="submit" value="Search">
+</form>
 
 </body>
 </html>
