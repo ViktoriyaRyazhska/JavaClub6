@@ -12,8 +12,8 @@
 <div>
     <h1>Books</h1>
 
-    <form method="get" action="search">
-        <input type="text" name="keyword"> &nbsp;
+    <form method="get" action="/editBooks/"  >
+        <input type="text" name="title"/> <br />
         <input type="submit" value="Search">
     </form>
 
@@ -25,11 +25,6 @@
             <th>REALIZE YEAR</th>
             <th>AUTHOR</th>
             <th>BOOK AVAILABILITY</th>
-
-
-<%--            <th>TOTAL_QUANTITY</th>--%>
-<%--            <th>IN-READING</th>--%>
-<%--            <th>LAST_UPDATE</th>--%>
             <th>ACTION</th>
         </tr>
         <c:forEach var="book" items="${books}" >
@@ -43,9 +38,6 @@
                     </c:if>
                     <br>
                 </c:forEach>
-
-<%--                </td>--%>
-<%--                <td>${book.deployDate.toString()}</td>--%>
                 <c:if test="${book.totalQuantity-book.inReading == 0}"><td style="color:red">unavailable</td></c:if>
                 <c:if test="${book.totalQuantity-book.inReading != 0}"> <td style="color:blue">available</td></c:if>
 

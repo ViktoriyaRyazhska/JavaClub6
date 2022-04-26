@@ -19,6 +19,7 @@ public class AuthorDAOImp implements AuthorDAO{
     public List<Author> list() {
         @SuppressWarnings("unchecked")
         TypedQuery<Author> query = sessionFactory.getCurrentSession().createQuery("from Author ");
+        System.out.println("Author Service work");
         return query.getResultList();
     }
 

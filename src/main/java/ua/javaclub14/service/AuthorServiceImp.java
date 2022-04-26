@@ -17,6 +17,7 @@ public class AuthorServiceImp implements AuthorService{
 
     @Override
     public List<Author> list() {
+        System.out.println("Author Service work");
 
         return (List<Author>) authorDAO.list();
     }

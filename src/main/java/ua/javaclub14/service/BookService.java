@@ -6,6 +6,13 @@ import ua.javaclub14.model.Book;
 import java.util.List;
 
 public interface BookService {
-//    Book findBookById(Long id);
+
+    List<Book> findBookByTitle(String title);
     List<Book> list();
+
+//    List<Book> listByTitle(String title);
+
+
 }
+
+
