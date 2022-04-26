@@ -9,13 +9,32 @@
 </head>
 <body>
 
-<form:form action="/admin/registerBook" modelAttribute="model" method="post">
-    <input type="text" name="title" th:field="${model.book.title}"><br />
-    <input type="text" name="deployDate" th:field="${model.book.deployDate}"><br />
-    <input type="text" name="copyNumber" th:field="${model.book.copyNumber}"><br />
-    <input type="text" name="name" th:field="${model.author.name}"><br />
-    <input type="text" name="surname" th:field="${model.author.surname}"><br />
-    <input type="submit" th:field="Create"/>
+<form:form action="/admin/registerBook"  method="post">
+    <table>
+        <tr>
+            <td>Book Title:</td>
+            <td><input type="text" name="title" ></td>
+        </tr>
+        <tr>
+            <td>Deploy Date</td>
+            <td><input type="text" name="deployDate"></td>
+        </tr>
+        <tr>
+            <td>Number of copies</td>
+            <td><input type="text" name="copyNumber"></td>
+        </tr>
+        <tr>
+            <td>Author Name</td>
+            <td><input type="text" name="name"></td>
+        </tr>
+        <tr>
+            <td>Author Surname</td>
+            <td><input type="text" name="surname"></td>
+        </tr>
+        <tr>
+            <td><input type="submit" th:field="Create"/></td>
+        </tr>
+    </table>
 </form:form>
 </body>
 </html>

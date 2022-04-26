@@ -45,11 +45,11 @@ public class AdminController {
     }
 
     @GetMapping("/showFrom")
-    public ModelAndView showForm(){
-        Map<String, Object> model = new HashMap<>();
-        model.put("author", new Author());
-        model.put("book", new Book());
-        return new ModelAndView("admin/registerbook/registerBook", "model", model);
+    public String showForm(){
+        //Map<String, Object> model = new HashMap<>();
+        //model.put("author", new Author());
+        //model.put("book", new Book());
+        return "admin/registerbook/registerBook";
     }
 
     @PostMapping("/registerBook")
