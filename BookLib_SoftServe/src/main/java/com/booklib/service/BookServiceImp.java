@@ -2,6 +2,7 @@ package com.booklib.service;
 
 import com.booklib.dao.BookDao;
 import com.booklib.entity.Book;
+import com.booklib.entity.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -39,6 +40,11 @@ public class BookServiceImp implements BookService {
     @Transactional
     public void deleteBook(Book book) {
         bookDao.deleteBook(book);
+    }
 
+    @Transactional
+    public void save(Book book) {
+
+        bookDao.save(book);
     }
 }
