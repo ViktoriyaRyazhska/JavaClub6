@@ -29,6 +29,8 @@
 
                         <body>
                             <a href="<spring:url value='/'/>">back</a>
+                            <li><a href="<spring:url value='/allRequests'/>">allRequests</a></li>
+                            <li><a href="<spring:url value='/isReading'/>">isReading</a></li>
                             <h2>Requests List</h2>
                             <c:if test="${empty requests}">
                                 <div>Not found</div>

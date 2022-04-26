@@ -20,7 +20,6 @@
                                 <li><a href="<spring:url value='/allBooks'/>">allBooks</a></li>
                                 <li><a href="<spring:url value='/allBooks/Title1'/>">allBooks/{Title1}</a></li>
                                 <li><a href="<spring:url value='/allRequests'/>">allRequests</a></li>
-                                <li><a href="<spring:url value='/currentReaders'/>">currentReaders</a></li>
                             </ul>
                         </body>
 

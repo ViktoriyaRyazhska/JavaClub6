@@ -53,14 +53,10 @@ public class RequestController {
 
     }
 
-    @GetMapping("/currentReaders")
-    public String currentReaders(@RequestParam String id, Model model) {
-        if (!id.isEmpty()) {
-            List<User> users = requestService.getCurrentReaders();
-            model.addAttribute("currentReaders", users);
-        }
-
-        return "currentReaders";
+    @GetMapping("/isReading")
+    public String currentReaders(Model model) {
+        model.addAttribute("requests", requestService.getCurrentReaders());
+        return "allRequests";
     }
 
     // @PostMapping("/addRequest")

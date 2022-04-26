@@ -13,7 +13,7 @@ public interface RequestDao {
 
     void save(Request request);
 
-    List<User> getCurrentReaders();
+    List<Request> getCurrentReaders();
 
     long getGivenBooksWithinPeriod(Date from, Date to);
 }

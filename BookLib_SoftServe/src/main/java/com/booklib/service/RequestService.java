@@ -12,5 +12,5 @@ public interface RequestService {
 
     void save(Request request);
 
-    List<User> getCurrentReaders();
+    List<Request> getCurrentReaders();
 }

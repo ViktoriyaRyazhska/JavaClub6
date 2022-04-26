@@ -28,10 +28,14 @@ public class RequestServiceImp implements RequestService {
 
     @Override
     @Transactional
-    public void save(Request request) { requestDao.save(request); }
+    public void save(Request request) {
+        requestDao.save(request);
+    }
 
     @Override
-    //@Transactional
-    public List<User> getCurrentReaders() { return requestDao.getCurrentReaders(); }
+    @Transactional
+    public List<Request> getCurrentReaders() {
+        return requestDao.getCurrentReaders();
+    }
 
 }

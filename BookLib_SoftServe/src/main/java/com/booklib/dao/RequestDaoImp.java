@@ -45,17 +45,19 @@ public class RequestDaoImp implements RequestDao {
     }
 
     @Override
-    public List<User> getCurrentReaders() {
-        TypedQuery<User> query = sessionFactory.getCurrentSession().createQuery("select user from Request where DATEDIFF(date_return, last_day) > 0");
-
-        return new ArrayList<>(new HashSet<>(query.getResultList()));
+    public List<Request> getCurrentReaders() {
+        @SuppressWarnings("unchecked")
+        TypedQuery<Request> query = sessionFactory.getCurrentSession()
+                .createQuery("from Request where date_return = null");
+        return query.getResultList();
     }
 
     @Override
     public long getGivenBooksWithinPeriod(Date from, Date to) {
 
-        TypedQuery<Book> query = sessionFactory.getCurrentSession().createQuery("select book from Request where date_return = null and " +
-                "DATEDIFF(:to, last_day) >= 0 and DATEDIFF(first_day, :from) >= 0");
+        TypedQuery<Book> query = sessionFactory.getCurrentSession()
+                .createQuery("select book from Request where date_return = null and " +
+                        "DATEDIFF(:to, last_day) >= 0 and DATEDIFF(first_day, :from) >= 0");
         query.setParameter("to", to);
         query.setParameter("from", from);
 
