@@ -36,7 +36,7 @@
         </table>
         <a href = "/user/books" class="w3-button w3-right">See All Books</a>
     </div>
-    <div class="w3-bar-block w3-right" style="width:120px">
+    <div class="w3-bar-block w3-right">
         <div class="w3-bar-item">Your upcoming deadlines: </div>
         <div class="w3-bar-item">
         <c:forEach items="${userbooks}" var="userbook">

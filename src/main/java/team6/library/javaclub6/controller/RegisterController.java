@@ -8,7 +8,8 @@ import org.springframework.security.crypto.bcrypt.BCrypt;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.validation.BindingResult;
-import org.springframework.web.servlet.ModelAndView;
+
+import javax.servlet.http.HttpServletRequest;
 import java.sql.Date;
 
 @Controller
@@ -18,18 +19,23 @@ public class RegisterController {
     private UserService userService;
 
     @GetMapping("/register")
-    public ModelAndView showForm() {
-        return new ModelAndView("register", "user", new User());
+    public String showForm() {
+        return "register";
     }
 
     @PostMapping("/addUser")
-    public String submit(@ModelAttribute("user")User user, BindingResult result, ModelMap map) {
+    public String submit(HttpServletRequest request, BindingResult result) {
+        User user = new User();
         if (result.hasErrors()) {
             return "error";
         }
+        user.setName(request.getParameter("name"));
+        user.setSurname(request.getParameter("surname"));
+        user.setBirthDate(Date.valueOf(request.getParameter("birthDate")));
+        user.setEmail(request.getParameter("email"));
         user.setRegistrationDate(new Date(System.currentTimeMillis()));
-        user.setPassword(BCrypt.hashpw(user.getPassword(), BCrypt.gensalt(12)));
+        user.setPassword(BCrypt.hashpw(request.getParameter("password"), BCrypt.gensalt(12)));
         userService.save(user);
-        return "redirect:/";
+        return "redirect:/login";
     }
 }

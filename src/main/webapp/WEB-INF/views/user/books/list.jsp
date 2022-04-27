@@ -14,7 +14,13 @@
     <title>Book List</title>
 </head>
 <body>
-<h2>Books List</h2>
+<div class="w3-bar w3-black">
+    <div class="w3-bar-item">Library by team6</div>
+    <a href="/logout" class="w3-bar-item w3-right w3-button w3-hover-red">Log Out</a>
+    <a href="/user/" class="w3-bar-item w3-button w3-right w3-hover-red">Home</a>
+</div>
+<div class="w3-container">
+    <h2>Books List</h2>
 <input class="w3-input w3-border w3-padding" type="text" placeholder="Search for book.." id="myInput" onkeyup="myFunction()">
 <table class="w3-table-all" id="myTable">
     <tr>
@@ -22,7 +28,7 @@
         <th><strong>Title</strong></th>
         <th><strong>Authors</strong></th>
         <th><strong>Deploy date</strong></th>
-        <th><strong>Available</strong></th>
+        <th><strong>Availability</strong></th>
     </tr>
     <c:forEach items="${books}" var="book">
         <tr>
@@ -69,5 +75,6 @@
         }
     }
 </script>
+</div>
 </body>
 </html>

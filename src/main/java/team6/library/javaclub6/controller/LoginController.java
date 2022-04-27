@@ -18,7 +18,7 @@ public class LoginController {
                             Model model) {
         String errorMessage = null;
         if(error != null) {
-            errorMessage = "Username or Password is incorrect !!";
+            errorMessage = "Email or Password is incorrect !!";
         }
         if(logout != null) {
             errorMessage = "You have been successfully logged out !!";

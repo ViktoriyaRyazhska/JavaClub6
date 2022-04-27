@@ -79,4 +79,11 @@ public class UserServiceImp implements UserService {
         userBooks.sort(Comparator.comparing(UserBook::getRentDate));
         return userBooks;
     }
+
+    @Transactional
+    public List<UserBook> getRequestList(User user) {
+        List <UserBook> userBooks = user.getBooks();
+        userBooks.removeIf(i -> i.getFkStatus().getId() == 1);
+        return userBooks;
+    }
 }

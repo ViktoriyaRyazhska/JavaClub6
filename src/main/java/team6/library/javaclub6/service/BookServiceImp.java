@@ -36,13 +36,15 @@ public class BookServiceImp implements BookService {
         List<Book> result = new ArrayList<>();
         HashMap<Book, Integer> map = new HashMap<>();
         for(UserBook i:userBooks){
-            if (i.getRentDate().compareTo(selectedPeriodEnd) < 0 && i.getRentDate().compareTo(selectedPeriodStart) >= 0){
+            if(i.getRentDate() != null){
+            if (i.getRentDate().compareTo(selectedPeriodEnd) < 0 && i.getRentDate().compareTo(selectedPeriodStart) >= 0) {
                 if (map.containsKey(i.getFkBook())) {
                     map.replace(i.getFkBook(), map.get(i.getFkBook()), map.get(i.getFkBook()) + 1);
                 } else {
                     map.put(i.getFkBook(), 1);
                     result.add(i.getFkBook());
                 }
+            }
             }
         }
         result.sort(Comparator.comparingInt(map::get));

@@ -46,6 +46,13 @@ public class UserController {
         return "user/index";
     }
 
+    @GetMapping("/requests")
+    public String requestList(Model model, Principal principal){
+        User user = userService.findByEmail(principal.getName());
+        model.addAttribute("userbooks", userService.getRequestList(user));
+        return "user/requestlist";
+    }
+
     @GetMapping("/books")
     public ModelAndView bookList(Model model) {
         model.addAttribute("books", bookService.list());

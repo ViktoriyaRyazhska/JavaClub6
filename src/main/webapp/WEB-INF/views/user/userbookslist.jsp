@@ -10,6 +10,7 @@
 <div class="w3-bar w3-black">
     <div class="w3-bar-item">Library by team6</div>
     <a href="/logout" class="w3-bar-item w3-right w3-button w3-hover-red">Log Out</a>
+    <a href="/user/requests" class="w3-bar-item w3-right w3-button w3-hover-red">Requests</a>
     <a href="/user/history" class="w3-bar-item w3-button w3-right w3-hover-red">History</a>
     <a href="/user/" class="w3-bar-item w3-button w3-right w3-hover-red">Home</a>
 </div>
