@@ -5,6 +5,7 @@ import com.library.model.Request;
 import com.library.service.RequestService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.time.LocalDate;
 import java.util.List;
@@ -31,6 +32,7 @@ public class RequestServiceImpl implements RequestService {
     }
 
     @Override
+    @Transactional
     public List<Request> findByUserId(Long userId) {
         return requestDAO.findByUserId(userId);
     }

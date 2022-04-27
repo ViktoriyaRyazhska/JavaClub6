@@ -12,9 +12,13 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+<<<<<<< HEAD
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.stream.Collectors;
+=======
+import java.util.List;
+>>>>>>> 79acf4b93d056830372878199442314f23652029
 
 @Service
 public class UserServiceImpl implements UserService {
@@ -25,11 +29,16 @@ public class UserServiceImpl implements UserService {
         this.userDAO = userDAO;
     }
 
-
     @Override
     @Transactional
     public void save(User user) {
         userDAO.save(user);
+    }
+
+    @Override
+    @Transactional
+    public List<User> findAll() {
+        return userDAO.findAll();
     }
 
     @Override

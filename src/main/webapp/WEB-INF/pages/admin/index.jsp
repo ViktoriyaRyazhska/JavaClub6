@@ -1,11 +1,5 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: Maryan
-  Date: 20.04.2022
-  Time: 19:42
-  To change this template use File | Settings | File Templates.
---%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <html>
 <head>
     <title>Library</title>
@@ -16,15 +10,15 @@
     <div class="container-fluid">
         <a class="navbar-brand" style="font-size: x-large; font-weight: bold">Library</a>
         <div class="d-flex">
-            <a href="user/books" class="btn btn-outline-light" type="button">Books</a>
-            <a class="btn btn-outline-light" type="button" style="margin-left: 10px">Account</a>
+            <a href="/library/admin/users" class="btn btn-outline-light" type="button">Users</a>
+            <a href="/library/admin/books" class="btn btn-outline-light" type="button" style="margin-left: 10px">Books</a>
         </div>
     </div>
 </nav>
 <div class="container">
     <h1>Welcome to the Library!</h1>
-    <h1>User</h1>
-    <a href="user/books">Rent a book</a>
+    <h1>Admin</h1>
+    <a href="/library/admin/books">See books</a>
 </div>
 </body>
 </html>

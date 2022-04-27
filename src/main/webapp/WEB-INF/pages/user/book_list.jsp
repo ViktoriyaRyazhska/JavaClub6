@@ -2,7 +2,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <html>
 <head>
-    <title>Books</title>
+    <title>Library</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 </head>
 <body>
@@ -10,18 +10,18 @@
     <div class="container-fluid">
         <a class="navbar-brand" style="font-size: x-large; font-weight: bold">Library</a>
         <div class="d-flex">
-            <a class="btn btn-outline-light" type="button" href="signup" style="margin-right: 10px">Signup</a>
-            <a class="btn btn-outline-light" type="button" href="login" style="margin-right: 10px">Login</a>
-            <a class="btn btn-outline-light" type="button" href="/library">Home</a>
+            <a href="/library/user" class="btn btn-outline-light" type="button">Home</a>
+            <a class="btn btn-outline-light" type="button" style="margin-left: 10px">Account</a>
         </div>
     </div>
 </nav>
 <div class="container">
-    <c:set var="number" value="0"/>
+    <c:set var="number" value="0"></c:set>
     <h1>Books</h1>
     <div style="display: flex">
         <input type="text" class="form-control" placeholder="Book search..." aria-describedby="basic-addon2"
                id="searchBookInput" onkeyup="searchFunction()">
+        <a href="/library/user" class="btn btn-outline-dark" type="button" style="margin-left: 10px">Back</a>
     </div>
     <table class="table" id="booksTableElement">
         <thead>
@@ -34,7 +34,7 @@
         </thead>
         <tbody>
         <c:forEach var="book" items="${books}">
-            <c:set var="number" value="${number + 1}"/>
+            <c:set var="number" value="${number + 1}"></c:set>
             <tr>
                 <td>${number}</td>
                 <td>${book.title}</td>
@@ -48,6 +48,7 @@
                         </c:forEach>
                     </td>
                 </c:if>
+                <td><a>Rent</a></td>
             </tr>
         </c:forEach>
         </tbody>
