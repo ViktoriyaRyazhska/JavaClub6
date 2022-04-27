@@ -58,7 +58,7 @@
                     <td>
                       <form:select path="id">
                         <c:forEach items="${authors}" var="author">
-                          <form:option value="${author.id}">${author.surname} ${author.name}
+                          <form:option value="${author.id}">${author.id}. ${author.surname} ${author.name}
                           </form:option>
                         </c:forEach>
                       </form:select>
@@ -67,13 +67,6 @@
                   <tr>
                     <td>Co authors</td>
                     <td>
-                      <!-- <div>
-                        <c:forEach items="${authors}" var="author">
-                          <input type="checkbox" path="coauthors" name="coauthors">
-                          <label for="${author.id}">${author.surname} ${author.name}</label>
-                        </c:forEach>
-                      </div> -->
-
                       <form:checkboxes items="${authorsList}" path="coauthors" />
                     </td>
 

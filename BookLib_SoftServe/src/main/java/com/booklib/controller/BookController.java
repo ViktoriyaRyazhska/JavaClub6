@@ -103,12 +103,13 @@ public class BookController {
             @RequestParam String genre,
             @RequestParam int copies,
             @RequestParam String id,
-            @RequestParam String[] coauthors,
+            @RequestParam(name = "coauthors", defaultValue = "0") String[] coauthors,
             Model model) {
-        if (title.isEmpty() || genre.isEmpty() || id.isEmpty() || coauthors.equals(null)) {
+        if (title.isEmpty() || genre.isEmpty() || id.isEmpty()) {
             model.addAttribute("error", "Fill all fields!");
             model.addAttribute("books", bookService.list());
             model.addAttribute("authors", authorService.findAll());
+            model.addAttribute("authorsList", getAuthorsList());
             return "addBook";
         }
         Book book = new Book();
