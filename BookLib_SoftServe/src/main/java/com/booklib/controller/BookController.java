@@ -6,11 +6,8 @@ import java.util.Locale;
 import com.booklib.dao.AuthorDao;
 import com.booklib.entity.Author;
 import com.booklib.entity.Book;
-//<<<<<<< HEAD
 import com.booklib.service.AuthorService;
-//=======
 import com.booklib.entity.User;
-//>>>>>>> b822d509ec55c8fb62729ec9da2c2bc5f2d197b0
 import com.booklib.service.BookService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -97,16 +94,29 @@ public class BookController {
     @GetMapping("/addBook")
     public String addBook(Locale locale, Model model) {
         model.addAttribute("books", bookService.list());
+        model.addAttribute("authors", authorService.findAll());
         return "addBook";
     }
 
     @PostMapping("/addBook")
-    public String addBook(@ModelAttribute("book") @Valid Book book,
-                           BindingResult result, Model model) {
-        if (result.hasErrors()) {
+    public String addBook(
+            @RequestParam String title,
+            @RequestParam String genre,
+            @RequestParam int copies,
+            @RequestParam String id,
+            Model model) {
+        if (title.isEmpty() || genre.isEmpty() || id.isEmpty()) {
+            model.addAttribute("error", "Fill all fields!");
             model.addAttribute("books", bookService.list());
+            model.addAttribute("authors", authorService.findAll());
             return "addBook";
         }
+        Book book = new Book();
+        Author author = authorService.findAuthorById(Long.parseLong(id));
+        book.setTitle(title);
+        book.setGenre(genre);
+        book.setCopies(copies);
+        book.setMain_author(author);
         bookService.save(book);
         return "redirect:/allBooks";
     }

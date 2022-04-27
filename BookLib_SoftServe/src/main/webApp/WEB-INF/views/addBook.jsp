@@ -8,7 +8,7 @@
 
             <head>
               <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-              <title>Edit User</title>
+              <title>Add Book</title>
               <style type="text/css">
                 .error {
                   color: red;
@@ -55,33 +55,48 @@
                   </tr>
                   <tr>
                     <td>Main author</td>
-                        <td>
-                            <form:input path="main_author" /> <br />
-                            <form:errors path="main_author" cssClass="error" />
-                        </td>
-                    </tr>
+                    <td>
+                      <!-- <form:input path="main_author" /> <br />
+                      <form:errors path="main_author" cssClass="error" /> -->
+                      <form:select path="id">
+                        <c:forEach items="${authors}" var="author">
+                          <form:option value="${author.id}">${author.surname} ${author.name}
+                          </form:option>
+                        </c:forEach>
+                      </form:select>
+                    </td>
+                  </tr>
                   <tr>
-                    <td colspan="2"><button type="submit">Add Book</button></td>
+                    <td colspan="2">
+                      <p cssClass="error">${error}</p>
+                      <button type="submit">Add Book</button>
+                    </td>
                   </tr>
                 </table>
               </form:form>
-              <h2>Book List</h2>
-              <table>
-                <tr>
-                  <td><strong>Title</strong></td>
-                  <td><strong>Genre</strong></td>
-                  <td><strong>Copies</strong></td>
-                  <td><strong>Main author</strong></td>
-                </tr>
-                <c:forEach items="${books}" var="book">
+              <h2>Books List</h2>
+              <c:if test="${empty books}">
+                <div>Not found</div>
+              </c:if>
+
+              <c:if test="${not empty books}">
+                <table>
                   <tr>
-                    <td>${book.title}</td>
-                    <td>${book.genre}</td>
-                    <td>${book.copies}</td>
-                    <td>${book.main_author}</td>
+                    <td><strong>Title</strong></td>
+                    <td><strong>Genre</strong></td>
+                    <td><strong>Copies</strong></td>
+                    <td><strong>Main_author</strong></td>
                   </tr>
-                </c:forEach>
-              </table>
+                  <c:forEach items="${books}" var="book">
+                    <tr>
+                      <td>${book.title}</td>
+                      <td>${book.genre}</td>
+                      <td>${book.copies}</td>
+                      <td>${book.main_author.name} ${book.main_author.surname}</td>
+                    </tr>
+                  </c:forEach>
+                </table>
+              </c:if>
             </body>
 
             </html>

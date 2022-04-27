@@ -48,9 +48,9 @@ public class BookServiceImp implements BookService {
         bookDao.deleteBook(book);
     }
 
+    @Override
     @Transactional
     public void save(Book book) {
-
         bookDao.save(book);
     }
 }
