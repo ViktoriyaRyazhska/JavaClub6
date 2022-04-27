@@ -12,9 +12,14 @@
 <div>
   <h1>Books</h1>
 
-  <form method="POST" action="searchBook"  >
-    <input type="text" name="title" /> <br />
-    <input type="submit" value="Search">
+  <form method="POST" action="searchBookByTitle"  >
+    <input type="text" name="title" />
+    <input type="submit" value="Search by title">
+  </form>
+  <br />
+  <form method="POST" action="searchBookByAuthor"  >
+    <input type="text" name="name" />
+    <input type="submit" value="Search by author">
   </form>
 
   <%--    <h3><a href="/new">New Book</a></h3>--%>
@@ -28,16 +33,18 @@
       <th>ACTION</th>
     </tr>
     <c:forEach var="book" items="${books}" >
+      <c:forEach items="${authors}" var="author">
+        <c:if test="${book.getRoleId() == author.getId()}">
       <tr>
         <td>${book.getId()}</td>
         <td>${book.getTitle()}</td>
         <td>${book.getRealizeYear()}</td>
-        <c:forEach items="${authors}" var="author">
 
-          <c:if test="${book.getRoleId() == author.getId()}"><td>${author.getFirstName()} ${author.getLastName()}</td>
-          </c:if>
+
+          <td>${author.getFirstName()} ${author.getLastName()}</td>
+
           <br>
-        </c:forEach>
+
         <c:if test="${book.totalQuantity-book.inReading == 0}"><td style="color:red">unavailable</td></c:if>
         <c:if test="${book.totalQuantity-book.inReading != 0}"> <td style="color:blue">available</td></c:if>
 
@@ -46,6 +53,8 @@
           <a href="edit?id=$(book.getId())">Edit</a>
         </td>
       </tr>
+        </c:if>
+      </c:forEach>
     </c:forEach>
   </table>
 </div>

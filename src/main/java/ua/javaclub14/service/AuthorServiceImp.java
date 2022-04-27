@@ -35,5 +35,10 @@ public class AuthorServiceImp implements AuthorService{
     @Override
     public void deleteAuthor(Author author) { authorDAO.deleteAuthor(author); }
 
+    @Override
+    public List<Author> findAuthorByNameAndSurname(String name) {
+        return authorDAO.findAuthorByNameAndSurname(name);
+    }
+
 
 }

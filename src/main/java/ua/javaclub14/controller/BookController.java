@@ -48,7 +48,7 @@ public class BookController {
         return "redirect:/";
     }
 
-    @RequestMapping("searchBook")
+    @RequestMapping("searchBookByTitle")
     public String booksByTitle(@RequestParam("title") String title, Model model) {
         System.out.println("findBookByTitle Controller list work");
 
@@ -57,9 +57,27 @@ public class BookController {
         } else {
             List<Book> bookList = bookService.findBookByTitle(title);
             model.addAttribute("books", bookList);
-            model.addAttribute("authors", authorService.list());
-            return "searchBook";
+            List<Author> authorList = authorService.list();
+            model.addAttribute("authors", authorList);
+            return "searchBookByTitle";
+        }
+    }
+
+        @RequestMapping("searchBookByAuthor")
+        public String booksByAuthor(@RequestParam("name") String name, Model model) {
+            System.out.println("findBookByTitle Controller list work");
+
+            if (name.isEmpty()) {
+                return "editBooks";
+            } else {
+                List<Book> bookList = bookService.list();
+                model.addAttribute("books", bookList);
+                List<Author> authorList = authorService.findAuthorByNameAndSurname(name);
+                model.addAttribute("authors", authorList);
+                return "searchBookByAuthor";
+            }
         }
 
-    }
+
+
 }

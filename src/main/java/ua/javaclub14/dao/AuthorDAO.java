@@ -11,4 +11,5 @@ public interface AuthorDAO {
     void deleteAuthor(Author author);
 
 
+    List<Author> findAuthorByNameAndSurname(String name);
 }
