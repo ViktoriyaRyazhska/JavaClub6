@@ -26,6 +26,11 @@ public class UserBookServiceImp implements UserBookService{
         userBookDao.returnBook(userBook);
     }
 
+    @Override
+    public List<UserBook> hasReadBookList() {
+        return userBookDao.hasReadBookList();
+    }
+
     @Transactional
     public List<UserBook> list() {
         return userBookDao.list();

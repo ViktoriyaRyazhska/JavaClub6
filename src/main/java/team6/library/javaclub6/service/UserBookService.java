@@ -9,5 +9,6 @@ import java.util.List;
 public interface UserBookService {
     void newRequest(Book book, User user);
     void returnBook(UserBook userBook);
+    List<UserBook> hasReadBookList();
     List<UserBook> list();
 }

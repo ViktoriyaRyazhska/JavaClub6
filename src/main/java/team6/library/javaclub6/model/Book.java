@@ -26,4 +26,54 @@ public class Book implements Serializable {
     @ToString.Exclude private List<AuthorBook> authors;
     @OneToMany(mappedBy = "fkBook")
     @ToString.Exclude private List<UserBook> users;
+
+    public int getId() {
+        return id;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public Date getDeployDate() {
+        return deployDate;
+    }
+
+    public int getCopyNumber() {
+        return copyNumber;
+    }
+
+    public List<AuthorBook> getAuthors() {
+        return authors;
+    }
+
+    public List<UserBook> getUsers() {
+        return users;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public void setDeployDate(Date deployDate) {
+        this.deployDate = deployDate;
+    }
+
+    public void setCopyNumber(int copyNumber) {
+        this.copyNumber = copyNumber;
+    }
+
+    public void setAuthors(List<AuthorBook> authors) {
+        this.authors = authors;
+    }
+
+    public void setUsers(List<UserBook> users) {
+        this.users = users;
+    }
+
+
 }

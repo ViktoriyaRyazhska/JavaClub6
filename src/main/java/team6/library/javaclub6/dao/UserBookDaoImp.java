@@ -3,6 +3,7 @@ package team6.library.javaclub6.dao;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
+import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import team6.library.javaclub6.model.Book;
 import team6.library.javaclub6.model.RequestStatus;
@@ -34,7 +35,13 @@ public class UserBookDaoImp implements UserBookDao{
         sessionFactory.getCurrentSession().update(userBook);
     }
 
-    @Override
+    @Transactional
+    public List<UserBook> hasReadBookList() {
+        TypedQuery<UserBook> query = sessionFactory.getCurrentSession().createQuery("FROM UserBook WHERE returnDate IS NOT NULL");
+        return query.getResultList();
+    }
+
+    @Transactional
     public List<UserBook> list() {
         TypedQuery<UserBook> query = sessionFactory.getCurrentSession().createQuery("from UserBook");
         return query.getResultList();

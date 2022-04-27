@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="ubd01_javaclub6" uuid="fb15fbf9-3bb8-4345-aa78-93749be37241">
+    <data-source source="LOCAL" name="ubd01_javaclub6@ubd01.mysql.ukraine.com.ua" uuid="fb15fbf9-3bb8-4345-aa78-93749be37241">
       <driver-ref>mysql.8</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
       <jdbc-url>jdbc:mysql://ubd01.mysql.ukraine.com.ua/ubd01_javaclub6</jdbc-url>
-      <working-dir>$ProjectFileDir$</working-dir>
+      <driver-properties>
+        <property name="serverTimezone" value="UTC" />
+      </driver-properties>
     </data-source>
   </component>
 </project>

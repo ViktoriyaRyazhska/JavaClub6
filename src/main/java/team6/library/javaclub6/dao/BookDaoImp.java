@@ -1,6 +1,7 @@
 package team6.library.javaclub6.dao;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.transaction.annotation.Transactional;
 import team6.library.javaclub6.model.Book;
 import org.hibernate.SessionFactory;
 import org.springframework.stereotype.Repository;
@@ -14,7 +15,7 @@ public class BookDaoImp implements BookDao {
     @Autowired
     private SessionFactory sessionFactory;
 
-    @Override
+    @Transactional
     public List<Book> list() {
         TypedQuery<Book> query = sessionFactory.getCurrentSession().createQuery("from Book where title is not null");
         return query.getResultList();
@@ -24,5 +25,10 @@ public class BookDaoImp implements BookDao {
     public Book findById(int id) {
         Book result = sessionFactory.getCurrentSession().get(Book.class, id);
         return result;
+    }
+
+    @Override
+    public void save(Book book) {
+        sessionFactory.getCurrentSession().persist(book);
     }
 }

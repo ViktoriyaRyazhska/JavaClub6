@@ -18,6 +18,7 @@ public class BookServiceImp implements BookService {
     @Autowired
     private UserBookService userBookService;
 
+
     @Transactional(readOnly = true)
     public List<Book> list() {
         return bookDao.list();
@@ -26,6 +27,11 @@ public class BookServiceImp implements BookService {
     @Transactional
     public Book findById(int id) {
         return bookDao.findById(id);
+    }
+
+    @Transactional
+    public void save(Book book) {
+        bookDao.save(book);
     }
 
     @Transactional
