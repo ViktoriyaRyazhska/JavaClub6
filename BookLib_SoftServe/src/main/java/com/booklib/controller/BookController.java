@@ -6,11 +6,11 @@ import java.util.Locale;
 import com.booklib.dao.AuthorDao;
 import com.booklib.entity.Author;
 import com.booklib.entity.Book;
-<<<<<<< HEAD
+//<<<<<<< HEAD
 import com.booklib.service.AuthorService;
-=======
+//=======
 import com.booklib.entity.User;
->>>>>>> b822d509ec55c8fb62729ec9da2c2bc5f2d197b0
+//>>>>>>> b822d509ec55c8fb62729ec9da2c2bc5f2d197b0
 import com.booklib.service.BookService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;

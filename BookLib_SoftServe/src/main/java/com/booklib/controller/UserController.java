@@ -48,7 +48,7 @@ public class UserController {
         // Roles role = userService.findRole(2L);
         // user.setRoles(role);
         userService.save(user);
-        return "redirect:/allUsers";
+        return "redirect:/addUser";
     }
 
     @ModelAttribute("user")
