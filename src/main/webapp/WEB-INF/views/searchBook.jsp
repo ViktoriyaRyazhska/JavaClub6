@@ -4,7 +4,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <title>Books</title>
 
 </head>
@@ -12,7 +12,7 @@
 <div>
   <h1>Books</h1>
 
-  <form method="GET" action="searchBook"  >
+  <form method="POST" action="searchBook"  >
     <input type="text" name="title" /> <br />
     <input type="submit" value="Search">
   </form>
@@ -23,7 +23,7 @@
       <th>ID</th>
       <th>TITLE</th>
       <th>REALIZE YEAR</th>
-     <th>AUTHOR</th>--%>
+     <th>AUTHOR</th>
       <th>BOOK AVAILABILITY</th>
       <th>ACTION</th>
     </tr>

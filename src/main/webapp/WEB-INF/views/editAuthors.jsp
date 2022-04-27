@@ -6,7 +6,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>Spring5 MVC Hibernate Demo</title>
-    <style type="text/css">
+    <style>
         .error {
             color: red;
         }

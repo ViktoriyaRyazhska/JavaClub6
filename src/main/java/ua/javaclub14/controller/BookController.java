@@ -35,15 +35,6 @@ public class BookController {
     }
 
 
-//    @GetMapping("search/")
-//    public String getBook(@RequestParam String title, Model model) {
-//        System.out.println("Book Controller work");
-//        model.addAttribute("books", bookService.findBookByTitle(title));
-//        model.addAttribute("authors", authorService.list());
-//
-//        return "searchBook";
-//    }
-
     @PostMapping("/")
     public String saveBook(@ModelAttribute("book") @Valid Book book,
                              BindingResult result, Model model) {
@@ -66,8 +57,8 @@ public class BookController {
         } else {
             List<Book> bookList = bookService.findBookByTitle(title);
             model.addAttribute("books", bookList);
-//            model.addAttribute("authors", authorService.list());
-            return "redirect:/editBook";
+            model.addAttribute("authors", authorService.list());
+            return "searchBook";
         }
 
     }
