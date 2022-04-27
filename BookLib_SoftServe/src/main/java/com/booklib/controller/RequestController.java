@@ -1,15 +1,7 @@
 package com.booklib.controller;
 
-import java.util.Calendar;
-import java.util.Date;
 import java.util.List;
-import java.util.Locale;
-
-import javax.validation.Valid;
-
-import com.booklib.entity.Book;
 import com.booklib.entity.Request;
-import com.booklib.entity.User;
 import com.booklib.service.BookService;
 import com.booklib.service.RequestService;
 import com.booklib.service.UserService;

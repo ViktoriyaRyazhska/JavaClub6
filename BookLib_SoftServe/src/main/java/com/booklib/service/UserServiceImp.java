@@ -13,8 +13,6 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import java.time.Instant;
-import java.time.LocalDate;
 import java.util.Date;
 import java.util.List;
 
@@ -46,9 +44,6 @@ public class UserServiceImp implements UserService, UserDetailsService {
         userForSave.setDate_registr(new Date(System.currentTimeMillis()));
         userForSave.setRoles(rolesDao.findByRole("ROLE_USER"));
 
-        // Roles role = userDao.findRole(new Long(2));
-        // user.setRoles(role);
-        // user.setDate_registr(new Date());
         userDao.save(userForSave);
     }
 
@@ -66,6 +61,6 @@ public class UserServiceImp implements UserService, UserDetailsService {
     @Override
     @Transactional
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-        return userDao.findByUsername(username) ;
+        return userDao.findByUsername(username);
     }
 }

@@ -5,11 +5,10 @@ import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
-
 import javax.persistence.TypedQuery;
 
 @Repository
-public class RolesDaoImpl implements RolesDao{
+public class RolesDaoImpl implements RolesDao {
 
     @Autowired
     private SessionFactory sessionFactory;
@@ -21,8 +20,10 @@ public class RolesDaoImpl implements RolesDao{
         query.setParameter("id", id);
         return query.getSingleResult();
     }
+
     @Override
     public Roles findByRole(String role) {
+        @SuppressWarnings("unchecked")
         TypedQuery<Roles> query = sessionFactory.getCurrentSession().createQuery("from Roles where role like :role");
         query.setParameter("role", role);
         return query.getSingleResult();

@@ -1,25 +1,23 @@
 package com.booklib.controller;
 
+import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Locale;
+import java.util.Set;
 
-import com.booklib.dao.AuthorDao;
 import com.booklib.entity.Author;
 import com.booklib.entity.Book;
 import com.booklib.service.AuthorService;
-import com.booklib.entity.User;
 import com.booklib.service.BookService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
-
-import javax.validation.Valid;
 
 @Controller
 public class BookController {
@@ -95,6 +93,7 @@ public class BookController {
     public String addBook(Locale locale, Model model) {
         model.addAttribute("books", bookService.list());
         model.addAttribute("authors", authorService.findAll());
+        model.addAttribute("authorsList", getAuthorsList());
         return "addBook";
     }
 
@@ -104,8 +103,9 @@ public class BookController {
             @RequestParam String genre,
             @RequestParam int copies,
             @RequestParam String id,
+            @RequestParam String[] coauthors,
             Model model) {
-        if (title.isEmpty() || genre.isEmpty() || id.isEmpty()) {
+        if (title.isEmpty() || genre.isEmpty() || id.isEmpty() || coauthors.equals(null)) {
             model.addAttribute("error", "Fill all fields!");
             model.addAttribute("books", bookService.list());
             model.addAttribute("authors", authorService.findAll());
@@ -113,12 +113,30 @@ public class BookController {
         }
         Book book = new Book();
         Author author = authorService.findAuthorById(Long.parseLong(id));
+        Set<Author> coauthor = new HashSet<Author>();
+        for (String a : coauthors) {
+            coauthor.add(authorService.findAuthorById(Long.parseLong(a)));
+        }
+
         book.setTitle(title);
         book.setGenre(genre);
         book.setCopies(copies);
         book.setMain_author(author);
+        book.setCoauthors(coauthor);
         bookService.save(book);
         return "redirect:/allBooks";
+    }
+
+    @ModelAttribute("authorsList")
+    public List<String> getAuthorsList() {
+        List<String> authorsList = new ArrayList<String>();
+        List<Author> authors = authorService.findAll();
+
+        for (Author a : authors) {
+            authorsList.add(a.getId().toString());
+        }
+
+        return authorsList;
     }
 
 }

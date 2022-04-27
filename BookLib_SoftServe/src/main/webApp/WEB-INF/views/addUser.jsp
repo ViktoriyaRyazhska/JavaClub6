@@ -8,7 +8,7 @@
 
             <head>
               <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-              <title>Edit User</title>
+              <title>Add User</title>
               <style type="text/css">
                 .error {
                   color: red;
@@ -52,7 +52,8 @@
                       <form:input path="username" /> <br />
                       <form:errors path="username" cssClass="error" />
                     </td>
-                  </tr>                  <tr>
+                  </tr>
+                  <tr>
                     <td>Email</td>
                     <td>
                       <form:input path="email" /> <br />

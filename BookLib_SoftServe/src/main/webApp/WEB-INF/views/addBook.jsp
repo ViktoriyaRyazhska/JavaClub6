@@ -56,8 +56,6 @@
                   <tr>
                     <td>Main author</td>
                     <td>
-                      <!-- <form:input path="main_author" /> <br />
-                      <form:errors path="main_author" cssClass="error" /> -->
                       <form:select path="id">
                         <c:forEach items="${authors}" var="author">
                           <form:option value="${author.id}">${author.surname} ${author.name}
@@ -67,8 +65,23 @@
                     </td>
                   </tr>
                   <tr>
+                    <td>Co authors</td>
+                    <td>
+                      <!-- <div>
+                        <c:forEach items="${authors}" var="author">
+                          <input type="checkbox" path="coauthors" name="coauthors">
+                          <label for="${author.id}">${author.surname} ${author.name}</label>
+                        </c:forEach>
+                      </div> -->
+
+                      <form:checkboxes items="${authorsList}" path="coauthors" />
+                    </td>
+
+                    </td>
+                  </tr>
+                  <tr>
                     <td colspan="2">
-                      <p cssClass="error">${error}</p>
+                      <p class="error">${error}</p>
                       <button type="submit">Add Book</button>
                     </td>
                   </tr>

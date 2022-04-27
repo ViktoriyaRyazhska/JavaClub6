@@ -2,7 +2,6 @@ package com.booklib.dao;
 
 import com.booklib.entity.Author;
 import com.booklib.entity.Book;
-import com.booklib.entity.User;
 
 import java.util.List;
 

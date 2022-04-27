@@ -55,8 +55,8 @@
                                             <td>${book.genre}</td>
                                             <td>${book.copies}
                                                 <c:if test="${book.copies ne 0}">
-                                                    <form:form action="${contextPath}/BookLib_SoftServe/updateCopies" method="GET"
-                                                        enctype="multipart/form-data">
+                                                    <form:form action="${contextPath}/BookLib_SoftServe/updateCopies"
+                                                        method="GET" enctype="multipart/form-data">
                                                         <input type="hidden" value="${book.id}" name="id">
                                                         <button type="submit">&#8595;</button>
                                                     </form:form>
@@ -70,18 +70,18 @@
                                                 <td>available</td>
                                             </c:if>
                                             <td>
-                                                <form:form action="${contextPath}/BookLib_SoftServe/single-book" method="GET"
+                                                <form:form action="${contextPath}/single-book" method="GET"
                                                     enctype="multipart/form-data">
                                                     <input type="hidden" value="${book.id}" name="id">
                                                     <button type="submit">Open</button>
                                                 </form:form>
-                                                <form:form action="${contextPath}/BookLib_SoftServe/deleteBook" method="GET"
-                                                    enctype="multipart/form-data">
+                                                <form:form action="${contextPath}/BookLib_SoftServe/deleteBook"
+                                                    method="GET" enctype="multipart/form-data">
                                                     <input type="hidden" value="${book.id}" name="id">
                                                     <button type="submit">Delete</button>
                                                 </form:form>
-                                                <form:form action="${contextPath}/BookLib_SoftServe/addRequest" method="POST"
-                                                    enctype="multipart/form-data">
+                                                <form:form action="${contextPath}/BookLib_SoftServe/addRequest"
+                                                    method="POST" enctype="multipart/form-data">
                                                     <input type="hidden" value="${book.id}" name="id">
                                                     <button type="submit">Take TODO:</button>
                                                 </form:form>

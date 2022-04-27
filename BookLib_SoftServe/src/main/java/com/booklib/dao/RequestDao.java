@@ -1,7 +1,6 @@
 package com.booklib.dao;
 
 import com.booklib.entity.Request;
-import com.booklib.entity.User;
 
 import java.util.Date;
 import java.util.List;

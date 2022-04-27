@@ -2,7 +2,6 @@ package com.booklib.controller;
 
 import java.util.Locale;
 
-import com.booklib.entity.Roles;
 import com.booklib.entity.User;
 import com.booklib.service.UserService;
 import lombok.RequiredArgsConstructor;
@@ -13,7 +12,6 @@ import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
-
 
 import javax.validation.Valid;
 
@@ -48,8 +46,6 @@ public class UserController {
             model.addAttribute("users", userService.list());
             return "addUser";
         }
-        // Roles role = userService.findRole(2L);
-        // user.setRoles(role);
         userService.save(user);
         return "redirect:/addUser";
     }

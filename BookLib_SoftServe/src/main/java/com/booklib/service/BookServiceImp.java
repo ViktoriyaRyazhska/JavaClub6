@@ -3,7 +3,6 @@ package com.booklib.service;
 import com.booklib.dao.BookDao;
 import com.booklib.entity.Author;
 import com.booklib.entity.Book;
-import com.booklib.entity.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
