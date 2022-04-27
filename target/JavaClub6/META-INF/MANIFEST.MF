@@ -1,5 +1,5 @@
 Manifest-Version: 1.0
 Created-By: IntelliJ IDEA
-Built-By: Idel Gaming
-Build-Jdk: 14
+Built-By: Max
+Build-Jdk: Oracle OpenJDK version 18.0.1
 

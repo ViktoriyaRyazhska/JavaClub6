@@ -8,7 +8,7 @@
 <c:if test="${not empty errorMessage}"><div style="color:red; font-weight: bold; margin: 30px 0px;">${errorMessage}</div></c:if>
 
 <form name='login' action="/login" method='POST' class="w3-container w3-card-4 w3-black w3-display-middle">
-    <h2>Library by team6</h2>
+    <h2>Library by team3</h2>
     <p>Please log into your account</p>
     <p><label>Email</label>
             <input type='email' name='username' value='' placeholder="example@example.com" class="w3-input w3-border"></p>

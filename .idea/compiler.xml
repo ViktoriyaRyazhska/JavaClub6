@@ -7,13 +7,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="JavaClub" />
         <module name="JavaClub6" />
+        <module name="JavaClub" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="JavaClub" target="8" />
-      <module name="JavaClub6" target="8" />
+      <module name="JavaClub6" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
