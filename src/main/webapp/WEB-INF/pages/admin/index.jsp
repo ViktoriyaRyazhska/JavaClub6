@@ -10,7 +10,8 @@
     <div class="container-fluid">
         <a class="navbar-brand" style="font-size: x-large; font-weight: bold">Library</a>
         <div class="d-flex">
-            <a href="/library/admin/users" class="btn btn-outline-light" type="button">Users</a>
+            <a href="/library/logout" class="btn btn-outline-light" type="button" >Log Out</a>
+            <a href="/library/admin/users" class="btn btn-outline-light" type="button" style="margin-left: 10px">Users</a>
             <a href="/library/admin/books" class="btn btn-outline-light" type="button" style="margin-left: 10px">Books</a>
         </div>
     </div>
