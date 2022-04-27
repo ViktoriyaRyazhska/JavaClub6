@@ -10,18 +10,12 @@
         <div class="container-fluid">
             <a class="navbar-brand" style="font-size: x-large; font-weight: bold">Library</a>
             <div class="d-flex">
-                <a class="btn btn-outline-dark" type="button" href="register" style="margin-right: 10px">Register</a>
+                <a class="btn btn-outline-dark" type="button" href="registration" style="margin-right: 10px">Register</a>
                 <a class="btn btn-outline-dark" type="button" href="login">Login</a>
             </div>
         </div>
     </nav>
     <div class="container">
-<<<<<<< HEAD
-        <h1>Welcome to the Library!</h1>
-        <a href="books">List of books </a><br>
-        <a href="user">User </a><br>
-        <a href="login">Log In</a>
-=======
         <c:set var="number" value="0"></c:set>
         <h5>Popular books this month</h5>
         <table class="table" id="booksTableElement">
@@ -53,7 +47,6 @@
             </c:forEach>
             </tbody>
         </table>
->>>>>>> bca239b2dd2f36119569e21b72c52b55aaf34ca6
     </div>
     </body>
 </html>

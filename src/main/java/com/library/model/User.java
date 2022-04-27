@@ -11,13 +11,12 @@ import javax.persistence.Table;
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 import org.springframework.format.annotation.DateTimeFormat;
 
+import java.util.Collection;
 import java.util.Date;
+import java.util.List;
 
 @Getter
 @Setter
@@ -46,6 +45,14 @@ public class User {
     @DateTimeFormat (pattern = "DD.MM.YY")
     @Column(name = "create_time")
     private Date createTime;
+
+    @Column(name = "email")
+    @NotEmpty(message = "Please, enter your email")
+    private String email;
+
+    @Column(name="password")
+    @NotEmpty(message = "Please,enter your password")
+    private String password;
 
     @ManyToOne
     @JoinColumn(name = "role_id")

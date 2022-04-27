@@ -1,11 +1,20 @@
 package com.library.service.impl;
 
 import com.library.dao.UserDAO;
+import com.library.model.Role;
 import com.library.model.User;
 import com.library.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.core.authority.SimpleGrantedAuthority;
+import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.stream.Collectors;
 
 @Service
 public class UserServiceImpl implements UserService {
@@ -40,4 +49,20 @@ public class UserServiceImpl implements UserService {
     public void deleteUser(User user) {
         userDAO.deleteUser(user);
     }
+
+    @Transactional
+    public UserDetails loadUserByUsername(String s) throws UsernameNotFoundException {
+        User user = findByEmail(s);
+        if (user == null) {
+            throw new UsernameNotFoundException(String.format("User not found"));
+        }
+        Collection<Role> roles = new ArrayList<>();
+        roles.add(user.getRole());
+        return new org.springframework.security.core.userdetails.User(user.getEmail(), user.getPassword(),mapRolesToAuthorities(roles));
+
+    }
+    private Collection<? extends GrantedAuthority> mapRolesToAuthorities(Collection<Role> roles){
+        return roles.stream().map(r -> new SimpleGrantedAuthority(r.getRoleTitle())).collect(Collectors.toList());
+    }
+
 }
