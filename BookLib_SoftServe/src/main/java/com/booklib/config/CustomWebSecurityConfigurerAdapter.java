@@ -28,8 +28,8 @@ public class CustomWebSecurityConfigurerAdapter extends WebSecurityConfigurerAda
     protected void configure(HttpSecurity http) throws Exception {
         http.authorizeRequests()
                 .antMatchers("/addUser").permitAll()
-                .antMatchers("/hello").permitAll()
-                .antMatchers("/").permitAll()
+//                .antMatchers("/hello").permitAll()
+//                .antMatchers("/").permitAll()
                 .anyRequest().authenticated()
                 .and()
                 .httpBasic()

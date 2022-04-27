@@ -4,78 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2191047e-4f65-4476-b393-b1b80d3d20d7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/JavaClub6.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__antlr_antlr_2_7_7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_classmate_1_5_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_protobuf_protobuf_java_3_11_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_mchange_c3p0_0_9_5_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_mchange_mchange_commons_java_0_2_11.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_istack_istack_commons_runtime_3_0_7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_xml_fastinfoset_FastInfoset_1_2_15.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__hsqldb_hsqldb_1_8_0_10.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_activation_javax_activation_api_1_2_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_persistence_javax_persistence_api_2_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_javax_servlet_api_4_0_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_jsp_javax_servlet_jsp_api_2_3_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_jsp_jstl_javax_servlet_jsp_jstl_api_1_2_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_validation_validation_api_1_1_0_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_xml_bind_jaxb_api_2_3_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_8_0_28.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_12_8.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jaxb_jaxb_runtime_2_3_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jaxb_txw2_2_3_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_common_hibernate_commons_annotations_5_1_2_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_c3p0_5_6_7_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_core_5_6_7_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_entitymanager_5_6_7_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_validator_5_4_1_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_jandex_2_4_2_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_4_2_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_spec_javax_transaction_jboss_transaction_api_1_2_spec_1_1_1_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jvnet_staxex_stax_ex_1_8.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_18_22.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_32.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_config_5_6_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_core_5_6_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_crypto_5_6_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_web_5_6_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_5_3_17.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_5_3_17.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_5_3_17.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_5_3_17.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_5_3_17.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jcl_5_3_17.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_5_3_17.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_orm_5_3_17.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_5_3_17.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_5_3_17.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_5_3_17.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__taglibs_standard_1_1_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BookLib_SoftServe/BookLib.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BookLib_SoftServe/src/main/java/com/booklib/config/CustomWebSecurityConfigurerAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BookLib_SoftServe/src/main/java/com/booklib/config/MyBasicAuthenticationEntryPoint.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BookLib_SoftServe/src/main/java/com/booklib/config/SpringSecurityInit.java" afterDir="false" />
+    <list default="true" id="2191047e-4f65-4476-b393-b1b80d3d20d7" name="Changes" comment="Added Security">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookLib_SoftServe/src/main/java/com/booklib/controller/BookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/BookLib_SoftServe/src/main/java/com/booklib/controller/BookController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookLib_SoftServe/src/main/java/com/booklib/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/BookLib_SoftServe/src/main/java/com/booklib/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookLib_SoftServe/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/BookLib_SoftServe/src/main/resources/hibernate.cfg.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookLib_SoftServe/target/classes/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/BookLib_SoftServe/target/classes/hibernate.cfg.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookLib_SoftServe/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/BookLib_SoftServe/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookLib_SoftServe/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/BookLib_SoftServe/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookLib_SoftServe/src/main/java/com/booklib/config/CustomWebSecurityConfigurerAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/BookLib_SoftServe/src/main/java/com/booklib/config/CustomWebSecurityConfigurerAdapter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BookLib_SoftServe/target/tomcat/logs/access_log.2022-04-27" beforeDir="false" afterPath="$PROJECT_DIR$/BookLib_SoftServe/target/tomcat/logs/access_log.2022-04-27" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookLib_SoftServe/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/views/addUser_jsp.java" beforeDir="false" afterPath="$PROJECT_DIR$/BookLib_SoftServe/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/views/addUser_jsp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookLib_SoftServe/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/views/allUsers_jsp.java" beforeDir="false" afterPath="$PROJECT_DIR$/BookLib_SoftServe/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/views/allUsers_jsp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookLib_SoftServe/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/views/hello_jsp.java" beforeDir="false" afterPath="$PROJECT_DIR$/BookLib_SoftServe/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/views/hello_jsp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookLib_SoftServe/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/views/allBooks_jsp.java" beforeDir="false" afterPath="$PROJECT_DIR$/BookLib_SoftServe/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/views/allBooks_jsp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookLib_SoftServe/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/views/allRequests_jsp.java" beforeDir="false" afterPath="$PROJECT_DIR$/BookLib_SoftServe/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/views/allRequests_jsp.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -179,7 +113,14 @@
       <option name="project" value="LOCAL" />
       <updated>1650104114362</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Added Security">
+      <created>1651052081872</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1651052081872</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -195,7 +136,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="cfg" />
-    <option name="LAST_COMMIT_MESSAGE" value="cfg" />
+    <MESSAGE value="Added Security" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Security" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
