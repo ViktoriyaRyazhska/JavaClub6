@@ -19,7 +19,6 @@
                                 <li><a href="<spring:url value='/addUser'/>">addUser</a></li>
                                 <li><a href="<spring:url value='/allBooks'/>">allBooks</a></li>
                                 <li><a href="<spring:url value='/addBook'/>">addBook</a></li>
-                                <li><a href="<spring:url value='/allBooks/Title1'/>">allBooks/{Title1}</a></li>
                                 <li><a href="<spring:url value='/allRequests'/>">allRequests</a></li>
 
                             </ul>

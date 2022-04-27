@@ -95,8 +95,12 @@
                     <td>${user.surname}</td>
                     <td>${user.email}</td>
                     <td>${user.password}</td>
-                    <td>${user.date_registr}</td>
-                    <td>${user.birthday}</td>
+                    <td>
+                      <fmt:formatDate value="${user.birthday}" type="both" pattern='yyyy-MM-dd' />
+                    </td>
+                    <td>
+                      <fmt:formatDate value="${user.date_registr}" type="both" pattern='yyyy-MM-dd' />
+                    </td>
                   </tr>
                 </c:forEach>
               </table>
