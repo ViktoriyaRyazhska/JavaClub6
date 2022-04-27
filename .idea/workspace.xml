@@ -4,26 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2191047e-4f65-4476-b393-b1b80d3d20d7" name="Changes" comment="Added Security">
-      <change afterPath="$PROJECT_DIR$/BookLib_SoftServe/src/main/java/com/booklib/dao/RolesDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BookLib_SoftServe/src/main/java/com/booklib/dao/RolesDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookLib_SoftServe/src/main/java/com/booklib/config/CustomWebSecurityConfigurerAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/BookLib_SoftServe/src/main/java/com/booklib/config/CustomWebSecurityConfigurerAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookLib_SoftServe/src/main/java/com/booklib/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/BookLib_SoftServe/src/main/java/com/booklib/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookLib_SoftServe/src/main/java/com/booklib/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/BookLib_SoftServe/src/main/java/com/booklib/dao/UserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookLib_SoftServe/src/main/java/com/booklib/dao/UserDaoImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/BookLib_SoftServe/src/main/java/com/booklib/dao/UserDaoImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookLib_SoftServe/src/main/java/com/booklib/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/BookLib_SoftServe/src/main/java/com/booklib/entity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookLib_SoftServe/src/main/java/com/booklib/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/BookLib_SoftServe/src/main/java/com/booklib/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookLib_SoftServe/src/main/java/com/booklib/service/UserServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/BookLib_SoftServe/src/main/java/com/booklib/service/UserServiceImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookLib_SoftServe/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/BookLib_SoftServe/src/main/resources/hibernate.cfg.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookLib_SoftServe/src/main/webApp/WEB-INF/views/addUser.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/BookLib_SoftServe/src/main/webApp/WEB-INF/views/addUser.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookLib_SoftServe/target/classes/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/BookLib_SoftServe/target/classes/hibernate.cfg.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookLib_SoftServe/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/BookLib_SoftServe/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookLib_SoftServe/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/BookLib_SoftServe/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookLib_SoftServe/target/tomcat/logs/access_log.2022-04-27" beforeDir="false" afterPath="$PROJECT_DIR$/BookLib_SoftServe/target/tomcat/logs/access_log.2022-04-27" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookLib_SoftServe/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/views/addUser_jsp.java" beforeDir="false" afterPath="$PROJECT_DIR$/BookLib_SoftServe/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/views/addUser_jsp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookLib_SoftServe/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/views/hello_jsp.java" beforeDir="false" afterPath="$PROJECT_DIR$/BookLib_SoftServe/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/views/hello_jsp.java" afterDir="false" />
-    </list>
+    <list default="true" id="2191047e-4f65-4476-b393-b1b80d3d20d7" name="Changes" comment="Updated Security" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -170,7 +151,14 @@
       <option name="project" value="LOCAL" />
       <updated>1651055079543</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Updated Security">
+      <created>1651070082776</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1651070082776</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -187,7 +175,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="cfg" />
     <MESSAGE value="Added Security" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Security" />
+    <MESSAGE value="Updated Security" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated Security" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
