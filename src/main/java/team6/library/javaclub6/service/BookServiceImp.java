@@ -35,6 +35,11 @@ public class BookServiceImp implements BookService {
     }
 
     @Transactional
+    public void update(Book book) {
+        bookDao.update(book);
+    }
+
+    @Transactional
     public List<Book> popularList(int year, int month) {
         Date selectedPeriodStart = new Date(year, month, 1);
         Date selectedPeriodEnd = new Date(year, month + 1, 1);

@@ -13,9 +13,8 @@ import team6.library.javaclub6.service.AuthorService;
 import team6.library.javaclub6.service.BookService;
 import team6.library.javaclub6.service.UserBookService;
 
+import java.security.Principal;
 import java.sql.Date;
-import java.util.HashMap;
-import java.util.Map;
 
 @Controller
 @RequestMapping("/admin")
@@ -75,12 +74,44 @@ public class AdminController {
 
     @GetMapping("/search")
     public String search(){
-        return "admin/updatebook/updateBook";
+        return "admin/updatebook/searchBook";
     }
 
     @PostMapping("/searchBook")
     public String searchShowBooks(@RequestParam String title, Model model){
         model.addAttribute("book", bookService.findByTitle(title));
+        return "admin/updatebook/searchBook";
+    }
+
+    @GetMapping("/updateBook")
+    public ModelAndView showUpdatePage(@RequestParam int id){
+        Book book = new Book();
+        book.setId(id);
+        return new ModelAndView("admin/updatebook/updateBook", "book", book);
+    }
+
+    @PostMapping("/updateBook")
+    public String updateBook(@RequestParam int id,
+                             @RequestParam String title,
+                             @RequestParam Date deployDate,
+                             @RequestParam int copyNumber,
+                             @RequestParam String name,
+                             @RequestParam String surname, @ModelAttribute("book") Book book){
+        //Book book = new Book();
+        book.setId(id);
+        book.setTitle(title);
+        book.setDeployDate(deployDate);
+        book.setCopyNumber(copyNumber);
+
+        Author author = new Author();
+        author.setName(name);
+        author.setSurname(surname);
+        bookService.update(book);
+        if (!authorService.finaByNameSurnameBool(name, surname)){
+            authorService.saveAuthor(author);
+        }
+        //if !authorBookService.newAuthorBook(book, author) => save ELSE update
+        authorBookService.newAuthorBook(book, author);
         return "admin/updatebook/updateBook";
     }
 }

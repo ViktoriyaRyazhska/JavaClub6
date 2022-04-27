@@ -33,6 +33,11 @@ public class BookDaoImp implements BookDao {
     }
 
     @Transactional
+    public void update(Book book) {
+        sessionFactory.getCurrentSession().update(book);
+    }
+
+    @Transactional
     public List<Book> findByTitle(String title) {
         TypedQuery<Book> query = sessionFactory.getCurrentSession().createQuery("FROM Book WHERE title=:title");
         query.setParameter("title", title);
