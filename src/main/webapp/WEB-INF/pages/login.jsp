@@ -15,7 +15,6 @@
 </nav>
 <div class="container" align="center">
     <div class="card" style="width: 50%; padding: 30px; margin: 30px">
-<<<<<<< HEAD
         <h1>Log in</h1>
         <form name='login' action="login" method='POST' style="margin-bottom: 0px">
 
@@ -31,33 +30,6 @@
             </div>
             <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}" />
         </form>
-=======
-    <h1>Log in</h1>
-    <form name='login' action="login" method='POST' style="margin-bottom: 0px">
-<%--        <table>--%>
-<%--            <tr>--%>
-<%--                <td>Email:</td>--%>
-<%--                <td><input type='email' name='username' value='' placeholder="example@example.com" class="form-control"></td>--%>
-<%--            </tr>--%>
-<%--            <tr>--%>
-<%--                <td>Password:</td>--%>
-<%--                <td><input type='password' name='password' class="form-control"/></td>--%>
-<%--            </tr>--%>
-<%--        </table>--%>
-        <div class="input-group mb-3">
-            <input type="email" name="username" value="" placeholder="Email" class="form-control"/>
-        </div>
-        <div class="input-group mb-3">
-            <input type="password" name="password" placeholder="Password" class="form-control"/>
-        </div>
-        <div>
-            <button type="submit" class="btn btn-outline-dark" style="width: 100%; margin-bottom: 10px">Login</button>
-            <a href="registration">I'm new here</a>
-        </div>
-        <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}" />
-    </form>
->>>>>>> 79acf4b93d056830372878199442314f23652029
-    </div>
 </div>
 </body>
 </html>

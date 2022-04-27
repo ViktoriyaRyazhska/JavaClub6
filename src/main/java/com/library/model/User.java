@@ -13,12 +13,8 @@ import javax.validation.constraints.NotNull;
 
 import lombok.*;
 import org.springframework.format.annotation.DateTimeFormat;
-
-<<<<<<< HEAD
 import java.util.Collection;
-=======
 import java.time.LocalDate;
->>>>>>> 79acf4b93d056830372878199442314f23652029
 import java.util.Date;
 import java.util.List;
 
@@ -49,12 +45,6 @@ public class User {
     @DateTimeFormat (pattern = "DD.MM.YY")
     @Column(name = "create_time")
     private LocalDate createTime;
-
-    @Column
-    private String email;
-
-    @Column
-    private String password;
 
     @Column(name = "email")
     @NotEmpty(message = "Please, enter your email")

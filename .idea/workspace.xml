@@ -10,45 +10,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3fe0153a-a71c-46cd-8145-9da68c20aeb8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/JavaClub_war.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/JavaClub_war_exploded.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/JavaClub.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/JavaClub.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/library/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/library/config/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/library/dao/impl/UserDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/library/dao/impl/UserDAOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/library/controller/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/library/controller/AdminController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/library/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/library/model/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/library/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/library/service/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/library/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/library/service/impl/UserServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/index.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/library/AuthorEditor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/library/AuthorEditor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/library/config/AppInitializer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/library/config/AppInitializer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/library/config/HibernateConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/library/config/HibernateConfig.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/library/config/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/library/config/SecurityConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/library/config/SpringSecurityInitializer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/library/config/SpringSecurityInitializer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/library/config/WebConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/library/config/WebConfig.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/library/controller/BookController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/library/controller/BookController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/library/controller/HomeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/library/controller/HomeController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/library/controller/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/library/controller/LoginController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/library/controller/RegisterController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/library/controller/RegisterController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/library/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/library/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/library/dao/AuthorDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/library/dao/AuthorDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/library/dao/BookDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/library/dao/BookDAO.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/library/dao/UserDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/library/dao/UserDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/library/dao/impl/AuthorDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/library/dao/impl/AuthorDAOImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/library/dao/impl/BookDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/library/dao/impl/BookDAOImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/library/dao/impl/UserDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/library/dao/impl/UserDAOImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/library/model/Author.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/library/model/Author.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/library/model/Book.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/library/model/Book.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/library/model/Request.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/library/model/Request.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/library/model/Role.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/library/model/Role.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/library/model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/library/model/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/library/service/AuthorService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/library/service/AuthorService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/library/service/BookService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/library/service/BookService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/library/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/library/service/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/library/service/impl/AuthorServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/library/service/impl/AuthorServiceImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/library/service/impl/BookServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/library/service/impl/BookServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/library/service/impl/RequestServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/library/service/impl/RequestServiceImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/library/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/library/service/impl/UserServiceImpl.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -102,12 +83,12 @@
     <property name="settings.editor.selected.configurable" value="com.poratu.idea.plugins.tomcat.setting.TomcatSettingConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\JavaClab6Library\src\main\webapp\WEB-INF\pages\user" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\JavaClab6Library\src\main\java\com\library\controller" />
       <recent name="D:\JavaClab6Library\src\main\webapp\WEB-INF\pages" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\JavaClab6Library\src\main\webapp\WEB-INF\pages\user" />
     </key>
   </component>
   <component name="RunManager">
@@ -244,7 +225,8 @@
       <workItem from="1650620879535" duration="2538000" />
       <workItem from="1650788825042" duration="1091000" />
       <workItem from="1650878851514" duration="317000" />
-      <workItem from="1651042862534" duration="12536000" />
+      <workItem from="1651042862534" duration="13230000" />
+      <workItem from="1651070290491" duration="1388000" />
     </task>
     <servers />
   </component>
@@ -296,22 +278,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1650488476871" />
-    <state width="1493" height="195" key="GridCell.Tab.0.bottom" timestamp="1651069498534">
+    <state width="1493" height="195" key="GridCell.Tab.0.bottom" timestamp="1651071229288">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="195" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1651069498534" />
-    <state width="1493" height="195" key="GridCell.Tab.0.center" timestamp="1651069498534">
+    <state width="1493" height="195" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1651071229288" />
+    <state width="1493" height="195" key="GridCell.Tab.0.center" timestamp="1651071229288">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="195" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1651069498534" />
-    <state width="1493" height="195" key="GridCell.Tab.0.left" timestamp="1651069498534">
+    <state width="1493" height="195" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1651071229288" />
+    <state width="1493" height="195" key="GridCell.Tab.0.left" timestamp="1651071229288">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="195" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1651069498534" />
-    <state width="1493" height="195" key="GridCell.Tab.0.right" timestamp="1651069498534">
+    <state width="1493" height="195" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1651071229288" />
+    <state width="1493" height="195" key="GridCell.Tab.0.right" timestamp="1651071229288">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="195" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1651069498534" />
+    <state width="1493" height="195" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1651071229288" />
     <state width="1024" height="210" key="GridCell.Tab.1.bottom" timestamp="1650548129737">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

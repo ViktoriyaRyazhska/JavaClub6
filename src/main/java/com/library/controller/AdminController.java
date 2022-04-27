@@ -29,11 +29,11 @@ public class AdminController {
         return "admin/index";
     }
 
-    @GetMapping("/users")
-    public String allUsers(Model model) {
-        model.addAttribute("users", userService.findAll());
-        return "admin/user_list";
-    }
+//    @GetMapping("/users")
+//    public String allUsers(Model model) {
+//        model.addAttribute("users", userService.findAll());
+//        return "admin/user_list";
+//    }
 
     @GetMapping("/users/details/{id}")
     public String getUserDetails(Model model, @PathVariable Long id) {
