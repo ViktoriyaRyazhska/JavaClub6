@@ -10,4 +10,7 @@ public interface AuthorService {
     Author findAuthorById(Long id);
     void addAuthor(Author author);
     void deleteAuthor(Author author);
+
+
+
 }

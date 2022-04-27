@@ -10,4 +10,8 @@ public interface BookDAO {
 //    List<Book> listByTitle(String title);
 
     public List<Book> findBookByTitle(String title);
+
+
+    void addBook(Book book);
+
 }

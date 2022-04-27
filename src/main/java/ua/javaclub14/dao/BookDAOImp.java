@@ -3,6 +3,7 @@ package ua.javaclub14.dao;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
+import ua.javaclub14.model.Author;
 import ua.javaclub14.model.Book;
 
 import javax.persistence.TypedQuery;
@@ -21,26 +22,21 @@ public class BookDAOImp implements BookDAO{
         return query.getResultList();
     }
 
-//    @Override
-//    public List<Book> listByTitle(String title) {
-//        @SuppressWarnings("unchecked")
-//        TypedQuery<Book> query = sessionFactory.getCurrentSession().createQuery("from Book where title like : title");
-//        query.setParameter("title",title);
-//        return query.getResultList();
-//    }
+
+
 
     @Override
     public List<Book> findBookByTitle(String title) {
-
+        System.out.println("findBookByTitle DAO list work");
         @SuppressWarnings("unchecked")
+
         TypedQuery<Book> query = sessionFactory.getCurrentSession().createQuery("from Book where title like :title");
-        query.setParameter("title",title);
-        System.out.println("Book DAO work");
+        query.setParameter("title", title);
         return query.getResultList();
     }
 
-//    @Override
-//    public Book findBookById(Long id) {
-//        return sessionFactory.getCurrentSession().get(Book.class, id);
-//    }
+    @Override
+    public void addBook(Book book) {
+        sessionFactory.getCurrentSession().save(book);
+    }
 }

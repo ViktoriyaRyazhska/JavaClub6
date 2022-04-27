@@ -18,6 +18,7 @@
 <a href="/editAuthors">Authors</a>
 <a href="/editUsers">Users</a>
 <a href="/editBooks">Books</a>
+<a href="/formBook">Form book</a>
 
 </body>
 </html>

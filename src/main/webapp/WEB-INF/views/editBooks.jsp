@@ -1,3 +1,4 @@
+
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
 <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
@@ -9,10 +10,12 @@
 
 </head>
 <body>
+
+
 <div>
     <h1>Books</h1>
 
-    <form method="get" action="/editBooks/"  >
+    <form method="GET" action="searchBook"  >
         <input type="text" name="title"/> <br />
         <input type="submit" value="Search">
     </form>
@@ -44,6 +47,7 @@
 
                 <td>
                     <a href="edit?id=$(book.getId())">Edit</a>
+                    <a href="delete?id=$(book.getId())">Delete</a>
                 </td>
             </tr>
         </c:forEach>

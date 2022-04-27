@@ -19,7 +19,7 @@ public class AuthorDAOImp implements AuthorDAO{
     public List<Author> list() {
         @SuppressWarnings("unchecked")
         TypedQuery<Author> query = sessionFactory.getCurrentSession().createQuery("from Author ");
-        System.out.println("Author Service work");
+        System.out.println("Author DAO work");
         return query.getResultList();
     }
 
@@ -35,4 +35,6 @@ public class AuthorDAOImp implements AuthorDAO{
 
     @Override
     public void deleteAuthor(Author author) {sessionFactory.getCurrentSession().delete(author); }
+
+
 }

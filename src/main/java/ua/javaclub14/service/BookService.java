@@ -10,6 +10,8 @@ public interface BookService {
     List<Book> findBookByTitle(String title);
     List<Book> list();
 
+    void addBook(Book book);
+
 //    List<Book> listByTitle(String title);
 
 
