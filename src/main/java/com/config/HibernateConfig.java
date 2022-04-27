@@ -19,7 +19,8 @@ import javax.sql.DataSource;
 
 @Configuration
 @EnableTransactionManagement
-@ComponentScan({ "com.config" })
+@ComponentScan({"com.config"})
+@PropertySource(value = {"classpath:application.properties"})
 public class HibernateConfig {
 
     @Autowired
@@ -39,5 +40,20 @@ public class HibernateConfig {
         HibernateTransactionManager transactionManager = new HibernateTransactionManager();
         transactionManager.setSessionFactory(getSessionFactory().getObject());
         return transactionManager;
+    }
+    private Properties hibernateProperties() {
+        Properties properties = new Properties();
+        properties.put("hibernate.dialect", environment.getRequiredProperty("hibernate.dialect"));
+        properties.put("hibernate.show_sql", environment.getRequiredProperty("hibernate.show_sql"));
+        properties.put("hibernate.format_sql", environment.getRequiredProperty("hibernate.format_sql"));
+        properties.put("hibernate.hbm2ddl.auto", environment.getRequiredProperty("hibernate.hbm2ddl.auto"));
+        return properties;
+    }
+    @Bean
+    @Autowired
+    public HibernateTransactionManager transactionManager(SessionFactory s) {
+        HibernateTransactionManager txManager = new HibernateTransactionManager();
+        txManager.setSessionFactory(s);
+        return txManager;
     }
 }
