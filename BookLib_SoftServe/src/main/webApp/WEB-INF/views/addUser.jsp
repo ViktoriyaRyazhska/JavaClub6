@@ -47,6 +47,12 @@
                     </td>
                   </tr>
                   <tr>
+                    <td>username</td>
+                    <td>
+                      <form:input path="username" /> <br />
+                      <form:errors path="username" cssClass="error" />
+                    </td>
+                  </tr>                  <tr>
                     <td>Email</td>
                     <td>
                       <form:input path="email" /> <br />
@@ -58,13 +64,6 @@
                     <td>
                       <form:input path="password" /> <br />
                       <form:errors path="password" cssClass="error" />
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>date_registr</td>
-                    <td>
-                      <form:input path="date_registr" /> <br />
-
                     </td>
                   </tr>
                   <tr>
@@ -84,6 +83,7 @@
                 <tr>
                   <td><strong>Name</strong></td>
                   <td><strong>Surname</strong></td>
+                  <td><strong>username</strong></td>
                   <td><strong>Email</strong></td>
                   <td><strong>Password</strong></td>
                   <td><strong>date_registr</strong></td>
@@ -93,6 +93,7 @@
                   <tr>
                     <td>${user.name}</td>
                     <td>${user.surname}</td>
+                    <td>${user.username}</td>
                     <td>${user.email}</td>
                     <td>${user.password}</td>
                     <td>

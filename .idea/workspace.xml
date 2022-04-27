@@ -5,11 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2191047e-4f65-4476-b393-b1b80d3d20d7" name="Changes" comment="Added Security">
+      <change afterPath="$PROJECT_DIR$/BookLib_SoftServe/src/main/java/com/booklib/dao/RolesDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BookLib_SoftServe/src/main/java/com/booklib/dao/RolesDaoImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BookLib_SoftServe/src/main/java/com/booklib/config/CustomWebSecurityConfigurerAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/BookLib_SoftServe/src/main/java/com/booklib/config/CustomWebSecurityConfigurerAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookLib_SoftServe/src/main/java/com/booklib/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/BookLib_SoftServe/src/main/java/com/booklib/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookLib_SoftServe/src/main/java/com/booklib/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/BookLib_SoftServe/src/main/java/com/booklib/dao/UserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookLib_SoftServe/src/main/java/com/booklib/dao/UserDaoImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/BookLib_SoftServe/src/main/java/com/booklib/dao/UserDaoImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookLib_SoftServe/src/main/java/com/booklib/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/BookLib_SoftServe/src/main/java/com/booklib/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookLib_SoftServe/src/main/java/com/booklib/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/BookLib_SoftServe/src/main/java/com/booklib/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookLib_SoftServe/src/main/java/com/booklib/service/UserServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/BookLib_SoftServe/src/main/java/com/booklib/service/UserServiceImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookLib_SoftServe/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/BookLib_SoftServe/src/main/resources/hibernate.cfg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookLib_SoftServe/src/main/webApp/WEB-INF/views/addUser.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/BookLib_SoftServe/src/main/webApp/WEB-INF/views/addUser.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookLib_SoftServe/target/classes/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/BookLib_SoftServe/target/classes/hibernate.cfg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookLib_SoftServe/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/BookLib_SoftServe/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookLib_SoftServe/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/BookLib_SoftServe/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BookLib_SoftServe/target/tomcat/logs/access_log.2022-04-27" beforeDir="false" afterPath="$PROJECT_DIR$/BookLib_SoftServe/target/tomcat/logs/access_log.2022-04-27" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookLib_SoftServe/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/views/allBooks_jsp.java" beforeDir="false" afterPath="$PROJECT_DIR$/BookLib_SoftServe/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/views/allBooks_jsp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookLib_SoftServe/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/views/allRequests_jsp.java" beforeDir="false" afterPath="$PROJECT_DIR$/BookLib_SoftServe/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/views/allRequests_jsp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookLib_SoftServe/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/views/addUser_jsp.java" beforeDir="false" afterPath="$PROJECT_DIR$/BookLib_SoftServe/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/views/addUser_jsp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookLib_SoftServe/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/views/hello_jsp.java" beforeDir="false" afterPath="$PROJECT_DIR$/BookLib_SoftServe/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/views/hello_jsp.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,9 +85,34 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.repository.indices" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Maven.BookLib [tomcat7:run]">
+    <configuration name="BookLib [tomcat7:run]" type="MavenRunConfiguration" factoryName="Maven" temporary="true">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="tomcat7:run" />
+              </list>
+            </option>
+            <option name="pomFileName" value="pom.xml" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$/BookLib_SoftServe" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
     <configuration name="Unnamed" type="Remote" nameIsGenerated="true">
       <module name="BookLib" />
       <option name="USE_SOCKET_TRANSPORT" value="true" />
@@ -89,6 +127,11 @@
       </RunnerSettings>
       <method v="2" />
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Maven.BookLib [tomcat7:run]" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -120,7 +163,14 @@
       <option name="project" value="LOCAL" />
       <updated>1651052081872</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added Security">
+      <created>1651055079543</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1651055079543</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -144,8 +194,23 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/BookLib_SoftServe/src/main/java/com/booklib/dao/UserDaoImp.java</url>
-          <line>24</line>
-          <option name="timeStamp" value="3" />
+          <line>26</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/BookLib_SoftServe/src/main/java/com/booklib/service/UserServiceImp.java</url>
+          <line>67</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/BookLib_SoftServe/src/main/java/com/booklib/service/UserServiceImp.java</url>
+          <line>38</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/BookLib_SoftServe/src/main/java/com/booklib/controller/UserController.java</url>
+          <line>46</line>
+          <option name="timeStamp" value="9" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -5,6 +5,7 @@ import java.util.Locale;
 import com.booklib.entity.Roles;
 import com.booklib.entity.User;
 import com.booklib.service.UserService;
+import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -13,9 +14,11 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 
+
 import javax.validation.Valid;
 
 @Controller
+@RequiredArgsConstructor
 public class UserController {
 
     @Autowired

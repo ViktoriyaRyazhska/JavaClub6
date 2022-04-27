@@ -20,11 +20,12 @@ public class UserDaoImp implements UserDao {
         sessionFactory.getCurrentSession().save(user);
     }
 
+
+
     @Override
-    public Roles findRole(Long id) {
-        @SuppressWarnings("unchecked")
-        TypedQuery<Roles> query = sessionFactory.getCurrentSession().createQuery("from Roles where id like :id");
-        query.setParameter("id", id);
+    public User findByUsername(String username) {
+        TypedQuery<User> query = sessionFactory.getCurrentSession().createQuery("from User where username like :username");
+        query.setParameter("username", username);
         return query.getSingleResult();
     }
 

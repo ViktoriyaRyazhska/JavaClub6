@@ -20,12 +20,14 @@ com\booklib\controller\RequestController.class
 com\booklib\dao\UserDaoImp.class
 com\booklib\service\UserService.class
 com\booklib\config\HibernateConfig.class
+com\booklib\dao\RolesDaoImpl.class
 com\booklib\service\BookService.class
 com\booklib\config\AppInitializer.class
 com\booklib\config\SpringSecurityInit.class
 com\booklib\config\CustomWebSecurityConfigurerAdapter.class
 com\booklib\config\MyBasicAuthenticationEntryPoint.class
 com\booklib\dao\BookDaoImp.class
+com\booklib\dao\RolesDao.class
 com\booklib\config\WebMvcConfig.class
 com\booklib\entity\Author.class
 com\booklib\entity\Roles.class
