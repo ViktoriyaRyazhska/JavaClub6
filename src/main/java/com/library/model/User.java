@@ -13,9 +13,10 @@ import javax.validation.constraints.NotNull;
 
 import lombok.*;
 import org.springframework.format.annotation.DateTimeFormat;
+
+import java.sql.Date;
 import java.util.Collection;
 import java.time.LocalDate;
-import java.util.Date;
 import java.util.List;
 
 @Getter
