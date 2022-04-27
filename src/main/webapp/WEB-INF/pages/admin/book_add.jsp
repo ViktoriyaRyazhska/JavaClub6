@@ -11,7 +11,7 @@
     <div class="container-fluid">
         <a class="navbar-brand" style="font-size: x-large; font-weight: bold">Library</a>
         <div class="d-flex">
-            <a class="btn btn-outline-light" type="button">Users</a>
+            <a href="/library/admin/users" class="btn btn-outline-light" type="button">Users</a>
             <a href="/library/admin" class="btn btn-outline-light" type="button" style="margin-left: 10px">Home</a>
         </div>
     </div>

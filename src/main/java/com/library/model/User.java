@@ -17,6 +17,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 import org.springframework.format.annotation.DateTimeFormat;
 
+import java.time.LocalDate;
 import java.util.Date;
 
 @Getter
@@ -41,11 +42,17 @@ public class User {
 
     @Column(name = "date_of_birth")
     @DateTimeFormat (pattern = "DD.MM.YY")
-    private Date dateOfBirth;
+    private LocalDate dateOfBirth;
 
     @DateTimeFormat (pattern = "DD.MM.YY")
     @Column(name = "create_time")
-    private Date createTime;
+    private LocalDate createTime;
+
+    @Column
+    private String email;
+
+    @Column
+    private String password;
 
     @ManyToOne
     @JoinColumn(name = "role_id")

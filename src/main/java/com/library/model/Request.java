@@ -16,6 +16,7 @@ import lombok.Setter;
 import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.lang.Nullable;
 
+import java.time.LocalDate;
 import java.util.Date;
 
 @Getter
@@ -42,11 +43,11 @@ public class Request {
 
     @Column(name = "request_date")
     @DateTimeFormat(pattern = "DD.MM.YY")
-    private Date requestDate;
+    private LocalDate requestDate;
 
     @Column(name = "return_date", nullable = true)
     @Nullable
     @DateTimeFormat(pattern = "DD.MM.YY")
-    private Date returnDate;
+    private LocalDate returnDate;
 
 }
