@@ -25,7 +25,7 @@
 <div class="container">
     <h1>Welcome to the Library!</h1>
     <h1>User</h1>
-    <a href="user/books">Rent a book</a>
+    <a href="user/create_book_request">Rent a book</a>
 </div>
 </body>
 </html>

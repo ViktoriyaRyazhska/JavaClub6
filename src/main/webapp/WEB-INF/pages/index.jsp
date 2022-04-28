@@ -16,6 +16,7 @@
         </div>
     </div>
 </nav>
+<div class="container">
         <c:set var="number" value="0"/>
         <h3>Welcome to the Library!</h3>
         <hr>
@@ -53,5 +54,6 @@
             </tbody>
         </table>
     </div>
+</div>
     </body>
 </html>

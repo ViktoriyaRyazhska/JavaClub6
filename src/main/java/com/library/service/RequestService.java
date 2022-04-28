@@ -12,5 +12,6 @@ public interface RequestService {
     List<Request> findByBookId(Long bookId);
     List<Request> findByUserId(Long userId);
     List<Request> findByDateRange(LocalDate startDate, LocalDate endDate);
+    void createRequest(Request request);
 
 }

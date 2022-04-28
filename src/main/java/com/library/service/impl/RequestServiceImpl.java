@@ -41,4 +41,9 @@ public class RequestServiceImpl implements RequestService {
     public List<Request> findByDateRange(LocalDate startDate, LocalDate endDate) {
         return requestDAO.findByDateRange(startDate, endDate);
     }
+
+    @Override
+    public void createRequest(Request request) {
+        requestDAO.createRequest(request);
+    }
 }
