@@ -62,8 +62,13 @@ public class UserController {
 
     @GetMapping("/books")
     public String allBooks(Model model) {
-        model.addAttribute("books", bookService.findAll());
-        return "user/book_list";
+        List<Book> books = bookService.findAll();
+        List<Integer> availableCopies = new ArrayList<>();
+        for (Book book : books) {
+            availableCopies.add(book.getAmountOfCopies() - bookService.getNotReturned(book));
+        }
+        model.addAttribute("books", books);
+        model.addAttribute("availableCopies", availableCopies);        return "user/book_list";
     }
 
     @GetMapping("/create_book_request")

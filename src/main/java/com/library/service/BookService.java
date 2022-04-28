@@ -15,4 +15,5 @@ public interface BookService {
     List<Book> findBookByAuthor(Author author);
     void updateBook(Book book);
     void deleteBook(Book book);
+    Integer getNotReturned(Book book);
 }

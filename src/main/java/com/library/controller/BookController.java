@@ -12,6 +12,8 @@ import org.springframework.web.bind.WebDataBinder;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Set;
 
 @Controller
@@ -34,8 +36,13 @@ public class BookController {
 
     @GetMapping
     public String allBooks(Model model) {
-        model.addAttribute("books", bookService.findAll());
-        return "admin/book_list";
+        List<Book> books = bookService.findAll();
+        List<Integer> availableCopies = new ArrayList<>();
+        for (Book book : books) {
+            availableCopies.add(book.getAmountOfCopies() - bookService.getNotReturned(book));
+        }
+        model.addAttribute("books", books);
+        model.addAttribute("availableCopies", availableCopies);        return "admin/book_list";
     }
 
     @GetMapping("/add")

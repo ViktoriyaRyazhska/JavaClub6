@@ -1,11 +1,4 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<%--
-  Created by IntelliJ IDEA.
-  User: Maryan
-  Date: 20.04.2022
-  Time: 19:42
-  To change this template use File | Settings | File Templates.
---%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
@@ -20,7 +13,6 @@
         <div class="d-flex">
             <a href="/library/logout" class="btn btn-outline-light" type="button">Log Out</a>
             <a href="user/books" class="btn btn-outline-light" type="button" style="margin-left: 10px">Books</a>
-            <a class="btn btn-outline-light" type="button" style="margin-left: 10px">Account</a>
         </div>
     </div>
 </nav>
@@ -31,9 +23,8 @@
     <br>
     <br>
     <a href="user/create_book_request">
-        <button class="btn btn-dark">Rent a book</button>
+        <button class="btn btn-outline-dark">Rent a book</button>
     </a>
-
     <div class="is-reading-books" style="margin-top: 30px">
         <c:set var="number" value="0"/>
         <h4>Books that you are reading</h4>
@@ -63,8 +54,6 @@
             </table>
         </c:if>
     </div>
-
-
     <div class="read-books" style="margin-top: 30px">
         <c:set var="number" value="0"/>
         <h4>Books that you have read</h4>

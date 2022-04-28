@@ -15,9 +15,8 @@
     <div class="container-fluid">
         <a class="navbar-brand" style="font-size: x-large; font-weight: bold">Library</a>
         <div class="d-flex">
-            <a href="/logout" class="btn btn-outline-light" type="button">Log Out</a>
+            <a href="/library/logout" class="btn btn-outline-light" type="button">Log Out</a>
             <a href="user/books" class="btn btn-outline-light" type="button" style="margin-left: 10px">Books</a>
-            <a class="btn btn-outline-light" type="button" style="margin-left: 10px">Account</a>
         </div>
     </div>
 </nav>
