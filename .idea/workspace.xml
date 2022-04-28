@@ -9,9 +9,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="82826e5a-c890-4472-8b88-201647c5c45b" name="Default Changelist" comment="Changes in admin main page">
+    <list default="true" id="82826e5a-c890-4472-8b88-201647c5c45b" name="Default Changelist" comment="Added changes to create_book_request.jsp file references works good">
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/admin/give_book.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/user/create_book_request.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/user/create_book_request.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +22,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -84,6 +85,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="LibrarySoft" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="LibrarySoft" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Tomcat" type="com.poratu.idea.plugins.tomcat" factoryName="SMART_TOMCAT_FACTORY">
       <option name="adminPort" value="8023" />
       <option name="contextPath" value="/library" />
@@ -139,7 +153,14 @@
       <option name="project" value="LOCAL" />
       <updated>1651171354795</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added changes to create_book_request.jsp file references works good">
+      <created>1651171589822</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1651171589822</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -160,6 +181,7 @@
     <MESSAGE value="Added give book mappers for AdminController.class" />
     <MESSAGE value="Added some additional implementations" />
     <MESSAGE value="Changes in admin main page" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changes in admin main page" />
+    <MESSAGE value="Added changes to create_book_request.jsp file references works good" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added changes to create_book_request.jsp file references works good" />
   </component>
 </project>
