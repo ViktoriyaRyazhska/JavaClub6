@@ -1,0 +1,376 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"ArtifactsWorkspaceSettings\">\n    <artifacts-to-build>\n      <artifact name=\"JavaClab6Library:war exploded\" />\n    </artifacts-to-build>\n  </component>\n  <component name=\"AutoImportSettings\">\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\n  </component>\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"3fe0153a-a71c-46cd-8145-9da68c20aeb8\" name=\"Default Changelist\" comment=\"added functionality of requesting book for User\">\n      <change afterPath=\"$PROJECT_DIR$/.idea/jpa-buddy.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/.idea/.name\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/.idea/dataSources.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/dataSources.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/com/library/controller/UserController.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/com/library/controller/UserController.java\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/main/resources/application.properties\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/resources/application.properties\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/user/user_main_page.jsp\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/user/user_main_page.jsp\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/target/classes/com/library/config/SecurityConfig.class\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/target/classes/com/library/config/SecurityConfig.class\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/target/classes/com/library/controller/RegisterController.class\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/target/classes/com/library/controller/RegisterController.class\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/target/classes/com/library/controller/UserController.class\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/target/classes/com/library/controller/UserController.class\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/target/classes/com/library/dao/RoleDAO.class\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/target/classes/com/library/dao/RoleDAO.class\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/target/classes/com/library/dao/impl/RoleDAOImpl.class\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/target/classes/com/library/dao/impl/RoleDAOImpl.class\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/target/classes/com/library/service/RoleService.class\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/target/classes/com/library/service/RoleService.class\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/target/classes/com/library/service/impl/RoleServiceImpl.class\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/target/classes/com/library/service/impl/RoleServiceImpl.class\" afterDir=\"false\" />\n    </list>\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"FileTemplateManagerImpl\">\n    <option name=\"RECENT_TEMPLATES\">\n      <list>\n        <option value=\"jsf\" />\n        <option value=\"Jsp File\" />\n        <option value=\"Interface\" />\n        <option value=\"Class\" />\n      </list>\n    </option>\n  </component>\n  <component name=\"Git.Settings\">\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\n  </component>\n  <component name=\"JpbToolWindowState\">\n    <option name=\"myId2FirstActivated\">\n      <map>\n        <entry key=\"com.haulmont.jpb.jpaPalette\" value=\"true\" />\n        <entry key=\"com.haulmont.jpb.jpaStructure\" value=\"true\" />\n      </map>\n    </option>\n    <option name=\"myId2Visible\">\n      <map>\n        <entry key=\"com.haulmont.jpb.jpaPalette\" value=\"true\" />\n        <entry key=\"com.haulmont.jpb.jpaStructure\" value=\"false\" />\n      </map>\n    </option>\n  </component>\n  <component name=\"LogFilters\">\n    <option name=\"FILTER_ERRORS\" value=\"false\" />\n    <option name=\"FILTER_WARNINGS\" value=\"false\" />\n    <option name=\"FILTER_INFO\" value=\"true\" />\n    <option name=\"FILTER_DEBUG\" value=\"true\" />\n    <option name=\"CUSTOM_FILTER\" />\n  </component>\n  <component name=\"MavenImportPreferences\">\n    <option name=\"generalSettings\">\n      <MavenGeneralSettings>\n        <option name=\"mavenHome\" value=\"D:\\Install\\IntelliJ IDEA 2020.2.3\\plugins\\maven\\lib\\maven3\" />\n      </MavenGeneralSettings>\n    </option>\n  </component>\n  <component name=\"ProjectId\" id=\"27sNE5wL8og963QuGdr31pFhrTE\" />\n  <component name=\"ProjectViewState\">\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\"><![CDATA[{\n  \"keyToString\": {\n    \"SHARE_PROJECT_CONFIGURATION_FILES\": \"true\"\n  },\n  \"keyToStringList\": {\n    \"DatabaseDriversLRU\": [\n      \"mysql\"\n    ]\n  }\n}]]></component>\n  <component name=\"RecentsManager\">\n    <key name=\"MoveFile.RECENT_KEYS\">\n      <recent name=\"D:\\JavaClab6Library\\src\\main\\webapp\\WEB-INF\\pages\\user\" />\n    </key>\n    <key name=\"CopyFile.RECENT_KEYS\">\n      <recent name=\"D:\\JavaClab6Library\\src\\main\\java\\com\\library\\controller\" />\n      <recent name=\"D:\\JavaClab6Library\\src\\main\\webapp\\WEB-INF\\pages\" />\n    </key>\n  </component>\n  <component name=\"RunManager\">\n    <configuration default=\"true\" type=\"#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory\" factoryName=\"Local\" APPLICATION_SERVER_NAME=\"Tomcat 9.0.62\" ALTERNATIVE_JRE_ENABLED=\"false\">\n      <option name=\"UPDATING_POLICY\" value=\"restart-server\" />\n      <deployment>\n        <artifact name=\"JavaClab6Library:war exploded\">\n          <settings>\n            <option name=\"CONTEXT_PATH\" value=\"/JavaClab6Library_war_exploded\" />\n          </settings>\n        </artifact>\n      </deployment>\n      <server-settings>\n        <option name=\"BASE_DIRECTORY_NAME\" value=\"_LibrarySoft\" />\n      </server-settings>\n      <predefined_log_file enabled=\"true\" id=\"Tomcat\" />\n      <predefined_log_file enabled=\"true\" id=\"Tomcat Catalina\" />\n      <predefined_log_file id=\"Tomcat Manager\" />\n      <predefined_log_file id=\"Tomcat Host Manager\" />\n      <predefined_log_file id=\"Tomcat Localhost Access\" />\n      <RunnerSettings RunnerId=\"Debug\">\n        <option name=\"DEBUG_PORT\" value=\"54533\" />\n      </RunnerSettings>\n      <ConfigurationWrapper VM_VAR=\"JAVA_OPTS\" RunnerId=\"Cover\">\n        <option name=\"USE_ENV_VARIABLES\" value=\"true\" />\n        <STARTUP>\n          <option name=\"USE_DEFAULT\" value=\"true\" />\n          <option name=\"SCRIPT\" value=\"\" />\n          <option name=\"VM_PARAMETERS\" value=\"\" />\n          <option name=\"PROGRAM_PARAMETERS\" value=\"\" />\n        </STARTUP>\n        <SHUTDOWN>\n          <option name=\"USE_DEFAULT\" value=\"true\" />\n          <option name=\"SCRIPT\" value=\"\" />\n          <option name=\"VM_PARAMETERS\" value=\"\" />\n          <option name=\"PROGRAM_PARAMETERS\" value=\"\" />\n        </SHUTDOWN>\n      </ConfigurationWrapper>\n      <ConfigurationWrapper VM_VAR=\"JAVA_OPTS\" RunnerId=\"Debug\">\n        <option name=\"USE_ENV_VARIABLES\" value=\"true\" />\n        <STARTUP>\n          <option name=\"USE_DEFAULT\" value=\"true\" />\n          <option name=\"SCRIPT\" value=\"\" />\n          <option name=\"VM_PARAMETERS\" value=\"\" />\n          <option name=\"PROGRAM_PARAMETERS\" value=\"\" />\n        </STARTUP>\n        <SHUTDOWN>\n          <option name=\"USE_DEFAULT\" value=\"true\" />\n          <option name=\"SCRIPT\" value=\"\" />\n          <option name=\"VM_PARAMETERS\" value=\"\" />\n          <option name=\"PROGRAM_PARAMETERS\" value=\"\" />\n        </SHUTDOWN>\n      </ConfigurationWrapper>\n      <ConfigurationWrapper VM_VAR=\"JAVA_OPTS\" RunnerId=\"Run\">\n        <option name=\"USE_ENV_VARIABLES\" value=\"true\" />\n        <STARTUP>\n          <option name=\"USE_DEFAULT\" value=\"true\" />\n          <option name=\"SCRIPT\" value=\"\" />\n          <option name=\"VM_PARAMETERS\" value=\"\" />\n          <option name=\"PROGRAM_PARAMETERS\" value=\"\" />\n        </STARTUP>\n        <SHUTDOWN>\n          <option name=\"USE_DEFAULT\" value=\"true\" />\n          <option name=\"SCRIPT\" value=\"\" />\n          <option name=\"VM_PARAMETERS\" value=\"\" />\n          <option name=\"PROGRAM_PARAMETERS\" value=\"\" />\n        </SHUTDOWN>\n      </ConfigurationWrapper>\n      <method v=\"2\">\n        <option name=\"Make\" enabled=\"true\" />\n        <option name=\"BuildArtifacts\" enabled=\"true\">\n          <artifact name=\"JavaClab6Library:war exploded\" />\n          <artifact name=\"JavaClub:war\" />\n          <artifact name=\"LibrarySoft:war exploded\" />\n        </option>\n      </method>\n    </configuration>\n    <configuration name=\"Tomcat\" type=\"com.poratu.idea.plugins.tomcat\" factoryName=\"SMART_TOMCAT_FACTORY\">\n      <option name=\"adminPort\" value=\"8035\" />\n      <option name=\"contextPath\" value=\"/library\" />\n      <option name=\"docBase\" value=\"$PROJECT_DIR$/src/main/webapp\" />\n      <option name=\"envOptions\">\n        <map />\n      </option>\n      <option name=\"passParentEnvironmentVariables\" value=\"true\" />\n      <option name=\"port\" value=\"8100\" />\n      <option name=\"tomcatInfo\">\n        <TomcatInfo>\n          <option name=\"name\" value=\"Apache Tomcat/9.0.62\" />\n          <option name=\"number\" value=\"0\" />\n          <option name=\"path\" value=\"$PROJECT_DIR$/../Desktop/apache-tomcat-9.0.62\" />\n          <option name=\"version\" value=\"9.0.62.0\" />\n        </TomcatInfo>\n      </option>\n      <option name=\"vmOptions\" value=\"\" />\n      <method v=\"2\">\n        <option name=\"Make\" enabled=\"true\" />\n      </method>\n    </configuration>\n    <configuration default=\"true\" type=\"com.poratu.idea.plugins.tomcat\" factoryName=\"SMART_TOMCAT_FACTORY\">\n      <option name=\"adminPort\" value=\"8005\" />\n      <option name=\"contextPath\" value=\"/JavaClab6Library\" />\n      <option name=\"docBase\" value=\"D:\\JavaClab6Library\\src\\main\\webapp\" />\n      <option name=\"envOptions\" />\n      <option name=\"passParentEnvironmentVariables\" value=\"true\" />\n      <option name=\"port\" value=\"8080\" />\n      <option name=\"tomcatInfo\">\n        <TomcatInfo>\n          <option name=\"name\" value=\"Apache Tomcat/9.0.62\" />\n          <option name=\"number\" value=\"0\" />\n          <option name=\"path\" value=\"D:\\Install\\tomcat\\apache-tomcat-9.0.62\" />\n          <option name=\"version\" value=\"9.0.62.0\" />\n        </TomcatInfo>\n      </option>\n      <option name=\"vmOptions\" value=\"\" />\n      <method v=\"2\">\n        <option name=\"Make\" enabled=\"true\" />\n      </method>\n    </configuration>\n  </component>\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"3fe0153a-a71c-46cd-8145-9da68c20aeb8\" name=\"Default Changelist\" comment=\"\" />\n      <created>1650036148542</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1650036148542</updated>\n      <workItem from=\"1650036149642\" duration=\"1117000\" />\n      <workItem from=\"1650104780285\" duration=\"11479000\" />\n      <workItem from=\"1650129242255\" duration=\"3930000\" />\n      <workItem from=\"1650279864125\" duration=\"3560000\" />\n      <workItem from=\"1650373319181\" duration=\"588000\" />\n      <workItem from=\"1650374162057\" duration=\"11109000\" />\n      <workItem from=\"1650462102187\" duration=\"6171000\" />\n      <workItem from=\"1650537652347\" duration=\"8804000\" />\n      <workItem from=\"1650620879535\" duration=\"2538000\" />\n      <workItem from=\"1650788825042\" duration=\"1091000\" />\n      <workItem from=\"1650878851514\" duration=\"317000\" />\n      <workItem from=\"1651042862534\" duration=\"13230000\" />\n      <workItem from=\"1651070290491\" duration=\"15904000\" />\n      <workItem from=\"1651132450078\" duration=\"1049000\" />\n    </task>\n    <task id=\"LOCAL-00001\" summary=\"added functionality of requesting book for User\">\n      <created>1651149579267</created>\n      <option name=\"number\" value=\"00001\" />\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1651149579267</updated>\n    </task>\n    <option name=\"localTasksCounter\" value=\"2\" />\n    <servers />\n  </component>\n  <component name=\"TypeScriptGeneratedFilesManager\">\n    <option name=\"version\" value=\"3\" />\n  </component>\n  <component name=\"Vcs.Log.Tabs.Properties\">\n    <option name=\"TAB_STATES\">\n      <map>\n        <entry key=\"MAIN\">\n          <value>\n            <State />\n          </value>\n        </entry>\n      </map>\n    </option>\n  </component>\n  <component name=\"VcsManagerConfiguration\">\n    <MESSAGE value=\"added functionality of requesting book for User\" />\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"added functionality of requesting book for User\" />\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	
++++ b/.idea/workspace.xml	
+@@ -1,184 +1,88 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+-  <component name="ArtifactsWorkspaceSettings">
+-    <artifacts-to-build>
+-      <artifact name="JavaClab6Library:war exploded" />
+-    </artifacts-to-build>
+-  </component>
+   <component name="AutoImportSettings">
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="3fe0153a-a71c-46cd-8145-9da68c20aeb8" name="Default Changelist" comment="added functionality of requesting book for User">
++    <list default="true" id="19274a27-a810-413b-b106-6d547d4b98ae" name="Changes" comment="">
++      <change afterPath="$PROJECT_DIR$/.idea/JavaClub6.iml" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/.idea/artifacts/JavaClub6_war.xml" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/.idea/artifacts/JavaClub6_war_exploded.xml" afterDir="false" />
+       <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/com/library/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/library/controller/UserController.java" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/user/user_main_page.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/user/user_main_page.jsp" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/classes/com/library/config/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/library/config/SecurityConfig.class" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/classes/com/library/controller/AdminController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/library/controller/AdminController.class" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/classes/com/library/controller/BookController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/library/controller/BookController.class" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/classes/com/library/controller/HomeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/library/controller/HomeController.class" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/target/classes/com/library/controller/RegisterController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/library/controller/RegisterController.class" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/target/classes/com/library/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/library/controller/UserController.class" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/classes/com/library/dao/RoleDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/library/dao/RoleDAO.class" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/classes/com/library/dao/impl/RoleDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/library/dao/impl/RoleDAOImpl.class" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/classes/com/library/service/RoleService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/library/service/RoleService.class" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/classes/com/library/service/impl/RoleServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/library/service/impl/RoleServiceImpl.class" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/classes/com/library/service/BookService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/library/service/BookService.class" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/classes/com/library/service/impl/BookServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/library/service/impl/BookServiceImpl.class" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+     <option name="LAST_RESOLUTION" value="IGNORE" />
+-  </component>
+-  <component name="FileTemplateManagerImpl">
+-    <option name="RECENT_TEMPLATES">
+-      <list>
+-        <option value="jsf" />
+-        <option value="Jsp File" />
+-        <option value="Interface" />
+-        <option value="Class" />
+-      </list>
+-    </option>
+   </component>
+   <component name="Git.Settings">
++    <option name="RECENT_BRANCH_BY_REPOSITORY">
++      <map>
++        <entry key="$PROJECT_DIR$" value="main" />
++      </map>
++    </option>
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+   </component>
+   <component name="JpbToolWindowState">
+     <option name="myId2FirstActivated">
+       <map>
+-        <entry key="com.haulmont.jpb.jpaPalette" value="true" />
+         <entry key="com.haulmont.jpb.jpaStructure" value="true" />
+       </map>
+     </option>
+     <option name="myId2Visible">
+       <map>
+-        <entry key="com.haulmont.jpb.jpaPalette" value="true" />
+-        <entry key="com.haulmont.jpb.jpaStructure" value="false" />
++        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
+       </map>
+     </option>
+   </component>
+-  <component name="LogFilters">
+-    <option name="FILTER_ERRORS" value="false" />
+-    <option name="FILTER_WARNINGS" value="false" />
+-    <option name="FILTER_INFO" value="true" />
+-    <option name="FILTER_DEBUG" value="true" />
+-    <option name="CUSTOM_FILTER" />
++  <component name="MarkdownSettingsMigration">
++    <option name="stateVersion" value="1" />
+   </component>
+   <component name="MavenImportPreferences">
+     <option name="generalSettings">
+       <MavenGeneralSettings>
+-        <option name="mavenHome" value="D:\Install\IntelliJ IDEA 2020.2.3\plugins\maven\lib\maven3" />
++        <option name="useMavenConfig" value="true" />
+       </MavenGeneralSettings>
+     </option>
+   </component>
+-  <component name="ProjectId" id="27sNE5wL8og963QuGdr31pFhrTE" />
++  <component name="ProjectId" id="28R4tdKnd59Ryhatkww8O4txg2A" />
+   <component name="ProjectViewState">
+     <option name="hideEmptyMiddlePackages" value="true" />
+     <option name="showLibraryContents" value="true" />
+   </component>
+   <component name="PropertiesComponent"><![CDATA[{
+   "keyToString": {
+-    "SHARE_PROJECT_CONFIGURATION_FILES": "true"
+-  },
+-  "keyToStringList": {
+-    "DatabaseDriversLRU": [
+-      "mysql"
+-    ]
++    "Git.Branch.Popup.ShowAllRemotes": "true",
++    "RunOnceActivity.OpenProjectViewOnStart": "true",
++    "RunOnceActivity.ShowReadmeOnStart": "true",
++    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
++    "WebServerToolWindowFactoryState": "false",
++    "last_opened_file_path": "/Users/ostapkilbasovych/JavaClub6"
+   }
+ }]]></component>
+-  <component name="RecentsManager">
+-    <key name="MoveFile.RECENT_KEYS">
+-      <recent name="D:\JavaClab6Library\src\main\webapp\WEB-INF\pages\user" />
+-    </key>
+-    <key name="CopyFile.RECENT_KEYS">
+-      <recent name="D:\JavaClab6Library\src\main\java\com\library\controller" />
+-      <recent name="D:\JavaClab6Library\src\main\webapp\WEB-INF\pages" />
+-    </key>
+-  </component>
+   <component name="RunManager">
+-    <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.62" ALTERNATIVE_JRE_ENABLED="false">
+-      <option name="UPDATING_POLICY" value="restart-server" />
+-      <deployment>
+-        <artifact name="JavaClab6Library:war exploded">
+-          <settings>
+-            <option name="CONTEXT_PATH" value="/JavaClab6Library_war_exploded" />
+-          </settings>
+-        </artifact>
+-      </deployment>
+-      <server-settings>
+-        <option name="BASE_DIRECTORY_NAME" value="_LibrarySoft" />
+-      </server-settings>
+-      <predefined_log_file enabled="true" id="Tomcat" />
+-      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+-      <predefined_log_file id="Tomcat Manager" />
+-      <predefined_log_file id="Tomcat Host Manager" />
+-      <predefined_log_file id="Tomcat Localhost Access" />
+-      <RunnerSettings RunnerId="Debug">
+-        <option name="DEBUG_PORT" value="54533" />
+-      </RunnerSettings>
+-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+-        <option name="USE_ENV_VARIABLES" value="true" />
+-        <STARTUP>
+-          <option name="USE_DEFAULT" value="true" />
+-          <option name="SCRIPT" value="" />
+-          <option name="VM_PARAMETERS" value="" />
+-          <option name="PROGRAM_PARAMETERS" value="" />
+-        </STARTUP>
+-        <SHUTDOWN>
+-          <option name="USE_DEFAULT" value="true" />
+-          <option name="SCRIPT" value="" />
+-          <option name="VM_PARAMETERS" value="" />
+-          <option name="PROGRAM_PARAMETERS" value="" />
+-        </SHUTDOWN>
+-      </ConfigurationWrapper>
+-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+-        <option name="USE_ENV_VARIABLES" value="true" />
+-        <STARTUP>
+-          <option name="USE_DEFAULT" value="true" />
+-          <option name="SCRIPT" value="" />
+-          <option name="VM_PARAMETERS" value="" />
+-          <option name="PROGRAM_PARAMETERS" value="" />
+-        </STARTUP>
+-        <SHUTDOWN>
+-          <option name="USE_DEFAULT" value="true" />
+-          <option name="SCRIPT" value="" />
+-          <option name="VM_PARAMETERS" value="" />
+-          <option name="PROGRAM_PARAMETERS" value="" />
+-        </SHUTDOWN>
+-      </ConfigurationWrapper>
+-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+-        <option name="USE_ENV_VARIABLES" value="true" />
+-        <STARTUP>
+-          <option name="USE_DEFAULT" value="true" />
+-          <option name="SCRIPT" value="" />
+-          <option name="VM_PARAMETERS" value="" />
+-          <option name="PROGRAM_PARAMETERS" value="" />
+-        </STARTUP>
+-        <SHUTDOWN>
+-          <option name="USE_DEFAULT" value="true" />
+-          <option name="SCRIPT" value="" />
+-          <option name="VM_PARAMETERS" value="" />
+-          <option name="PROGRAM_PARAMETERS" value="" />
+-        </SHUTDOWN>
+-      </ConfigurationWrapper>
+-      <method v="2">
+-        <option name="Make" enabled="true" />
+-        <option name="BuildArtifacts" enabled="true">
+-          <artifact name="JavaClab6Library:war exploded" />
+-          <artifact name="JavaClub:war" />
+-          <artifact name="LibrarySoft:war exploded" />
+-        </option>
+-      </method>
+-    </configuration>
+-    <configuration name="Tomcat" type="com.poratu.idea.plugins.tomcat" factoryName="SMART_TOMCAT_FACTORY">
+-      <option name="adminPort" value="8035" />
++    <configuration name="Tomcat 9.0" type="com.poratu.idea.plugins.tomcat" factoryName="SMART_TOMCAT_FACTORY">
++      <option name="adminPort" value="8006" />
+       <option name="contextPath" value="/library" />
+       <option name="docBase" value="$PROJECT_DIR$/src/main/webapp" />
+       <option name="envOptions">
+         <map />
+       </option>
+       <option name="passParentEnvironmentVariables" value="true" />
+-      <option name="port" value="8100" />
++      <option name="port" value="8084" />
+       <option name="tomcatInfo">
+         <TomcatInfo>
+           <option name="name" value="Apache Tomcat/9.0.62" />
+@@ -192,58 +96,17 @@
+         <option name="Make" enabled="true" />
+       </method>
+     </configuration>
+-    <configuration default="true" type="com.poratu.idea.plugins.tomcat" factoryName="SMART_TOMCAT_FACTORY">
+-      <option name="adminPort" value="8005" />
+-      <option name="contextPath" value="/JavaClab6Library" />
+-      <option name="docBase" value="D:\JavaClab6Library\src\main\webapp" />
+-      <option name="envOptions" />
+-      <option name="passParentEnvironmentVariables" value="true" />
+-      <option name="port" value="8080" />
+-      <option name="tomcatInfo">
+-        <TomcatInfo>
+-          <option name="name" value="Apache Tomcat/9.0.62" />
+-          <option name="number" value="0" />
+-          <option name="path" value="D:\Install\tomcat\apache-tomcat-9.0.62" />
+-          <option name="version" value="9.0.62.0" />
+-        </TomcatInfo>
+-      </option>
+-      <option name="vmOptions" value="" />
+-      <method v="2">
+-        <option name="Make" enabled="true" />
+-      </method>
+-    </configuration>
+   </component>
+   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+   <component name="TaskManager">
+     <task active="true" id="Default" summary="Default task">
+-      <changelist id="3fe0153a-a71c-46cd-8145-9da68c20aeb8" name="Default Changelist" comment="" />
+-      <created>1650036148542</created>
++      <changelist id="19274a27-a810-413b-b106-6d547d4b98ae" name="Changes" comment="" />
++      <created>1651166279599</created>
+       <option name="number" value="Default" />
+       <option name="presentableId" value="Default" />
+-      <updated>1650036148542</updated>
+-      <workItem from="1650036149642" duration="1117000" />
+-      <workItem from="1650104780285" duration="11479000" />
+-      <workItem from="1650129242255" duration="3930000" />
+-      <workItem from="1650279864125" duration="3560000" />
+-      <workItem from="1650373319181" duration="588000" />
+-      <workItem from="1650374162057" duration="11109000" />
+-      <workItem from="1650462102187" duration="6171000" />
+-      <workItem from="1650537652347" duration="8804000" />
+-      <workItem from="1650620879535" duration="2538000" />
+-      <workItem from="1650788825042" duration="1091000" />
+-      <workItem from="1650878851514" duration="317000" />
+-      <workItem from="1651042862534" duration="13230000" />
+-      <workItem from="1651070290491" duration="15904000" />
+-      <workItem from="1651132450078" duration="1049000" />
++      <updated>1651166279599</updated>
++      <workItem from="1651166281751" duration="303000" />
+     </task>
+-    <task id="LOCAL-00001" summary="added functionality of requesting book for User">
+-      <created>1651149579267</created>
+-      <option name="number" value="00001" />
+-      <option name="presentableId" value="LOCAL-00001" />
+-      <option name="project" value="LOCAL" />
+-      <updated>1651149579267</updated>
+-    </task>
+-    <option name="localTasksCounter" value="2" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+@@ -260,8 +123,4 @@
+       </map>
+     </option>
+   </component>
+-  <component name="VcsManagerConfiguration">
+-    <MESSAGE value="added functionality of requesting book for User" />
+-    <option name="LAST_COMMIT_MESSAGE" value="added functionality of requesting book for User" />
+-  </component>
+ </project>
+\ No newline at end of file
+Index: .idea/compiler.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"CompilerConfiguration\">\n    <annotationProcessing>\n      <profile default=\"true\" name=\"Default\" enabled=\"true\" />\n      <profile name=\"Maven default annotation processors profile\" enabled=\"true\">\n        <sourceOutputDir name=\"target/generated-sources/annotations\" />\n        <sourceTestOutputDir name=\"target/generated-test-sources/test-annotations\" />\n        <outputRelativeToContentRoot value=\"true\" />\n        <module name=\"LibrarySoft\" />\n      </profile>\n    </annotationProcessing>\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/compiler.xml b/.idea/compiler.xml
+--- a/.idea/compiler.xml	
++++ b/.idea/compiler.xml	
+@@ -2,13 +2,15 @@
+ <project version="4">
+   <component name="CompilerConfiguration">
+     <annotationProcessing>
+-      <profile default="true" name="Default" enabled="true" />
+       <profile name="Maven default annotation processors profile" enabled="true">
+         <sourceOutputDir name="target/generated-sources/annotations" />
+         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+         <outputRelativeToContentRoot value="true" />
+-        <module name="LibrarySoft" />
++        <module name="JavaClub6" />
+       </profile>
+     </annotationProcessing>
++    <bytecodeTargetLevel>
++      <module name="JavaClub6" target="1.8" />
++    </bytecodeTargetLevel>
+   </component>
+ </project>
+\ No newline at end of file
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"ExternalStorageConfigurationManager\" enabled=\"true\" />\n  <component name=\"FrameworkDetectionExcludesConfiguration\">\n    <file type=\"web\" url=\"file://$PROJECT_DIR$\" />\n  </component>\n  <component name=\"MavenProjectsManager\">\n    <option name=\"originalFiles\">\n      <list>\n        <option value=\"$PROJECT_DIR$/pom.xml\" />\n      </list>\n    </option>\n  </component>\n  <component name=\"ProjectRootManager\" version=\"2\" languageLevel=\"JDK_16\" default=\"true\" project-jdk-name=\"16\" project-jdk-type=\"JavaSDK\" />\n  <component name=\"ProjectType\">\n    <option name=\"id\" value=\"jpab\" />\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/misc.xml b/.idea/misc.xml
+--- a/.idea/misc.xml	
++++ b/.idea/misc.xml	
+@@ -1,6 +1,5 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+-  <component name="ExternalStorageConfigurationManager" enabled="true" />
+   <component name="FrameworkDetectionExcludesConfiguration">
+     <file type="web" url="file://$PROJECT_DIR$" />
+   </component>
+@@ -11,7 +10,9 @@
+       </list>
+     </option>
+   </component>
+-  <component name="ProjectRootManager" version="2" languageLevel="JDK_16" default="true" project-jdk-name="16" project-jdk-type="JavaSDK" />
++  <component name="ProjectRootManager" version="2" languageLevel="JDK_16" default="true" project-jdk-name="16" project-jdk-type="JavaSDK">
++    <output url="file://$PROJECT_DIR$/out" />
++  </component>
+   <component name="ProjectType">
+     <option name="id" value="jpab" />
+   </component>
+Index: .idea/modules.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"ProjectModuleManager\">\n    <modules>\n      <module fileurl=\"file://$PROJECT_DIR$/.idea/JavaClub.iml\" filepath=\"$PROJECT_DIR$/.idea/JavaClub.iml\" />\n    </modules>\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/modules.xml b/.idea/modules.xml
+--- a/.idea/modules.xml	
++++ b/.idea/modules.xml	
+@@ -2,7 +2,7 @@
+ <project version="4">
+   <component name="ProjectModuleManager">
+     <modules>
+-      <module fileurl="file://$PROJECT_DIR$/.idea/JavaClub.iml" filepath="$PROJECT_DIR$/.idea/JavaClub.iml" />
++      <module fileurl="file://$PROJECT_DIR$/.idea/JavaClub6.iml" filepath="$PROJECT_DIR$/.idea/JavaClub6.iml" />
+     </modules>
+   </component>
+ </project>
+\ No newline at end of file

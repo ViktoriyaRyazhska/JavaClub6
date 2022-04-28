@@ -1,0 +1,39 @@
+<changelist name="Uncommitted_changes_before_Update_at_28_04_2022,_20_53_[Changes]1" date="1651168450948" recycled="true" deleted="true">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_28_04_2022,_20_53_[Changes]1/shelved.patch" />
+  <option name="DESCRIPTION" value="Uncommitted changes before Update at 28.04.2022, 20:53 [Changes]" />
+  <binary>
+    <option name="BEFORE_PATH" value="target/classes/com/library/controller/RegisterController.class" />
+    <option name="AFTER_PATH" value="target/classes/com/library/controller/RegisterController.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_28_04_2022,_20_53_[Changes]1/RegisterController.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/classes/com/library/controller/HomeController.class" />
+    <option name="AFTER_PATH" value="target/classes/com/library/controller/HomeController.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_28_04_2022,_20_53_[Changes]1/HomeController.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/classes/com/library/service/BookService.class" />
+    <option name="AFTER_PATH" value="target/classes/com/library/service/BookService.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_28_04_2022,_20_53_[Changes]1/BookService.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/classes/com/library/controller/AdminController.class" />
+    <option name="AFTER_PATH" value="target/classes/com/library/controller/AdminController.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_28_04_2022,_20_53_[Changes]1/AdminController.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/classes/com/library/service/impl/BookServiceImpl.class" />
+    <option name="AFTER_PATH" value="target/classes/com/library/service/impl/BookServiceImpl.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_28_04_2022,_20_53_[Changes]1/BookServiceImpl.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/classes/com/library/controller/UserController.class" />
+    <option name="AFTER_PATH" value="target/classes/com/library/controller/UserController.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_28_04_2022,_20_53_[Changes]1/UserController.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/classes/com/library/controller/BookController.class" />
+    <option name="AFTER_PATH" value="target/classes/com/library/controller/BookController.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_28_04_2022,_20_53_[Changes]1/BookController.class" />
+  </binary>
+</changelist>
