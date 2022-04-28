@@ -2,64 +2,80 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="JavaClab6Library:war exploded" />
+      <artifact name="LibrarySoft:war exploded" />
     </artifacts-to-build>
   </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3fe0153a-a71c-46cd-8145-9da68c20aeb8" name="Default Changelist" comment="added functionality of requesting book for User">
-      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
+    <list default="true" id="82826e5a-c890-4472-8b88-201647c5c45b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/LibrarySoft_war.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/LibrarySoft_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/JavaClab6Library.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/JavaClub.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/JavaClab6Library_war.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/JavaClab6Library_war_exploded.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/JavaClub_war.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/JavaClub_war_exploded.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c530552d-0648-4675-ae81-98399e870fa8.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c530552d-0648-4675-ae81-98399e870fa8/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/webContexts.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-<<<<<<< HEAD
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/library/controller/BookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/library/controller/BookController.java" afterDir="false" />
-=======
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/library/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/library/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LibrarySoft.iml" beforeDir="false" afterPath="$PROJECT_DIR$/LibrarySoft.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/user/user_main_page.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/user/user_main_page.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/library/AuthorEditor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/library/AuthorEditor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/library/config/AppInitializer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/library/config/AppInitializer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/library/config/HibernateConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/library/config/HibernateConfig.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/library/config/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/library/config/SecurityConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/library/config/SpringSecurityInitializer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/library/config/SpringSecurityInitializer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/library/config/WebConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/library/config/WebConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/library/controller/AdminController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/library/controller/AdminController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/library/controller/BookController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/library/controller/BookController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/library/controller/HomeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/library/controller/HomeController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/library/controller/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/library/controller/LoginController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/library/controller/RegisterController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/library/controller/RegisterController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/library/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/library/controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/library/dao/AuthorDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/library/dao/AuthorDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/library/dao/BookDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/library/dao/BookDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/library/dao/RequestDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/library/dao/RequestDAO.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/library/dao/RoleDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/library/dao/RoleDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/library/dao/UserDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/library/dao/UserDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/library/dao/impl/AuthorDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/library/dao/impl/AuthorDAOImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/library/dao/impl/BookDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/library/dao/impl/BookDAOImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/library/dao/impl/RequestDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/library/dao/impl/RequestDAOImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/library/dao/impl/RoleDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/library/dao/impl/RoleDAOImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/library/dao/impl/UserDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/library/dao/impl/UserDAOImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/library/model/Author.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/library/model/Author.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/library/model/Book.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/library/model/Book.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/library/model/Request.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/library/model/Request.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/library/model/Role.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/library/model/Role.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/library/model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/library/model/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/library/service/AuthorService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/library/service/AuthorService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/library/service/BookService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/library/service/BookService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/library/service/RequestService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/library/service/RequestService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/library/service/RoleService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/library/service/RoleService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/library/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/library/service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/library/service/impl/AuthorServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/library/service/impl/AuthorServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/library/service/impl/BookServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/library/service/impl/BookServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/library/service/impl/RequestServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/library/service/impl/RequestServiceImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/library/service/impl/RoleServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/library/service/impl/RoleServiceImpl.class" afterDir="false" />
->>>>>>> 2fac6814195a5135902bf42e03077173c0ed03bd
+      <change beforePath="$PROJECT_DIR$/target/classes/com/library/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/library/service/impl/UserServiceImpl.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="jsf" />
-        <option value="Jsp File" />
-        <option value="Interface" />
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="JpbToolWindowState">
-    <option name="myId2FirstActivated">
-      <map>
-        <entry key="com.haulmont.jpb.jpaPalette" value="true" />
-        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
-      </map>
-    </option>
-    <option name="myId2Visible">
-      <map>
-        <entry key="com.haulmont.jpb.jpaPalette" value="true" />
-        <entry key="com.haulmont.jpb.jpaStructure" value="false" />
-      </map>
-    </option>
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -75,131 +91,28 @@
       </MavenGeneralSettings>
     </option>
   </component>
-  <component name="ProjectId" id="27sNE5wL8og963QuGdr31pFhrTE" />
+  <component name="ProjectId" id="28QtxEhckvmHidIhNmLiyq7uLtx" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true"
-  },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
-    ]
-  }
-}]]></component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\JavaClab6Library\src\main\webapp\WEB-INF\pages\user" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\JavaClab6Library\src\main\java\com\library\controller" />
-      <recent name="D:\JavaClab6Library\src\main\webapp\WEB-INF\pages" />
-    </key>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../test" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="RunManager">
-    <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.62" ALTERNATIVE_JRE_ENABLED="false">
-      <option name="UPDATING_POLICY" value="restart-server" />
-      <deployment>
-        <artifact name="JavaClab6Library:war exploded">
-          <settings>
-            <option name="CONTEXT_PATH" value="/JavaClab6Library_war_exploded" />
-          </settings>
-        </artifact>
-      </deployment>
-      <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="_LibrarySoft" />
-      </server-settings>
-      <predefined_log_file enabled="true" id="Tomcat" />
-      <predefined_log_file enabled="true" id="Tomcat Catalina" />
-      <predefined_log_file id="Tomcat Manager" />
-      <predefined_log_file id="Tomcat Host Manager" />
-      <predefined_log_file id="Tomcat Localhost Access" />
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="54533" />
-      </RunnerSettings>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <method v="2">
-        <option name="Make" enabled="true" />
-        <option name="BuildArtifacts" enabled="true">
-          <artifact name="JavaClab6Library:war exploded" />
-          <artifact name="JavaClub:war" />
-          <artifact name="LibrarySoft:war exploded" />
-        </option>
-      </method>
-    </configuration>
     <configuration name="Tomcat" type="com.poratu.idea.plugins.tomcat" factoryName="SMART_TOMCAT_FACTORY">
-      <option name="adminPort" value="8035" />
+      <option name="adminPort" value="8005" />
       <option name="contextPath" value="/library" />
       <option name="docBase" value="$PROJECT_DIR$/src/main/webapp" />
-      <option name="envOptions">
-        <map />
-      </option>
-      <option name="passParentEnvironmentVariables" value="true" />
-      <option name="port" value="8100" />
-      <option name="tomcatInfo">
-        <TomcatInfo>
-          <option name="name" value="Apache Tomcat/9.0.62" />
-          <option name="number" value="0" />
-          <option name="path" value="$PROJECT_DIR$/../Desktop/apache-tomcat-9.0.62" />
-          <option name="version" value="9.0.62.0" />
-        </TomcatInfo>
-      </option>
-      <option name="vmOptions" value="" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="com.poratu.idea.plugins.tomcat" factoryName="SMART_TOMCAT_FACTORY">
-      <option name="adminPort" value="8005" />
-      <option name="contextPath" value="/JavaClab6Library" />
-      <option name="docBase" value="D:\JavaClab6Library\src\main\webapp" />
       <option name="envOptions" />
       <option name="passParentEnvironmentVariables" value="true" />
       <option name="port" value="8080" />
@@ -220,168 +133,75 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="3fe0153a-a71c-46cd-8145-9da68c20aeb8" name="Default Changelist" comment="" />
-      <created>1650036148542</created>
+      <changelist id="82826e5a-c890-4472-8b88-201647c5c45b" name="Default Changelist" comment="" />
+      <created>1651160883100</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1650036148542</updated>
-      <workItem from="1650036149642" duration="1117000" />
-      <workItem from="1650104780285" duration="11479000" />
-      <workItem from="1650129242255" duration="3930000" />
-      <workItem from="1650279864125" duration="3560000" />
-      <workItem from="1650373319181" duration="588000" />
-      <workItem from="1650374162057" duration="11109000" />
-      <workItem from="1650462102187" duration="6171000" />
-      <workItem from="1650537652347" duration="8804000" />
-      <workItem from="1650620879535" duration="2538000" />
-      <workItem from="1650788825042" duration="1091000" />
-      <workItem from="1650878851514" duration="317000" />
-      <workItem from="1651042862534" duration="13230000" />
-      <workItem from="1651070290491" duration="15904000" />
-      <workItem from="1651132450078" duration="3023000" />
+      <updated>1651160883100</updated>
+      <workItem from="1651160884249" duration="820000" />
+      <workItem from="1651161891017" duration="1412000" />
     </task>
-    <task id="LOCAL-00001" summary="added functionality of requesting book for User">
-      <created>1651149579267</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1651149579267</updated>
-    </task>
-    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-<<<<<<< HEAD
   <component name="WindowStateProjectService">
-    <state x="548" y="217" key="#BuildArtifactsBeforeRunChooser" timestamp="1650129433548">
+    <state x="223" y="58" width="1089" height="766" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1651161680791">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="548" y="217" key="#BuildArtifactsBeforeRunChooser/0.0.1536.824@0.0.1536.824" timestamp="1650129433548" />
-    <state x="395" y="90" key="#Inspections" timestamp="1650036947264">
+    <state x="223" y="58" width="1089" height="766" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1651161680791" />
+    <state width="1024" height="210" key="GridCell.Tab.0.bottom" timestamp="1651161709673">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="395" y="90" key="#Inspections/0.0.1536.824@0.0.1536.824" timestamp="1650036947264" />
-    <state x="248" y="0" key="#Project_Structure" timestamp="1650548043520">
+    <state width="1024" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1651161709673" />
+    <state width="1024" height="210" key="GridCell.Tab.0.center" timestamp="1651161709673">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="248" y="0" key="#Project_Structure/0.0.1536.824@0.0.1536.824" timestamp="1650548043520" />
-    <state x="548" y="290" key="#TomEE_Server" timestamp="1650115993233">
+    <state width="1024" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1651161709673" />
+    <state width="1024" height="210" key="GridCell.Tab.0.left" timestamp="1651161709673">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="548" y="290" key="#TomEE_Server/0.0.1536.824@0.0.1536.824" timestamp="1650115993233" />
-    <state x="547" y="290" key="#Tomcat_Server" timestamp="1650127177771">
+    <state width="1024" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1651161709673" />
+    <state width="1024" height="210" key="GridCell.Tab.0.right" timestamp="1651161709673">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="547" y="290" key="#Tomcat_Server/0.0.1536.824@0.0.1536.824" timestamp="1650127177771" />
-    <state x="223" y="0" width="1089" height="824" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1651085425201">
+    <state width="1024" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1651161709673" />
+    <state width="1024" height="210" key="GridCell.Tab.1.bottom" timestamp="1651161709673">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="223" y="0" width="1089" height="824" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1651085425201" />
-    <state x="574" y="118" key="#com.intellij.ide.util.MemberChooser" timestamp="1651093992560">
+    <state width="1024" height="210" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1651161709673" />
+    <state width="1024" height="210" key="GridCell.Tab.1.center" timestamp="1651161709673">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="574" y="118" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1651093992560" />
-    <state x="498" y="233" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1650112558779">
+    <state width="1024" height="210" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1651161709673" />
+    <state width="1024" height="210" key="GridCell.Tab.1.left" timestamp="1651161709673">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="498" y="233" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1536.824@0.0.1536.824" timestamp="1650112558779" />
-    <state x="500" y="43" key="#com.intellij.j2ee.appServerIntegrations.ApplicationServersConfigurable" timestamp="1650116292145">
+    <state width="1024" height="210" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1651161709673" />
+    <state width="1024" height="210" key="GridCell.Tab.1.right" timestamp="1651161709673">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="500" y="43" key="#com.intellij.j2ee.appServerIntegrations.ApplicationServersConfigurable/0.0.1536.824@0.0.1536.824" timestamp="1650116292145" />
-    <state x="551" y="306" width="433" height="217" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1650116219174">
+    <state width="1024" height="210" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1651161709673" />
+    <state width="1024" height="210" key="GridCell.Tab.2.bottom" timestamp="1651161709673">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="551" y="306" width="433" height="217" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1536.824@0.0.1536.824" timestamp="1650116219174" />
-    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1650488476871">
+    <state width="1024" height="210" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1651161709673" />
+    <state width="1024" height="210" key="GridCell.Tab.2.center" timestamp="1651161709673">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1650488476871" />
-    <state width="1493" height="195" key="GridCell.Tab.0.bottom" timestamp="1651160012263">
+    <state width="1024" height="210" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1651161709673" />
+    <state width="1024" height="210" key="GridCell.Tab.2.left" timestamp="1651161709673">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="195" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1651160012263" />
-    <state width="1493" height="195" key="GridCell.Tab.0.center" timestamp="1651160012263">
+    <state width="1024" height="210" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1651161709673" />
+    <state width="1024" height="210" key="GridCell.Tab.2.right" timestamp="1651161709673">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="195" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1651160012263" />
-    <state width="1493" height="195" key="GridCell.Tab.0.left" timestamp="1651160012263">
+    <state width="1024" height="210" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1651161709673" />
+    <state x="249" y="0" key="SettingsEditor" timestamp="1651161318600">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="195" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1651160012263" />
-    <state width="1493" height="195" key="GridCell.Tab.0.right" timestamp="1651160012263">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="195" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1651160012263" />
-    <state width="1024" height="210" key="GridCell.Tab.1.bottom" timestamp="1650548129737">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1024" height="210" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1650548129737" />
-    <state width="1024" height="210" key="GridCell.Tab.1.center" timestamp="1650548129737">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1024" height="210" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1650548129737" />
-    <state width="1024" height="210" key="GridCell.Tab.1.left" timestamp="1650548129737">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1024" height="210" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1650548129737" />
-    <state width="1024" height="210" key="GridCell.Tab.1.right" timestamp="1650548129737">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1024" height="210" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1650548129737" />
-    <state width="1024" height="210" key="GridCell.Tab.2.bottom" timestamp="1650548129737">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1024" height="210" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1650548129737" />
-    <state width="1024" height="210" key="GridCell.Tab.2.center" timestamp="1650548129737">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1024" height="210" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1650548129737" />
-    <state width="1024" height="210" key="GridCell.Tab.2.left" timestamp="1650548129737">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1024" height="210" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1650548129737" />
-    <state width="1024" height="210" key="GridCell.Tab.2.right" timestamp="1650548129737">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1024" height="210" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1650548129737" />
-    <state x="299" y="67" key="Maven.ArtifactSearchDialog" timestamp="1650113968928">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="299" y="67" key="Maven.ArtifactSearchDialog/0.0.1536.824@0.0.1536.824" timestamp="1650113968928" />
-    <state x="277" y="0" key="SettingsEditor" timestamp="1650548008527">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="277" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1650548008527" />
-    <state x="668" y="289" key="com.intellij.database.actions.DdlActions$CreateObject$1" timestamp="1650375853128">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="668" y="289" key="com.intellij.database.actions.DdlActions$CreateObject$1/0.0.1536.824@0.0.1536.824" timestamp="1650375853128" />
-    <state x="647" y="299" width="312" height="244" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1650375416593">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="647" y="299" width="312" height="244" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.1536.824@0.0.1536.824" timestamp="1650375416593" />
-    <state x="209" y="73" key="new project wizard" timestamp="1650135345767">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="209" y="73" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1650135345767" />
-=======
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="added functionality of requesting book for User" />
-    <option name="LAST_COMMIT_MESSAGE" value="added functionality of requesting book for User" />
->>>>>>> 2fac6814195a5135902bf42e03077173c0ed03bd
+    <state x="249" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1651161318600" />
   </component>
 </project>

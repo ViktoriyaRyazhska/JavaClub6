@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="LibrarySoft:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>LibrarySoft</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="LibrarySoft.war">
+      <element id="artifact" artifact-name="LibrarySoft:war exploded" />
+    </root>
+  </artifact>
+</component>

@@ -10,5 +10,8 @@
         <module name="LibrarySoft" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="LibrarySoft" target="8" />
+    </bytecodeTargetLevel>
   </component>
 </project>
