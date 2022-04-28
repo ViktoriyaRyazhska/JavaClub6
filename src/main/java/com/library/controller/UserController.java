@@ -68,7 +68,8 @@ public class UserController {
             availableCopies.add(book.getAmountOfCopies() - bookService.getNotReturned(book));
         }
         model.addAttribute("books", books);
-        model.addAttribute("availableCopies", availableCopies);        return "user/book_list";
+        model.addAttribute("availableCopies", availableCopies);
+        return "user/book_list";
     }
 
     @GetMapping("/create_book_request")

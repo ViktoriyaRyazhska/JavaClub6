@@ -16,7 +16,10 @@
     </div>
 </nav>
 <div class="container">
-    <h1>Users</h1>
+    <div style="display: flex; justify-content: space-between">
+        <h3>Users</h3>
+        <a href="users/statistics" class="btn btn-outline-dark" type="button">General Statistics</a>
+    </div>
     <table class="table">
         <thead>
         <tr>
