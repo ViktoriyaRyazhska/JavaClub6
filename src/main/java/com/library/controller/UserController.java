@@ -15,6 +15,7 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
 import java.time.LocalDate;
+import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -32,7 +33,30 @@ public class UserController {
     private UserService userService;
 
     @GetMapping
-    public String mainPage() {
+    public String mainPage(Model model) {
+        //get userName in the current session
+        Object principal = SecurityContextHolder.getContext().getAuthentication().getPrincipal();
+        String username;
+        if (principal instanceof UserDetails) {
+            username = ((UserDetails) principal).getUsername();
+        } else {
+            username = principal.toString();
+        }
+
+        User user = this.userService.findByEmail(username);
+        List<Request> requests = requestService.findByUserId(user.getUserId());
+        List<Request> hasRead = new ArrayList<>();
+        List<Request> isReading = new ArrayList<>();
+        for (Request request : requests) {
+            if (request.getReturnDate() != null) {
+                hasRead.add(request);
+            } else {
+                isReading.add(request);
+            }
+        }
+        model.addAttribute("isReading", isReading);
+        model.addAttribute("hasRead", hasRead);
+        model.addAttribute("user", this.userService.findByEmail(username));
         return "user/user_main_page";
     }
 
