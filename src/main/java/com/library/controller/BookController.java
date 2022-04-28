@@ -137,6 +137,8 @@ public class BookController {
 
         }
         System.out.println(requests.size());
+        System.out.println(requests);
+        System.out.println(requests.);
 
         model.addAttribute("book", book);
         model.addAttribute("requests", requests);

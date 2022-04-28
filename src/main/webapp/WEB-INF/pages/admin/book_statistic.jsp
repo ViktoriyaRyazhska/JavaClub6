@@ -67,42 +67,40 @@
         <h5>Time of reading: <span style="font-weight: bold">${sumDays} days</span></h5>
     </div>
     <hr>
-    <div class="users-list-who-take" style="margin-top: 30px">
-        <c:set var="number" value="0"/>
-        <c:if test="${requests.size()==0}"><p>No Requests</p></c:if>
-        <c:if test="${requests.size()!=0}}">
-            <table class="table">
-                <thead>
+    <c:set var="number" value="0"/>
+    <c:if test="${requests.size()==0}"><p>No Requests</p></c:if>
+    <c:if test="${requests.size()!=0}">
+        <table class="table">
+            <thead>
+            <tr>
+                <th>№</th>
+                <th>User</th>
+                <th>Request Date</th>
+                <th>Return Date</th>
+            </tr>
+            </thead>
+            <tbody>
+
+
+            <c:forEach var="request" items="${requests}">
+                <c:set var="number" value="${number + 1}"/>
+                <c:set var="user" value="${request.getUser().getName()} ${request.getUser().getSurname()}"/>
                 <tr>
-                    <th>№</th>
-                    <th>User</th>
-                    <th>Request Date</th>
-                    <th>Return Date</th>
+                    <td>${number}</td>
+                    <td>${user}</td>
+                    <td>${request.requestDate}</td>
+                    <c:if test="${request.returnDate == null}">
+                        <td>Still reading</td>
+                    </c:if>
+                    <c:if test="${request.returnDate != null}">
+                        <td>${request.returnDate}</td>
+                    </c:if>
                 </tr>
-                </thead>
-                <tbody>
+            </c:forEach>
 
-
-                <c:forEach var="request" items="${requests}">
-                    <c:set var="number" value="${number + 1}"/>
-                    <c:set var="user" value="${request.getUser().getName()} ${request.getUser().getSurname()}"/>
-                    <tr>
-                        <td>${number}</td>
-                        <td>${user}</td>
-                        <td>${request.requestDate}</td>
-                        <c:if test="${request.returnDate == null}">
-                            <td>Still reading</td>
-                        </c:if>
-                        <c:if test="${request.returnDate != null}">
-                            <td>${request.returnDate}</td>
-                        </c:if>
-                    </tr>
-                </c:forEach>
-
-                </tbody>
-            </table>
-        </c:if>
-    </div>
+            </tbody>
+        </table>
+    </c:if>
 </div>
 
 </body>
