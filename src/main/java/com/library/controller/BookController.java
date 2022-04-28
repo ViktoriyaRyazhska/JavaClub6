@@ -125,22 +125,27 @@ public class BookController {
         List<Request> requests = requestService.findByBookId(id);
         double numberOfRequests = requests.size();
         Double sumDaysOdReadingbook = 0.0;
+        List<Double> readingDays = new ArrayList<>();
         for (Request request : requests) {
             if (request.getReturnDate() == null) {
                 Period days = Period.between(request.getRequestDate(), LocalDate.now());
+                readingDays.add((double) days.getDays());
                 sumDaysOdReadingbook+=days.getDays();
             }else{
                 Period days = Period.between(request.getRequestDate(),request.getReturnDate());
+                readingDays.add((double) days.getDays());
                 sumDaysOdReadingbook+=days.getDays();
             }
 
 
         }
+        System.out.println(readingDays);
 
         model.addAttribute("book", book);
         model.addAttribute("requests", requests);
         model.addAttribute("numberOfRequests", numberOfRequests);
         model.addAttribute("sumDays",sumDaysOdReadingbook);
+        model.addAttribute("readingDays",readingDays);
         return "admin/book_statistic";
     }
 
