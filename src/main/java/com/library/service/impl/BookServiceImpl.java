@@ -97,4 +97,17 @@ public class BookServiceImpl implements BookService {
         bookDAO.deleteBook(book);
     }
 
+    @Override
+    @Transactional
+    public Integer getNotReturned(Book book) {
+        List<Request> requests = requestService.findByBookId(book.getBookId());
+        Integer notReturned = 0;
+        for (Request request : requests) {
+            if (request.getReturnDate() == null) {
+                notReturned++;
+            }
+        }
+        return notReturned;
+    }
+
 }

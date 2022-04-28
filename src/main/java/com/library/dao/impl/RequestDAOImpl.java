@@ -1,16 +1,21 @@
 package com.library.dao.impl;
 
 import com.library.dao.RequestDAO;
+import com.library.model.Book;
 import com.library.model.Request;
 import org.hibernate.SessionFactory;
 import org.hibernate.query.Query;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
+import org.springframework.transaction.annotation.EnableTransactionManagement;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.time.LocalDate;
 import java.util.List;
 
 @Repository
+@Transactional
+@EnableTransactionManagement
 public class RequestDAOImpl implements RequestDAO {
 
     @Autowired
@@ -18,7 +23,7 @@ public class RequestDAOImpl implements RequestDAO {
 
     @Override
     public List<Request> findAll() {
-        return sessionFactory.getCurrentSession().createQuery("from request").list();
+        return sessionFactory.getCurrentSession().createQuery("from Request").list();
     }
 
     @Override
@@ -46,5 +51,10 @@ public class RequestDAOImpl implements RequestDAO {
         query.setParameter("startDate", startDate);
         query.setParameter("endDate", endDate);
         return query.list();
+    }
+
+    @Override
+    public void createRequest(Request request) {
+        sessionFactory.getCurrentSession().save(request);
     }
 }

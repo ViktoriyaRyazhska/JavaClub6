@@ -17,7 +17,6 @@
     </div>
 </nav>
 <div class="container">
-    <c:set var="number" value="0"/>
     <h1>Books</h1>
     <div style="display: flex">
         <input type="text" class="form-control" placeholder="Book search..." aria-describedby="basic-addon2"
@@ -33,6 +32,8 @@
         </tr>
         </thead>
         <tbody>
+        <c:set var="number" value="0"/>
+        <c:set var="index" value="0"/>
         <c:forEach var="book" items="${books}">
             <c:set var="number" value="${number + 1}"/>
             <tr>
@@ -48,6 +49,9 @@
                         </c:forEach>
                     </td>
                 </c:if>
+                <c:if test="${availableCopies.get(Integer.parseInt(index)) == 0}"><td style="font-weight: bold">not available</td></c:if>
+                <c:if test="${availableCopies.get(Integer.parseInt(index)) > 0}"><td>available</td></c:if>
+                <c:set var="index" value="${index + 1}"/>
             </tr>
         </c:forEach>
         </tbody>

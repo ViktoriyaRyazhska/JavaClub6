@@ -9,9 +9,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3fe0153a-a71c-46cd-8145-9da68c20aeb8" name="Default Changelist" comment="">
+    <list default="true" id="3fe0153a-a71c-46cd-8145-9da68c20aeb8" name="Default Changelist" comment="added functionality of requesting book for User">
+      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/src/main/java/com/library/controller/BookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/library/controller/BookController.java" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/library/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/library/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/user/user_main_page.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/user/user_main_page.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/library/config/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/library/config/SecurityConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/library/controller/RegisterController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/library/controller/RegisterController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/library/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/library/controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/library/dao/RoleDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/library/dao/RoleDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/library/dao/impl/RoleDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/library/dao/impl/RoleDAOImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/library/service/RoleService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/library/service/RoleService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/library/service/impl/RoleServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/library/service/impl/RoleServiceImpl.class" afterDir="false" />
+>>>>>>> 2fac6814195a5135902bf42e03077173c0ed03bd
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +46,20 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JpbToolWindowState">
+    <option name="myId2FirstActivated">
+      <map>
+        <entry key="com.haulmont.jpb.jpaPalette" value="true" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
+      </map>
+    </option>
+    <option name="myId2Visible">
+      <map>
+        <entry key="com.haulmont.jpb.jpaPalette" value="true" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="false" />
+      </map>
+    </option>
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -50,19 +80,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="DatabaseDriversLRU" value="mysql" />
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/library/controller" />
-    <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Artifacts" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="com.poratu.idea.plugins.tomcat.setting.TomcatSettingConfigurable" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ]
+  }
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\JavaClab6Library\src\main\webapp\WEB-INF\pages\user" />
@@ -143,21 +170,24 @@
         <option name="BuildArtifacts" enabled="true">
           <artifact name="JavaClab6Library:war exploded" />
           <artifact name="JavaClub:war" />
+          <artifact name="LibrarySoft:war exploded" />
         </option>
       </method>
     </configuration>
     <configuration name="Tomcat" type="com.poratu.idea.plugins.tomcat" factoryName="SMART_TOMCAT_FACTORY">
-      <option name="adminPort" value="8005" />
+      <option name="adminPort" value="8035" />
       <option name="contextPath" value="/library" />
       <option name="docBase" value="$PROJECT_DIR$/src/main/webapp" />
-      <option name="envOptions" />
+      <option name="envOptions">
+        <map />
+      </option>
       <option name="passParentEnvironmentVariables" value="true" />
-      <option name="port" value="8080" />
+      <option name="port" value="8100" />
       <option name="tomcatInfo">
         <TomcatInfo>
           <option name="name" value="Apache Tomcat/9.0.62" />
           <option name="number" value="0" />
-          <option name="path" value="D:\Install\tomcat\apache-tomcat-9.0.62" />
+          <option name="path" value="$PROJECT_DIR$/../Desktop/apache-tomcat-9.0.62" />
           <option name="version" value="9.0.62.0" />
         </TomcatInfo>
       </option>
@@ -210,11 +240,20 @@
       <workItem from="1651070290491" duration="15904000" />
       <workItem from="1651132450078" duration="3023000" />
     </task>
+    <task id="LOCAL-00001" summary="added functionality of requesting book for User">
+      <created>1651149579267</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1651149579267</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+<<<<<<< HEAD
   <component name="WindowStateProjectService">
     <state x="548" y="217" key="#BuildArtifactsBeforeRunChooser" timestamp="1650129433548">
       <screen x="0" y="0" width="1536" height="824" />
@@ -328,5 +367,21 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="209" y="73" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1650135345767" />
+=======
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="added functionality of requesting book for User" />
+    <option name="LAST_COMMIT_MESSAGE" value="added functionality of requesting book for User" />
+>>>>>>> 2fac6814195a5135902bf42e03077173c0ed03bd
   </component>
 </project>

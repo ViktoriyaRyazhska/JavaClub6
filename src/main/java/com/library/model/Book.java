@@ -32,6 +32,7 @@ import java.util.Set;
 @Table(name = "books")
 public class Book {
 
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "book_id")
@@ -72,6 +73,18 @@ public class Book {
     @Override
     public int hashCode() {
         return Objects.hash(bookId);
+    }
+
+    public Integer getAmountOfCopies() {
+        return amountOfCopies;
+    }
+
+    public void setAmountOfCopies(Integer amountOfCopies) {
+        if (amountOfCopies < 0) {
+            this.amountOfCopies = 0;
+        } else {
+            this.amountOfCopies = amountOfCopies;
+        }
     }
 }
 
