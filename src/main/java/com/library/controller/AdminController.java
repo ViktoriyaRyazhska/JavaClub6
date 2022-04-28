@@ -72,6 +72,8 @@ public class AdminController {
         return "admin/user_details";
     }
 
+
+
     @RequestMapping("/users/statistics")
     public String getUsersStatistics(@RequestParam(required = false) String start, @RequestParam(required = false) String end, Model model) {
         LocalDate startDate;

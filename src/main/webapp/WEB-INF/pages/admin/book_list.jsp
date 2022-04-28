@@ -55,6 +55,7 @@
                     <%--                <td><a href="/library/admin/books/${book.bookId}">Details</a></td>--%>
                 <td><a href="books/edit/${book.bookId}">Edit</a></td>
                 <td><a href="books/delete/${book.bookId}">Delete</a></td>
+                <td><a href="books/statistic/${book.bookId}">Statistic</a></td>
             </tr>
         </c:forEach>
         </tbody>

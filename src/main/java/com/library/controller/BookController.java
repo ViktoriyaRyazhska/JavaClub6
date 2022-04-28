@@ -3,8 +3,10 @@ package com.library.controller;
 import com.library.AuthorEditor;
 import com.library.model.Author;
 import com.library.model.Book;
+import com.library.model.Request;
 import com.library.service.AuthorService;
 import com.library.service.BookService;
+import com.library.service.RequestService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -12,6 +14,8 @@ import org.springframework.web.bind.WebDataBinder;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
+import java.time.LocalDate;
+import java.time.Period;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
@@ -29,6 +33,9 @@ public class BookController {
     @Autowired
     private AuthorEditor authorEditor;
 
+    @Autowired
+    private RequestService requestService;
+
     @InitBinder
     public void initBinder(WebDataBinder binder) {
         binder.registerCustomEditor(Author.class, this.authorEditor);
@@ -42,7 +49,8 @@ public class BookController {
             availableCopies.add(book.getAmountOfCopies() - bookService.getNotReturned(book));
         }
         model.addAttribute("books", books);
-        model.addAttribute("availableCopies", availableCopies);        return "admin/book_list";
+        model.addAttribute("availableCopies", availableCopies);
+        return "admin/book_list";
     }
 
     @GetMapping("/add")
@@ -54,7 +62,7 @@ public class BookController {
     }
 
     @PostMapping("/add")
-        public String addBook(@Valid @ModelAttribute Book book) {
+    public String addBook(@Valid @ModelAttribute Book book) {
         bookService.addBook(book);
         return "redirect:/admin/books";
     }
@@ -75,7 +83,7 @@ public class BookController {
     }
 
     @RequestMapping("/edit/{id}")
-    public String editBook(@PathVariable("id") long id, Model model){
+    public String editBook(@PathVariable("id") long id, Model model) {
         model.addAttribute("book", this.bookService.findBookById(id));
         model.addAttribute("title", this.bookService.findBookById(id).getTitle());
         model.addAttribute("mainAuthor", this.bookService.findBookById(id).getMainAuthor());
@@ -88,7 +96,7 @@ public class BookController {
     }
 
     @PostMapping("/edit/{id}")
-    public String editBook(@PathVariable("id") long id, @RequestParam String title, @RequestParam Integer amountOfCopies, @RequestParam Author mainAuthor, @RequestParam(required = false)Set<Author> authorsSet) {
+    public String editBook(@PathVariable("id") long id, @RequestParam String title, @RequestParam Integer amountOfCopies, @RequestParam Author mainAuthor, @RequestParam(required = false) Set<Author> authorsSet) {
         Book book = this.bookService.findBookById(id);
         book.setTitle(title);
         book.setAmountOfCopies(amountOfCopies);
@@ -109,6 +117,32 @@ public class BookController {
     public String addAuthor(@Valid @ModelAttribute Author author) {
         authorService.addAuthor(author);
         return "redirect:/admin/books/add";
+    }
+
+    @GetMapping("/statistic/{id}")
+    public String showStatistic(@PathVariable Long id, Model model) {
+        Book book = bookService.findBookById(id);
+        List<Request> requests = requestService.findByBookId(id);
+        double numberOfRequests = requests.size();
+        Double sumDaysOdReadingbook = 0.0;
+        for (Request request : requests) {
+            if (request.getReturnDate() == null) {
+                Period days = Period.between(request.getRequestDate(), LocalDate.now());
+                sumDaysOdReadingbook+=days.getDays();
+            }else{
+                Period days = Period.between(request.getRequestDate(),request.getReturnDate());
+                sumDaysOdReadingbook+=days.getDays();
+            }
+
+
+        }
+        System.out.println(requests.size());
+
+        model.addAttribute("book", book);
+        model.addAttribute("requests", requests);
+        model.addAttribute("numberOfRequests", numberOfRequests);
+        model.addAttribute("sumDays",sumDaysOdReadingbook);
+        return "admin/book_statistic";
     }
 
 }
