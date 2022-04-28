@@ -18,14 +18,22 @@
             </tr>
             </form:form>
             <c:forEach items="${book}" var="book">
+                <th><strong>ID</strong></th>
+                <th><strong>Copy Number</strong></th>
+                <th><strong>Deploy Date</strong></th>
+                <th><strong>Title</strong></th>
                 <tr>
                     <td>${book.id}</td>
                     <td>${book.copyNumber}</td>
+                    <td>${book.deployDate}</td>
                     <td>${book.title}</td>
                     <td></td>
                     <td>
                         <form:form action="/admin/updateBook" method="get" modelAttribute="book">
                             <input type="hidden" value="${book.id}" name="id"/>
+                            <input type="hidden" value="${book.copyNumber}" name="copyNumber"/>
+                            <input type="hidden" value="${book.deployDate}" name="deployDate"/>
+                            <input type="hidden" value="${book.title}" name="title"/>
                             <button type="submit">Update</button>
                         </form:form>
                     </td>

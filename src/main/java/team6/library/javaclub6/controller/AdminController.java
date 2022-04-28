@@ -3,6 +3,7 @@ package team6.library.javaclub6.controller;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 import team6.library.javaclub6.model.Author;
@@ -84,10 +85,22 @@ public class AdminController {
     }
 
     @GetMapping("/updateBook")
-    public ModelAndView showUpdatePage(@RequestParam int id){
+    public ModelAndView showUpdatePage(@RequestParam int id,
+                                       @RequestParam int copyNumber,
+                                       @RequestParam Date deployDate,
+                                       @RequestParam String title, ModelMap model){
         Book book = new Book();
         book.setId(id);
-        return new ModelAndView("admin/updatebook/updateBook", "book", book);
+        book.setCopyNumber(copyNumber);
+        book.setDeployDate(deployDate);
+        book.setTitle(title);
+
+        Author author = new Author(); // find author's id by book id
+        author.setId(authorBookService.findAuthorIdByBookId(id));
+
+        model.addAttribute("book", book);
+        model.addAttribute("author", author);
+        return new ModelAndView("admin/updatebook/updateBook", "model", model); //pass modelMap
     }
 
     @PostMapping("/updateBook")
@@ -96,8 +109,8 @@ public class AdminController {
                              @RequestParam Date deployDate,
                              @RequestParam int copyNumber,
                              @RequestParam String name,
-                             @RequestParam String surname, @ModelAttribute("book") Book book){
-        //Book book = new Book();
+                             @RequestParam String surname,
+                             @ModelAttribute("book") Book book){
         book.setId(id);
         book.setTitle(title);
         book.setDeployDate(deployDate);
@@ -107,11 +120,13 @@ public class AdminController {
         author.setName(name);
         author.setSurname(surname);
         bookService.update(book);
-        if (!authorService.finaByNameSurnameBool(name, surname)){
+
+        if (!authorService.finaByNameSurnameBool(name, surname) && name != null && surname != null){
             authorService.saveAuthor(author);
+            authorBookService.newAuthorBook(book, authorService.findByNameSurname(author.getName(), author.getSurname()));
+        } else {
+            authorBookService.update(book, authorService.findByNameSurname(author.getName(), author.getSurname()));
         }
-        //if !authorBookService.newAuthorBook(book, author) => save ELSE update
-        authorBookService.newAuthorBook(book, author);
         return "admin/updatebook/updateBook";
     }
 }
