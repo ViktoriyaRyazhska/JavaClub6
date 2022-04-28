@@ -47,7 +47,7 @@ public class BookController {
     }
 
     @PostMapping("/add")
-    public String addBook(@Valid @ModelAttribute Book book) {
+        public String addBook(@Valid @ModelAttribute Book book) {
         bookService.addBook(book);
         return "redirect:/admin/books";
     }
