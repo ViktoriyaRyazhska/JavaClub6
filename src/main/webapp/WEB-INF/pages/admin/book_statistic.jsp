@@ -1,11 +1,6 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: Maryan
-  Date: 28.04.2022
-  Time: 20:50
-  To change this template use File | Settings | File Templates.
---%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+
 <html>
 <head>
     <title>Book Statistic</title>
@@ -70,7 +65,7 @@
     <div class="users-list-who-take" style="margin-top: 30px">
         <c:set var="number" value="0"/>
         <c:if test="${requests.size()==0}"><p>No Requests</p></c:if>
-        <c:if test="${requests.size()!=0}}">
+        <c:if test="${requests.size()!=0}">
             <table class="table">
                 <thead>
                 <tr>
@@ -83,8 +78,8 @@
                 <tbody>
 
 
-                <c:forEach var="request" items="${requests}">
-                    <c:set var="number" value="${number + 1}"/>
+                <c:forEach items="${requests}" var="request">
+                    <c:set value="${number + 1}" var="number" />
                     <c:set var="user" value="${request.getUser().getName()} ${request.getUser().getSurname()}"/>
                     <tr>
                         <td>${number}</td>
