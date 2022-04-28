@@ -1,11 +1,6 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: Maryan
-  Date: 28.04.2022
-  Time: 20:50
-  To change this template use File | Settings | File Templates.
---%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+
 <html>
 <head>
     <title>Book Statistic</title>
@@ -67,6 +62,7 @@
         <h5>Time of reading: <span style="font-weight: bold">${sumDays} days</span></h5>
     </div>
     <hr>
+<<<<<<< HEAD
     <c:set var="number" value="0"/>
     <c:if test="${requests.size()==0}"><p>No Requests</p></c:if>
     <c:if test="${requests.size()!=0}">
@@ -97,6 +93,39 @@
                     </c:if>
                 </tr>
             </c:forEach>
+=======
+    <div class="users-list-who-take" style="margin-top: 30px">
+        <c:set var="number" value="0"/>
+        <c:if test="${requests.size()==0}"><p>No Requests</p></c:if>
+        <c:if test="${requests.size()!=0}">
+            <table class="table">
+                <thead>
+                <tr>
+                    <th>№</th>
+                    <th>User</th>
+                    <th>Request Date</th>
+                    <th>Return Date</th>
+                </tr>
+                </thead>
+                <tbody>
+
+
+                <c:forEach items="${requests}" var="request">
+                    <c:set value="${number + 1}" var="number" />
+                    <c:set var="user" value="${request.getUser().getName()} ${request.getUser().getSurname()}"/>
+                    <tr>
+                        <td>${number}</td>
+                        <td>${user}</td>
+                        <td>${request.requestDate}</td>
+                        <c:if test="${request.returnDate == null}">
+                            <td>Still reading</td>
+                        </c:if>
+                        <c:if test="${request.returnDate != null}">
+                            <td>${request.returnDate}</td>
+                        </c:if>
+                    </tr>
+                </c:forEach>
+>>>>>>> 53e67f7f725f04832366c4214698caf3425c16a8
 
             </tbody>
         </table>
