@@ -1,6 +1,8 @@
 package ua.javaclub14.service;
 
 
+
+import ua.javaclub14.model.Author;
 import ua.javaclub14.model.Book;
 
 import java.util.List;
@@ -12,9 +14,12 @@ public interface BookService {
 
     void addBook(Book book);
 
-//    List<Book> listByTitle(String title);
 
 
+
+    void deleteBook(Book book);
+
+    Book findBookById(Long id);
 }
 
 

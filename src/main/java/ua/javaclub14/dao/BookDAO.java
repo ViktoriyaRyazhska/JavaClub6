@@ -1,5 +1,6 @@
 package ua.javaclub14.dao;
 
+import ua.javaclub14.model.Author;
 import ua.javaclub14.model.Book;
 
 import java.util.List;
@@ -13,5 +14,8 @@ public interface BookDAO {
 
 
     void addBook(Book book);
+
+    void deleteBook(Book book);
+    Book findBookById(Long id);
 
 }

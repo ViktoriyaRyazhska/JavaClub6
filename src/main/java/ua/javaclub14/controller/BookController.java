@@ -17,8 +17,13 @@ import java.util.Locale;
 
 @Controller
 public class BookController {
+
     @Autowired
     private BookService bookService;
+
+//    public void setBookService(BookService bookService){
+//        this.bookService=bookService;
+//    }
     @Autowired
     private AuthorService authorService;
 
@@ -28,23 +33,23 @@ public class BookController {
 
         model.addAttribute("books", bookService.list());
         model.addAttribute("authors", authorService.list());
-        System.out.println("Book Controller list work");
 
 
         return "editBooks";
     }
 
 
-    @PostMapping("formBook")
+//    @RequestMapping( "addBook")
+    @PostMapping("/addBook")
     public String saveBook(@ModelAttribute("book") @Valid Book book,
-                             BindingResult result, Model model) {
-
+                           BindingResult result, Model model) {
 
         if (result.hasErrors()) {
             model.addAttribute("books", bookService.list());
-            return "formBook";
+            return "editBooks";
         }
 
+        book.setInReading(0);
         bookService.addBook(book);
         return "redirect:/";
     }
@@ -78,6 +83,13 @@ public class BookController {
                 return "searchBookByAuthor";
             }
         }
+
+    @GetMapping("deleteBook/{bookid}")
+    public String deleteBook(@PathVariable Long bookid) {
+        Book book = bookService.findBookById(bookid);
+        bookService.deleteBook(book);
+        return "redirect:/editBooks";
+    }
 
 
 

@@ -1,4 +1,3 @@
-
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
 <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
@@ -25,7 +24,73 @@
         <input type="submit" value="Search by author">
     </form>
 
-    <h3><a href="formBook">New Book</a></h3>
+    <h1>Create Book</h1>
+
+
+
+<%--    <form:form action="addBook" method="post" modelAttribute="book">--%>
+<%--        <table>--%>
+<%--            <tr>--%>
+<%--                <td>Title</td>--%>
+<%--                <td>--%>
+<%--                    <form:input path="title"></form:input> <br />--%>
+<%--                    <form:errors path="title" cssClass="error" />--%>
+<%--                </td>--%>
+<%--            </tr>--%>
+<%--            <tr>--%>
+<%--                <td>Authors</td>--%>
+<%--                <td>--%>
+<%--                    <select id="author">--%>
+<%--                        <c:forEach items="${authors}" var="author">--%>
+<%--                            <option value="author">${author.getFirstName()} ${author.getLastName()}</option>--%>
+<%--                        </c:forEach>--%>
+<%--                    </select>--%>
+<%--                </td>--%>
+<%--            </tr>--%>
+<%--            <tr>--%>
+<%--                <td>Year realize</td>--%>
+<%--                <td>--%>
+<%--                    <form:input path="realizeYear" /> <br />--%>
+<%--                    <form:errors path="realizeYear" cssClass="error" />--%>
+<%--                </td>--%>
+<%--            </tr>--%>
+<%--            <tr>--%>
+<%--                <td>Total quantity</td>--%>
+<%--                <td>--%>
+<%--                    <form:input path="totalQuantity" /> <br />--%>
+<%--                    <form:errors path="totalQuantity" cssClass="error" />--%>
+<%--                </td>--%>
+<%--            </tr>--%>
+<%--            <tr>--%>
+<%--                <td colspan="4"><button type="submit">Submit</button></td>--%>
+<%--            </tr>--%>
+<%--        </table>--%>
+<%--    </form:form>--%>
+
+        <form method="POST" action="addBook">
+
+            <label for="title">Title_________</label>
+
+            <input type="text" id="title"/>
+
+            <br> <br>
+            <label for="author">Author_______</label>
+            <select id="author">
+                <c:forEach items="${authors}" var="author">
+                    <option value="author">${author.getFirstName()} ${author.getLastName()}</option>
+                </c:forEach>
+            </select>
+            <br><br>
+            <label for="realizeYear">Year realize___</label>
+            <input type="text" id="realizeYear"/>
+            <br><br>
+            <label for="totalQuantity">Total quantity_</label>
+            <input type="text" id="totalQuantity"/>
+            <br><br>
+            <input type="submit" value="Create">
+            <br><br>
+        </form>
+
     <table border="1" cellpadding="5">
         <tr>
             <th>ID</th>
@@ -52,7 +117,7 @@
 
                 <td>
                     <a href="edit?id=$(book.getId())">Edit</a>
-                    <a href="delete?id=$(book.getId())">Delete</a>
+                    <a href="/deleteBook/${book.id}">Delete</a>
                 </td>
             </tr>
         </c:forEach>
