@@ -19,6 +19,8 @@
 <a href="/editUsers">Users</a>
 <a href="/editBooks">Books</a>
 <a href="/formBook">Form book</a>
+<a href="/test">Test</a>
+<a href="/editBooks">Books2</a>
 
 </body>
 </html>

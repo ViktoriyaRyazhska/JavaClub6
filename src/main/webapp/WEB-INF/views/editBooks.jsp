@@ -25,8 +25,8 @@
         <input type="submit" value="Search by author">
     </form>
 
-<%--    <h3><a href="/new">New Book</a></h3>--%>
-    <table>
+    <h3><a href="formBook">New Book</a></h3>
+    <table border="1" cellpadding="5">
         <tr>
             <th>ID</th>
             <th>TITLE</th>
@@ -44,7 +44,7 @@
 
                     <c:if test="${book.getRoleId() == author.getId()}"><td>${author.getFirstName()} ${author.getLastName()}</td>
                     </c:if>
-                    <br>
+
                 </c:forEach>
                 <c:if test="${book.totalQuantity-book.inReading == 0}"><td style="color:red">unavailable</td></c:if>
                 <c:if test="${book.totalQuantity-book.inReading != 0}"> <td style="color:blue">available</td></c:if>

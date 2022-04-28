@@ -35,13 +35,14 @@ public class BookController {
     }
 
 
-    @PostMapping("/")
+    @PostMapping("formBook")
     public String saveBook(@ModelAttribute("book") @Valid Book book,
                              BindingResult result, Model model) {
 
+
         if (result.hasErrors()) {
             model.addAttribute("books", bookService.list());
-            return "editBooks";
+            return "formBook";
         }
 
         bookService.addBook(book);
