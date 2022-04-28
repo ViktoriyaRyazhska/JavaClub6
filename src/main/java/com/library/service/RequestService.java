@@ -14,4 +14,6 @@ public interface RequestService {
     List<Request> findByDateRange(LocalDate startDate, LocalDate endDate);
     void createRequest(Request request);
 
+    void updateRequest(Request request);
+
 }

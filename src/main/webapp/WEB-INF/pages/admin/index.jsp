@@ -18,8 +18,12 @@
 </nav>
 <div class="container">
     <h1>Welcome to the Library!</h1>
-    <h1>Admin</h1>
-    <a href="/library/admin/books">See books</a>
+    <h2>${user.name} ${user.surname}</h2>
+    <h3>Admin panel</h3>
+
+    <a href="/library/admin/books"> <button class="btn btn-outline-dark">See all books </button></a>
+    <a href="/library/admin/give_book"> <button class="btn btn-outline-dark">Give book to reader</button></a>
+
 </div>
 </body>
 </html>

@@ -9,6 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="82826e5a-c890-4472-8b88-201647c5c45b" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/admin/book_statistic.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
@@ -17,6 +18,11 @@
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/admin/book_list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/admin/book_list.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/library/controller/AdminController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/library/controller/AdminController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/library/controller/BookController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/library/controller/BookController.class" afterDir="false" />
+=======
+    <list default="true" id="82826e5a-c890-4472-8b88-201647c5c45b" name="Default Changelist" comment="Added changes to create_book_request.jsp file references works good">
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/admin/give_book.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+>>>>>>> eef89c15d289b723fb4412b28f7d157839f665d6
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +40,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="JpbToolWindowState">
+    <option name="myId2FirstActivated">
+      <map>
+        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
+      </map>
+    </option>
+    <option name="myId2Visible">
+      <map>
+        <entry key="com.haulmont.jpb.jpaStructure" value="false" />
+      </map>
+    </option>
+  </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
     <option name="FILTER_WARNINGS" value="false" />
@@ -45,6 +63,7 @@
     <option name="generalSettings">
       <MavenGeneralSettings>
         <option name="mavenHome" value="D:\Install\IntelliJ IDEA 2020.2.3\plugins\maven\lib\maven3" />
+        <option name="useMavenConfig" value="true" />
       </MavenGeneralSettings>
     </option>
   </component>
@@ -77,18 +96,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="LibrarySoft" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="LibrarySoft" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Tomcat" type="com.poratu.idea.plugins.tomcat" factoryName="SMART_TOMCAT_FACTORY">
-      <option name="adminPort" value="8005" />
+      <option name="adminPort" value="8023" />
       <option name="contextPath" value="/library" />
       <option name="docBase" value="$PROJECT_DIR$/src/main/webapp" />
-      <option name="envOptions" />
+      <option name="envOptions">
+        <map />
+      </option>
       <option name="passParentEnvironmentVariables" value="true" />
-      <option name="port" value="8080" />
+      <option name="port" value="8101" />
       <option name="tomcatInfo">
         <TomcatInfo>
           <option name="name" value="Apache Tomcat/9.0.62" />
           <option name="number" value="0" />
-          <option name="path" value="D:\Install\tomcat\apache-tomcat-9.0.62" />
+          <option name="path" value="$PROJECT_DIR$/../Desktop/apache-tomcat-9.0.62" />
           <option name="version" value="9.0.62.0" />
         </TomcatInfo>
       </option>
@@ -109,11 +143,41 @@
       <workItem from="1651160884249" duration="820000" />
       <workItem from="1651161891017" duration="9907000" />
     </task>
+    <task id="LOCAL-00001" summary="Added give book mappers for AdminController.class">
+      <created>1651169151927</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1651169151927</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Added some additional implementations">
+      <created>1651170904832</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1651170904832</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Changes in admin main page">
+      <created>1651171354795</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1651171354795</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Added changes to create_book_request.jsp file references works good">
+      <created>1651171589822</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1651171589822</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+<<<<<<< HEAD
   <component name="WindowStateProjectService">
     <state x="223" y="58" width="1089" height="766" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1651161680791">
       <screen x="0" y="0" width="1536" height="824" />
@@ -171,5 +235,24 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="249" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1651161318600" />
+=======
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Added give book mappers for AdminController.class" />
+    <MESSAGE value="Added some additional implementations" />
+    <MESSAGE value="Changes in admin main page" />
+    <MESSAGE value="Added changes to create_book_request.jsp file references works good" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added changes to create_book_request.jsp file references works good" />
+>>>>>>> eef89c15d289b723fb4412b28f7d157839f665d6
   </component>
 </project>
