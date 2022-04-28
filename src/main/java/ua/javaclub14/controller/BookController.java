@@ -8,10 +8,15 @@ import org.springframework.web.bind.annotation.*;
 
 import ua.javaclub14.model.Author;
 import ua.javaclub14.model.Book;
+import ua.javaclub14.model.BookUser;
 import ua.javaclub14.service.AuthorService;
 import ua.javaclub14.service.BookService;
+import ua.javaclub14.service.BookUserService;
 
 import javax.validation.Valid;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
 import java.util.Locale;
 
@@ -26,6 +31,10 @@ public class BookController {
 //    }
     @Autowired
     private AuthorService authorService;
+
+    @Autowired
+    private BookUserService bookUserService;
+
 
 
     @GetMapping("/editBooks")
@@ -49,7 +58,7 @@ public class BookController {
             return "editBooks";
         }
 
-        book.setInReading(0);
+
         bookService.addBook(book);
         return "redirect:/";
     }
@@ -89,6 +98,27 @@ public class BookController {
         Book book = bookService.findBookById(bookid);
         bookService.deleteBook(book);
         return "redirect:/editBooks";
+    }
+
+    @RequestMapping("sortPopular")
+    public String sortByPopular(@RequestParam("tripStart") String tripStart, @RequestParam("tripFinish") String tripFinish, Model model) throws ParseException {
+
+
+        System.out.println(tripStart);
+        System.out.println(tripFinish);
+        SimpleDateFormat format = new SimpleDateFormat();
+        format.applyPattern("yyyy-mm-dd");
+
+        Date start= format.parse(tripStart);
+        Date finish= format.parse(tripStart);
+
+            List<Book> bookList = bookService.findBookByPopular();
+            model.addAttribute("books", bookList);
+            List<BookUser> bookUserList = bookUserService.listByDate(start,finish);
+            model.addAttribute("booksUsers", bookList);
+
+            return "sortPopular";
+
     }
 
 

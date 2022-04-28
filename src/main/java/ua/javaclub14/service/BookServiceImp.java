@@ -50,4 +50,9 @@ public class BookServiceImp implements BookService {
         return bookDAO.findBookById(id);
     }
 
+    @Override
+    public List<Book> findBookByPopular() {
+        return bookDAO.findBookByPopular();
+    }
+
 }

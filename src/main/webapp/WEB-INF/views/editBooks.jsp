@@ -12,7 +12,7 @@
 
 
 <div>
-    <h1>Books</h1>
+    <h1>Books search</h1>
 
     <form method="POST" action="searchBookByTitle"  >
         <input type="text" name="title" />
@@ -24,9 +24,26 @@
         <input type="submit" value="Search by author">
     </form>
 
+    <br><br>
+
+    <form method="POST" action="sortPopular">
+
+    <label for="start">Start date:</label>
+
+    <input type="date" id="start" name="tripStart"
+<%--           value="2022-01-01"--%>
+           min="2020-01-01" max="2022-04-29">
+
+    <label for="finish">Finish date:</label>
+
+    <input type="date" id="finish" name="tripFinish"
+<%--           value="2022-04-28"--%>
+           min="2020-01-01" max="2022-04-29">
+
+    <input type="submit" value="Sort by popularity ">
+    </form>
+
     <h1>Create Book</h1>
-
-
 
 <%--    <form:form action="addBook" method="post" modelAttribute="book">--%>
 <%--        <table>--%>
@@ -90,6 +107,8 @@
             <input type="submit" value="Create">
             <br><br>
         </form>
+
+    <h1>Books list</h1>
 
     <table border="1" cellpadding="5">
         <tr>

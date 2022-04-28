@@ -20,6 +20,8 @@ public interface BookService {
     void deleteBook(Book book);
 
     Book findBookById(Long id);
+
+    public List<Book> findBookByPopular();
 }
 
 

@@ -57,6 +57,7 @@
       </c:forEach>
     </c:forEach>
   </table>
+  <a href="/editBooks">return to all books</a>
 </div>
 </body>
 </html>

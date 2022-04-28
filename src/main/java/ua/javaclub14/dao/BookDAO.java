@@ -18,4 +18,6 @@ public interface BookDAO {
     void deleteBook(Book book);
     Book findBookById(Long id);
 
+    public List<Book> findBookByPopular();
+
 }
