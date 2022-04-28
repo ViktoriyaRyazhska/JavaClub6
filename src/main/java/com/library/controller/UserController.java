@@ -115,5 +115,15 @@ public class UserController {
         requestService.createRequest(request);
         return "redirect:/user";
     }
+
+    @GetMapping("return_book/{id}")
+    public String deleteBook(@PathVariable Long id) {
+        this.requestService.findById(id).setReturnDate(LocalDate.now());
+        Request request = new Request();
+        request = this.requestService.findById(id);
+        request.setReturnDate(LocalDate.now());
+        this.requestService.updateRequest(request);
+        return "redirect:/user";
+    }
 }
 

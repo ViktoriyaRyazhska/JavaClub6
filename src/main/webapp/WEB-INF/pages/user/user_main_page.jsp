@@ -1,4 +1,5 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
@@ -19,7 +20,6 @@
 <div class="container">
     <h1>Welcome to the Library!</h1>
     <h3>${user.name} ${user.surname}</h3>
-    <%--    <a href="user/create_book_request">Rent a book</a>--%>
     <br>
     <br>
     <a href="user/create_book_request">
@@ -37,17 +37,20 @@
                     <th>Title</th>
                     <th>Author</th>
                     <th>Request Date</th>
+                    <th>Action</th>
                 </tr>
                 </thead>
                 <tbody>
                 <c:forEach var="request" items="${isReading}">
                     <c:set var="number" value="${number + 1}"/>
-                    <c:set var="author" value="${request.getBook().getMainAuthor().getName()} ${request.getBook().getMainAuthor().getSurname()}"/>
+                    <c:set var="author"
+                           value="${request.getBook().getMainAuthor().getName()} ${request.getBook().getMainAuthor().getSurname()}"/>
                     <tr>
                         <td>${number}</td>
                         <td>${request.getBook().getTitle()}</td>
                         <td>${author}</td>
                         <td>${request.getRequestDate()}</td>
+                        <td><a href="user/return_book/${request.requestId}">Return</a></td>
                     </tr>
                 </c:forEach>
                 </tbody>
@@ -72,7 +75,8 @@
                 <tbody>
                 <c:forEach var="request" items="${hasRead}">
                     <c:set var="number" value="${number + 1}"/>
-                    <c:set var="author" value="${request.getBook().getMainAuthor().getName()} ${request.getBook().getMainAuthor().getSurname()}"/>
+                    <c:set var="author"
+                           value="${request.getBook().getMainAuthor().getName()} ${request.getBook().getMainAuthor().getSurname()}"/>
                     <tr>
                         <td>${number}</td>
                         <td>${request.getBook().getTitle()}</td>

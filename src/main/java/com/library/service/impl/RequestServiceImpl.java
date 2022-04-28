@@ -46,4 +46,10 @@ public class RequestServiceImpl implements RequestService {
     public void createRequest(Request request) {
         requestDAO.createRequest(request);
     }
+
+    @Override
+    @Transactional
+    public void updateRequest(Request request){
+        requestDAO.updateRequest(request);
+    }
 }

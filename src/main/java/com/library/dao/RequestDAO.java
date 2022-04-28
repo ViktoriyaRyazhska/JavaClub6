@@ -14,6 +14,9 @@ public interface RequestDAO {
     List<Request> findByBookId(Long bookId);
     List<Request> findByUserId(Long bookId);
     List<Request> findByDateRange(LocalDate startDate, LocalDate endDate);
-
     public void createRequest(Request request);
+
+    void updateRequest(Request request);
+
+
 }
