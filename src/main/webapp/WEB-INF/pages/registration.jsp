@@ -21,19 +21,19 @@
         <h1>Registration</h1>
         <form action="registration" method="post" modelAttribute="user" style="margin: 0px">
             <div class="input-group mb-3">
-                <input placeholder="First Name" class="form-control"/>
+                <input name="name" placeholder="First Name" class="form-control"/>
             </div>
             <div class="input-group mb-3">
-                <input placeholder="Last Name" class="form-control"/>
+                <input name="surname" placeholder="Last Name" class="form-control"/>
+            </div>
+<%--            <div class="input-group mb-3">--%>
+<%--                <input name="dateOfBirth" type="date" class="form-control"/>--%>
+<%--            </div>--%>
+            <div class="input-group mb-3">
+                <input name="email" type="email" placeholder="Email" class="form-control"/>
             </div>
             <div class="input-group mb-3">
-                <input type="date" class="form-control"/>
-            </div>
-            <div class="input-group mb-3">
-                <input type="email" placeholder="Email" class="form-control"/>
-            </div>
-            <div class="input-group mb-3">
-                <input type="password" placeholder="Password" class="form-control"/>
+                <input name="password" type="password" placeholder="Password" class="form-control"/>
             </div>
             <div>
                 <button type="submit" class="btn btn-outline-dark" style="width: 100%">Register</button>

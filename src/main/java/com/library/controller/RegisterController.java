@@ -1,6 +1,7 @@
 package com.library.controller;
 
 import com.library.model.Role;
+import com.library.service.RoleService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.bcrypt.BCrypt;
 import org.springframework.stereotype.Controller;
@@ -13,6 +14,7 @@ import org.springframework.web.servlet.ModelAndView;
 import com.library.model.User;
 import com.library.service.UserService;
 
+import javax.validation.Valid;
 import java.sql.Date;
 import java.time.LocalDate;
 import java.util.Map;
@@ -23,20 +25,25 @@ public class RegisterController {
     @Autowired
     private UserService userService;
 
+    @Autowired
+    private RoleService roleService;
+
     @GetMapping("/registration")
-   public String registaration(){
+   public String register(){
         return "registration";
     }
 
     @PostMapping("/registration")
-    public  String addUser(User user, Map<String,Object> model){
+    public  String addUser(@ModelAttribute User user, Map<String,Object> model){
         User byEmail = userService.findByEmail(user.getEmail());
         if(byEmail!=null){
             model.put("message","You already has account");
             return "registration";
         }
         user.setCreateTime(LocalDate.now());
-//        user.setRole(new Role(1,"USER"));
+        user.setDateOfBirth(LocalDate.of(2005,9,20));
+        user.setRole(roleService.findByTitle("User"));
+        user.setPassword(BCrypt.hashpw(user.getPassword(), BCrypt.gensalt(12)));
         userService.save(user);
         return "redirect:/login";
     }

@@ -27,10 +27,13 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .antMatchers("/user/**").authenticated()
                 .antMatchers("/admin/**").hasAuthority("ADMIN")
                 .and()
-                .formLogin().loginPage("/login").defaultSuccessUrl("/user")
+                .formLogin().loginPage("/login").defaultSuccessUrl("/user").permitAll()
                 .and()
                 .logout().logoutSuccessUrl("/login?logout=true")
-                .invalidateHttpSession(true);
+                .invalidateHttpSession(true).permitAll()
+                .and()
+                .csrf()
+                .disable();
 
     }
 
