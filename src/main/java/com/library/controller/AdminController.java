@@ -7,6 +7,8 @@ import com.library.service.BookService;
 import com.library.service.RequestService;
 import com.library.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.context.SecurityContextHolder;
+import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
@@ -31,10 +33,20 @@ public class AdminController {
     private RequestService requestService;
 
     @GetMapping
-    public String index() {
-        return "admin/index";
-    }
+    public String index(Model model) {
+        //get userName in the current session
+        Object principal = SecurityContextHolder.getContext().getAuthentication().getPrincipal();
+        String username;
+        if (principal instanceof UserDetails) {
+            username = ((UserDetails) principal).getUsername();
+        } else {
+            username = principal.toString();
+        }
+        model.addAttribute("user", this.userService.findByEmail(username));
 
+        return "admin/index";
+
+    }
     @GetMapping("/users")
     public String allUsers(Model model) {
         model.addAttribute("users", userService.findAll());
