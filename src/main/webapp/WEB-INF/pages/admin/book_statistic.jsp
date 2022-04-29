@@ -20,7 +20,7 @@
 
 <div class="container">
     <div style="display: flex; justify-content: space-between">
-        <h3>Information about user</h3>
+        <h3>Information about book</h3>
         <a href="/library/admin/books" class="btn btn-outline-dark" type="button">Back to List</a>
     </div>
     <hr>
