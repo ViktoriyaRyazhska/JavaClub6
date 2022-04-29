@@ -1,10 +1,14 @@
 package team6.library.javaclub6.dao;
 
+import team6.library.javaclub6.model.Book;
 import team6.library.javaclub6.model.User;
 import org.hibernate.SessionFactory;
 import org.hibernate.query.Query;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
+
+import javax.persistence.TypedQuery;
+import java.util.List;
 
 @Repository
 public class UserDaoImp implements UserDao{
@@ -32,5 +36,11 @@ public class UserDaoImp implements UserDao{
     @Override
     public void update(User user) {
         sessionFactory.getCurrentSession().update(user);
+    }
+
+    @Override
+    public List<User> list() {
+        TypedQuery<User> query = sessionFactory.getCurrentSession().createQuery("from User");
+        return query.getResultList();
     }
 }

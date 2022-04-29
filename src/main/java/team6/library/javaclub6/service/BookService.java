@@ -8,4 +8,5 @@ public interface BookService {
     Book findById(int id);
     void save(Book book);
     List<Book> popularList(int year, int month);
+    int getAverageTimeOfReading(int id);
 }

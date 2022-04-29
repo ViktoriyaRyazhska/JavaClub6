@@ -8,6 +8,7 @@ import team6.library.javaclub6.model.Book;
 import team6.library.javaclub6.model.User;
 import team6.library.javaclub6.model.UserBook;
 
+import java.sql.Date;
 import java.util.List;
 
 @Service
@@ -26,7 +27,7 @@ public class UserBookServiceImp implements UserBookService{
         userBookDao.returnBook(userBook);
     }
 
-    @Override
+    @Transactional
     public List<UserBook> hasReadBookList() {
         return userBookDao.hasReadBookList();
     }
@@ -34,6 +35,30 @@ public class UserBookServiceImp implements UserBookService{
     @Transactional
     public List<UserBook> list() {
         return userBookDao.list();
+    }
+
+    @Transactional
+    public int getNumberOfBookGivenInSelectedPeriod(Date first, Date second) {
+        List<UserBook> userBooks = list();
+        int result = 0;
+        for (UserBook i:userBooks){
+            if (i.getFkStatus().getId() == 1 && i.getRentDate().compareTo(first) >= 0 && i.getRentDate().compareTo(second) <= 0) {
+                result++;
+            }
+        }
+        return result;
+    }
+
+    @Transactional
+    public int getNumberOfRequestsInSelectedPeriod(Date first, Date second) {
+        List<UserBook> userBooks = list();
+        int result = 0;
+        for (UserBook i:userBooks){
+            if (i.getRentDate().compareTo(first) >= 0 && i.getRentDate().compareTo(second) <= 0) {
+                result++;
+            }
+        }
+        return result;
     }
 
 

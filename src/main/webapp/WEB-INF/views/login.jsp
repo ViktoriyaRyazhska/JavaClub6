@@ -7,7 +7,6 @@
 <body onload='document.loginForm.username.focus();'>
 <c:if test="${not empty errorMessage}"><div class="w3-display-container w3-center w3-red">
           <span onclick="this.parentElement.style.display='none'" class="w3-button w3-large w3-display-topright">&times;</span>
-    <h3>Error!</h3>
     <p>${errorMessage}</p>
 </div></c:if>
 

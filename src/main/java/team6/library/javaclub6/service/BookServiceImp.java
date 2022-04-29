@@ -7,7 +7,9 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import team6.library.javaclub6.model.UserBook;
 
+import java.sql.Date;
 import java.util.*;
+
 
 @Service
 public class BookServiceImp implements BookService {
@@ -56,5 +58,24 @@ public class BookServiceImp implements BookService {
         result.sort(Comparator.comparingInt(map::get));
         Collections.reverse(result);
         return result.subList(0, 5);
+    }
+
+    @Transactional
+    public int getAverageTimeOfReading(int id) {
+        List<UserBook> userBooks = userBookService.list();
+        int number = 0;
+        int sum = 0;
+        for (UserBook i:userBooks) {
+            if (i.getFkStatus().getId() == 1 && i.getFkBook().getId() == id && i.getReturnDate() != null) {
+                number++;
+                int millis = (int) (i.getReturnDate().getTime() - i.getRentDate().getTime());
+                int days = millis / 1000 / 60 / 60 / 24;
+                sum += days;
+            }
+        }
+        if (number != 0) {
+            return sum / number;
+        }
+        return 0;
     }
 }

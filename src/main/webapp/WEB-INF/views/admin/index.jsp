@@ -17,11 +17,11 @@
 <a href="">Delete One copy/Book with all copies</a><br>
 <a href="">Give book to Reader</a><br>
 <a href="">Set title of book and display count of this Book’ copies with information about them (available/unavailable in Library)</a><br>
-<a href="admin/userReadBooks">Get statistics by Reader (books which this user has read, is reading, how long he is our client)</a><br>
-<a href="">Get statistics by Book (general, by copies, average time of reading)</a><br>
+<a href="/admin/userReadBooks">Get statistics by Reader (books which this user has read, is reading, how long he is our client)</a><br>
+<a href="/admin/books">Get statistics by Book (general, by copies, average time of reading)</a><br>
 <a href="">Get statistics by Readers (average age, time of working with Library, average number of requests to Library in selected period)</a><br>
-<a href="">Get list of users who has not returned book in time with detailed information about them</a><br>
-<a href="">How many books were giving in selected period?</a><br>
-<a href="">*Send notification to one reader, all reader</a><br>
+<a href="/admin/usermissedlist">Get list of users who has not returned book in time with detailed information about them</a><br>
+<a href="/admin/numberofrequests">How many books were giving in selected period?</a><br>
+<a href="/admin/sendmail">*Send notification to one reader, all reader</a><br>
 </body>
 </html>

@@ -10,4 +10,5 @@ public interface UserDao {
     User findByEmail(String email);
     void save(User user);
     void update(User user);
+    List<User> list();
 }

@@ -15,4 +15,10 @@ public interface UserService extends UserDetailsService {
     List<UserBook> getUserBooks(User user);
     List<UserBook> getHistory(User user);
     List<UserBook> getRequestList(User user);
+    List<User> getUserMissedReturnDate();
+    List<User> list();
+    List<User> getReadersList();
+    int getAverageAgeOfReaders();
+    int getTimeWorkingWithLibrary(User user);
+    int getAgeOfUser(User user);
 }

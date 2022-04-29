@@ -6,9 +6,6 @@ import team6.library.javaclub6.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.bcrypt.BCrypt;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.ModelMap;
-import org.springframework.validation.BindingResult;
-
 import javax.servlet.http.HttpServletRequest;
 import java.sql.Date;
 
@@ -24,11 +21,8 @@ public class RegisterController {
     }
 
     @PostMapping("/addUser")
-    public String submit(HttpServletRequest request, BindingResult result) {
+    public String submit(HttpServletRequest request) {
         User user = new User();
-        if (result.hasErrors()) {
-            return "error";
-        }
         user.setName(request.getParameter("name"));
         user.setSurname(request.getParameter("surname"));
         user.setBirthDate(Date.valueOf(request.getParameter("birthDate")));

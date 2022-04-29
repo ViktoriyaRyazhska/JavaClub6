@@ -15,7 +15,7 @@ public class BookDaoImp implements BookDao {
     @Autowired
     private SessionFactory sessionFactory;
 
-    @Transactional
+    @Override
     public List<Book> list() {
         TypedQuery<Book> query = sessionFactory.getCurrentSession().createQuery("from Book where title is not null");
         return query.getResultList();

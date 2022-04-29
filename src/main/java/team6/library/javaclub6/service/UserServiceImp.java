@@ -10,10 +10,8 @@ import org.springframework.transaction.annotation.Transactional;
 import team6.library.javaclub6.dao.UserDao;
 import team6.library.javaclub6.model.*;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Comparator;
-import java.util.List;
+import java.sql.Date;
+import java.util.*;
 import java.util.stream.Collectors;
 
 @Service
@@ -21,6 +19,12 @@ public class UserServiceImp implements UserService {
 
     @Autowired
     private UserDao userDao;
+
+    @Autowired
+    private UserBookService userBookService;
+
+    @Autowired
+    private RoleService roleService;
 
     @Transactional(readOnly = true)
     public User findById(int id){
@@ -85,5 +89,69 @@ public class UserServiceImp implements UserService {
         List <UserBook> userBooks = user.getBooks();
         userBooks.removeIf(i -> i.getFkStatus().getId() == 1);
         return userBooks;
+    }
+
+    @Transactional
+    public List<User> getUserMissedReturnDate() {
+        List<User> users = new ArrayList<>();
+        List<UserBook> userBooks = userBookService.list();
+        for (UserBook i:userBooks){
+            if (i.getFkStatus().getId() == 1){
+                if (i.getReturnDate() == null){
+                    if (i.getShouldReturnDate().compareTo(new Date(System.currentTimeMillis())) < 0) {
+                        users.add(i.getFkUser());
+                    }
+                } else {
+                    if (i.getShouldReturnDate().compareTo(i.getReturnDate()) < 0){
+                        users.add(i.getFkUser());
+                    }
+                }
+            }
+        }
+        return users;
+    }
+
+    @Transactional
+    public List<User> list() {
+        return userDao.list();
+    }
+
+    @Transactional
+    public List<User> getReadersList() {
+        List<User> users = userDao.list();
+        List<User> admins = new ArrayList<>();
+        Role admin = roleService.findById(1);
+        for (User i:users) {
+            for (UserRole j:i.getRoles()){
+                if (j.getFkRole().equals(admin)) {
+                    admins.add(i);
+                    break;
+                }
+            }
+        }
+        users.removeAll(admins);
+        return users;
+    }
+
+
+
+    @Transactional
+    public int getAverageAgeOfReaders() {
+        List<User> users = getReadersList();
+        int sum = 0;
+        for (User i:users) {
+            sum += getAgeOfUser(i);
+        }
+        return sum / users.size();
+    }
+
+    @Transactional
+    public int getTimeWorkingWithLibrary(User user) {
+        return new Date(System.currentTimeMillis() - user.getRegistrationDate().getTime()).getYear() - 70;
+    }
+
+    @Transactional
+    public int getAgeOfUser(User user) {
+        return new Date(System.currentTimeMillis() - user.getBirthDate().getTime()).getYear() - 70;
     }
 }
