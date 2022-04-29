@@ -26,9 +26,6 @@ public class BookController {
     @Autowired
     private BookService bookService;
 
-//    public void setBookService(BookService bookService){
-//        this.bookService=bookService;
-//    }
     @Autowired
     private AuthorService authorService;
 
@@ -46,20 +43,28 @@ public class BookController {
 
         return "editBooks";
     }
+    @RequestMapping( "addBook")
+//    @PostMapping("/addBook")
+    public String saveBook(@RequestParam ("title") String title, @RequestParam ("realizeYear") String realizeYear,
+                           @RequestParam ("totalQuantity") String totalQuantity,Model model) {
+        System.out.println("addBook Controller working");
 
+        Book book=new Book();
+        book.setTitle(title);
+        book.setRealizeYear(Integer.parseInt(realizeYear));
+        book.setTotalQuantity(Integer.parseInt(totalQuantity));
+        book.setRoleId(1L);
 
-//    @RequestMapping( "addBook")
-    @PostMapping("/addBook")
-    public String saveBook(@ModelAttribute("book") @Valid Book book,
-                           BindingResult result, Model model) {
-
-        if (result.hasErrors()) {
-            model.addAttribute("books", bookService.list());
-            return "editBooks";
-        }
+//        if (result.hasErrors()) {
+//            model.addAttribute("books", bookService.list());
+//            return "editBooks";
+//        }
 
 
         bookService.addBook(book);
+
+        model.addAttribute(book);
+        System.out.println("addBook addBook finish");
         return "redirect:/";
     }
 

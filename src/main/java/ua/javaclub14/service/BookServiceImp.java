@@ -36,8 +36,9 @@ public class BookServiceImp implements BookService {
 
     @Override
     public void addBook(Book book) {
-        System.out.println("Service add Book work");
+        System.out.println("addBook Service working");
         bookDAO.addBook(book);
+        System.out.println("addBook Service finish");
 //    this.bookDAO.addBook(book);
     }
 

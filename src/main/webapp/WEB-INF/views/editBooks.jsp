@@ -88,21 +88,21 @@
 
             <label for="title">Title_________</label>
 
-            <input type="text" id="title"/>
+            <input type="text" name="title" id="title"/>
 
             <br> <br>
-            <label for="author">Author_______</label>
-            <select id="author">
+            <label for="authorName">Author_______</label>
+            <select  id="authorName" name="author">
                 <c:forEach items="${authors}" var="author">
-                    <option value="author">${author.getFirstName()} ${author.getLastName()}</option>
+                    <option  name="author" value="author">${author.getFirstName()} ${author.getLastName()}</option>
                 </c:forEach>
             </select>
             <br><br>
             <label for="realizeYear">Year realize___</label>
-            <input type="text" id="realizeYear"/>
+            <input type="text" id="realizeYear" name="realizeYear"/>
             <br><br>
             <label for="totalQuantity">Total quantity_</label>
-            <input type="text" id="totalQuantity"/>
+            <input type="text" id="totalQuantity" name="totalQuantity"/>
             <br><br>
             <input type="submit" value="Create">
             <br><br>

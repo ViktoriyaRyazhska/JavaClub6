@@ -44,6 +44,7 @@ public class BookDAOImp implements BookDAO{
 
     @Override
     public void addBook(Book book) {
+        System.out.println("addBook DAO working");
 //        sessionFactory.getCurrentSession().save(book);
 
 
@@ -60,13 +61,17 @@ public class BookDAOImp implements BookDAO{
         session.beginTransaction();
         TypedQuery<Book> insertQuery = session.createSQLQuery( "INSERT INTO Book (title,realizeYear,inReading,lastUpdate,totalQuantity,roleId)VALUES(?,?,0,?,?,?)");
 
+
         insertQuery.setParameter(1, book.getTitle());
         insertQuery.setParameter(2, book.getRealizeYear());
         insertQuery.setParameter(3, book.getInReading());
         insertQuery.setParameter(4, date);
         insertQuery.setParameter(5, book.getRoleId());
+        System.out.println("addBook DAO query");
         insertQuery.executeUpdate();
+        System.out.println("addBook DAO finish");
         session.getTransaction().commit();
+
     }
 
 
