@@ -41,7 +41,7 @@ public class AuthorDAOImp implements AuthorDAO{
     public List<Author> findAuthorByNameAndSurname(String name) {
         @SuppressWarnings("unchecked")
 
-        TypedQuery<Author> query = sessionFactory.getCurrentSession().createQuery("from Author where lastName like :name or firstName like :name");
+        TypedQuery<Author> query = sessionFactory.getCurrentSession().createQuery("from Author where lastName like :name or firstName like :name or concat(firstName,' ',lastName) like :name ");
         query.setParameter("name", name);
         return query.getResultList();
     }
