@@ -5,4 +5,6 @@ import team6.library.javaclub6.model.Book;
 
 public interface AuthorBookDao {
     void newAuthorBook(Book book, Author author);
+    int findAuthorIdByBookId(int id);
+    void update(Book book, Author author);
 }

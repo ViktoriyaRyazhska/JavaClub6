@@ -7,6 +7,8 @@ public interface BookService {
     List<Book> list();
     Book findById(int id);
     void save(Book book);
+    void update(Book book);
     List<Book> popularList(int year, int month);
     int getAverageTimeOfReading(int id);
+    List<Book> findByTitle(String title);
 }

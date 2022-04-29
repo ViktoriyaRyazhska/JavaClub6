@@ -19,7 +19,6 @@ public class AuthorDaoImp implements AuthorDao {
         Query query = sessionFactory.getCurrentSession().createQuery("FROM Author WHERE name=: name AND surname=: surname");
         query.setParameter("name", name);
         query.setParameter("surname", surname);
-        System.out.println("RESULT LIST"+query.getResultList());
         return (Author) query.uniqueResult();
     }
 
@@ -29,9 +28,11 @@ public class AuthorDaoImp implements AuthorDao {
         Query query = sessionFactory.getCurrentSession().createQuery("FROM Author WHERE name=: name AND surname=: surname");
         query.setParameter("name", name);
         query.setParameter("surname", surname);
-        System.out.println("RESULT LIST"+query.getResultList());
-        if (query.getResultList().isEmpty()){ return false; }
-        return true;
+        if (query.getResultList().isEmpty()){
+            return false;
+        } else {
+            return true;
+        }
     }
 
     @Transactional

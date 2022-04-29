@@ -52,4 +52,13 @@ public class AuthorBook implements Serializable {
     public void setStatus(boolean status) {
         this.status = status;
     }
+
+    @Override
+    public String toString() {
+        return "AuthorBook{" +
+                "fkAuthor=" + fkAuthor +
+                ", fkBook=" + fkBook +
+                ", status=" + status +
+                '}';
+    }
 }

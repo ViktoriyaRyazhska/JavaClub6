@@ -21,14 +21,26 @@ public class BookDaoImp implements BookDao {
         return query.getResultList();
     }
 
-    @Override
+    @Transactional
     public Book findById(int id) {
         Book result = sessionFactory.getCurrentSession().get(Book.class, id);
         return result;
     }
 
-    @Override
+    @Transactional
     public void save(Book book) {
         sessionFactory.getCurrentSession().persist(book);
+    }
+
+    @Transactional
+    public void update(Book book) {
+        sessionFactory.getCurrentSession().update(book);
+    }
+
+    @Transactional
+    public List<Book> findByTitle(String title) {
+        TypedQuery<Book> query = sessionFactory.getCurrentSession().createQuery("FROM Book WHERE title=:title");
+        query.setParameter("title", title);
+        return query.getResultList();
     }
 }
